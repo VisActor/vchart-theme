@@ -15,42 +15,42 @@
 
 Extended themes for VChart
 
-![unit test](https://github.com/visactor/vutil/actions/workflows/unit-test.yml/badge.svg?event=push)
+[@visactor/vchart-theme](https://github.com/VisActor/vchart-theme/tree/main/packages/vchart-theme)
+
 [![npm Version](https://img.shields.io/npm/v/@visactor/vchart-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-theme)
 [![npm Download](https://img.shields.io/npm/dm/@visactor/vchart-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-theme)
-[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/visactor/vutil/blob/main/LICENSE)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/visactor/vchart-theme/blob/main/LICENSE)
+
+[@visactor/vchart-semi-theme](https://github.com/VisActor/vchart-semi-theme/tree/main/packages/vchart-semi-theme)
+
+[![npm Version](https://img.shields.io/npm/v/@visactor/vchart-semi-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-semi-theme)
+[![npm Download](https://img.shields.io/npm/dm/@visactor/vchart-semi-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-semi-theme)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/visactor/vchart-theme/blob/main/LICENSE)
 
 </div>
 
 <div align="center">
 
-English| [简体中文](./README.zh-CN.md)
-
-</div>
-
-<div align="center">
-
-（video）
+English | [简体中文](./README.zh-CN.md)
 
 </div>
 
 # Introduction
 
-VUtil is a general visualization tool for visual grammar library [VGrammar](https://github.com/VisActor/VGrammar). Including data processing, mathematical tools, js code tools, and graphics processing tools.
+This repo is used to collect all extension themes for [VChart](https://github.com/VisActor/VChart). These themes are not built-in to VChart by default, but rather support on-demand usage, allowing users to obtain more beautiful and contextualized VChart charts with less work.
 
 # Repo Intro
 
 This repository includes the following packages:
 
-1. vutil: visualization toolkit collection
-2. vdataset: data processing tool
-3. vvisutil: math and graphics Tools
+1. vchart-theme: contains all static extension themes
+2. vchart-semi-theme: dynamic chart themes used in conjunction with [Semi Design](https://github.com/DouyinFE/semi-design).
 
 # Usage
 
 ## Installation
 
-[npm package](https://www.npmjs.com/package/@visactor/vutil)
+[npm package](https://www.npmjs.com/package/@visactor/vchart-theme)
 
 ```bash
 // npm
@@ -62,20 +62,19 @@ yarn add @visactor/vchart-theme
 
 ##
 
-[More demos and detailed tutorials](https://visactor.io/vutil)
+[More demos and detailed tutorials](https://visactor.io)
 
 # Related Links
 
-- [VGrammar](https://github.com/VisActor/VGrammar)
 - [VChart](https://visactor.io/vchart)
 
 # Contribution
 
-If you would like to contribute, please read the [Code of Conduct ](./CODE_OF_CONDUCT.md) 和 [ Guide](./CONTRIBUTING.zh-CN.md) first。
+If you would like to contribute, please read the [Code of Conduct](./CODE_OF_CONDUCT.md) and [Guide](./CONTRIBUTING.zh-CN.md) first。
 
 Small streams converge to make great rivers and seas!
 
-<a href="https://github.com/visactor/vutil/graphs/contributors"><img src="https://contrib.rocks/image?repo=visactor/vutil" /></a>
+<a href="https://github.com/visactor/vchart-theme/graphs/contributors"><img src="https://contrib.rocks/image?repo=visactor/vchart-theme" /></a>
 
 # License
 

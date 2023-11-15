@@ -8,17 +8,24 @@
 </div>
 
 <div align="center">
-  <h1>VUtil</h1>
+  <h1>VChart Themes</h1>
 </div>
 
 <div align="center">
 
-VUtil 是 VGrammar 的通用可视化工具包。
+VChart 的扩展主题。
 
-![unit test](https://github.com/visactor/vutil/actions/workflows/unit-test.yml/badge.svg?event=push)
+[@visactor/vchart-theme](https://github.com/VisActor/vchart-theme/tree/main/packages/vchart-theme)
+
 [![npm Version](https://img.shields.io/npm/v/@visactor/vchart-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-theme)
 [![npm Download](https://img.shields.io/npm/dm/@visactor/vchart-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-theme)
-[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/visactor/vutil/blob/main/LICENSE)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/visactor/vchart-theme/blob/main/LICENSE)
+
+[@visactor/vchart-semi-theme](https://github.com/VisActor/vchart-semi-theme/tree/main/packages/vchart-semi-theme)
+
+[![npm Version](https://img.shields.io/npm/v/@visactor/vchart-semi-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-semi-theme)
+[![npm Download](https://img.shields.io/npm/dm/@visactor/vchart-semi-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-semi-theme)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/visactor/vchart-theme/blob/main/LICENSE)
 
 </div>
 
@@ -28,29 +35,22 @@ VUtil 是 VGrammar 的通用可视化工具包。
 
 </div>
 
-<div align="center">
-
-（演示视频）
-
-</div>
-
 # 简介
 
-VUtil 是可视化语法库[VGrammar](https://github.com/VisActor/VGrammar) 的通用可视化工具。 包括数据处理、数学工具、js 代码工具、图形处理工具。
+这个仓库用于存放 [VChart](https://github.com/VisActor/VChart) 的所有扩展主题。这些主题默认没有内置在 VChart 里，而是支持用户按需使用，使用户可以通过更少的工作获得更美观宜人、更贴合使用场景的 VChart 图表。
 
 # 仓库简介
 
 本仓库包含如下 package
 
-1. vutil：可视化工具包合集
-2. vdataset：数据处理工具
-3. vvisutil：数学和图形工具
+1. vchart-theme：包含所有的静态扩展主题
+2. vchart-semi-theme：和 [Semi Design](https://github.com/DouyinFE/semi-design) 搭配使用的动态图表主题
 
 # 使用
 
 ## 安装
 
-[npm package](https://www.npmjs.com/package/@visactor/vutil)
+[npm package](https://www.npmjs.com/package/@visactor/vchart-theme)
 
 ```bash
 // npm
@@ -62,11 +62,10 @@ yarn add @visactor/vchart-theme
 
 ##
 
-[更多 demo 和详细教程](https://visactor.io/vutil)
+[更多 demo 和详细教程](https://visactor.io)
 
 # 相关链接
 
-- [VGrammar](https://github.com/VisActor/VGrammar)
 - [VChart](https://visactor.io/vchart)
 
 # 参与贡献
@@ -75,7 +74,7 @@ yarn add @visactor/vchart-theme
 
 细流成河，终成大海！
 
-<a href="https://github.com/visactor/vutil/graphs/contributors"><img src="https://contrib.rocks/image?repo=visactor/vutil" /></a>
+<a href="https://github.com/visactor/vchart-theme/graphs/contributors"><img src="https://contrib.rocks/image?repo=visactor/vchart-theme" /></a>
 
 # 许可证
 

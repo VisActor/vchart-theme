@@ -8,12 +8,12 @@
 </div>
 
 <div align="center">
-  <h1>VChart Themes</h1>
+  <h1>VUtil</h1>
 </div>
 
 <div align="center">
 
-Extended themes for VChart
+VUtil 是 VGrammar 的通用可视化工具包。
 
 ![unit test](https://github.com/visactor/vutil/actions/workflows/unit-test.yml/badge.svg?event=push)
 [![npm Version](https://img.shields.io/npm/v/@visactor/vchart-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-theme)
@@ -24,31 +24,31 @@ Extended themes for VChart
 
 <div align="center">
 
-English| [简体中文](./README.zh-CN.md)
+[English](./README.md) | 简体中文
 
 </div>
 
 <div align="center">
 
-（video）
+（演示视频）
 
 </div>
 
-# Introduction
+# 简介
 
-VUtil is a general visualization tool for visual grammar library [VGrammar](https://github.com/VisActor/VGrammar). Including data processing, mathematical tools, js code tools, and graphics processing tools.
+VUtil 是可视化语法库[VGrammar](https://github.com/VisActor/VGrammar) 的通用可视化工具。 包括数据处理、数学工具、js 代码工具、图形处理工具。
 
-# Repo Intro
+# 仓库简介
 
-This repository includes the following packages:
+本仓库包含如下 package
 
-1. vutil: visualization toolkit collection
-2. vdataset: data processing tool
-3. vvisutil: math and graphics Tools
+1. vutil：可视化工具包合集
+2. vdataset：数据处理工具
+3. vvisutil：数学和图形工具
 
-# Usage
+# 使用
 
-## Installation
+## 安装
 
 [npm package](https://www.npmjs.com/package/@visactor/vutil)
 
@@ -62,21 +62,21 @@ yarn add @visactor/vchart-theme
 
 ##
 
-[More demos and detailed tutorials](https://visactor.io/vutil)
+[更多 demo 和详细教程](https://visactor.io/vutil)
 
-# Related Links
+# 相关链接
 
 - [VGrammar](https://github.com/VisActor/VGrammar)
 - [VChart](https://visactor.io/vchart)
 
-# Contribution
+# 参与贡献
 
-If you would like to contribute, please read the [Code of Conduct ](./CODE_OF_CONDUCT.md) 和 [ Guide](./CONTRIBUTING.zh-CN.md) first。
+如想参与贡献，请先阅读 [行为准则](./CODE_OF_CONDUCT.md) 和 [贡献指南](./CONTRIBUTING.zh-CN.md)。
 
-Small streams converge to make great rivers and seas!
+细流成河，终成大海！
 
 <a href="https://github.com/visactor/vutil/graphs/contributors"><img src="https://contrib.rocks/image?repo=visactor/vutil" /></a>
 
-# License
+# 许可证
 
-[MIT License](./LICENSE)
+[MIT 协议](./LICENSE)

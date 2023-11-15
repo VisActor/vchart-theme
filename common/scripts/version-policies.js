@@ -45,8 +45,7 @@ const writeNextBump = (
 const readNextBumpFromChanges = () => {
   const changeRoots = [
     path.join(__dirname, '../changes/@visactor/vchart-theme'),
-    path.join(__dirname, '../changes/@visactor/vdataset'),
-    path.join(__dirname, '../changes/@visactor/vscale')
+    path.join(__dirname, '../changes/@visactor/vchart-semi-theme')
   ];
 
   const changeType = [];

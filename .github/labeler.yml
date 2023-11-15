@@ -2,6 +2,10 @@
 vchart-theme:
   - packages/vchart-theme/**
 
+# Add 'vchart-semi-theme' label to any change within the 'vchart-semi-theme' package
+vchart-semi-theme:
+  - packages/vchart-semi-theme/**
+
 # Add 'test' label to any change to packages/*/__tests__/* files within the source dir
 test:
   - packages/*/__tests__/*

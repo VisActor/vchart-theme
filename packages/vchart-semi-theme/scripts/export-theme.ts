@@ -5,36 +5,33 @@ import fs from 'fs';
 import path from 'path';
 import { ThemeManager } from '@visactor/vchart';
 import { allThemeMap } from '../src';
-import { allThemeMap as semiAllThemeMap } from '@visactor/vchart-semi-theme';
 
 const VCHART_THEME_PROJECT_ROOT = process.cwd();
 const targetPaths = [path.resolve(VCHART_THEME_PROJECT_ROOT, './public')];
 
 const result: string[] = [];
-[ThemeManager.themes, allThemeMap, semiAllThemeMap].forEach(themeMap =>
-  themeMap.forEach((value, key) => {
-    let success = true;
-    if (!ThemeManager.themeExist(key)) {
-      ThemeManager.registerTheme(key, value);
-    }
-    const theme = ThemeManager.getTheme(key);
-    const themeJson = JSON.stringify(theme);
-    targetPaths.forEach(targetPath => {
-      try {
-        const fileName = path.resolve(targetPath, `${key}.json`);
-        if (fs.existsSync(fileName)) {
-          fs.unlinkSync(fileName);
-        }
-        fs.writeFileSync(path.resolve(targetPath, `${key}.json`), themeJson);
-      } catch {
-        success = false;
+allThemeMap.forEach((value, key) => {
+  let success = true;
+  if (!ThemeManager.themeExist(key)) {
+    ThemeManager.registerTheme(key, value);
+  }
+  const theme = ThemeManager.getTheme(key);
+  const themeJson = JSON.stringify(theme);
+  targetPaths.forEach(targetPath => {
+    try {
+      const fileName = path.resolve(targetPath, `${key}.json`);
+      if (fs.existsSync(fileName)) {
+        fs.unlinkSync(fileName);
       }
-    });
-    if (success) {
-      result.push(key);
+      fs.writeFileSync(path.resolve(targetPath, `${key}.json`), themeJson);
+    } catch {
+      success = false;
     }
-  })
-);
+  });
+  if (success) {
+    result.push(key);
+  }
+});
 
 // 自动更新 readme
 const readmePath = path.resolve(VCHART_THEME_PROJECT_ROOT, './README.md');
@@ -46,7 +43,7 @@ const readmeThemeListEnd = readme.indexOf(endTag);
 const newReadme = `${readme.slice(0, readmeThemeListStart)}\n<!-- 以下为自动生成 -->\n${[...allThemeMap.keys()]
   .map(
     key =>
-      `- [${key}](https://raw.githubusercontent.com/VisActor/vchart-theme/develop/packages/vchart-theme/public/${key}.json) ${
+      `- [${key}](https://raw.githubusercontent.com/VisActor/vchart-theme/develop/packages/vchart-semi-theme/public/${key}.json) ${
         allThemeMap.get(key)?.description ?? ''
       }`
   )

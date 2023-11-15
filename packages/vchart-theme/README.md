@@ -18,8 +18,6 @@ The list of themes included here is as follows, with links to the theme JSON fil
 - [vScreenECommercePurple](https://raw.githubusercontent.com/VisActor/vchart-theme/develop/packages/vchart-theme/public/vScreenECommercePurple.json) 大屏-电商紫
 - [vScreenRedBlue](https://raw.githubusercontent.com/VisActor/vchart-theme/develop/packages/vchart-theme/public/vScreenRedBlue.json) 大屏-红蓝
 - [vScreenPartyRed](https://raw.githubusercontent.com/VisActor/vchart-theme/develop/packages/vchart-theme/public/vScreenPartyRed.json) 大屏-党建红
-- [semiDesignLight](https://raw.githubusercontent.com/VisActor/vchart-theme/develop/packages/vchart-theme/public/semiDesignLight.json) Semi Design - light
-- [semiDesignDark](https://raw.githubusercontent.com/VisActor/vchart-theme/develop/packages/vchart-theme/public/semiDesignDark.json) Semi Design - dark
 <!-- 以上为自动生成 -->
 <!-- ThemeListEnd -->
 

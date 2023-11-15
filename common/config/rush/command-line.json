@@ -94,6 +94,15 @@
       "shellCommand": "rush run -p @visactor/vchart-theme -s start"
     },
     {
+      "commandKind": "global",
+
+      "name": "semi",
+      "summary": "Start the development server",
+      "description": "Run this command to start vchart-semi-theme development server",
+
+      "shellCommand": "rush run -p @visactor/vchart-semi-theme -s start"
+    },
+    {
       "name": "change-all",
       "commandKind": "global",
       "autoinstallerName": "run-script",

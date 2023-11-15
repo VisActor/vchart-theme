@@ -1,5 +1,5 @@
 {
-  "name": "@visactor/vchart-theme",
+  "name": "@visactor/vchart-semi-theme",
   "version": "1.6.3",
   "description": "Extended themes for VChart",
   "sideEffects": false,
@@ -9,8 +9,7 @@
   "files": [
     "cjs",
     "esm",
-    "build",
-    "public"
+    "build"
   ],
   "scripts": {
     "compile": "tsc --noEmit",
@@ -37,7 +36,6 @@
     "@visactor/vchart": "^1.6.2",
     "@visactor/vchart-types": "^1.6.2",
     "@visactor/vutils": "^0.16.7",
-    "@visactor/vchart-semi-theme": "workspace:1.6.3",
     "eslint": "~8.18.0",
     "vite": "3.2.6",
     "typescript": "4.9.5",
@@ -66,7 +64,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/VisActor/vchart-theme.git",
-    "directory": "packages/vchart-theme"
+    "directory": "packages/vchart-semi-theme"
   },
   "author": {
     "name": "VisActor",

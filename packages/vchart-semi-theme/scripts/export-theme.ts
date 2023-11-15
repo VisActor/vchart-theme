@@ -43,7 +43,7 @@ const readmeThemeListEnd = readme.indexOf(endTag);
 const newReadme = `${readme.slice(0, readmeThemeListStart)}\n<!-- 以下为自动生成 -->\n${[...allThemeMap.keys()]
   .map(
     key =>
-      `- [${key}](https://raw.githubusercontent.com/VisActor/vchart-theme/develop/packages/vchart-semi-theme/public/${key}.json) ${
+      `- [${key}](https://raw.githubusercontent.com/VisActor/vchart-theme/main/packages/vchart-semi-theme/public/${key}.json) ${
         allThemeMap.get(key)?.description ?? ''
       }`
   )

@@ -14,6 +14,13 @@ module.exports = {
       }
     }
   ],
-  parserOptions: { tsconfigRootDir: __dirname, project: './tsconfig.eslint.json' },
+  parserOptions: {
+    tsconfigRootDir: __dirname,
+    project: './tsconfig.eslint.json',
+    sourceType: 'module',
+    ecmaFeatures: {
+      jsx: true // 让eslint支持jsx语法
+    }
+  },
   ignorePatterns: ['scripts/**', 'bundler.config.js']
 };

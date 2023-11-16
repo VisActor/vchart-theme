@@ -1,10 +1,10 @@
 import * as path from 'path';
 import localConf from './vite.config.local';
-import { NodeGlobalsPolyfillPlugin } from '@esbuild-plugins/node-globals-polyfill';
-import { NodeModulesPolyfillPlugin } from '@esbuild-plugins/node-modules-polyfill';
-import rollupNodePolyFill from 'rollup-plugin-node-polyfills';
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react-swc';
+import svgr from 'vite-plugin-svgr';
 
-export default {
+export default defineConfig({
   server: {
     host: '0.0.0.0',
     port: localConf.port || 3000,
@@ -15,31 +15,7 @@ export default {
     __DEV__: true,
     __VERSION__: JSON.stringify(require('../../../package.json').version)
   },
-  optimizeDeps: {
-    esbuildOptions: {
-      // Node.js global to browser globalThis
-      define: {
-        global: 'globalThis'
-      },
-      // Enable esbuild polyfill plugins
-      plugins: [
-        NodeGlobalsPolyfillPlugin({
-          process: true,
-          buffer: true
-        }),
-        NodeModulesPolyfillPlugin()
-      ]
-    }
-  },
-  build: {
-    rollupOptions: {
-      plugins: [
-        // Enable rollup polyfills plugin
-        // used during production bundling
-        rollupNodePolyFill()
-      ]
-    }
-  },
+  plugins: [react(), svgr()],
   resolve: {
     ...localConf?.resolve,
     alias: {
@@ -47,4 +23,4 @@ export default {
       //'@visactor/vutils-extension': path.resolve(__dirname, '../../../../vutils-extension/src/index.ts')
     }
   }
-};
+});

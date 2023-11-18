@@ -1,4 +1,4 @@
-import type { ITheme } from '@visactor/vchart-types';
+import type { ITheme } from '@visactor/vchart';
 import { semiDesignLight } from './light';
 import { semiDesignDark } from './dark';
 

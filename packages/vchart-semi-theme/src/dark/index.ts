@@ -1,4 +1,4 @@
-import type { ITheme } from '@visactor/vchart-types';
+import type { ITheme } from '@visactor/vchart';
 import { colorScheme } from './color-scheme';
 import { SEMI_FONT_FAMILY } from '../common/constants';
 

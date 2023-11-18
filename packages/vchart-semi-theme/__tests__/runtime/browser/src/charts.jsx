@@ -27,7 +27,10 @@ const Charts = () => {
                 }}
                 option={{
                   ...chart.option,
-                  mode: isMobile ? 'mobile-browser' : 'desktop-browser'
+                  mode: isMobile ? 'mobile-browser' : 'desktop-browser',
+                  onError: err => {
+                    console.error(err);
+                  }
                 }}
               />
             </div>

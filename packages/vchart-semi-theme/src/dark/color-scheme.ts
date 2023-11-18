@@ -1,9 +1,10 @@
-import type { BuiltinColorPalette, IThemeColorScheme } from '@visactor/vchart-types';
-import { dataScheme } from '../common/data-scheme';
+import type { BuiltinColorPalette, IColorSchemeStruct, IThemeColorScheme } from '@visactor/vchart';
+// eslint-disable-next-line no-duplicate-imports
+import { lightTheme } from '@visactor/vchart';
 
 export const colorScheme: IThemeColorScheme = {
   default: {
-    dataScheme,
+    dataScheme: (lightTheme.colorScheme.default as IColorSchemeStruct).dataScheme,
     palette: {
       /** 背景色 */
       backgroundColor: '#16161a',

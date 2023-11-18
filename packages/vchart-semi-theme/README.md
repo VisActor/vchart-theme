@@ -8,8 +8,8 @@ The list of themes included here is as follows, with links to the theme JSON fil
 
 <!-- ThemeListBegin -->
 <!-- 以下为自动生成 -->
-- [semiDesignLight](https://raw.githubusercontent.com/VisActor/vchart-theme/develop/packages/vchart-semi-theme/public/semiDesignLight.json) Semi Design - light
-- [semiDesignDark](https://raw.githubusercontent.com/VisActor/vchart-theme/develop/packages/vchart-semi-theme/public/semiDesignDark.json) Semi Design - dark
+- [semiDesignLight](https://raw.githubusercontent.com/VisActor/vchart-theme/main/packages/vchart-semi-theme/public/semiDesignLight.json) Semi Design - light
+- [semiDesignDark](https://raw.githubusercontent.com/VisActor/vchart-theme/main/packages/vchart-semi-theme/public/semiDesignDark.json) Semi Design - dark
 <!-- 以上为自动生成 -->
 <!-- ThemeListEnd -->
 

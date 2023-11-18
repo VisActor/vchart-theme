@@ -12,7 +12,6 @@
     "build",
     "public"
   ],
-  "type": "module",
   "scripts": {
     "compile": "tsc --noEmit",
     "eslint": "eslint --debug --fix src/",
@@ -27,6 +26,7 @@
   },
   "peerDependencies": {
     "@visactor/vchart": "^1.6.2",
+    "@visactor/vutils": "^0.16.7",
     "@douyinfe/semi-ui": ">=2.46.1"
   },
   "devDependencies": {
@@ -61,7 +61,6 @@
     "vite-plugin-svgr": "^4.1.0",
     "@babel/runtime": "latest",
     "@visactor/vchart": "^1.6.2",
-    "@visactor/vchart-types": "^1.6.2",
     "@visactor/react-vchart": "^1.6.2",
     "@visactor/vutils": "^0.16.7",
     "@douyinfe/semi-ui": ">=2.46.1",

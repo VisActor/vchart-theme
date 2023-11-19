@@ -18,7 +18,7 @@
     "build": "bundle && npm run export",
     "export": "ts-node scripts/export-theme.ts",
     "dev": "bundle --clean -f es -w",
-    "start": "ts-node __tests__/runtime/browser/scripts/initVite.ts && vite serve __tests__/runtime/browser",
+    "start": "vite serve __tests__/runtime/browser",
     "test": "jest",
     "test-cov": "jest -w 16 --coverage",
     "test-live": "npm run test-watch __tests__/unit/",

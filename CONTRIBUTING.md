@@ -6,11 +6,11 @@ We has adopted [the Contributor Covenant](CODE_OF_CONDUCT.md) as our Code of Con
 
 ## Open Development
 
-All work on VUtil happens directly on GitHub. Both core team members and external contributors send pull requests which go through the same review process.
+All work on vchart-theme happens directly on GitHub. Both core team members and external contributors send pull requests which go through the same review process.
 
 ## Semantic Versioning
 
-VUtil follows [semantic versioning](https://semver.org/). We release patch versions for critical bugfixes, minor versions for new features or non-essential changes, and major versions for any breaking changes. When we make breaking changes, we also introduce deprecation warnings in a minor version so that our users learn about the upcoming changes and migrate their code in advance.
+vchart-theme follows [semantic versioning](https://semver.org/). We release patch versions for critical bugfixes, minor versions for new features or non-essential changes, and major versions for any breaking changes. When we make breaking changes, we also introduce deprecation warnings in a minor version so that our users learn about the upcoming changes and migrate their code in advance.
 
 Every significant change is documented in the changelog file.
 
@@ -62,7 +62,7 @@ The core team is monitoring for pull requests. We will review your pull request 
 
 ## Development Workflow
 
-After cloning VUtil, run `rush update --full` to fetch its dependencies. Then, you can run several commands:
+After cloning vchart-theme, run `rush update --full` to fetch its dependencies. Then, you can run several commands:
 
 1. `rush eslint` checks the code style.
 2. `rush test` runs the complete test suite.

@@ -26,5 +26,5 @@
     "editor.defaultFormatter": "ms-python.black-formatter"
   },
   "python.formatting.provider": "none",
-  "cSpell.words": ["vutil"]
+  "cSpell.words": ["vutil", "vchart"]
 }

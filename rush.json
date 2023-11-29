@@ -24,14 +24,14 @@
       "projectFolder": "packages/vchart-theme",
       "tags": ["package"],
       "shouldPublish": true,
-      "versionPolicyName": "vutilMain"
+      "versionPolicyName": "vchartThemeMain"
     },
     {
       "packageName": "@visactor/vchart-semi-theme",
       "projectFolder": "packages/vchart-semi-theme",
       "tags": ["package"],
       "shouldPublish": true,
-      "versionPolicyName": "vutilMain"
+      "versionPolicyName": "vchartThemeMain"
     },
     {
       "packageName": "@internal/bundler",

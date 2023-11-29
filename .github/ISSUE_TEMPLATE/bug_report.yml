@@ -1,5 +1,5 @@
 name: Bug Report
-description: Report a bug to @VisActor/vutil
+description: Report a bug to @VisActor/vchart-theme
 title: '[Bug] '
 labels: [bug]
 body:
@@ -30,7 +30,7 @@ body:
     attributes:
       label: Version
       description: |
-        Check if the issue is reproducible with the latest stable version of @VisActor/vutil.
+        Check if the issue is reproducible with the latest stable version of @VisActor/vchart-theme.
       placeholder: |
         e.g. 1.0.0
 

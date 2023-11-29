@@ -12,7 +12,7 @@
 
 ## 版本管理
 
-VUtil 遵循[语义化版本控制](https://semver.org/lang/zh-CN/)。我们发布 patch 补丁版本以修复重要的错误，发布 minor 次要版本以提供新功能或非必要的更改，发布 major 主要版本以适应任何重大更改。当我们进行重大更改时，在次要版本中还会引入弃用警告，以便用户了解即将到来的更改并提前迁移代码。
+vchart-theme 遵循[语义化版本控制](https://semver.org/lang/zh-CN/)。我们发布 patch 补丁版本以修复重要的错误，发布 minor 次要版本以提供新功能或非必要的更改，发布 major 主要版本以适应任何重大更改。当我们进行重大更改时，在次要版本中还会引入弃用警告，以便用户了解即将到来的更改并提前迁移代码。
 
 每个重要的更改我们都会记录在对应项目 CHANGELOG 更新日志中。
 
@@ -70,7 +70,7 @@ VisActor 团队会关注所有的 pull request，我们会 review 以及合并�
 
 ## 开发流程
 
-在你 clone 了 VUtil 的代码并且使用 `rush update --full` 安装完依赖后，你还可以运行下面几个常用的命令：
+在你 clone 了 vchart-theme 的代码并且使用 `rush update --full` 安装完依赖后，你还可以运行下面几个常用的命令：
 
 1. `rush eslint` 运行所有项目的 eslint 脚本
 2. `rush test` 运行所有项目的 test 脚本

@@ -1,8 +1,6 @@
-import { isValidNumber } from '@visactor/vutils';
-
 export const getTokenValue = <T>(token: string, defaultValue?: T, chartContainer?: HTMLElement): T | string => {
-  const value = getComputedStyle(chartContainer ?? document.documentElement).getPropertyValue(token) || defaultValue;
-  if (isValidNumber(value?.[0])) {
+  const value = getComputedStyle(chartContainer ?? document.body).getPropertyValue(token) || defaultValue;
+  if (value && !isNaN(value[0])) {
     return `rgba(${value})`;
   }
   return value;
@@ -26,4 +24,18 @@ export const observeAttribute = (
     });
   });
   observer.observe(element, { attributes: true });
+};
+
+export const observeThemeSwitch = (callback: (mutation: MutationRecord, node: HTMLLinkElement) => void) => {
+  const observer = new MutationObserver(mutations => {
+    mutations.forEach(mutation => {
+      if (mutation.addedNodes.length === 1) {
+        const node = mutation.addedNodes[0] as HTMLLinkElement;
+        if (node.tagName === 'LINK' && node.getAttribute?.('semi-theme-switcher') === 'true') {
+          callback(mutation, node);
+        }
+      }
+    });
+  });
+  observer.observe(document.body, { childList: true });
 };

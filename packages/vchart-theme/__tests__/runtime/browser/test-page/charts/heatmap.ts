@@ -63,7 +63,7 @@ const spec: IHeatmapChartSpec = {
         fields: ['value']
       }
     ],
-    range: ['#07A35A', { type: 'palette', key: 'backgroundColor' }, '#E33232']
+    range: ['#07A35A', '#ffffff', '#E33232']
   },
   axes: [
     {

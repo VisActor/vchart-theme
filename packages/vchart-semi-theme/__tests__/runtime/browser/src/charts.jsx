@@ -1,6 +1,6 @@
 import React from 'react';
 import { isMobile } from 'react-device-detect';
-import { charts } from '../../../../../vchart-theme/__tests__/runtime/browser/test-page/charts';
+import { charts } from './chart-list';
 import { VChart } from '@visactor/react-vchart';
 
 const chartHeight = 400;
@@ -28,9 +28,8 @@ const Charts = () => {
                 option={{
                   ...chart.option,
                   mode: isMobile ? 'mobile-browser' : 'desktop-browser',
-                  onError: err => {
-                    console.error(err);
-                  }
+                  onError: null,
+                  logLevel: 5
                 }}
               />
             </div>

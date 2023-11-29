@@ -9,7 +9,6 @@ import { semiDesignDark } from './dark';
 import { semiDesignLight } from './light';
 import { dataSchemeTokenMap, paletteTokenMap } from './common/token-map';
 import { getTokenValue } from './util';
-import { isObject } from '@visactor/vutils';
 
 const baseThemeMap = {
   light: semiDesignLight,
@@ -49,7 +48,7 @@ const generatePalette = (mode: 'light' | 'dark', chartContainer?: HTMLElement): 
   const baseTheme = baseThemeMap[mode];
   const newPalette = {};
   Object.keys(paletteTokenMap).forEach(key => {
-    const token = isObject(paletteTokenMap[key]) ? paletteTokenMap[key][mode] : paletteTokenMap[key];
+    const token = typeof paletteTokenMap[key] === 'object' ? paletteTokenMap[key][mode] : paletteTokenMap[key];
     newPalette[key] = getTokenValue(
       token,
       (baseTheme.colorScheme.default as IColorSchemeStruct).palette[key],

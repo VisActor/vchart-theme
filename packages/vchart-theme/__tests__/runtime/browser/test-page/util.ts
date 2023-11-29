@@ -1,5 +1,3 @@
-import { isValid } from '@visactor/vutils';
-
 export const domDocument: Document | undefined = globalThis.document;
 
 export const createElement = <T extends HTMLElement = HTMLElement>(
@@ -24,7 +22,7 @@ export const createElement = <T extends HTMLElement = HTMLElement>(
     for (const key in attr) {
       const attrItem = document.createAttribute(key);
       const value = attr[key];
-      if (isValid(value)) {
+      if (value !== undefined) {
         attrItem.value = value;
         element.attributes.setNamedItem(attrItem);
       }

@@ -3,8 +3,11 @@ import { createRoot } from 'react-dom/client';
 import Frame from './frame.jsx';
 import './normalize.css';
 import { initVChartSemiTheme } from '../../../../src';
+import VChart from '@visactor/vchart';
 
-initVChartSemiTheme();
+initVChartSemiTheme({
+  isWatchingThemeSwitch: true
+});
 
 // 匹配系统亮暗模式
 const mql = window.matchMedia('(prefers-color-scheme: dark)');
@@ -26,3 +29,5 @@ mql.addListener(matchMode);
 const dom = document.querySelector('#root');
 const root = createRoot(dom);
 root.render(<Frame />);
+
+window['VChart'] = VChart;

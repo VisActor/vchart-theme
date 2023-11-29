@@ -1,7 +1,4 @@
-import * as path from 'path';
 import localConf from './vite.config.local';
-import { NodeGlobalsPolyfillPlugin } from '@esbuild-plugins/node-globals-polyfill';
-import { NodeModulesPolyfillPlugin } from '@esbuild-plugins/node-modules-polyfill';
 import rollupNodePolyFill from 'rollup-plugin-node-polyfills';
 
 export default {
@@ -20,15 +17,7 @@ export default {
       // Node.js global to browser globalThis
       define: {
         global: 'globalThis'
-      },
-      // Enable esbuild polyfill plugins
-      plugins: [
-        NodeGlobalsPolyfillPlugin({
-          process: true,
-          buffer: true
-        }),
-        NodeModulesPolyfillPlugin()
-      ]
+      }
     }
   },
   build: {
@@ -44,7 +33,6 @@ export default {
     ...localConf?.resolve,
     alias: {
       ...localConf?.resolve?.alias
-      //'@visactor/vutils-extension': path.resolve(__dirname, '../../../../vutils-extension/src/index.ts')
     }
   }
 };

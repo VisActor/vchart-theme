@@ -1,6 +1,6 @@
 {
   "name": "@visactor/vchart-semi-theme",
-  "version": "1.7.2",
+  "version": "1.7.1",
   "description": "Extended themes for VChart",
   "sideEffects": false,
   "main": "cjs/index.js",

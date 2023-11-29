@@ -5,7 +5,7 @@ import fs from 'fs';
 import path from 'path';
 import { ThemeManager } from '@visactor/vchart';
 import { allThemeMap } from '../src';
-import { allThemeMap as semiAllThemeMap } from '@visactor/vchart-semi-theme';
+import { allThemeMap as semiAllThemeMap } from '../../vchart-semi-theme/src';
 
 const VCHART_THEME_PROJECT_ROOT = process.cwd();
 const targetPaths = [path.resolve(VCHART_THEME_PROJECT_ROOT, './public')];

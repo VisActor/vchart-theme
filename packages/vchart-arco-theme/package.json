@@ -1,5 +1,5 @@
 {
-  "name": "@visactor/vchart-semi-theme",
+  "name": "@visactor/vchart-arco-theme",
   "version": "1.7.2",
   "description": "Extended themes for VChart",
   "sideEffects": false,
@@ -73,11 +73,11 @@
     "access": "public"
   },
   "homepage": "https://www.visactor.io",
-  "bugs": "https://github.com/VisActor/vchart-theme/issues",
+  "bugs": "https://github.com/VisActor/vchart-arco-theme/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/VisActor/vchart-theme.git",
-    "directory": "packages/vchart-semi-theme"
+    "url": "https://github.com/VisActor/vchart-arco-theme.git",
+    "directory": "packages/vchart-arco-theme"
   },
   "author": {
     "name": "VisActor",

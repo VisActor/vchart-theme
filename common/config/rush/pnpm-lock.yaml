@@ -5,7 +5,7 @@ importers:
   .:
     specifiers: {}
 
-  ../../packages/vchart-semi-theme:
+  ../../packages/vchart-arco-theme:
     specifiers:
       '@babel/runtime': latest
       '@douyinfe/semi-icons': latest
@@ -24,6 +24,7 @@ importers:
       '@types/offscreencanvas': 2019.6.4
       '@visactor/react-vchart': ~1.7.2
       '@visactor/vchart': ~1.7.2
+      '@visactor/vchart-theme-utils': workspace:1.7.2
       '@vitejs/plugin-react': ^4.1.1
       '@vitejs/plugin-react-swc': ^3.4.1
       eslint: ~8.18.0
@@ -43,10 +44,91 @@ importers:
       typescript: 4.9.5
       vite: ^4.5.0
       vite-plugin-svgr: ^4.1.0
+    dependencies:
+      '@visactor/vchart-theme-utils': link:../vchart-theme-utils
     devDependencies:
-      '@babel/runtime': 7.23.5
-      '@douyinfe/semi-icons': 2.47.1_react@18.2.0
-      '@douyinfe/semi-icons-lab': 2.47.1_biqbaboplfbrettd7655fr4n2y
+      '@babel/runtime': 7.23.8
+      '@douyinfe/semi-icons': 2.50.1_react@18.2.0
+      '@douyinfe/semi-icons-lab': 2.50.1_biqbaboplfbrettd7655fr4n2y
+      '@douyinfe/semi-ui': 2.47.1_biqbaboplfbrettd7655fr4n2y
+      '@esbuild-plugins/node-globals-polyfill': 0.1.1
+      '@esbuild-plugins/node-modules-polyfill': 0.1.4
+      '@internal/bundler': link:../../tools/bundler
+      '@internal/eslint-config': link:../../share/eslint-config
+      '@internal/jest-config': link:../../share/jest-config
+      '@internal/ts-config': link:../../share/ts-config
+      '@jest/globals': 29.5.0
+      '@rushstack/eslint-patch': 1.1.4
+      '@types/jest': 29.5.10
+      '@types/node': 20.10.1
+      '@types/offscreencanvas': 2019.6.4
+      '@visactor/react-vchart': 1.7.2_biqbaboplfbrettd7655fr4n2y
+      '@visactor/vchart': 1.7.2
+      '@vitejs/plugin-react': 4.2.0_vite@4.5.0
+      '@vitejs/plugin-react-swc': 3.5.0_vite@4.5.0
+      eslint: 8.18.0
+      husky: 7.0.4
+      jest: 29.5.0_6yoywmac55il2i4kkpbisa4jai
+      lint-staged: 12.3.7
+      magic-string: 0.25.9
+      prettier: 2.6.1
+      react: 18.2.0
+      react-device-detect: 2.2.3_biqbaboplfbrettd7655fr4n2y
+      react-dom: 18.2.0_react@18.2.0
+      ts-jest: 29.1.1_doipufordlnvh5g4adbwayvyvy
+      ts-loader: 8.0.2_typescript@4.9.5
+      ts-node: 10.9.0_rl57fpuzwlxwxrsbfrpy2clfky
+      tslib: 2.3.1
+      tslint: 5.12.1_typescript@4.9.5
+      typescript: 4.9.5
+      vite: 4.5.0_@types+node@20.10.1
+      vite-plugin-svgr: 4.2.0_sberx2hmayz3ondyqd3rv3bd2m
+
+  ../../packages/vchart-semi-theme:
+    specifiers:
+      '@babel/runtime': latest
+      '@douyinfe/semi-icons': latest
+      '@douyinfe/semi-icons-lab': latest
+      '@douyinfe/semi-ui': ^2.46.1
+      '@esbuild-plugins/node-globals-polyfill': 0.1.1
+      '@esbuild-plugins/node-modules-polyfill': 0.1.4
+      '@internal/bundler': workspace:*
+      '@internal/eslint-config': workspace:*
+      '@internal/jest-config': workspace:*
+      '@internal/ts-config': workspace:*
+      '@jest/globals': ~29.5.0
+      '@rushstack/eslint-patch': ~1.1.4
+      '@types/jest': ~29.5.0
+      '@types/node': '*'
+      '@types/offscreencanvas': 2019.6.4
+      '@visactor/react-vchart': ~1.7.2
+      '@visactor/vchart': ~1.7.2
+      '@visactor/vchart-theme-utils': workspace:1.7.2
+      '@vitejs/plugin-react': ^4.1.1
+      '@vitejs/plugin-react-swc': ^3.4.1
+      eslint: ~8.18.0
+      husky: 7.0.4
+      jest: ~29.5.0
+      lint-staged: 12.3.7
+      magic-string: ^0.25.7
+      prettier: 2.6.1
+      react: ^18.0.0
+      react-device-detect: ^2.2.2
+      react-dom: ^18.0.0
+      ts-jest: ~29.1.0
+      ts-loader: 8.0.2
+      ts-node: 10.9.0
+      tslib: 2.3.1
+      tslint: 5.12.1
+      typescript: 4.9.5
+      vite: ^4.5.0
+      vite-plugin-svgr: ^4.1.0
+    dependencies:
+      '@visactor/vchart-theme-utils': link:../vchart-theme-utils
+    devDependencies:
+      '@babel/runtime': 7.23.8
+      '@douyinfe/semi-icons': 2.50.1_react@18.2.0
+      '@douyinfe/semi-icons-lab': 2.50.1_biqbaboplfbrettd7655fr4n2y
       '@douyinfe/semi-ui': 2.47.1_biqbaboplfbrettd7655fr4n2y
       '@esbuild-plugins/node-globals-polyfill': 0.1.1
       '@esbuild-plugins/node-modules-polyfill': 0.1.4
@@ -82,6 +164,62 @@ importers:
       vite-plugin-svgr: 4.2.0_sberx2hmayz3ondyqd3rv3bd2m
 
   ../../packages/vchart-theme:
+    specifiers:
+      '@internal/bundler': workspace:*
+      '@internal/eslint-config': workspace:*
+      '@internal/jest-config': workspace:*
+      '@internal/ts-config': workspace:*
+      '@jest/globals': ~29.5.0
+      '@rushstack/eslint-patch': ~1.1.4
+      '@types/jest': ~29.5.0
+      '@types/node': '*'
+      '@types/offscreencanvas': 2019.6.4
+      '@visactor/vchart': ~1.7.2
+      '@visactor/vchart-types': ~1.7.2
+      eslint: ~8.18.0
+      husky: 7.0.4
+      jest: ~29.5.0
+      lint-staged: 12.3.7
+      magic-string: ^0.25.7
+      prettier: 2.6.1
+      react: ^18.0.0
+      react-device-detect: ^2.2.2
+      ts-jest: ~29.1.0
+      ts-loader: 8.0.2
+      ts-node: 10.9.0
+      tslib: 2.3.1
+      tslint: 5.12.1
+      typescript: 4.9.5
+      vite: ^4.5.0
+    devDependencies:
+      '@internal/bundler': link:../../tools/bundler
+      '@internal/eslint-config': link:../../share/eslint-config
+      '@internal/jest-config': link:../../share/jest-config
+      '@internal/ts-config': link:../../share/ts-config
+      '@jest/globals': 29.5.0
+      '@rushstack/eslint-patch': 1.1.4
+      '@types/jest': 29.5.10
+      '@types/node': 20.10.1
+      '@types/offscreencanvas': 2019.6.4
+      '@visactor/vchart': 1.7.2
+      '@visactor/vchart-types': 1.7.2
+      eslint: 8.18.0
+      husky: 7.0.4
+      jest: 29.5.0_6yoywmac55il2i4kkpbisa4jai
+      lint-staged: 12.3.7
+      magic-string: 0.25.9
+      prettier: 2.6.1
+      react: 18.2.0
+      react-device-detect: 2.2.3_react@18.2.0
+      ts-jest: 29.1.1_doipufordlnvh5g4adbwayvyvy
+      ts-loader: 8.0.2_typescript@4.9.5
+      ts-node: 10.9.0_rl57fpuzwlxwxrsbfrpy2clfky
+      tslib: 2.3.1
+      tslint: 5.12.1_typescript@4.9.5
+      typescript: 4.9.5
+      vite: 4.5.0_@types+node@20.10.1
+
+  ../../packages/vchart-theme-utils:
     specifiers:
       '@internal/bundler': workspace:*
       '@internal/eslint-config': workspace:*
@@ -1595,8 +1733,8 @@ packages:
     resolution: {integrity: sha512-x/rqGMdzj+fWZvCOYForTghzbtqPDZ5gPwaoNGHdgDfF2QA/XZbCBp4Moo5scrkAMPhB7z26XM/AaHuIJdgauA==}
     dev: false
 
-  /@babel/runtime/7.23.5:
-    resolution: {integrity: sha512-NdUTHcPe4C99WxPub+K9l9tK5/lV4UXIoaHSYgzco9BCyjKAAwzdBI+wWtYqHt7LJdbo74ZjRPJgzVweq1sz0w==}
+  /@babel/runtime/7.23.8:
+    resolution: {integrity: sha512-Y7KbAP984rn1VGMbGqKmBLio9V7y5Je9GvU4rQPCPinCyNfUcToxIXl06d59URp/F3LwinvODxab5N/G6qggkw==}
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.14.0
@@ -1717,8 +1855,8 @@ packages:
       scroll-into-view-if-needed: 2.2.31
     dev: true
 
-  /@douyinfe/semi-icons-lab/2.47.1_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-UYAtDQjdHk3ymLAPmiHjk+XGLn6ppghpzRnMMxq7TUucJw8enysOM6lvr6bH34VNk0SKrzHBQyKgG7rhQL3gmw==}
+  /@douyinfe/semi-icons-lab/2.50.1_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-YT7sZhFGI2cWbLRFRUSaiO/xCDEVjCt33tjRLypj1Rr8OEd87/xpzYgSTDsTW3ebMUmfCj5SKHKy71+0Sghj/g==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -1729,6 +1867,15 @@ packages:
 
   /@douyinfe/semi-icons/2.47.1_react@18.2.0:
     resolution: {integrity: sha512-+gC22MWuOCKSRwB5Yxq55+NUgoO9b7stYvIkuCmPuD3kYgjFhhGRR+o9dscQmDa8Wjd98wY05zI01S4BV/ptLw==}
+    peerDependencies:
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    dependencies:
+      classnames: 2.3.2
+      react: 18.2.0
+    dev: true
+
+  /@douyinfe/semi-icons/2.50.1_react@18.2.0:
+    resolution: {integrity: sha512-gf4nFrBaUJHx57z4yWEASzL39NrmfNA8HbFPvtTzOC6tqtGUcwhBBw9MyvfwTtRerVfRh1xzki+VGjkfrx8kMQ==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
@@ -4736,7 +4883,7 @@ packages:
     resolution: {integrity: sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==}
     engines: {node: '>=0.11'}
     dependencies:
-      '@babel/runtime': 7.23.5
+      '@babel/runtime': 7.23.8
     dev: true
 
   /date-time/3.1.0:
@@ -8332,7 +8479,7 @@ packages:
       react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
       react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@babel/runtime': 7.23.5
+      '@babel/runtime': 7.23.8
       memoize-one: 5.2.1
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -8430,7 +8577,7 @@ packages:
   /regenerator-transform/0.15.2:
     resolution: {integrity: sha512-hfMp2BoF0qOk3uc5V20ALGDS2ddjQaLrdl7xrGXvAIow7qeWRM2VA2HuCHkUKk9slq3VwEwLNK3DFBqDfPGYtg==}
     dependencies:
-      '@babel/runtime': 7.23.5
+      '@babel/runtime': 7.23.8
     dev: false
 
   /regex-not/1.0.2:

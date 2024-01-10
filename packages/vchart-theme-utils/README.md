@@ -8,6 +8,7 @@ The list of themes included here is as follows, with links to the theme JSON fil
 
 <!-- ThemeListBegin -->
 <!-- 以下为自动生成 -->
+
 - [vScreenVolcanoBlue](https://raw.githubusercontent.com/VisActor/vchart-theme/main/packages/vchart-theme/public/vScreenVolcanoBlue.json) 大屏-火山蓝
 - [vScreenClean](https://raw.githubusercontent.com/VisActor/vchart-theme/main/packages/vchart-theme/public/vScreenClean.json) 大屏-清新蜡笔
 - [vScreenOutskirts](https://raw.githubusercontent.com/VisActor/vchart-theme/main/packages/vchart-theme/public/vScreenOutskirts.json) 大屏-郊外
@@ -18,8 +19,8 @@ The list of themes included here is as follows, with links to the theme JSON fil
 - [vScreenECommercePurple](https://raw.githubusercontent.com/VisActor/vchart-theme/main/packages/vchart-theme/public/vScreenECommercePurple.json) 大屏-电商紫
 - [vScreenRedBlue](https://raw.githubusercontent.com/VisActor/vchart-theme/main/packages/vchart-theme/public/vScreenRedBlue.json) 大屏-红蓝
 - [vScreenPartyRed](https://raw.githubusercontent.com/VisActor/vchart-theme/main/packages/vchart-theme/public/vScreenPartyRed.json) 大屏-党建红
-<!-- 以上为自动生成 -->
-<!-- ThemeListEnd -->
+  <!-- 以上为自动生成 -->
+  <!-- ThemeListEnd -->
 
 ## Usage
 

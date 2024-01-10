@@ -25,7 +25,13 @@ VChart 的扩展主题。
 
 [![npm Version](https://img.shields.io/npm/v/@visactor/vchart-semi-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-semi-theme)
 [![npm Download](https://img.shields.io/npm/dm/@visactor/vchart-semi-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-semi-theme)
-[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/visactor/vchart-theme/blob/main/LICENSE)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/visactor/vchart-semi-theme/blob/main/LICENSE)
+
+[@visactor/vchart-arco-theme](https://github.com/VisActor/vchart-arco-theme/tree/main/packages/vchart-arco-theme)
+
+[![npm Version](https://img.shields.io/npm/v/@visactor/vchart-arco-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-arco-theme)
+[![npm Download](https://img.shields.io/npm/dm/@visactor/vchart-arco-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-arco-theme)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/visactor/vchart-arco-theme/blob/main/LICENSE)
 
 </div>
 
@@ -53,10 +59,10 @@ VChart 的扩展主题。
 [npm package](https://www.npmjs.com/package/@visactor/vchart-theme)
 
 ```bash
-// npm
+# npm
 npm install @visactor/vchart-theme
 
-// yarn
+# yarn
 yarn add @visactor/vchart-theme
 ```
 

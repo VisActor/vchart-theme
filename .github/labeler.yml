@@ -2,9 +2,17 @@
 vchart-theme:
   - packages/vchart-theme/**
 
+# Add 'vchart-theme-utils' label to any change within the 'vchart-theme-utils' package
+vchart-theme-utils:
+  - packages/vchart-theme-utils/**
+
 # Add 'vchart-semi-theme' label to any change within the 'vchart-semi-theme' package
 vchart-semi-theme:
   - packages/vchart-semi-theme/**
+
+# Add 'vchart-arco-theme' label to any change within the 'vchart-arco-theme' package
+vchart-arco-theme:
+  - packages/vchart-arco-theme/**
 
 # Add 'test' label to any change to packages/*/__tests__/* files within the source dir
 test:

@@ -1,17 +1,17 @@
-import type { IChartInfo } from '../../../../../vchart-theme/__tests__/runtime/browser/test-page/charts/interface';
-import area from '../../../../../vchart-theme/__tests__/runtime/browser/test-page/charts/area';
-import bar from '../../../../../vchart-theme/__tests__/runtime/browser/test-page/charts/bar';
-import column from '../../../../../vchart-theme/__tests__/runtime/browser/test-page/charts/column';
-import pie from '../../../../../vchart-theme/__tests__/runtime/browser/test-page/charts/pie';
-import rose from '../../../../../vchart-theme/__tests__/runtime/browser/test-page/charts/rose';
-import radar from '../../../../../vchart-theme/__tests__/runtime/browser/test-page/charts/radar';
-import scatter from '../../../../../vchart-theme/__tests__/runtime/browser/test-page/charts/scatter';
-import heatmap from '../../../../../vchart-theme/__tests__/runtime/browser/test-page/charts/heatmap';
-import markArea from '../../../../../vchart-theme/__tests__/runtime/browser/test-page/charts/mark-area';
-import markLine from '../../../../../vchart-theme/__tests__/runtime/browser/test-page/charts/mark-line';
-import markPoint from '../../../../../vchart-theme/__tests__/runtime/browser/test-page/charts/mark-point';
-import gauge from '../../../../../vchart-theme/__tests__/runtime/browser/test-page/charts/gauge';
-import funnel from '../../../../../vchart-theme/__tests__/runtime/browser/test-page/charts/funnel';
+import type { IChartInfo } from './charts/interface';
+import area from './charts/area';
+import bar from './charts/bar';
+import column from './charts/column';
+import pie from './charts/pie';
+import rose from './charts/rose';
+import radar from './charts/radar';
+import scatter from './charts/scatter';
+import heatmap from './charts/heatmap';
+import markArea from './charts/mark-area';
+import markLine from './charts/mark-line';
+import markPoint from './charts/mark-point';
+import gauge from './charts/gauge';
+import funnel from './charts/funnel';
 
 export const charts: IChartInfo[] = [
   area,

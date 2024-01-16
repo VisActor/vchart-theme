@@ -1,9 +1,9 @@
 import type { ITheme } from '@visactor/vchart';
-import { semiDesignLight } from './light';
-import { semiDesignDark } from './dark';
+import { arcoDesignLight } from './light';
+import { arcoDesignDark } from './dark';
 
 export const allThemeMap = new Map([
   // semi design 主题
-  [semiDesignLight.name, semiDesignLight],
-  [semiDesignDark.name, semiDesignDark]
+  [arcoDesignLight.name, arcoDesignLight],
+  [arcoDesignDark.name, arcoDesignDark]
 ]) as Map<string, ITheme>;

@@ -1,5 +1,5 @@
 import { isMobile } from 'react-device-detect';
-import { charts } from './charts';
+import { charts } from './chart-list';
 import VChart from '@visactor/vchart';
 import { createElement } from './util';
 

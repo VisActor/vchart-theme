@@ -43,7 +43,7 @@ export default {
         position: 'inside-outer',
         offsetRadius: 10,
         style: {
-          text: datum => datum['type']
+          text: (datum: any) => datum.type
         }
       }
     },

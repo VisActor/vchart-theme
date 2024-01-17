@@ -2,7 +2,7 @@ import type { IBarChartSpec } from '@visactor/vchart';
 import type { IChartInfo } from './interface';
 
 export default {
-  title: 'Bar Chart',
+  title: 'Bar Chart (Horizontal)',
   spec: {
     type: 'bar',
     direction: 'horizontal',

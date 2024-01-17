@@ -70,6 +70,12 @@
       "projectFolder": "share/jest-config",
       "tags": ["share"],
       "shouldPublish": false
+    },
+    {
+      "packageName": "@internal/chart-demo",
+      "projectFolder": "share/chart-demo",
+      "tags": ["share"],
+      "shouldPublish": false
     }
   ]
 }

@@ -7,7 +7,7 @@ export default {
     xField: 'Date',
     yField: 'Price',
     point: {
-      visible: false, // disable point
+      visible: false // disable point
     },
     axes: [
       {
@@ -15,59 +15,59 @@ export default {
         min: 0.12,
         max: 0.18,
         tick: {
-          visible: false,
+          visible: false
         },
         domainLine: {
-          visible: false,
+          visible: false
         },
         label: {
           // format tick label, the last label add unit
-          formatMethod: (value, datum) => {
+          formatMethod: (value: any) => {
             if (value === 0.18) {
               return `$${value}`;
             }
             return value;
-          },
-        },
+          }
+        }
       }, // configure y-axis 配置 y 轴
       {
         orient: 'bottom',
         label: {
-          formatMethod: (value, datum) => {
+          formatMethod: (value: any) => {
             if (value.startsWith('Jan-')) {
               return `20${value.split('-')[1]}`;
             }
 
             return '';
-          },
-        },
-      },
+          }
+        }
+      }
     ],
     markArea: [
       {
         coordinates: [
           {
             Date: 'Jan-20',
-            Price: 0.18,
+            Price: 0.18
           },
           {
             Date: 'Mar-23',
-            Price: 0.18,
+            Price: 0.18
           },
           {
             Date: 'Mar-23',
-            Price: 0.12,
+            Price: 0.12
           },
           {
             Date: 'Jan-20',
-            Price: 0.12,
-          },
+            Price: 0.12
+          }
         ],
         label: {
           text: ['Electricite prices', 'have surged since 2020'],
-          position: 'insideTop',
-        },
-      },
+          position: 'insideTop'
+        }
+      }
     ],
     data: {
       id: 'data',
@@ -194,8 +194,8 @@ export default {
         { Date: 'Dec-22', Price: 0.165 },
         { Date: 'Jan-23', Price: 0.168 },
         { Date: 'Feb-23', Price: 0.168 },
-        { Date: 'Mar-23', Price: 0.166 },
-      ],
-    },
-  },
+        { Date: 'Mar-23', Price: 0.166 }
+      ]
+    }
+  }
 } as IChartInfo;

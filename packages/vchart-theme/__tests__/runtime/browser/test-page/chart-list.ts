@@ -8,12 +8,12 @@ import {
   rose,
   radar,
   scatter,
-  //heatmap,
+  heatmap,
   gauge,
   funnel,
   markArea,
   markLine,
-  markPoint,
+  markPoint
 } from '@internal/chart-demo';
 
 export const charts: IChartInfo[] = [
@@ -24,10 +24,10 @@ export const charts: IChartInfo[] = [
   rose,
   radar,
   scatter,
-  //heatmap,
+  heatmap,
   gauge,
   funnel,
   markArea,
   markLine,
-  markPoint,
+  markPoint
 ];

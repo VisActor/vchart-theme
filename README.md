@@ -49,9 +49,9 @@ This repo is used to collect all extension themes for [VChart](https://github.co
 
 This repository includes the following packages:
 
-1. [vchart-theme](https://github.com/VisActor/vchart-theme/tree/main/packages/vchart-theme): contains all static extension themes
-2. [vchart-semi-theme](https://github.com/VisActor/vchart-theme/tree/main/packages/vchart-semi-theme): dynamic chart themes used in conjunction with [Semi Design](https://github.com/DouyinFE/semi-design).
-3. [vchart-arco-theme](https://github.com/VisActor/vchart-theme/tree/main/packages/vchart-arco-theme): dynamic chart themes used in conjunction with [ArcoDesign](https://github.com/arco-design).
+1. [vchart-theme](https://github.com/VisActor/vchart-theme/tree/develop/packages/vchart-theme): contains all static extension themes
+2. [vchart-semi-theme](https://github.com/VisActor/vchart-theme/tree/develop/packages/vchart-semi-theme): dynamic chart themes used in conjunction with [Semi Design](https://github.com/DouyinFE/semi-design).
+3. [vchart-arco-theme](https://github.com/VisActor/vchart-theme/tree/develop/packages/vchart-arco-theme): dynamic chart themes used in conjunction with [ArcoDesign](https://github.com/arco-design).
 
 # Usage
 

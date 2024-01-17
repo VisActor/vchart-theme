@@ -21,13 +21,13 @@ VChart 的扩展主题。
 [![npm Download](https://img.shields.io/npm/dm/@visactor/vchart-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-theme)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/visactor/vchart-theme/blob/main/LICENSE)
 
-[@visactor/vchart-semi-theme](https://github.com/VisActor/vchart-semi-theme/tree/main/packages/vchart-semi-theme)
+[@visactor/vchart-semi-theme](https://github.com/VisActor/vchart-theme/tree/main/packages/vchart-semi-theme)
 
 [![npm Version](https://img.shields.io/npm/v/@visactor/vchart-semi-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-semi-theme)
 [![npm Download](https://img.shields.io/npm/dm/@visactor/vchart-semi-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-semi-theme)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/visactor/vchart-semi-theme/blob/main/LICENSE)
 
-[@visactor/vchart-arco-theme](https://github.com/VisActor/vchart-arco-theme/tree/main/packages/vchart-arco-theme)
+[@visactor/vchart-arco-theme](https://github.com/VisActor/vchart-theme/tree/main/packages/vchart-arco-theme)
 
 [![npm Version](https://img.shields.io/npm/v/@visactor/vchart-arco-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-arco-theme)
 [![npm Download](https://img.shields.io/npm/dm/@visactor/vchart-arco-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-arco-theme)
@@ -50,25 +50,12 @@ VChart 的扩展主题。
 本仓库包含如下 package
 
 1. vchart-theme：包含所有的静态扩展主题
-2. vchart-semi-theme：和 [Semi Design](https://github.com/DouyinFE/semi-design) 搭配使用的动态图表主题
+2. [vchart-semi-theme](https://github.com/VisActor/vchart-theme/tree/develop/packages/vchart-semi-theme)：和 [Semi Design](https://github.com/DouyinFE/semi-design) 搭配使用的动态图表主题
+3. [vchart-arco-theme](https://github.com/VisActor/vchart-theme/tree/develop/packages/vchart-arco-theme)：和 [ArcoDesign](https://github.com/arco-design) 搭配使用的动态图表主题
 
 # 使用
 
-## 安装
-
-[npm package](https://www.npmjs.com/package/@visactor/vchart-theme)
-
-```bash
-# npm
-npm install @visactor/vchart-theme
-
-# yarn
-yarn add @visactor/vchart-theme
-```
-
-##
-
-[更多 demo 和详细教程](https://visactor.io)
+[更多 demo 和详细教程](https://www.visactor.io/vchart/guide/tutorial_docs/Theme/Theme_Extension)
 
 # 相关链接
 

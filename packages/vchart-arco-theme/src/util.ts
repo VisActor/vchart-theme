@@ -7,4 +7,4 @@ export const getCurrentMode = () =>
     ? 'dark'
     : 'light';
 
-export const generateThemeName = (mode: 'light' | 'dark') => `semiDesign${mode[0].toUpperCase()}${mode.slice(1)}`;
+export const generateThemeName = (mode: 'light' | 'dark') => `arcoDesign${mode[0].toUpperCase()}${mode.slice(1)}`;

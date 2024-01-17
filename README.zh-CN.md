@@ -49,7 +49,7 @@ VChart 的扩展主题。
 
 本仓库包含如下 package
 
-1. vchart-theme：包含所有的静态扩展主题
+1. [vchart-theme](https://github.com/VisActor/vchart-theme/tree/develop/packages/vchart-theme)：包含所有的静态扩展主题
 2. [vchart-semi-theme](https://github.com/VisActor/vchart-theme/tree/develop/packages/vchart-semi-theme)：和 [Semi Design](https://github.com/DouyinFE/semi-design) 搭配使用的动态图表主题
 3. [vchart-arco-theme](https://github.com/VisActor/vchart-theme/tree/develop/packages/vchart-arco-theme)：和 [ArcoDesign](https://github.com/arco-design) 搭配使用的动态图表主题
 

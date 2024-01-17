@@ -25,11 +25,11 @@ const Charts = () => {
                   height: chartHeight,
                   ...chart.spec
                 }}
-                option={{
+                options={{
                   ...chart.option,
-                  mode: isMobile ? 'mobile-browser' : 'desktop-browser',
-                  onError: null,
-                  logLevel: 5
+                  mode: isMobile ? 'mobile-browser' : 'desktop-browser'
+                  // onError: null,
+                  // logLevel: 5
                 }}
               />
             </div>

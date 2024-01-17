@@ -25,8 +25,11 @@
     "test-watch": "DEBUG_MODE=1 jest --watch"
   },
   "peerDependencies": {
-    "@visactor/vchart": "~1.7.2",
+    "@visactor/vchart": "~1.8.7",
     "@douyinfe/semi-ui": "^2.46.1"
+  },
+  "dependencies": {
+    "@visactor/vchart-theme-utils": "workspace:1.7.2"
   },
   "devDependencies": {
     "@esbuild-plugins/node-globals-polyfill": "0.1.1",
@@ -35,6 +38,7 @@
     "@internal/eslint-config": "workspace:*",
     "@internal/ts-config": "workspace:*",
     "@internal/jest-config": "workspace:*",
+    "@internal/chart-demo": "workspace:*",
     "jest": "~29.5.0",
     "@jest/globals": "~29.5.0",
     "ts-jest": "~29.1.0",
@@ -60,8 +64,8 @@
     "vite": "^4.5.0",
     "vite-plugin-svgr": "^4.1.0",
     "@babel/runtime": "latest",
-    "@visactor/vchart": "~1.7.2",
-    "@visactor/react-vchart": "~1.7.2",
+    "@visactor/vchart": "~1.8.7",
+    "@visactor/react-vchart": "~1.8.7",
     "@douyinfe/semi-ui": "^2.46.1",
     "@douyinfe/semi-icons": "latest",
     "@douyinfe/semi-icons-lab": "latest"

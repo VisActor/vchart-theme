@@ -1,13 +1,6 @@
-import type { BuiltinColorPalette, ProgressiveDataScheme } from '@visactor/vchart';
+import type { DataSchemeTokenMap, PaletteTokenMap } from '@visactor/vchart-theme-utils/esm/interface';
 
-export const paletteTokenMap: Record<
-  keyof BuiltinColorPalette,
-  | string
-  | {
-      light: string;
-      dark: string;
-    }
-> = {
+export const paletteTokenMap: PaletteTokenMap = {
   /** 背景色 */
   backgroundColor: '--semi-color-bg-0',
   /** 图表边框色 */
@@ -66,7 +59,7 @@ export const paletteTokenMap: Record<
   infoColor: '--semi-color-info'
 };
 
-export const dataSchemeTokenMap: ProgressiveDataScheme<string> = [
+export const dataSchemeTokenMap: DataSchemeTokenMap = [
   // 第一档颜色（数据项 <= 10）
   {
     maxDomainLength: 10,

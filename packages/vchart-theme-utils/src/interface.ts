@@ -7,6 +7,6 @@ export type PaletteTokenMap = Record<keyof BuiltinColorPalette, Token>;
 export type Token =
   | string
   | {
-      light: string;
-      dark: string;
+      light?: string;
+      dark?: string;
     };

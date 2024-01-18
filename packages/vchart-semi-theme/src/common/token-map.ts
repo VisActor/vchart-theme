@@ -36,6 +36,11 @@ export const paletteTokenMap: PaletteTokenMap = {
     light: '--semi-grey-9',
     dark: '--semi-color-border'
   },
+
+  /** 缩略轴滑块描边颜色 */
+  dataZoomHandleStrokeColor: {
+    light: '--semi-color-fill-2'
+  },
   /** 缩略轴图表区域颜色 */
   dataZoomChartColor: '--semi-color-fill-1',
 

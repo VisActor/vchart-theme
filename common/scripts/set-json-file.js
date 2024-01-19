@@ -1,4 +1,3 @@
-
 function setJsonFileByKey(file, json, keys, newValue) {
   const prevValue = keys.reduce((res, k) => {
     return res[k];

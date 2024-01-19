@@ -1,6 +1,6 @@
 /**
  * prelease
- *  node pre-release.js [alpha.0] [patch | major | minor | 1.0.0]
+ * node release.js [alpha.0] [patch | major | minor | 1.0.0]
  */
 
 const { spawnSync } = require('child_process')
@@ -10,15 +10,16 @@ const getPackageJson = require('./get-package-json');
 const writePrereleaseVersion = require('./set-prerelease-version');
 
 
+const semverRegex = /^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-(alpha|beta|rc)(?:\.(?:(0|[1-9])))*)$/;
+
 const preReleaseNameReg = /^((alpha|beta|rc)(?:\.(?:0|[1-9]))*)$/;
 
 
 function run() {
   let preReleaseName = process.argv.slice(2)[0];
-
   let preReleaseType = '';
   const rushJson = getPackageJson(path.join(__dirname, '../../rush.json'))
-  const package = rushJson.projects.find((project) => project.packageName === `@visactor/vchart-theme`);
+  const package = rushJson.projects.find((project) => project.packageName === '@visactor/vchart-theme');
   let regRes = null;
 
 

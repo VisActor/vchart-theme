@@ -25,8 +25,7 @@
     "test-watch": "DEBUG_MODE=1 jest --watch"
   },
   "peerDependencies": {
-    "@visactor/vchart": "~1.8.8",
-    "@douyinfe/semi-ui": "^2.46.1"
+    "@visactor/vchart": "~1.8.8"
   },
   "dependencies": {
     "@visactor/vchart-theme-utils": "workspace:1.7.2"

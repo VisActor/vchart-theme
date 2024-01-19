@@ -34,7 +34,7 @@ importers:
       '@typescript-eslint/parser': 5.30.0
       '@visactor/react-vchart': ~1.8.8
       '@visactor/vchart': ~1.8.8
-      '@visactor/vchart-theme-utils': workspace:1.7.2
+      '@visactor/vchart-theme-utils': workspace:1.7.3
       '@vitejs/plugin-react': ^4.1.1
       '@vitejs/plugin-react-swc': ^3.4.1
       arco-design-pro: ^2.8.0
@@ -170,7 +170,7 @@ importers:
       '@types/offscreencanvas': 2019.6.4
       '@visactor/react-vchart': ~1.8.8
       '@visactor/vchart': ~1.8.8
-      '@visactor/vchart-theme-utils': workspace:1.7.2
+      '@visactor/vchart-theme-utils': workspace:1.7.3
       '@vitejs/plugin-react': ^4.1.1
       '@vitejs/plugin-react-swc': ^3.4.1
       eslint: ~8.18.0
@@ -5746,6 +5746,7 @@ packages:
 
   /bindings/1.5.0:
     resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==}
+    requiresBuild: true
     dependencies:
       file-uri-to-path: 1.0.0
     dev: false
@@ -7333,6 +7334,7 @@ packages:
 
   /file-uri-to-path/1.0.0:
     resolution: {integrity: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==}
+    requiresBuild: true
     dev: false
     optional: true
 
@@ -9662,6 +9664,7 @@ packages:
 
   /nan/2.18.0:
     resolution: {integrity: sha512-W7tfG7vMOGtD30sHoZSSc/JVYiyDPEyQVso/Zz+/uQd0B0L46gtC+pHha5FFMRpil6fm/AoEcRWyOVi4+E/f8w==}
+    requiresBuild: true
     dev: false
     optional: true
 

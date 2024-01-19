@@ -1,14 +1,9 @@
-# Change Log - @visactor/vchart-theme-utils
+# Change Log - @visactor/vchart-arco-theme
 
 This log was last generated on Fri, 19 Jan 2024 07:47:09 GMT and should not be manually modified.
 
 ## 1.7.3
 Fri, 19 Jan 2024 07:47:09 GMT
-
-_Version update only_
-
-## 1.7.2
-Wed, 29 Nov 2023 21:46:11 GMT
 
 _Initial release_
 

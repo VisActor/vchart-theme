@@ -32,8 +32,8 @@ importers:
       '@types/react-dom': ^17.0.0
       '@typescript-eslint/eslint-plugin': 5.30.0
       '@typescript-eslint/parser': 5.30.0
-      '@visactor/react-vchart': ~1.8.7
-      '@visactor/vchart': ~1.8.7
+      '@visactor/react-vchart': ~1.8.8
+      '@visactor/vchart': ~1.8.8
       '@visactor/vchart-theme-utils': workspace:1.7.2
       '@vitejs/plugin-react': ^4.1.1
       '@vitejs/plugin-react-swc': ^3.4.1
@@ -105,8 +105,8 @@ importers:
       '@types/react-dom': 17.0.25
       '@typescript-eslint/eslint-plugin': 5.30.0_cow5zg7tx6c3eisi5a4ud5kwia
       '@typescript-eslint/parser': 5.30.0_vwud3sodsb5zxmzckoj7rdwdbq
-      '@visactor/react-vchart': 1.8.7_biqbaboplfbrettd7655fr4n2y
-      '@visactor/vchart': 1.8.7
+      '@visactor/react-vchart': 1.8.8_biqbaboplfbrettd7655fr4n2y
+      '@visactor/vchart': 1.8.8
       '@vitejs/plugin-react': 4.2.1_vite@4.5.1
       '@vitejs/plugin-react-swc': 3.5.0_vite@4.5.1
       arco-design-pro: 2.8.0
@@ -168,8 +168,8 @@ importers:
       '@types/jest': ~29.5.0
       '@types/node': '*'
       '@types/offscreencanvas': 2019.6.4
-      '@visactor/react-vchart': ~1.8.7
-      '@visactor/vchart': ~1.8.7
+      '@visactor/react-vchart': ~1.8.8
+      '@visactor/vchart': ~1.8.8
       '@visactor/vchart-theme-utils': workspace:1.7.2
       '@vitejs/plugin-react': ^4.1.1
       '@vitejs/plugin-react-swc': ^3.4.1
@@ -194,9 +194,9 @@ importers:
       '@visactor/vchart-theme-utils': link:../vchart-theme-utils
     devDependencies:
       '@babel/runtime': 7.23.8
-      '@douyinfe/semi-icons': 2.51.0_react@18.2.0
-      '@douyinfe/semi-icons-lab': 2.51.0_biqbaboplfbrettd7655fr4n2y
-      '@douyinfe/semi-ui': 2.51.0_biqbaboplfbrettd7655fr4n2y
+      '@douyinfe/semi-icons': 2.51.2_react@18.2.0
+      '@douyinfe/semi-icons-lab': 2.51.2_biqbaboplfbrettd7655fr4n2y
+      '@douyinfe/semi-ui': 2.51.2_biqbaboplfbrettd7655fr4n2y
       '@esbuild-plugins/node-globals-polyfill': 0.1.1
       '@esbuild-plugins/node-modules-polyfill': 0.1.4
       '@internal/bundler': link:../../tools/bundler
@@ -209,8 +209,8 @@ importers:
       '@types/jest': 29.5.11
       '@types/node': 20.11.5
       '@types/offscreencanvas': 2019.6.4
-      '@visactor/react-vchart': 1.8.7_biqbaboplfbrettd7655fr4n2y
-      '@visactor/vchart': 1.8.7
+      '@visactor/react-vchart': 1.8.8_biqbaboplfbrettd7655fr4n2y
+      '@visactor/vchart': 1.8.8
       '@vitejs/plugin-react': 4.2.1_vite@4.5.1
       '@vitejs/plugin-react-swc': 3.5.0_vite@4.5.1
       eslint: 8.18.0
@@ -243,8 +243,8 @@ importers:
       '@types/jest': ~29.5.0
       '@types/node': '*'
       '@types/offscreencanvas': 2019.6.4
-      '@visactor/vchart': ~1.8.7
-      '@visactor/vchart-types': ~1.8.7
+      '@visactor/vchart': ~1.8.8
+      '@visactor/vchart-types': ~1.8.8
       eslint: ~8.18.0
       husky: 7.0.4
       jest: ~29.5.0
@@ -271,8 +271,8 @@ importers:
       '@types/jest': 29.5.11
       '@types/node': 20.11.5
       '@types/offscreencanvas': 2019.6.4
-      '@visactor/vchart': 1.8.7
-      '@visactor/vchart-types': 1.8.7
+      '@visactor/vchart': 1.8.8
+      '@visactor/vchart-types': 1.8.8
       eslint: 8.18.0
       husky: 7.0.4
       jest: 29.5.0_vgpojbcxjh2pk3qfizn5ici2iu
@@ -300,8 +300,8 @@ importers:
       '@types/jest': ~29.5.0
       '@types/node': '*'
       '@types/offscreencanvas': 2019.6.4
-      '@visactor/vchart': ~1.8.7
-      '@visactor/vchart-types': ~1.8.7
+      '@visactor/vchart': ~1.8.8
+      '@visactor/vchart-types': ~1.8.8
       eslint: ~8.18.0
       husky: 7.0.4
       jest: ~29.5.0
@@ -327,8 +327,8 @@ importers:
       '@types/jest': 29.5.11
       '@types/node': 20.11.5
       '@types/offscreencanvas': 2019.6.4
-      '@visactor/vchart': 1.8.7
-      '@visactor/vchart-types': 1.8.7
+      '@visactor/vchart': 1.8.8
+      '@visactor/vchart-types': 1.8.8
       eslint: 8.18.0
       husky: 7.0.4
       jest: 29.5.0_vgpojbcxjh2pk3qfizn5ici2iu
@@ -356,8 +356,8 @@ importers:
       '@types/jest': ~29.5.0
       '@types/node': '*'
       '@types/offscreencanvas': 2019.6.4
-      '@visactor/vchart': ~1.8.7
-      '@visactor/vchart-types': ~1.8.7
+      '@visactor/vchart': ~1.8.8
+      '@visactor/vchart-types': ~1.8.8
       eslint: ~8.18.0
       husky: 7.0.4
       jest: ~29.5.0
@@ -381,8 +381,8 @@ importers:
       '@types/jest': 29.5.11
       '@types/node': 20.11.5
       '@types/offscreencanvas': 2019.6.4
-      '@visactor/vchart': 1.8.7
-      '@visactor/vchart-types': 1.8.7
+      '@visactor/vchart': 1.8.8
+      '@visactor/vchart-types': 1.8.8
       eslint: 8.18.0
       husky: 7.0.4
       jest: 29.5.0_vgpojbcxjh2pk3qfizn5ici2iu
@@ -1953,28 +1953,28 @@ packages:
       tslib: 2.3.1
     dev: true
 
-  /@douyinfe/semi-animation-react/2.51.0:
-    resolution: {integrity: sha512-Mt5VcK2UGIzRlEq2A/+vDfHLoWJ/H80ApBxPxtPkCEyZgdxQ6qZoegnHxH/iPIdhFRsBIJaaDTj1BFCjCN1kLQ==}
+  /@douyinfe/semi-animation-react/2.51.2:
+    resolution: {integrity: sha512-fcgo3zrz/bshMvIQ6gKVrSNLu5gYKS8R3HaZ8BTmonvTXyi4pthlWN1H/C79fcYQDSot8pJj4/SWQif0llyhRw==}
     dependencies:
-      '@douyinfe/semi-animation': 2.51.0
-      '@douyinfe/semi-animation-styled': 2.51.0
+      '@douyinfe/semi-animation': 2.51.2
+      '@douyinfe/semi-animation-styled': 2.51.2
       classnames: 2.5.1
     dev: true
 
-  /@douyinfe/semi-animation-styled/2.51.0:
-    resolution: {integrity: sha512-JascXmOsZiOXRlbnkF67ymNSNyo6m4BFQ9FeiQoFRtuRHVGey3fO59DfisMgOTGQQ7EoAhyKRe/vjQn7s2F5Rg==}
+  /@douyinfe/semi-animation-styled/2.51.2:
+    resolution: {integrity: sha512-PGlGVGFwqlpGYiySznGfRCTn52P2YMGz9Soic9o8M1xjSkMCMkJVv3o7kxiLtOUeTyJMR/NUbjTVMM1ZogffTQ==}
     dev: true
 
-  /@douyinfe/semi-animation/2.51.0:
-    resolution: {integrity: sha512-Fmy/eU+7mBBw/50v/62GChOAXGFo/UugODX/ySK1aJXsjkVKKIQSX3Sdu0mAtqZj00URHo1hoXFaU59fgmeVaw==}
+  /@douyinfe/semi-animation/2.51.2:
+    resolution: {integrity: sha512-LUFv/pxWOCgwv3LHzQ3HKt4qho0+RrC+FD0pqQdIIMhVgB/hIchbtY1WMlPSKWDz4uIrDYSOvMyO6TR3lJLdhA==}
     dependencies:
       bezier-easing: 2.1.0
     dev: true
 
-  /@douyinfe/semi-foundation/2.51.0:
-    resolution: {integrity: sha512-9KUa8lYFNvRsMmd0JZ40KQCI3tZe+hPGN3V+lhTJ2+lDh4jaerESI8mmPRNn5L010t4yWGugBOBUbPegFvkKvA==}
+  /@douyinfe/semi-foundation/2.51.2:
+    resolution: {integrity: sha512-IyLLF54D42NyRE7sL1Y17muP0r9nAfZM7rdCEYFOPl8hbHeDSaD5B9GDc3OJriPodkC/i7t/BwU916x/nwzkmQ==}
     dependencies:
-      '@douyinfe/semi-animation': 2.51.0
+      '@douyinfe/semi-animation': 2.51.2
       async-validator: 3.5.2
       classnames: 2.5.1
       date-fns: 2.30.0
@@ -1984,8 +1984,8 @@ packages:
       scroll-into-view-if-needed: 2.2.31
     dev: true
 
-  /@douyinfe/semi-icons-lab/2.51.0_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-qmrGkGlXROLowi4aoJ/NqEz3C36TqhaPwKwEjXbyhmk2qyXz74JH4UdgPZ1pA2LzePkSbsRJzxoCNZX4+Ow+5Q==}
+  /@douyinfe/semi-icons-lab/2.51.2_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-+p/3RgtdeLDqBlNX0KN417Swj0mfVQl1fMppFcdGXjFEiIxjPrMdMb+3TAb0iaglN1U12tQiIx2eDW1j9RQL0w==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -1994,8 +1994,8 @@ packages:
       react-dom: 18.2.0_react@18.2.0
     dev: true
 
-  /@douyinfe/semi-icons/2.51.0_react@18.2.0:
-    resolution: {integrity: sha512-GMT+SF2P2yLJoldsJsiwN/moY3JV8Ejl4lkPRkZkVPGtIl/VvdVV0mV/7si+IpClCttW9HiawYizTRE9PkLSWA==}
+  /@douyinfe/semi-icons/2.51.2_react@18.2.0:
+    resolution: {integrity: sha512-KXi9WzTEIaFAMBfsOzGyUqk0L0J28++mVOiiplTTG4972H1EpZJH1qRhbROuHCTzBAsHAlojLOI1vJWmyh+7vg==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
@@ -2003,22 +2003,22 @@ packages:
       react: 18.2.0
     dev: true
 
-  /@douyinfe/semi-illustrations/2.51.0_react@18.2.0:
-    resolution: {integrity: sha512-URY/NvelzSSITABBLq/teIDCygii9gVpmYiDJQdVSjbS4xG2+6qkQUpYLJTrs3h0OfndIv6kZSq2w0+7Z1JkSw==}
+  /@douyinfe/semi-illustrations/2.51.2_react@18.2.0:
+    resolution: {integrity: sha512-yYfPWZDG+Q5psXHdiIg80wAe4JuPW6FIZ2MkeguqPPzB7Z27tzkv0xUf7wiaHTXIb+BzFaX4O3+Ad0vvKuwz3A==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
       react: 18.2.0
     dev: true
 
-  /@douyinfe/semi-theme-default/2.51.0:
-    resolution: {integrity: sha512-Kwyzlpii90oiJ2zPxBdPp3RurcvRTjJ4U64+uj0+rIfYr3aEzLakvrGYweWE4ny17zQqctMiG84zJsx662C8GA==}
+  /@douyinfe/semi-theme-default/2.51.2:
+    resolution: {integrity: sha512-3t9+1EkoD1Nt2Eq4mzrp87alaXKn07HTobyereSie5agZrlDzewfncJn3n4Sf5N+ZExZ6FaKGYVJ/vjYQvvVAw==}
     dependencies:
       glob: 7.2.3
     dev: true
 
-  /@douyinfe/semi-ui/2.51.0_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-0UTxUELZ6z4FOH9EKjbJLlmoD+wvPPWJs+lNmHKQ6zqNYSzx2d6MIm4U7biNY6yXKwcJWhFOw5QY5BwgjHdGnA==}
+  /@douyinfe/semi-ui/2.51.2_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-Vvd845R79Iw5v62ToIUcSbiNtIiR0lx+TLob9c+L8tVtrsqBZwhakV7ChQp8G67TCTeF60MJB7jB8bXMrugZIQ==}
     peerDependencies:
       react: '>=16.0.0'
       react-dom: '>=16.0.0'
@@ -2026,12 +2026,12 @@ packages:
       '@dnd-kit/core': 6.1.0_biqbaboplfbrettd7655fr4n2y
       '@dnd-kit/sortable': 7.0.2_sm3txfnl76aqlmpp73hvpv5hze
       '@dnd-kit/utilities': 3.2.2_react@18.2.0
-      '@douyinfe/semi-animation': 2.51.0
-      '@douyinfe/semi-animation-react': 2.51.0
-      '@douyinfe/semi-foundation': 2.51.0
-      '@douyinfe/semi-icons': 2.51.0_react@18.2.0
-      '@douyinfe/semi-illustrations': 2.51.0_react@18.2.0
-      '@douyinfe/semi-theme-default': 2.51.0
+      '@douyinfe/semi-animation': 2.51.2
+      '@douyinfe/semi-animation-react': 2.51.2
+      '@douyinfe/semi-foundation': 2.51.2
+      '@douyinfe/semi-icons': 2.51.2_react@18.2.0
+      '@douyinfe/semi-illustrations': 2.51.2_react@18.2.0
+      '@douyinfe/semi-theme-default': 2.51.2
       async-validator: 3.5.2
       classnames: 2.5.1
       copy-text-to-clipboard: 2.2.0
@@ -2045,7 +2045,7 @@ packages:
       react-window: 1.8.10_biqbaboplfbrettd7655fr4n2y
       resize-observer-polyfill: 1.5.1
       scroll-into-view-if-needed: 2.2.31
-      utility-types: 3.10.0
+      utility-types: 3.11.0
     dev: true
 
   /@esbuild-plugins/node-globals-polyfill/0.1.1:
@@ -3316,8 +3316,8 @@ packages:
       - supports-color
     dev: true
 
-  /@swc/core-darwin-arm64/1.3.103:
-    resolution: {integrity: sha512-Dqqz48mvdm/3PHPPA6YeAEofkF9H5Krgqd/baPf0dXcarzng6U9Ilv2aCtDjq7dfI9jfkVCW5zuwq98PE2GEdw==}
+  /@swc/core-darwin-arm64/1.3.104:
+    resolution: {integrity: sha512-rCnVj8x3kn6s914Adddu+zROHUn6mUEMkNKUckofs3W9OthNlZXJA3C5bS2MMTRFXCWamJ0Zmh6INFpz+f4Tfg==}
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [darwin]
@@ -3325,8 +3325,8 @@ packages:
     dev: true
     optional: true
 
-  /@swc/core-darwin-x64/1.3.103:
-    resolution: {integrity: sha512-mhUVSCEAyFLqtrDtwr9qPbe891J8cKxq53CD873/ZsUnyasHMPyWXzTvy9qjmbYyfDIArm6fGqjF5YsDKwGGNg==}
+  /@swc/core-darwin-x64/1.3.104:
+    resolution: {integrity: sha512-LBCWGTYkn1UjyxrmcLS3vZgtCDVhwxsQMV7jz5duc7Gas8SRWh6ZYqvUkjlXMDX1yx0uvzHrkaRw445+zDRj7Q==}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [darwin]
@@ -3334,8 +3334,8 @@ packages:
     dev: true
     optional: true
 
-  /@swc/core-linux-arm-gnueabihf/1.3.103:
-    resolution: {integrity: sha512-rYLmwxr01ZHOI6AzooqwB0DOkMm0oU8Jznk6uutV1lHgcwyxsNiC1Css8yf77Xr/sYTvKvuTfBjThqa5H716pA==}
+  /@swc/core-linux-arm-gnueabihf/1.3.104:
+    resolution: {integrity: sha512-iFbsWcx0TKHWnFBNCuUstYqRtfkyBx7FKv5To1Hx14EMuvvoCD/qUoJEiNfDQN5n/xU9g5xq4RdbjEWCFLhAbA==}
     engines: {node: '>=10'}
     cpu: [arm]
     os: [linux]
@@ -3343,8 +3343,8 @@ packages:
     dev: true
     optional: true
 
-  /@swc/core-linux-arm64-gnu/1.3.103:
-    resolution: {integrity: sha512-w+5XFpUqxiAGUBiyRyYR28Ghddp5uVyo+dHAkCnY1u3V6RsZkY3vRwmoXT7/HxVGV7csodJ1P9Cp9VaRnNvTKA==}
+  /@swc/core-linux-arm64-gnu/1.3.104:
+    resolution: {integrity: sha512-1BIIp+nUPrRHHaJ35YJqrwXPwYSITp5robqqjyTwoKGw2kq0x+A964kpWul6v0d7A9Ial8fyH4m13eSWBodD2A==}
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [linux]
@@ -3352,8 +3352,8 @@ packages:
     dev: true
     optional: true
 
-  /@swc/core-linux-arm64-musl/1.3.103:
-    resolution: {integrity: sha512-lS5p8ewAIar7adX6t0OrkICTcw92PXrn3ZmYyG5hvfjUg4RPQFjMfFMDQSne32ZJhGXHBf0LVm1R8wHwkcpwgA==}
+  /@swc/core-linux-arm64-musl/1.3.104:
+    resolution: {integrity: sha512-IyDNkzpKwvLqmRwTW+s8f8OsOSSj1N6juZKbvNHpZRfWZkz3T70q3vJlDBWQwy8z8cm7ckd7YUT3eKcSBPPowg==}
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [linux]
@@ -3361,8 +3361,8 @@ packages:
     dev: true
     optional: true
 
-  /@swc/core-linux-x64-gnu/1.3.103:
-    resolution: {integrity: sha512-Lf2cHDoEPNB6TwexHBEZCsAO2C7beb0YljhtQS+QfjWLLVqCiwt5LRCPuKN2Bav7el9KZXOI5baXedUeFj0oFg==}
+  /@swc/core-linux-x64-gnu/1.3.104:
+    resolution: {integrity: sha512-MfX/wiRdTjE5uXHTDnaX69xI4UBfxIhcxbVlMj//N+7AX/G2pl2UFityfVMU2HpM12BRckrCxVI8F/Zy3DZkYQ==}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [linux]
@@ -3370,8 +3370,8 @@ packages:
     dev: true
     optional: true
 
-  /@swc/core-linux-x64-musl/1.3.103:
-    resolution: {integrity: sha512-HR1Y9iiLEO3F49P47vjbHczBza9RbdXWRWC8NpcOcGJ4Wnw0c2DLWAh416fGH3VYCF/19EuglLEXhvSj0NXGuA==}
+  /@swc/core-linux-x64-musl/1.3.104:
+    resolution: {integrity: sha512-5yeILaxA31gGEmquErO8yxlq1xu0XVt+fz5mbbKXKZMRRILxYxNzAGb5mzV41r0oHz6Vhv4AXX/WMCmeWl+HkQ==}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [linux]
@@ -3379,8 +3379,8 @@ packages:
     dev: true
     optional: true
 
-  /@swc/core-win32-arm64-msvc/1.3.103:
-    resolution: {integrity: sha512-3/GfROD1GPyf2hi6R0l4iZ5nrrKG8IU29hYhZCb7r0ZqhL/58kktVPlkib8X/EAJI8xbhM/NMl76h8ElrnyH5w==}
+  /@swc/core-win32-arm64-msvc/1.3.104:
+    resolution: {integrity: sha512-rwcImsYnWDWGmeESG0XdGGOql5s3cG5wA8C4hHHKdH76zamPfDKKQFBsjmoNi0f1IsxaI9AJPeOmD4bAhT1ZoQ==}
     engines: {node: '>=10'}
     cpu: [arm64]
     os: [win32]
@@ -3388,8 +3388,8 @@ packages:
     dev: true
     optional: true
 
-  /@swc/core-win32-ia32-msvc/1.3.103:
-    resolution: {integrity: sha512-9ejEFjfgPi0ibNmtuiRbYq9p4RRV6oH1DN9XjkYM8zh2qHlpZHKQZ3n4eHS0VtJO4rEGZxL8ebcnTNs62wqJig==}
+  /@swc/core-win32-ia32-msvc/1.3.104:
+    resolution: {integrity: sha512-ICDA+CJLYC7NkePnrbh/MvXwDQfy3rZSFgrVdrqRosv9DKHdFjYDnA9++7ozjrIdFdBrFW2NR7pyUcidlwhNzA==}
     engines: {node: '>=10'}
     cpu: [ia32]
     os: [win32]
@@ -3397,8 +3397,8 @@ packages:
     dev: true
     optional: true
 
-  /@swc/core-win32-x64-msvc/1.3.103:
-    resolution: {integrity: sha512-/1RvaOmZolXurWAUdnELYynVlFUiT0hj3PyTPoo+YK6+KV7er4EqUalRsoUf3zzGepQuhKFZFDpQn6Xi9kJX1A==}
+  /@swc/core-win32-x64-msvc/1.3.104:
+    resolution: {integrity: sha512-fZJ1Ju62U4lMZVU+nHxLkFNcu0hG5Y0Yj/5zjrlbuX5N8J5eDndWAFsVnQhxRTZqKhZB53pvWRQs5FItSDqgXg==}
     engines: {node: '>=10'}
     cpu: [x64]
     os: [win32]
@@ -3406,8 +3406,8 @@ packages:
     dev: true
     optional: true
 
-  /@swc/core/1.3.103:
-    resolution: {integrity: sha512-PYtt8KzRXIFDwxeD7BA9ylmXNQ4hRVcmDVuAmL3yvL9rgx7Tn3qn6T37wiMVZnP1OjqGyhuHRPNycd+ssr+byw==}
+  /@swc/core/1.3.104:
+    resolution: {integrity: sha512-9LWH/qzR/Pmyco+XwPiPfz59T1sryI7o5dmqb593MfCkaX5Fzl9KhwQTI47i21/bXYuCdfa9ySZuVkzXMirYxA==}
     engines: {node: '>=10'}
     requiresBuild: true
     peerDependencies:
@@ -3419,16 +3419,16 @@ packages:
       '@swc/counter': 0.1.2
       '@swc/types': 0.1.5
     optionalDependencies:
-      '@swc/core-darwin-arm64': 1.3.103
-      '@swc/core-darwin-x64': 1.3.103
-      '@swc/core-linux-arm-gnueabihf': 1.3.103
-      '@swc/core-linux-arm64-gnu': 1.3.103
-      '@swc/core-linux-arm64-musl': 1.3.103
-      '@swc/core-linux-x64-gnu': 1.3.103
-      '@swc/core-linux-x64-musl': 1.3.103
-      '@swc/core-win32-arm64-msvc': 1.3.103
-      '@swc/core-win32-ia32-msvc': 1.3.103
-      '@swc/core-win32-x64-msvc': 1.3.103
+      '@swc/core-darwin-arm64': 1.3.104
+      '@swc/core-darwin-x64': 1.3.104
+      '@swc/core-linux-arm-gnueabihf': 1.3.104
+      '@swc/core-linux-arm64-gnu': 1.3.104
+      '@swc/core-linux-arm64-musl': 1.3.104
+      '@swc/core-linux-x64-gnu': 1.3.104
+      '@swc/core-linux-x64-musl': 1.3.104
+      '@swc/core-win32-arm64-msvc': 1.3.104
+      '@swc/core-win32-ia32-msvc': 1.3.104
+      '@swc/core-win32-x64-msvc': 1.3.104
     dev: true
 
   /@swc/counter/0.1.2:
@@ -4909,13 +4909,13 @@ packages:
       '@typescript-eslint/types': 5.30.0
       eslint-visitor-keys: 3.4.3
 
-  /@visactor/react-vchart/1.8.7_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-muSHgWaTGG7Qc3pWtjyw8jotakPeI8E/FTiae7bF/Repp6VCnRl4rEZ5NCdFLET1WMFSKRNTkmTBE+duNh/D8A==}
+  /@visactor/react-vchart/1.8.8_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-s7nBBndnS0fvJDNhBCaNWEzkX6W3EThUGl2Rd3QPPxILGvau7Z802TT66NfO0XFDOp5q8QrATDK1tk2U4vuc7Q==}
     peerDependencies:
       react: '>=16.0.0'
       react-dom: '>=16.0.0'
     dependencies:
-      '@visactor/vchart': 1.8.7
+      '@visactor/vchart': 1.8.8
       '@visactor/vgrammar-core': 0.10.10
       '@visactor/vrender-core': 0.17.16
       '@visactor/vrender-kits': 0.17.16
@@ -4925,12 +4925,12 @@ packages:
       react-is: 18.2.0
     dev: true
 
-  /@visactor/vchart-types/1.8.7:
-    resolution: {integrity: sha512-FFA8boVDD+TClK38S+/WTka5eXjdqxyeAzuNGYrY3de3ebY5wQrlsTH1cD1RnawQoPc6fcGe3WGo8xHz2He6NQ==}
+  /@visactor/vchart-types/1.8.8:
+    resolution: {integrity: sha512-oVRBPMGfnijraZKcEZtFTuf6eXq+9rBphuHP/n/aTIfcDRjBVtcekGkKxle1rNPxQoFf3/M9wT8WspCzHLvcMg==}
     dev: true
 
-  /@visactor/vchart/1.8.7:
-    resolution: {integrity: sha512-M0kFlZ17TcamZSRrO/8X45mjBxBPrPAQyJK2amKb4LR6yu2tJNMQJMVSUzC3TPeoyZBC6Qhthj0h6PLB88qTRA==}
+  /@visactor/vchart/1.8.8:
+    resolution: {integrity: sha512-XJ25FzWLzalXQYpjUqlJ02gm8+E3wstOg6XR1VdAZRkNGpbvAfKoCsv3yN9LKOVA0QDkRWK6IEAcD+IezKBopQ==}
     dependencies:
       '@visactor/vdataset': 0.17.3
       '@visactor/vgrammar-core': 0.10.10
@@ -4945,7 +4945,7 @@ packages:
       '@visactor/vrender-kits': 0.17.16
       '@visactor/vscale': 0.17.3
       '@visactor/vutils': 0.17.3
-      '@visactor/vutils-extension': 1.8.7
+      '@visactor/vutils-extension': 1.8.8
     dev: true
 
   /@visactor/vdataset/0.17.3:
@@ -5077,8 +5077,8 @@ packages:
       '@visactor/vutils': 0.17.3
     dev: true
 
-  /@visactor/vutils-extension/1.8.7:
-    resolution: {integrity: sha512-o6Hw5+jqj9IzPS6babV0fyQ8RC9r2DHfvSx5fC/cEuHdvCVYjtzdHJHGmjJ42EAp4PGGUUn2MtGyaxFtzxSD5A==}
+  /@visactor/vutils-extension/1.8.8:
+    resolution: {integrity: sha512-FNLW0ojOmuKHkbsIYZK7x4/yvYVo3M+OTFksWY5wxdlMsaAsz9NZgaVdWjRmcPA/tMD6rd2e/y4jEaIeskZ8Xw==}
     dependencies:
       '@visactor/vrender-core': 0.17.16
       '@visactor/vrender-kits': 0.17.16
@@ -5099,7 +5099,7 @@ packages:
     peerDependencies:
       vite: ^4 || ^5
     dependencies:
-      '@swc/core': 1.3.103
+      '@swc/core': 1.3.104
       vite: 4.5.1_62zwdg4whqujtjpsufnmu2a74y
     transitivePeerDependencies:
       - '@swc/helpers'
@@ -5553,7 +5553,7 @@ packages:
       postcss: ^8.1.0
     dependencies:
       browserslist: 4.22.2
-      caniuse-lite: 1.0.30001578
+      caniuse-lite: 1.0.30001579
       fraction.js: 4.3.7
       normalize-range: 0.1.2
       picocolors: 1.0.0
@@ -5798,8 +5798,8 @@ packages:
     engines: {node: ^6 || ^7 || ^8 || ^9 || ^10 || ^11 || ^12 || >=13.7}
     hasBin: true
     dependencies:
-      caniuse-lite: 1.0.30001578
-      electron-to-chromium: 1.4.635
+      caniuse-lite: 1.0.30001579
+      electron-to-chromium: 1.4.639
       node-releases: 2.0.14
       update-browserslist-db: 1.0.13_browserslist@4.22.2
 
@@ -5885,8 +5885,8 @@ packages:
     resolution: {integrity: sha512-Gmy6FhYlCY7uOElZUSbxo2UCDH8owEk996gkbrpsgGtrJLM3J7jGxl9Ic7Qwwj4ivOE5AWZWRMecDdF7hqGjFA==}
     engines: {node: '>=10'}
 
-  /caniuse-lite/1.0.30001578:
-    resolution: {integrity: sha512-J/jkFgsQ3NEl4w2lCoM9ZPxrD+FoBNJ7uJUpGVjIg/j0OwJosWM36EPDv+Yyi0V4twBk9pPmlFS+PLykgEvUmg==}
+  /caniuse-lite/1.0.30001579:
+    resolution: {integrity: sha512-u5AUVkixruKHJjw/pj9wISlcMpgFWzSrczLZbrqBSxukQixmg0SJ5sZTpvaFvxU0HoQKd4yoyAogyrAz9pzJnA==}
 
   /chai/4.4.1:
     resolution: {integrity: sha512-13sOfMv2+DWduEU+/xbun3LScLoqN17nBeTLUsmDfKdoiC1fr0n9PU4guu4AhRcOVFk/sW8LyZWHuhWtQZiF+g==}
@@ -6721,7 +6721,7 @@ packages:
       end-of-stream: 1.4.4
       inherits: 2.0.4
       readable-stream: 2.3.8
-      stream-shift: 1.0.2
+      stream-shift: 1.0.3
     dev: false
 
   /duplexify/4.1.2:
@@ -6730,7 +6730,7 @@ packages:
       end-of-stream: 1.4.4
       inherits: 2.0.4
       readable-stream: 3.6.2
-      stream-shift: 1.0.2
+      stream-shift: 1.0.3
     dev: false
 
   /each-props/1.3.2:
@@ -6748,8 +6748,8 @@ packages:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: true
 
-  /electron-to-chromium/1.4.635:
-    resolution: {integrity: sha512-iu/2D0zolKU3iDGXXxdOzNf72Jnokn+K1IN6Kk4iV6l1Tr2g/qy+mvmtfAiBwZe5S3aB5r92vp+zSZ69scYRrg==}
+  /electron-to-chromium/1.4.639:
+    resolution: {integrity: sha512-CkKf3ZUVZchr+zDpAlNLEEy2NJJ9T64ULWaDgy3THXXlPVPkLu3VOs9Bac44nebVtdwl2geSj6AxTtGDOxoXhg==}
 
   /emittery/0.13.1:
     resolution: {integrity: sha512-DeWwawk6r5yR9jFgnDKYt4sLS0LmHJJi3ZOnb5/JdbYwj3nW+FxQnHIjhBKz8YLC7oRNPVM9NQ47I3CVx34eqQ==}
@@ -11461,8 +11461,8 @@ packages:
   /stream-exhaust/1.0.2:
     resolution: {integrity: sha512-b/qaq/GlBK5xaq1yrK9/zFcyRSTNxmcZwFLGSTG0mXgZl/4Z6GgiyYOXOvY7N3eEvFRAG1bkDRz5EPGSvPYQlw==}
 
-  /stream-shift/1.0.2:
-    resolution: {integrity: sha512-rV4Bovi9xx0BFzOb/X0B2GqoIjvqPCttZdu0Wgtx2Dxkj7ETyWl9gmqJ4EutWRLvtZWm8dxE+InQZX1IryZn/w==}
+  /stream-shift/1.0.3:
+    resolution: {integrity: sha512-76ORR0DO1o1hlKwTbi/DM3EXWGf3ZJYO8cXX5RJwnul2DEg2oyoZyjLNoQM8WsvZiFKCRfC1O0J7iCvie3RZmQ==}
     dev: false
 
   /stream-source/0.3.5:
@@ -12368,8 +12368,8 @@ packages:
       object.getownpropertydescriptors: 2.1.7
     dev: true
 
-  /utility-types/3.10.0:
-    resolution: {integrity: sha512-O11mqxmi7wMKCo6HKFt5AhO4BwY3VV68YU07tgxfz8zJTIxr4BpsezN49Ffwy9j3ZpwwJp4fkRwjRzq3uWE6Rg==}
+  /utility-types/3.11.0:
+    resolution: {integrity: sha512-6Z7Ma2aVEWisaL6TvBCy7P8rm2LQoPv6dJ7ecIaIixHcwfbJ0x7mWdbcwlIM5IGQxPZSFYeqRCqlOOeKoJYMkw==}
     engines: {node: '>= 4'}
     dev: true
 

@@ -1,18 +1,16 @@
-name: Pre-release CI
+name: hotfix CI
 
 on:
   push:
     branches:
-      - 'pre-release/[0-9]+.[0-9]+.[0-9]+-alpha.[0-9]+'
-      - 'pre-release/[0-9]+.[0-9]+.[0-9]+-beta.[0-9]+'
-      - 'pre-release/[0-9]+.[0-9]+.[0-9]+-rc.[0-9]+'
+      - 'hotfix/[0-9]+.[0-9]+.[0-9]+'
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
     permissions:
       contents: write
+      pull-requests: write
 
     strategy:
       matrix:
@@ -21,6 +19,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+      - run: |
+          git config user.name ${{ github.actor }}
+          git config user.email ${{ github.actor }}@users.noreply.github.com
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
@@ -38,10 +40,16 @@ jobs:
         with:
           path: packages/vchart-theme
           semver_string: ${{ github.ref_name }}
-          semver_pattern: '^pre-release/(.*)$' # ^v?(.*)$ by default
+          semver_pattern: '^hotfix/(.*)$' # ^v?(.*)$ by default
 
-      - name: Apply prereleaseName
-        run: node common/scripts/apply-release-version.js ${{ steps.semver_parser.outputs.pre_release_name }} ${{ steps.semver_parser.outputs.main }}
+      - name: update nextBump of version policies
+        uses: xile611/set-next-bump-of-rush@main
+        with:
+          release_version: ${{ steps.semver_parser.outputs.full }}
+          write_next_bump: true
+
+      - name: Update version
+        run: node common/scripts/install-run-rush.js version --bump
 
       - name: Build packages
         run: node common/scripts/install-run-rush.js build --only tag:package
@@ -50,7 +58,7 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
           NPM_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-        run: node common/scripts/install-run-rush.js publish --publish --include-all --tag ${{ steps.semver_parser.outputs.pre_release_type }}
+        run: node common/scripts/install-run-rush.js publish --publish --include-all --tag hotfix
 
       - name: Update shrinkwrap
         run: node common/scripts/install-run-rush.js update
@@ -65,6 +73,24 @@ jobs:
         uses: actions-js/push@master
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          message: 'build: prerelease version ${{ steps.package-version.outputs.current_version }}'
+          message: 'build: release version ${{ steps.package-version.outputs.current_version }}'
           branch: ${{ github.ref_name }}
-          author_name: ${{ github.actor }}
+
+      - name: Collect changelog of rush
+        uses: xile611/collect-rush-changlog@main
+        id: changelog
+        with:
+          version: ${{ steps.package-version.outputs.current_version }}
+
+      - name: Create Release for Tag
+        id: release_tag
+        uses: ncipollo/release-action@v1.12.0
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag: v${{ steps.package-version.outputs.current_version }}
+          commit: ${{ github.ref_name }}
+          prerelease: false
+          body: |
+            ${{ steps.changelog.outputs.markdown }}
+          draft: true #

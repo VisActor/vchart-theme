@@ -27,8 +27,22 @@
       "versionPolicyName": "vchartThemeMain"
     },
     {
+      "packageName": "@visactor/vchart-theme-utils",
+      "projectFolder": "packages/vchart-theme-utils",
+      "tags": ["package"],
+      "shouldPublish": true,
+      "versionPolicyName": "vchartThemeMain"
+    },
+    {
       "packageName": "@visactor/vchart-semi-theme",
       "projectFolder": "packages/vchart-semi-theme",
+      "tags": ["package"],
+      "shouldPublish": true,
+      "versionPolicyName": "vchartThemeMain"
+    },
+    {
+      "packageName": "@visactor/vchart-arco-theme",
+      "projectFolder": "packages/vchart-arco-theme",
       "tags": ["package"],
       "shouldPublish": true,
       "versionPolicyName": "vchartThemeMain"
@@ -54,6 +68,12 @@
     {
       "packageName": "@internal/jest-config",
       "projectFolder": "share/jest-config",
+      "tags": ["share"],
+      "shouldPublish": false
+    },
+    {
+      "packageName": "@internal/chart-demo",
+      "projectFolder": "share/chart-demo",
       "tags": ["share"],
       "shouldPublish": false
     }

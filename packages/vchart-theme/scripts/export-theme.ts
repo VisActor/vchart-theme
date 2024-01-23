@@ -6,12 +6,14 @@ import path from 'path';
 import { ThemeManager } from '@visactor/vchart';
 import { allThemeMap } from '../src';
 import { allThemeMap as semiAllThemeMap } from '../../vchart-semi-theme/src';
+import { allThemeMap as arcoAllThemeMap } from '../../vchart-arco-theme/src';
 
 const VCHART_THEME_PROJECT_ROOT = process.cwd();
 const targetPaths = [path.resolve(VCHART_THEME_PROJECT_ROOT, './public')];
+const allMaps = [ThemeManager.themes, allThemeMap, semiAllThemeMap, arcoAllThemeMap];
 
 const result: string[] = [];
-[ThemeManager.themes, allThemeMap, semiAllThemeMap].forEach(themeMap =>
+allMaps.forEach(themeMap =>
   themeMap.forEach((value, key) => {
     let success = true;
     if (!ThemeManager.themeExist(key)) {
@@ -43,11 +45,19 @@ const startTag = '<!-- ThemeListBegin -->';
 const endTag = '<!-- ThemeListEnd -->';
 const readmeThemeListStart = readme.indexOf(startTag) + startTag.length;
 const readmeThemeListEnd = readme.indexOf(endTag);
-const newReadme = `${readme.slice(0, readmeThemeListStart)}\n<!-- 以下为自动生成 -->\n${[...allThemeMap.keys()]
+const newReadme = `${readme.slice(0, readmeThemeListStart)}\n<!-- 以下为自动生成 -->\n${allMaps
+  .reduce<string[]>((list, map) => {
+    [...map.keys()].forEach(key => {
+      if (!list.includes(key)) {
+        list.push(key);
+      }
+    });
+    return list;
+  }, [])
   .map(
     key =>
       `- [${key}](https://raw.githubusercontent.com/VisActor/vchart-theme/main/packages/vchart-theme/public/${key}.json) ${
-        allThemeMap.get(key)?.description ?? ''
+        ThemeManager.getTheme(key)?.description ?? ''
       }`
   )
   .join('\n')}\n<!-- 以上为自动生成 -->\n${readme.slice(readmeThemeListEnd)}`;

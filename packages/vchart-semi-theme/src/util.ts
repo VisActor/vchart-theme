@@ -1,30 +1,13 @@
-export const getTokenValue = <T>(token: string, defaultValue?: T, chartContainer?: HTMLElement): T | string => {
-  const value = getComputedStyle(chartContainer ?? document.body).getPropertyValue(token) || defaultValue;
-  if (value && !isNaN(value[0])) {
-    return `rgba(${value})`;
-  }
-  return value;
-};
+import { THEME_MODE_ATTRIBUTE } from './common/constants';
+
+export * from '@visactor/vchart-theme-utils';
 
 export const getCurrentMode = () =>
-  document.body.hasAttribute('theme-mode') && document.body.getAttribute('theme-mode') === 'dark' ? 'dark' : 'light';
+  document.body.hasAttribute(THEME_MODE_ATTRIBUTE) && document.body.getAttribute(THEME_MODE_ATTRIBUTE) === 'dark'
+    ? 'dark'
+    : 'light';
 
 export const generateThemeName = (mode: 'light' | 'dark') => `semiDesign${mode[0].toUpperCase()}${mode.slice(1)}`;
-
-export const observeAttribute = (
-  element: HTMLElement,
-  attribute: string,
-  callback: (mutation: MutationRecord) => void
-) => {
-  const observer = new MutationObserver(mutations => {
-    mutations.forEach(mutation => {
-      if (mutation.attributeName === attribute) {
-        callback(mutation);
-      }
-    });
-  });
-  observer.observe(element, { attributes: true });
-};
 
 export const observeThemeSwitch = (callback: (mutation: MutationRecord, node: HTMLLinkElement) => void) => {
   const observer = new MutationObserver(mutations => {

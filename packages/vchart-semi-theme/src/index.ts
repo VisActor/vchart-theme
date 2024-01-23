@@ -4,6 +4,7 @@ import VChart from '@visactor/vchart';
 import type { IInitVChartSemiThemeOption } from './interface';
 import { generateThemeName, getCurrentMode, observeAttribute, observeThemeSwitch } from './util';
 import { generateVChartSemiTheme } from './generator';
+import { THEME_MODE_ATTRIBUTE } from './common/constants';
 
 export * from './theme-map';
 export * from './generator';
@@ -16,7 +17,7 @@ export const initVChartSemiTheme = (options?: IInitVChartSemiThemeOption) => {
   switchVChartSemiTheme(false, defaultMode);
 
   if (isWatchingMode) {
-    observeAttribute(document.body, 'theme-mode', () => switchVChartSemiTheme());
+    observeAttribute(document.body, THEME_MODE_ATTRIBUTE, () => switchVChartSemiTheme());
   }
   if (isWatchingThemeSwitch) {
     observeThemeSwitch(() => {

@@ -39,7 +39,7 @@ export const colorScheme: IThemeColorScheme = {
       /** 轴网格线颜色 */
       axisGridColor: 'rgba(255,255,255,0.08)',
       /** 轴线颜色 */
-      axisDomainColor: 'rgba(255,255,255,0.15)',
+      axisDomainColor: 'rgba(255,255,255,0.08)',
 
       /** 缩略轴滑块描边颜色 */
       dataZoomHandleStrokeColor: 'rgba(46,50,56,0.13)',

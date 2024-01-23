@@ -1,8 +1,6 @@
 /**
- * release ['patch' | 'minor' | 'major']
- * release 0.1.3
- *
- * release
+ * prelease
+ * node release.js [alpha.0] [patch | major | minor | 1.0.0]
  */
 
 const { spawnSync } = require('child_process')
@@ -17,9 +15,9 @@ function getPackageJson(pkgJsonPath) {
 
 
 function run() {
-  const cwd = process.cwd();
   let releaseVersion = process.argv.slice(2)[0];
-
+  const cwd = process.cwd();
+  // 0. update `nextBump`
   checkAndUpdateNextBump(releaseVersion);
 
   // 1. update version of package.json, this operation will remove the common/changes
@@ -48,7 +46,7 @@ function run() {
   });
 
   const rushJson = getPackageJson(path.join(__dirname, '../../rush.json'));
-  const package = rushJson.projects.find((project) => project.name === `@visactor/vchart-theme`);
+  const package = rushJson.projects.find((project) => project.name === '@visactor/vchart-theme');
 
   if (package) {
     const pkgJsonPath = path.join(__dirname, '../../', project.projectFolder, 'package.json')

@@ -12,6 +12,7 @@ import {
 } from '@douyinfe/semi-icons-lab';
 import styles from './index.module.scss';
 import Charts from './charts.jsx';
+import { THEME_MODE_ATTRIBUTE } from '../../../../src/common/constants';
 
 const Frame = () => {
   return (
@@ -68,10 +69,10 @@ const Frame = () => {
           style={{ margin: '0 10px' }}
           onClick={() => {
             const body = document.body;
-            if (body.hasAttribute('theme-mode')) {
-              body.removeAttribute('theme-mode');
+            if (body.hasAttribute(THEME_MODE_ATTRIBUTE)) {
+              body.removeAttribute(THEME_MODE_ATTRIBUTE);
             } else {
-              body.setAttribute('theme-mode', 'dark');
+              body.setAttribute(THEME_MODE_ATTRIBUTE, 'dark');
             }
           }}
         >

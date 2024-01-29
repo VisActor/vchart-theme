@@ -1,6 +1,6 @@
 {
   "name": "@visactor/vchart-arco-theme",
-  "version": "1.8.8",
+  "version": "1.9.0",
   "description": "Extended themes for VChart",
   "sideEffects": false,
   "main": "cjs/index.js",
@@ -28,7 +28,7 @@
     "@visactor/vchart": "~1.9.0"
   },
   "dependencies": {
-    "@visactor/vchart-theme-utils": "workspace:1.8.8"
+    "@visactor/vchart-theme-utils": "workspace:1.9.0"
   },
   "devDependencies": {
     "@esbuild-plugins/node-globals-polyfill": "0.1.1",

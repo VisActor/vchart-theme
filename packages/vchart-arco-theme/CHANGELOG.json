@@ -2,15 +2,9 @@
   "name": "@visactor/vchart-arco-theme",
   "entries": [
     {
-      "version": "1.7.4",
-      "tag": "@visactor/vchart-arco-theme_v1.7.4",
-      "date": "Fri, 19 Jan 2024 09:03:41 GMT",
-      "comments": {}
-    },
-    {
-      "version": "1.7.3",
-      "tag": "@visactor/vchart-arco-theme_v1.7.3",
-      "date": "Fri, 19 Jan 2024 07:47:09 GMT",
+      "version": "1.9.0",
+      "tag": "@visactor/vchart-arco-theme_v1.9.0",
+      "date": "Mon, 29 Jan 2024 12:38:02 GMT",
       "comments": {}
     }
   ]

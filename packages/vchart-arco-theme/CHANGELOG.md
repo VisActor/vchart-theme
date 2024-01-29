@@ -1,14 +1,9 @@
 # Change Log - @visactor/vchart-arco-theme
 
-This log was last generated on Fri, 19 Jan 2024 09:03:41 GMT and should not be manually modified.
+This log was last generated on Mon, 29 Jan 2024 12:38:02 GMT and should not be manually modified.
 
-## 1.7.4
-Fri, 19 Jan 2024 09:03:41 GMT
-
-_Version update only_
-
-## 1.7.3
-Fri, 19 Jan 2024 07:47:09 GMT
+## 1.9.0
+Mon, 29 Jan 2024 12:38:02 GMT
 
 _Initial release_
 

@@ -2,6 +2,12 @@
   "name": "@visactor/vchart-semi-theme",
   "entries": [
     {
+      "version": "1.7.4",
+      "tag": "@visactor/vchart-semi-theme_v1.7.4",
+      "date": "Fri, 19 Jan 2024 09:03:41 GMT",
+      "comments": {}
+    },
+    {
       "version": "1.7.3",
       "tag": "@visactor/vchart-semi-theme_v1.7.3",
       "date": "Fri, 19 Jan 2024 07:47:09 GMT",

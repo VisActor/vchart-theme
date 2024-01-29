@@ -34,7 +34,7 @@ importers:
       '@typescript-eslint/parser': 5.30.0
       '@visactor/react-vchart': ~1.8.8
       '@visactor/vchart': ~1.8.8
-      '@visactor/vchart-theme-utils': workspace:1.7.3
+      '@visactor/vchart-theme-utils': workspace:1.8.8
       '@vitejs/plugin-react': ^4.1.1
       '@vitejs/plugin-react-swc': ^3.4.1
       arco-design-pro: ^2.8.0
@@ -170,7 +170,7 @@ importers:
       '@types/offscreencanvas': 2019.6.4
       '@visactor/react-vchart': ~1.8.8
       '@visactor/vchart': ~1.8.8
-      '@visactor/vchart-theme-utils': workspace:1.7.3
+      '@visactor/vchart-theme-utils': workspace:1.8.8
       '@vitejs/plugin-react': ^4.1.1
       '@vitejs/plugin-react-swc': ^3.4.1
       eslint: ~8.18.0

@@ -7,7 +7,7 @@ import './index.css';
 
 function App() {
   // Set up Layout's elements
-  const { Header, Sider } = Layout;
+  const { Sider } = Layout;
 
   return (
     <div className="App">

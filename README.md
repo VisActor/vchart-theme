@@ -33,6 +33,12 @@ Extended themes for VChart
 [![npm Download](https://img.shields.io/npm/dm/@visactor/vchart-arco-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-arco-theme)
 [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/visactor/vchart-arco-theme/blob/main/LICENSE)
 
+[@visactor/vchart-tt-platform-theme](https://github.com/VisActor/vchart-theme/tree/main/packages/vchart-tt-platform-theme)
+
+[![npm Version](https://img.shields.io/npm/v/@visactor/vchart-tt-platform-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-tt-platform-theme)
+[![npm Download](https://img.shields.io/npm/dm/@visactor/vchart-tt-platform-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-tt-platform-theme)
+[![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/visactor/vchart-tt-platform-theme/blob/main/LICENSE)
+
 </div>
 
 <div align="center">
@@ -52,6 +58,7 @@ This repository includes the following packages:
 1. [vchart-theme](https://github.com/VisActor/vchart-theme/tree/develop/packages/vchart-theme): contains all static extension themes
 2. [vchart-semi-theme](https://github.com/VisActor/vchart-theme/tree/develop/packages/vchart-semi-theme): dynamic chart themes used in conjunction with [Semi Design](https://github.com/DouyinFE/semi-design).
 3. [vchart-arco-theme](https://github.com/VisActor/vchart-theme/tree/develop/packages/vchart-arco-theme): dynamic chart themes used in conjunction with [ArcoDesign](https://github.com/arco-design).
+4. [vchart-tt-platform-theme](https://github.com/VisActor/vchart-theme/tree/develop/packages/vchart-tt-platform-theme): dynamic chart themes used in conjunction with [Semi Design](https://github.com/DouyinFE/semi-design) for TT platform.
 
 # Usage
 

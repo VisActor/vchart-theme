@@ -1,17 +1,3 @@
-/**
- *
- * @param {chart data} data
- * @param {***} info
- * @returns
- */
-// export function getLineSpec(data, info, custom_spec) {
-//   const spec = clone(lineSpec);
-//   spec.data = data;
-//   spec.xField = [...info.dimension];
-//   spec.yField = info.valueField;
-//   spec.seriesField = info.group;
-//   return merge(spec, custom_spec);
-// }
 export const barSpec = {
   type: 'bar',
   data: {
@@ -347,17 +333,9 @@ export const radarSpec = {
   },
   legends: {
     visible: true
-    // orient: "bottom",
-    // position: "middle",
   },
   area: {
-    visible: true, // display area
-    // state: {
-    //   // The style in the hover state of the area
-    //   hover: {
-    //     fillOpacity: 0.5,
-    //   },
-    // },
+    visible: true,
     style: {
       visible: datum => datum.type !== 'Average risk'
     }

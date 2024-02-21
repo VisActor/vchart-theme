@@ -18,5 +18,12 @@ export const radar: ISeriesTheme['radar'] = {
         fillOpacity: 0.5
       }
     }
+  },
+  label: {
+    position: 'top',
+    offset: 4,
+    style: {
+      fill: { type: 'palette', key: 'secondaryFontColor' }
+    }
   }
 };

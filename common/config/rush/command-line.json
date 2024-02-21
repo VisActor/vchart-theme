@@ -112,6 +112,15 @@
       "shellCommand": "rush run -p @visactor/vchart-arco-theme -s start"
     },
     {
+      "commandKind": "global",
+
+      "name": "tt",
+      "summary": "Start the development server",
+      "description": "Run this command to start vchart-tt-platform-theme development server",
+
+      "shellCommand": "rush run -p @visactor/vchart-tt-platform-theme -s start"
+    },
+    {
       "name": "change-all",
       "commandKind": "global",
       "autoinstallerName": "run-script",

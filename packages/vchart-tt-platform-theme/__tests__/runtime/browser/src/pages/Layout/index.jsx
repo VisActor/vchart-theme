@@ -3,7 +3,7 @@ import { Nav, Layout } from '@douyinfe/semi-ui';
 import { IconStar } from '@douyinfe/semi-icons';
 import Chart from '../Chart';
 import Logo from '../logo';
-import './index.css';
+import './index.scss';
 
 function App() {
   // Set up Layout's elements

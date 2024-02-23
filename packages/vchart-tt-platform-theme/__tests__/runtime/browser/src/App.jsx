@@ -2,7 +2,7 @@ import React from 'react';
 
 import Layout from './pages/Layout';
 
-import './global.css';
+import './global.scss';
 
 const App = () => {
   return <Layout />;

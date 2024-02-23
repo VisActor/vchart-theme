@@ -19,10 +19,10 @@ export const initVChartTTPlatformTheme = (options?: IInitVChartSemiThemeOption) 
     themeManager = ThemeManager
   } = options ?? {};
 
-  switchVChartSemiTheme(themeManager, false, defaultMode);
+  switchVChartTTPlatformTheme(themeManager, false, defaultMode);
 
   if (isWatchingMode) {
-    observeAttribute(document.body, THEME_MODE_ATTRIBUTE, () => switchVChartSemiTheme(themeManager));
+    observeAttribute(document.body, THEME_MODE_ATTRIBUTE, () => switchVChartTTPlatformTheme(themeManager));
   }
   if (isWatchingThemeSwitch) {
     observeThemeSwitch(() => {
@@ -33,7 +33,7 @@ export const initVChartTTPlatformTheme = (options?: IInitVChartSemiThemeOption) 
       const timer = setInterval(() => {
         const theme = generateVChartTTPlatformTheme(mode);
         if (times > 50 || cacheColorScheme !== JSON.stringify(theme.colorScheme)) {
-          switchVChartSemiTheme(themeManager, true, mode, theme);
+          switchVChartTTPlatformTheme(themeManager, true, mode, theme);
           clearInterval(timer);
         }
         times++;
@@ -42,7 +42,7 @@ export const initVChartTTPlatformTheme = (options?: IInitVChartSemiThemeOption) 
   }
 };
 
-export const switchVChartSemiTheme = (
+export const switchVChartTTPlatformTheme = (
   themeManager: typeof ThemeManager,
   force?: boolean,
   mode?: 'light' | 'dark',

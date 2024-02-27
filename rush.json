@@ -48,6 +48,13 @@
       "versionPolicyName": "vchartThemeMain"
     },
     {
+      "packageName": "@visactor/vchart-tt-platform-theme",
+      "projectFolder": "packages/vchart-tt-platform-theme",
+      "tags": ["package"],
+      "shouldPublish": true,
+      "versionPolicyName": "vchartThemeMain"
+    },
+    {
       "packageName": "@internal/bundler",
       "projectFolder": "tools/bundler",
       "tags": ["tool"],

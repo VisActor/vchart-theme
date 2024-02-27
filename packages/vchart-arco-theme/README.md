@@ -91,6 +91,8 @@ interface IInitVChartArcoThemeOption {
   defaultMode?: 'light' | 'dark';
   /** Whether to listen for the light/dark mode switching and automatically change the chart theme. The default setting is true */
   isWatchingMode?: boolean;
+  /** Specify a ThemeManager, usually not specified. If multiple versions of vchart coexist, it needs to be specified */
+  themeManager?: typeof ThemeManager;
 }
 ```
 
@@ -800,10 +802,11 @@ This package contains both static theme JSON resources (static resources only ap
 
 <!-- ThemeListBegin -->
 <!-- 以下为自动生成 -->
+
 - [arcoDesignLight](https://raw.githubusercontent.com/VisActor/vchart-theme/main/packages/vchart-arco-theme/public/arcoDesignLight.json) Arco Design - light
 - [arcoDesignDark](https://raw.githubusercontent.com/VisActor/vchart-theme/main/packages/vchart-arco-theme/public/arcoDesignDark.json) Arco Design - dark
-<!-- 以上为自动生成 -->
-<!-- ThemeListEnd -->
+  <!-- 以上为自动生成 -->
+  <!-- ThemeListEnd -->
 
 ## Debug
 

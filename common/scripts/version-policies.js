@@ -47,7 +47,8 @@ const readNextBumpFromChanges = () => {
     path.join(__dirname, '../changes/@visactor/vchart-theme'),
     path.join(__dirname, '../changes/@visactor/vchart-theme-utils'),
     path.join(__dirname, '../changes/@visactor/vchart-semi-theme'),
-    path.join(__dirname, '../changes/@visactor/vchart-arco-theme')
+    path.join(__dirname, '../changes/@visactor/vchart-arco-theme'),
+    path.join(__dirname, '../changes/@visactor/vchart-tt-platform-theme')
   ];
 
   const changeType = [];

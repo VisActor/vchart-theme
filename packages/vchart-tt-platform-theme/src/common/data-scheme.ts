@@ -2,23 +2,7 @@ import type { DataSchemeItem, ProgressiveDataScheme } from '@visactor/vchart';
 
 /** 标准色板 */
 export const dataScheme: ProgressiveDataScheme<DataSchemeItem> = [
-  // 第一档颜色（数据项 <= 10）
-  {
-    maxDomainLength: 10,
-    scheme: [
-      '#5769FF',
-      '#8ED4E7',
-      '#F58700',
-      '#DCB7FC',
-      '#4A9CF7',
-      '#F3CC35',
-      '#FE8090',
-      '#8BD7D2',
-      '#83B023',
-      '#E9A5E5'
-    ]
-  },
-  // 第二档颜色（数据项 > 10）
+  // 20 色色板
   {
     scheme: [
       '#5769FF',

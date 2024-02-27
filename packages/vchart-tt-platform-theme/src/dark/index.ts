@@ -3,6 +3,7 @@ import { colorScheme } from './color-scheme';
 import { SEMI_FONT_FAMILY } from '../common/constants';
 import { series } from '../common/series';
 import { component } from '../common/component';
+import { markByName } from '../common/mark';
 
 export const ttPlatformDark: ITheme = {
   name: 'ttPlatformDark',
@@ -11,5 +12,6 @@ export const ttPlatformDark: ITheme = {
   fontFamily: SEMI_FONT_FAMILY,
   colorScheme,
   series,
-  component
+  component,
+  markByName
 };

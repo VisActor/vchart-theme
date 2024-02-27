@@ -46,6 +46,9 @@ export const colorScheme: IThemeColorScheme = {
       /** 轴线颜色 */
       axisDomainColor: '#ACAFB6', //用上边定义的lineColor1
 
+      /** 十字准星背景色 */
+      crosshairBackgroundColor: 'rgba(55,58,67,0.05)',
+
       /** 缩略轴滑块描边颜色 */
       dataZoomHandleStrokeColor: '#aeb5be',
       /** 缩略轴图表区域颜色 */

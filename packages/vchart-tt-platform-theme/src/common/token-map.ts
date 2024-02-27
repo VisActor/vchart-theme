@@ -6,9 +6,9 @@ export const paletteTokenMap: PaletteTokenMap = {
   /** 图表边框色 */
   borderColor: '--semi-color-border',
 
-  lineColor0: '--semi-color-line-0',
-  lineColor1: '--semi-color-line-1',
-  lineColor2: '--semi-color-line-2',
+  lineColor0: '--semi-color-data-line-0',
+  lineColor1: '--semi-color-data-line-1',
+  lineColor2: '--semi-color-data-line-2',
 
   /** 鼠标 hover 项背景颜色 */
   hoverBackgroundColor: '--semi-color-fill-0',
@@ -41,6 +41,9 @@ export const paletteTokenMap: PaletteTokenMap = {
   /** 轴线颜色 */
   axisDomainColor: '--semi-color-line-1',
 
+  /** 十字准星背景色 */
+  crosshairBackgroundColor: '--semi-color-fill-0',
+
   /** 缩略轴滑块描边颜色 */
   dataZoomHandleStrokeColor: {
     light: '--semi-color-fill-2'
@@ -69,23 +72,7 @@ export const paletteTokenMap: PaletteTokenMap = {
 };
 
 export const dataSchemeTokenMap: DataSchemeTokenMap = [
-  // 第一档颜色（数据项 <= 10）
-  {
-    maxDomainLength: 10,
-    scheme: [
-      '--semi-color-data-0',
-      '--semi-color-data-2',
-      '--semi-color-data-4',
-      '--semi-color-data-6',
-      '--semi-color-data-8',
-      '--semi-color-data-10',
-      '--semi-color-data-12',
-      '--semi-color-data-14',
-      '--semi-color-data-16',
-      '--semi-color-data-18'
-    ]
-  },
-  // 第二档颜色（数据项 > 10）
+  // 20 色色板
   {
     scheme: [
       '--semi-color-data-0',

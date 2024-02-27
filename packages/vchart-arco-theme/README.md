@@ -91,6 +91,8 @@ interface IInitVChartArcoThemeOption {
   defaultMode?: 'light' | 'dark';
   /** Whether to listen for the light/dark mode switching and automatically change the chart theme. The default setting is true */
   isWatchingMode?: boolean;
+  /** Specify a ThemeManager, usually not specified. If multiple versions of vchart coexist, it needs to be specified */
+  themeManager?: typeof ThemeManager;
 }
 ```
 

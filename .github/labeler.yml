@@ -14,6 +14,10 @@ vchart-semi-theme:
 vchart-arco-theme:
   - packages/vchart-arco-theme/**
 
+# Add 'vchart-tt-platform-theme' label to any change within the 'vchart-tt-platform-theme' package
+vchart-tt-platform-theme:
+  - packages/vchart-tt-platform-theme/**
+
 # Add 'test' label to any change to packages/*/__tests__/* files within the source dir
 test:
   - packages/*/__tests__/*

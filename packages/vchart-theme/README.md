@@ -28,6 +28,8 @@ The list of themes included here is as follows, with links to the theme JSON fil
 - [semiDesignDark](https://raw.githubusercontent.com/VisActor/vchart-theme/main/packages/vchart-theme/public/semiDesignDark.json) Semi Design - dark
 - [arcoDesignLight](https://raw.githubusercontent.com/VisActor/vchart-theme/main/packages/vchart-theme/public/arcoDesignLight.json) Arco Design - light
 - [arcoDesignDark](https://raw.githubusercontent.com/VisActor/vchart-theme/main/packages/vchart-theme/public/arcoDesignDark.json) Arco Design - dark
+- [ttPlatformLight](https://raw.githubusercontent.com/VisActor/vchart-theme/main/packages/vchart-theme/public/ttPlatformLight.json) TT Platform - light
+- [ttPlatformDark](https://raw.githubusercontent.com/VisActor/vchart-theme/main/packages/vchart-theme/public/ttPlatformDark.json) TT Platform - dark
 <!-- 以上为自动生成 -->
 <!-- ThemeListEnd -->
 

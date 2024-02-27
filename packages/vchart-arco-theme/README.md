@@ -802,11 +802,10 @@ This package contains both static theme JSON resources (static resources only ap
 
 <!-- ThemeListBegin -->
 <!-- 以下为自动生成 -->
-
 - [arcoDesignLight](https://raw.githubusercontent.com/VisActor/vchart-theme/main/packages/vchart-arco-theme/public/arcoDesignLight.json) Arco Design - light
 - [arcoDesignDark](https://raw.githubusercontent.com/VisActor/vchart-theme/main/packages/vchart-arco-theme/public/arcoDesignDark.json) Arco Design - dark
-  <!-- 以上为自动生成 -->
-  <!-- ThemeListEnd -->
+<!-- 以上为自动生成 -->
+<!-- ThemeListEnd -->
 
 ## Debug
 

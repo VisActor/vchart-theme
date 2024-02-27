@@ -110,11 +110,10 @@ This package contains both static theme JSON resources (static resources only ap
 
 <!-- ThemeListBegin -->
 <!-- 以下为自动生成 -->
-
 - [ttPlatformLight](https://raw.githubusercontent.com/VisActor/vchart-theme/main/packages/vchart-tt-platform-theme/public/ttPlatformLight.json) TT Platform - light
 - [ttPlatformDark](https://raw.githubusercontent.com/VisActor/vchart-theme/main/packages/vchart-tt-platform-theme/public/ttPlatformDark.json) TT Platform - dark
-  <!-- 以上为自动生成 -->
-  <!-- ThemeListEnd -->
+<!-- 以上为自动生成 -->
+<!-- ThemeListEnd -->
 
 ## Debug
 

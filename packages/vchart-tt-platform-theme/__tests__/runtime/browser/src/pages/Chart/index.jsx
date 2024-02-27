@@ -8,8 +8,11 @@ import {
   radarSpec,
   funnelSpec,
   barStackedSpec,
+  barStackedHorizontalSpec,
+  barStackedPercentSpec,
   areaSpec,
-  barGroupSpec
+  barGroupSpec,
+  barGroupHorizontalSpec
 } from './chartTheme';
 
 const Chart = () => {
@@ -22,7 +25,7 @@ const Chart = () => {
 
   return (
     <div className="chart">
-      {/* 图表01 bar Chart */}
+      {/* bar chart */}
       <div className="chartBlock">
         <div className="chartTitle">
           <Title
@@ -35,7 +38,7 @@ const Chart = () => {
         </div>
         <CommonChart ref={chartRef} onClick={handleChartClick} spec={barGroupSpec} />
       </div>
-      {/* 图表02 stackedbar */}
+      {/* stacked bar chart */}
       <div className="chartBlock">
         <div className="chartTitle">
           <Title
@@ -47,6 +50,45 @@ const Chart = () => {
           </Title>
         </div>
         <BarChart ref={chartRef} onClick={handleChartClick} spec={barStackedSpec} />
+      </div>
+      {/* horizontal bar chart */}
+      <div className="chartBlock">
+        <div className="chartTitle">
+          <Title
+            heading={5}
+            // className="heading"
+            style={{ margin: '20px 24px 12px 24px', textAlign: 'left' }}
+          >
+            This is group bar chart
+          </Title>
+        </div>
+        <CommonChart ref={chartRef} onClick={handleChartClick} spec={barGroupHorizontalSpec} />
+      </div>
+      {/* stacked horizontal bar chart */}
+      <div className="chartBlock">
+        <div className="chartTitle">
+          <Title
+            heading={5}
+            // className="heading"
+            style={{ margin: '20px 24px 12px 24px', textAlign: 'left' }}
+          >
+            TikTok Platform Design is Awesome!!!
+          </Title>
+        </div>
+        <BarChart ref={chartRef} onClick={handleChartClick} spec={barStackedHorizontalSpec} />
+      </div>
+      {/* stacked percent bar chart */}
+      <div className="chartBlock">
+        <div className="chartTitle">
+          <Title
+            heading={5}
+            // className="heading"
+            style={{ margin: '20px 24px 12px 24px', textAlign: 'left' }}
+          >
+            TikTok Platform Design is Awesome!!!
+          </Title>
+        </div>
+        <BarChart ref={chartRef} onClick={handleChartClick} spec={barStackedPercentSpec} />
       </div>
       <div className="ChartsContainer">
         {/* 图表03 Line Chart */}

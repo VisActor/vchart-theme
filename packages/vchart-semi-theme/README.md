@@ -798,11 +798,10 @@ This package contains both static theme JSON resources (static resources only ap
 
 <!-- ThemeListBegin -->
 <!-- 以下为自动生成 -->
-
 - [semiDesignLight](https://raw.githubusercontent.com/VisActor/vchart-theme/main/packages/vchart-semi-theme/public/semiDesignLight.json) Semi Design - light
 - [semiDesignDark](https://raw.githubusercontent.com/VisActor/vchart-theme/main/packages/vchart-semi-theme/public/semiDesignDark.json) Semi Design - dark
-  <!-- 以上为自动生成 -->
-  <!-- ThemeListEnd -->
+<!-- 以上为自动生成 -->
+<!-- ThemeListEnd -->
 
 ## Debug
 

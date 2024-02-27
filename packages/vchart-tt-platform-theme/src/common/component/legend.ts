@@ -16,10 +16,10 @@ export const legendTheme: IComponentTheme = {
       background: {
         state: {
           selectedHover: {
-            fill: { type: 'palette', key: 'hoverBackgroundColor' }
+            fill: { type: 'palette', key: 'hoverBackgroundColor', a: 0.3 } // FIXME: 颜色和 crosshair 不同，需要排查
           },
           unSelectedHover: {
-            fill: { type: 'palette', key: 'hoverBackgroundColor' }
+            fill: { type: 'palette', key: 'hoverBackgroundColor', a: 0.3 } // FIXME: 颜色和 crosshair 不同，需要排查
           }
         }
       },

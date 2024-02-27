@@ -1,6 +1,6 @@
 import type { ThemeManager } from '@visactor/vchart';
 
-export interface IInitVChartSemiThemeOption {
+export interface IInitVChartTTPlatformThemeOption {
   /** 初始亮暗色模式 */
   defaultMode?: 'light' | 'dark';
   /** 是否监听亮暗色模式自动更改图表主题 */

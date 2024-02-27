@@ -1,7 +1,7 @@
 import type { ITheme } from '@visactor/vchart';
 // eslint-disable-next-line no-duplicate-imports
 import { ThemeManager } from '@visactor/vchart';
-import type { IInitVChartSemiThemeOption } from './interface';
+import type { IInitVChartTTPlatformThemeOption } from './interface';
 import { generateThemeName, getCurrentMode, observeAttribute, observeThemeSwitch } from './util';
 import { generateVChartTTPlatformTheme } from './generator';
 import { THEME_MODE_ATTRIBUTE } from './common/constants';
@@ -11,7 +11,7 @@ export * from './generator';
 export * from './light';
 export * from './dark';
 
-export const initVChartTTPlatformTheme = (options?: IInitVChartSemiThemeOption) => {
+export const initVChartTTPlatformTheme = (options?: IInitVChartTTPlatformThemeOption) => {
   const {
     defaultMode,
     isWatchingMode = true,

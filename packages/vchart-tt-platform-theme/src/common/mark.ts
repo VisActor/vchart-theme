@@ -20,5 +20,10 @@ export const markByName: IGlobalMarkThemeByName = {
         size: 12
       }
     }
+  },
+  label: {
+    style: {
+      lineJoin: 'bevel'
+    }
   }
 };

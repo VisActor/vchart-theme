@@ -1,5 +1,5 @@
 <div align="center">
-  <img alt="VisActor Logo" width="200" src="https://github.com/VisActor/vchart-theme/blob/develop/profile/logo_500_200_vivid.png"/>
+  <img alt="VisActor Logo" width="200" src="https://github.com/VisActor/vchart-theme/blob/develop/assets/logo_500_200_vivid.png"/>
 </div>
 
 <div align="center">

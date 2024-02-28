@@ -1,10 +1,5 @@
 <div align="center">
-  <a href="https://github.com/VisActor#gh-light-mode-only" target="_blank">
-    <img alt="VisActor Logo" width="200" src="https://github.com/VisActor/.github/blob/main/profile/logo_500_200_light.svg"/>
-  </a>
-  <a href="https://github.com/VisActor#gh-dark-mode-only" target="_blank">
-    <img alt="VisActor Logo" width="200" src="https://github.com/VisActor/.github/blob/main/profile/logo_500_200_dark.svg"/>
-  </a>
+  <img alt="VisActor Logo" width="200" src="https://github.com/VisActor/vchart-theme/blob/develop/assets/logo_500_200_vivid.png"/>
 </div>
 
 <div align="center">

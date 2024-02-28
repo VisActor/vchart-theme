@@ -8,20 +8,14 @@
 
 <div align="center">
 
-VChart 的扩展主题。
+VChart 的扩展主题。[[English](./README.md) | 简体中文]
 
-| Packages                                                                                                                   |                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| Packages                                                                                                                   |                                                                                                                                                                                                                        Information                                                                                                                                                                                                                        |
 | :------------------------------------------------------------------------------------------------------------------------- | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 | [@visactor/vchart-theme](https://github.com/VisActor/vchart-theme/tree/main/packages/vchart-theme)                         |                               [![npm Version](https://img.shields.io/npm/v/@visactor/vchart-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-theme) [![npm Download](https://img.shields.io/npm/dm/@visactor/vchart-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-theme) [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/visactor/vchart-theme/blob/main/LICENSE)                               |
 | [@visactor/vchart-semi-theme](https://github.com/VisActor/vchart-theme/tree/main/packages/vchart-semi-theme)               |                  [![npm Version](https://img.shields.io/npm/v/@visactor/vchart-semi-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-semi-theme) [![npm Download](https://img.shields.io/npm/dm/@visactor/vchart-semi-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-semi-theme) [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/visactor/vchart-semi-theme/blob/main/LICENSE)                   |
 | [@visactor/vchart-arco-theme](https://github.com/VisActor/vchart-theme/tree/main/packages/vchart-arco-theme)               |                  [![npm Version](https://img.shields.io/npm/v/@visactor/vchart-arco-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-arco-theme) [![npm Download](https://img.shields.io/npm/dm/@visactor/vchart-arco-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-arco-theme) [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/visactor/vchart-arco-theme/blob/main/LICENSE)                   |
 | [@visactor/vchart-tt-platform-theme](https://github.com/VisActor/vchart-theme/tree/main/packages/vchart-tt-platform-theme) | [![npm Version](https://img.shields.io/npm/v/@visactor/vchart-tt-platform-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-tt-platform-theme) [![npm Download](https://img.shields.io/npm/dm/@visactor/vchart-tt-platform-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-tt-platform-theme) [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/visactor/vchart-tt-platform-theme/blob/main/LICENSE) |
-
-</div>
-
-<div align="center">
-
-[English](./README.md) | 简体中文
 
 </div>
 

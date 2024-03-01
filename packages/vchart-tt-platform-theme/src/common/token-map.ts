@@ -1,4 +1,4 @@
-import type { DataSchemeTokenMap, PaletteTokenMap } from '@visactor/vchart-theme-utils/esm/interface';
+import type { DataSchemeTokenMap, PaletteTokenMap } from '@visactor/vchart-theme-utils';
 
 export const paletteTokenMap: PaletteTokenMap = {
   /** 背景色 */

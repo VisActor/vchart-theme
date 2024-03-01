@@ -28,7 +28,7 @@
     "@visactor/vchart": "~1.9.4"
   },
   "dependencies": {
-    "@visactor/vchart-theme-utils": "workspace:1.9.4"
+    "@visactor/vchart-semi-theme": "workspace:1.9.4"
   },
   "devDependencies": {
     "@esbuild-plugins/node-globals-polyfill": "0.1.1",

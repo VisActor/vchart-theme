@@ -12,13 +12,13 @@ import PageLayout from './layout';
 import { GlobalContext } from './context';
 import changeTheme from './utils/changeTheme';
 import useStorage from './utils/useStorage';
-import { initVChartArcoTheme, switchVChartArcoTheme } from '../../../../src';
+import { initVChartArcoTheme } from '../../../../src';
 import { observeAttribute } from '@visactor/vchart-theme-utils';
 
-initVChartArcoTheme();
+const themeHelper = initVChartArcoTheme();
 // 监听 body style 上的主题色变化，强制更新主题
 observeAttribute(document.body, 'style', () => {
-  switchVChartArcoTheme(true);
+  themeHelper.switchVChartTheme(true);
 });
 
 const store = createStore(rootReducer);

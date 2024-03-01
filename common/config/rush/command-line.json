@@ -118,7 +118,7 @@
       "summary": "Start the development server",
       "description": "Run this command to start vchart-tt-platform-theme development server",
 
-      "shellCommand": "rush run -p @visactor/vchart-theme-utils -s build && rush run -p @visactor/vchart-tt-platform-theme -s start"
+      "shellCommand": "rush run -p @visactor/vchart-semi-theme -s build && rush run -p @visactor/vchart-tt-platform-theme -s start"
     },
     {
       "name": "change-all",

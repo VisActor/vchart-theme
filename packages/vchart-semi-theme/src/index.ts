@@ -1,6 +1,7 @@
 import type { IInitVChartSemiThemeOption } from './interface';
 import { VChartSemiThemeHelper } from './theme-helper';
 
+export * from './common';
 export * from './interface';
 export * from './theme-helper';
 export * from './theme-map';

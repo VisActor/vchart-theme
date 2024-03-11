@@ -1,12 +1,7 @@
 import type { IMarkAreaTheme } from '@visactor/vchart-types';
-import { THEME_CONSTANTS } from '../constants';
 
 export const markArea: IMarkAreaTheme = {
   label: {
-    style: {
-      fontSize: THEME_CONSTANTS.l4FontSize
-      // lineHeight: THEME_CONSTANTS.l4LineHeight,
-    },
     labelBackground: {
       padding: {
         top: 2,

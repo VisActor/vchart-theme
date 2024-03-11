@@ -1,5 +1,4 @@
 import type { IDiscreteLegendTheme } from '@visactor/vchart-types';
-import { THEME_CONSTANTS } from '../../constants';
 
 export const discreteLegend: IDiscreteLegendTheme = {
   orient: 'top',
@@ -8,10 +7,6 @@ export const discreteLegend: IDiscreteLegendTheme = {
   title: {
     visible: false,
     padding: 0,
-    textStyle: {
-      fontSize: THEME_CONSTANTS.l5FontSize,
-      lineHeight: THEME_CONSTANTS.l5LineHeight
-    },
     space: 12
   },
   item: {
@@ -23,11 +18,7 @@ export const discreteLegend: IDiscreteLegendTheme = {
       space: 6
     },
     label: {
-      space: 6,
-      style: {
-        fontSize: THEME_CONSTANTS.l5FontSize,
-        lineHeight: THEME_CONSTANTS.l5LineHeight
-      }
+      space: 6
     }
   }
 };

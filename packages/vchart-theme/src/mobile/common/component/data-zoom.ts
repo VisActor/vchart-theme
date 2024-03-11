@@ -1,5 +1,4 @@
 import type { IDataZoomTheme } from '@visactor/vchart-types';
-import { THEME_CONSTANTS } from '../constants';
 
 export const dataZoom: IDataZoomTheme = {
   padding: [12, 0],
@@ -18,17 +17,9 @@ export const dataZoom: IDataZoomTheme = {
     size: 20
   },
   startText: {
-    padding: 8,
-    style: {
-      fontSize: THEME_CONSTANTS.l5FontSize,
-      lineHeight: THEME_CONSTANTS.l5LineHeight
-    }
+    padding: 8
   },
   endText: {
-    padding: 8,
-    style: {
-      fontSize: THEME_CONSTANTS.l5FontSize,
-      lineHeight: THEME_CONSTANTS.l5LineHeight
-    }
+    padding: 8
   }
 };

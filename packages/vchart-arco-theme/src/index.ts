@@ -1,6 +1,7 @@
 import type { IInitVChartArcoThemeOption } from './interface';
 import { VChartArcoThemeHelper } from './theme-helper';
 
+export * from './common';
 export * from './interface';
 export * from './theme-helper';
 export * from './theme-map';

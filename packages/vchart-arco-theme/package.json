@@ -18,14 +18,14 @@
     "build": "bundle && npm run export",
     "export": "ts-node scripts/export-theme.ts",
     "dev": "bundle --clean -f es -w",
-    "start": "vite serve __tests__/runtime/browser",
+    "start": "vite serve demo",
     "test": "jest",
     "test-cov": "jest -w 16 --coverage",
     "test-live": "npm run test-watch __tests__/unit/",
     "test-watch": "DEBUG_MODE=1 jest --watch"
   },
   "peerDependencies": {
-    "@visactor/vchart": "~1.9.4"
+    "@visactor/vchart": "~1.10.0-alpha.8"
   },
   "dependencies": {
     "@visactor/vchart-theme-utils": "workspace:1.9.4"
@@ -79,8 +79,8 @@
     "react-router-dom": "^5.2.0",
     "react-device-detect": "^2.2.2",
     "redux": "^4.1.2",
-    "@visactor/vchart": "~1.9.4",
-    "@visactor/react-vchart": "~1.9.4",
+    "@visactor/vchart": "~1.10.0-alpha.8",
+    "@visactor/react-vchart": "~1.10.0-alpha.8",
     "@arco-design/webpack-plugin": "^1.6.0",
     "@arco-plugins/vite-plugin-svgr": "^0.7.2",
     "@svgr/webpack": "^5.5.0",
@@ -105,10 +105,10 @@
     "access": "public"
   },
   "homepage": "https://www.visactor.io",
-  "bugs": "https://github.com/VisActor/vchart-arco-theme/issues",
+  "bugs": "https://github.com/VisActor/vchart-theme/issues",
   "repository": {
     "type": "git",
-    "url": "https://github.com/VisActor/vchart-arco-theme.git",
+    "url": "https://github.com/VisActor/vchart-theme.git",
     "directory": "packages/vchart-arco-theme"
   },
   "author": {

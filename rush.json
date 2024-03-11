@@ -55,6 +55,13 @@
       "versionPolicyName": "vchartThemeMain"
     },
     {
+      "packageName": "@visactor/vchart-ve-o-theme",
+      "projectFolder": "packages/vchart-ve-o-theme",
+      "tags": ["package"],
+      "shouldPublish": true,
+      "versionPolicyName": "vchartThemeMain"
+    },
+    {
       "packageName": "@internal/bundler",
       "projectFolder": "tools/bundler",
       "tags": ["tool"],

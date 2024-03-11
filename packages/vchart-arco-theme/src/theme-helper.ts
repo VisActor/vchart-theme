@@ -7,8 +7,10 @@ import { arcoDesignDark } from './dark';
 import { getDataSchemeTokenMap, getPaletteTokenMap } from './common/token-map';
 
 export class VChartArcoThemeHelper extends VChartExtendThemeHelper {
-  themeModeAttribute = 'arco-theme';
-  themeNamePrefix = 'arcoDesign';
+  static themeModeAttribute = 'arco-theme';
+  static themeNamePrefix = 'arcoDesign';
+  themeModeAttribute = VChartArcoThemeHelper.themeModeAttribute;
+  themeNamePrefix = VChartArcoThemeHelper.themeNamePrefix;
 
   baseTheme = {
     light: arcoDesignLight,

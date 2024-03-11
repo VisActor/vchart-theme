@@ -4,8 +4,8 @@ import { ttPlatformDark } from './dark';
 import { dataSchemeTokenMap, paletteTokenMap } from './common/token-map';
 
 export class VChartTTPlatformThemeHelper extends VChartSemiThemeHelper {
-  themeModeAttribute = 'theme-mode';
-  themeNamePrefix = 'ttPlatform';
+  static themeNamePrefix = 'ttPlatform';
+  themeNamePrefix = VChartTTPlatformThemeHelper.themeNamePrefix;
 
   baseTheme = {
     light: ttPlatformLight,

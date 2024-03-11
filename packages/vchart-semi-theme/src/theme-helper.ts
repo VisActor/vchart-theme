@@ -6,8 +6,10 @@ import { dataSchemeTokenMap, paletteTokenMap } from './common/token-map';
 import { observeThemeSwitch } from './util';
 
 export class VChartSemiThemeHelper extends VChartExtendThemeHelper {
-  themeModeAttribute = 'theme-mode';
-  themeNamePrefix = 'semiDesign';
+  static themeModeAttribute = 'theme-mode';
+  static themeNamePrefix = 'semiDesign';
+  themeModeAttribute = VChartSemiThemeHelper.themeModeAttribute;
+  themeNamePrefix = VChartSemiThemeHelper.themeNamePrefix;
 
   baseTheme = {
     light: semiDesignLight,

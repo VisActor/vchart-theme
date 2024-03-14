@@ -1,4 +1,6 @@
 import type { IInitVChartSemiThemeOption } from './interface';
+import type { IThemeQueryOption } from '@visactor/vchart-theme-utils';
+// eslint-disable-next-line no-duplicate-imports
 import { VChartExtendThemeHelper } from '@visactor/vchart-theme-utils';
 import { semiDesignLight } from './light';
 import { semiDesignDark } from './dark';
@@ -31,13 +33,14 @@ export class VChartSemiThemeHelper extends VChartExtendThemeHelper {
     if (isWatchingThemeSwitch) {
       observeThemeSwitch(() => {
         const mode = this.getCurrentMode();
-        const cacheColorScheme = JSON.stringify(this.generateTheme(mode).colorScheme);
+        const option: IThemeQueryOption = { mode };
+        const cacheColorScheme = JSON.stringify(this.generateTheme(option).colorScheme);
         // 轮询直到监测到主题变化
         let times = 0;
         const timer = setInterval(() => {
-          const theme = this.generateTheme(mode);
+          const theme = this.generateTheme(option);
           if (times > 50 || cacheColorScheme !== JSON.stringify(theme.colorScheme)) {
-            this.switchVChartTheme(true, mode, theme);
+            this.switchVChartTheme(true, option, theme);
             clearInterval(timer);
           }
           times++;

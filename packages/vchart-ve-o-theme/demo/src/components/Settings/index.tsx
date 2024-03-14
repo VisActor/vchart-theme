@@ -7,7 +7,7 @@ import { GlobalState } from '../../store';
 import Block from './block';
 import ColorPanel from './color';
 import IconButton from '../NavBar/IconButton';
-import useLocale from '@/utils/useLocale';
+import useLocale from '../../utils/useLocale';
 
 interface SettingProps {
   trigger?: React.ReactElement;

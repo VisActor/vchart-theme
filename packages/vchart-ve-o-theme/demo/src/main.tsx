@@ -6,20 +6,11 @@ import { Provider } from 'react-redux';
 import { ConfigProvider } from '@arco-design/web-react';
 import zhCN from '@arco-design/web-react/es/locale/zh-CN';
 import enUS from '@arco-design/web-react/es/locale/en-US';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import rootReducer from './store';
 import PageLayout from './layout';
 import { GlobalContext } from './context';
 import changeTheme from './utils/changeTheme';
 import useStorage from './utils/useStorage';
-import { initVChartVeOTheme } from '../../src';
-import { observeAttribute } from '@visactor/vchart-theme-utils';
-
-const themeHelper = initVChartVeOTheme();
-// 监听 body style 上的主题色变化，强制更新主题
-observeAttribute(document.body, 'style', () => {
-  themeHelper.switchVChartTheme(true);
-});
 
 const store = createStore(rootReducer);
 
@@ -50,30 +41,26 @@ function Index() {
   };
 
   return (
-    <BrowserRouter>
-      <ConfigProvider
-        locale={getArcoLocale()}
-        componentConfig={{
-          Card: {
-            bordered: false,
-          },
-          List: {
-            bordered: false,
-          },
-          Table: {
-            border: false,
-          },
-        }}
-      >
-        <Provider store={store}>
-          <GlobalContext.Provider value={contextValue}>
-            <Switch>
-              <Route path="/" component={PageLayout} />
-            </Switch>
-          </GlobalContext.Provider>
-        </Provider>
-      </ConfigProvider>
-    </BrowserRouter>
+    <ConfigProvider
+      locale={getArcoLocale()}
+      componentConfig={{
+        Card: {
+          bordered: false,
+        },
+        List: {
+          bordered: false,
+        },
+        Table: {
+          border: false,
+        },
+      }}
+    >
+      <Provider store={store}>
+        <GlobalContext.Provider value={contextValue}>
+          <PageLayout />
+        </GlobalContext.Provider>
+      </Provider>
+    </ConfigProvider>
   );
 }
 

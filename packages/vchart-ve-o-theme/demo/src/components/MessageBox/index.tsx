@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import groupBy from 'lodash/groupBy';
+import groupBy from 'lodash';
 import {
   Trigger,
   Badge,

@@ -4,7 +4,7 @@ import { SketchPicker } from 'react-color';
 import { generate, getRgbStr } from '@arco-design/color';
 import { useSelector, useDispatch } from 'react-redux';
 import { GlobalState } from '../../store';
-import useLocale from '@/utils/useLocale';
+import useLocale from '../../utils/useLocale';
 import styles from './style/color-panel.module.less';
 
 function ColorPanel() {

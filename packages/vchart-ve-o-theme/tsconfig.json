@@ -6,7 +6,11 @@
     "baseUrl": "./",
     "rootDir": "./src",
     "outDir": "./es",
-    "composite": true
+    "composite": true,
+    "paths": {
+      "@visactor/vchart-arco-theme": ["../vchart-arco-theme/src"],
+      "@visactor/vchart-theme-utils": ["../vchart-theme-utils/src"]
+    }
   },
   "ts-node": {
     "transpileOnly": true,
@@ -14,5 +18,13 @@
       "module": "commonjs"
     }
   },
+  "references": [
+    {
+      "path": "../vchart-arco-theme"
+    },
+    {
+      "path": "../vchart-theme-utils"
+    }
+  ],
   "include": ["src"]
 }

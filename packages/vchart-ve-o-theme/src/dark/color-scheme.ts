@@ -1,7 +1,6 @@
-import type { BuiltinColorPalette, IThemeColorScheme } from '@visactor/vchart';
-import { dataScheme } from '../common/data-scheme';
+import type { BuiltinColorPalette, IColorSchemeStruct, IThemeColorScheme } from '@visactor/vchart';
 
-export const colorScheme: IThemeColorScheme = {
+export const getColorScheme = (dataScheme: IColorSchemeStruct['dataScheme']): IThemeColorScheme => ({
   default: {
     dataScheme,
     palette: {
@@ -65,4 +64,4 @@ export const colorScheme: IThemeColorScheme = {
       infoColor: 'rgba(60,126,255,1)'
     } as Partial<BuiltinColorPalette>
   }
-};
+});

@@ -18,8 +18,8 @@ export class VChartArcoThemeHelper extends VChartExtendThemeHelper {
   };
 
   declare tokenMap: {
-    dataScheme: DataSchemeTokenMap;
-    palette: PaletteTokenMap;
+    dataScheme?: DataSchemeTokenMap;
+    palette?: PaletteTokenMap;
   };
 
   declare options: IInitVChartArcoThemeOption;

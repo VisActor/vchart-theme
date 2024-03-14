@@ -25,7 +25,7 @@
     "test-watch": "DEBUG_MODE=1 jest --watch"
   },
   "peerDependencies": {
-    "@visactor/vchart": "~1.10.0-alpha.8"
+    "@visactor/vchart": "~1.10.0"
   },
   "dependencies": {
     "@visactor/vchart-semi-theme": "workspace:1.9.4",
@@ -65,8 +65,8 @@
     "vite-plugin-svgr": "^4.1.0",
     "node-sass": "^9.0.0",
     "@babel/runtime": "latest",
-    "@visactor/vchart": "~1.10.0-alpha.8",
-    "@visactor/react-vchart": "~1.10.0-alpha.8",
+    "@visactor/vchart": "~1.10.0",
+    "@visactor/react-vchart": "~1.10.0",
     "@douyinfe/semi-ui": "^2.51.3",
     "@douyinfe/semi-icons": "latest",
     "@douyinfe/semi-icons-lab": "latest",

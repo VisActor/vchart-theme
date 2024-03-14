@@ -9,9 +9,19 @@ function Chart(props: any) {
   return (
     <Card>
       <Typography.Title heading={6}>{props.title}</Typography.Title>
+      <Typography.Paragraph type="secondary">
+        <ul>
+          {props.description?.map((line, i) => (
+            <li key={i}>{line}</li>
+          ))}
+        </ul>
+      </Typography.Paragraph>
       <VChart
         spec={{
           height: chartHeight,
+          tooltip: {
+            visible: true,
+          },
           ...props.spec,
         }}
         options={{

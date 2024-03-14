@@ -6,7 +6,10 @@
     "baseUrl": "./",
     "rootDir": "./src",
     "outDir": "./es",
-    "composite": true
+    "composite": true,
+    "paths": {
+      "@visactor/vchart-theme-utils": ["../vchart-theme-utils/src"]
+    }
   },
   "ts-node": {
     "transpileOnly": true,
@@ -14,5 +17,10 @@
       "module": "commonjs"
     }
   },
+  "references": [
+    {
+      "path": "../vchart-theme-utils"
+    }
+  ],
   "include": ["src"]
 }

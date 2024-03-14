@@ -16,3 +16,7 @@ export interface IInitThemeOption {
   /** 指定 ThemeManager，一般不用指定，如果遇到多版本 vchart 共存时需要指定 */
   themeManager?: typeof ThemeManager;
 }
+
+export interface IThemeQueryOption {
+  mode?: ThemeMode;
+}

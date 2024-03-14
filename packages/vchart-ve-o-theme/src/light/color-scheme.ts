@@ -1,7 +1,7 @@
-import type { BuiltinColorPalette, IThemeColorScheme } from '@visactor/vchart';
-import { dataScheme } from '../common/data-scheme';
+import type { BuiltinColorPalette, IColorSchemeStruct, IThemeColorScheme } from '@visactor/vchart';
+import { VeOColor } from '../common';
 
-export const colorScheme: IThemeColorScheme = {
+export const getColorScheme = (dataScheme: IColorSchemeStruct['dataScheme']): IThemeColorScheme => ({
   default: {
     dataScheme,
     palette: {
@@ -25,20 +25,20 @@ export const colorScheme: IThemeColorScheme = {
       /** 主要字色 */
       primaryFontColor: 'rgba(29,33,41,1)',
       /** 次要字色 */
-      secondaryFontColor: 'rgba(78,89,105,1)',
+      secondaryFontColor: '#676B72',
       /** 第三字色 */
-      tertiaryFontColor: 'rgba(134,144,156,1)',
+      tertiaryFontColor: '#737A87',
       /** 轴标签字色 */
-      axisLabelFontColor: 'rgba(134,144,156,1)',
+      axisLabelFontColor: '#737A87',
       /** 禁用字色 */
       disableFontColor: 'rgba(201,205,212,1)',
       /** 轴高亮标记字色 */
       axisMarkerFontColor: 'rgba(255,255,255,1)',
 
       /** 轴网格线颜色 */
-      axisGridColor: 'rgba(229,230,235,1)',
+      axisGridColor: '#EAEDF1',
       /** 轴线颜色 */
-      axisDomainColor: 'rgba(229,230,235,1)',
+      axisDomainColor: '#737A87',
 
       /** 缩略轴滑块描边颜色 */
       dataZoomHandleStrokeColor: 'rgba(169,174,184,1)',
@@ -53,7 +53,7 @@ export const colorScheme: IThemeColorScheme = {
       /** 标注标签背景颜色 */
       markLabelBackgroundColor: 'rgba(229,230,235,1)',
       /** 标注线颜色 */
-      markLineStrokeColor: 'rgba(78,89,105,1)',
+      markLineStrokeColor: VeOColor.critical,
 
       /** 危险色 */
       dangerColor: 'rgba(245,63,63,1)',
@@ -65,4 +65,4 @@ export const colorScheme: IThemeColorScheme = {
       infoColor: 'rgba(22,93,255,1)'
     } as Partial<BuiltinColorPalette>
   }
-};
+});

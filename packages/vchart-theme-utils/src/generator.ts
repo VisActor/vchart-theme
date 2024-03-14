@@ -9,15 +9,17 @@ export const generateDataScheme = (
   baseDataScheme: ProgressiveDataScheme<any>,
   chartContainer?: HTMLElement
 ): ProgressiveDataScheme<string> => {
-  return tokenMap.map((item, i) => {
-    const { scheme } = baseDataScheme[i] as IProgressiveDataSchemeCase<string>;
-    return {
-      ...item,
-      scheme: item.scheme.map((token, j) => {
-        return getTokenValue(typeof token === 'object' ? token[mode] : token, scheme?.[j], chartContainer);
-      })
-    };
-  });
+  return (
+    tokenMap?.map((item, i) => {
+      const { scheme } = baseDataScheme[i] as IProgressiveDataSchemeCase<string>;
+      return {
+        ...item,
+        scheme: item.scheme.map((token, j) => {
+          return getTokenValue(typeof token === 'object' ? token[mode] : token, scheme?.[j], chartContainer);
+        })
+      };
+    }) ?? baseDataScheme
+  );
 };
 
 /** 生成语义色板 */
@@ -26,11 +28,14 @@ export const generatePalette = (
   tokenMap: PaletteTokenMap,
   basePalette: Record<string, any>,
   chartContainer?: HTMLElement
-): any => {
-  const newPalette = {};
-  Object.keys(tokenMap).forEach(key => {
-    const token = typeof tokenMap[key] === 'object' ? tokenMap[key][mode] : tokenMap[key];
-    newPalette[key] = getTokenValue(token, basePalette[key], chartContainer);
-  });
-  return newPalette;
+): Record<string, any> => {
+  if (tokenMap) {
+    const newPalette = {};
+    Object.keys(tokenMap).forEach(key => {
+      const token = typeof tokenMap[key] === 'object' ? tokenMap[key][mode] : tokenMap[key];
+      newPalette[key] = getTokenValue(token, basePalette[key], chartContainer);
+    });
+    return newPalette;
+  }
+  return basePalette;
 };

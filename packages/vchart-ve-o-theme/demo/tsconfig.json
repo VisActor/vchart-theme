@@ -17,7 +17,10 @@
     "jsx": "react-jsx",
     "baseUrl": ".",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["src/*"],
+      "@visactor/vchart-ve-o-theme": ["../src"],
+      "@visactor/vchart-arco-theme": ["../../vchart-arco-theme/src"],
+      "@visactor/vchart-theme-utils": ["../../vchart-theme-utils/src"]
     }
   },
   "include": ["src"]

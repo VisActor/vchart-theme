@@ -12,7 +12,7 @@
     "esModuleInterop": true,
     "importHelpers": false,
     "isolatedModules": false,
-    "noImplicitReturns": false,
+    "noImplicitReturns": true,
     "noImplicitThis": true,
     "noUnusedParameters": false,
     "noUnusedLocals": false,

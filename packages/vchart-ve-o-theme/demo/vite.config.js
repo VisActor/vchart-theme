@@ -1,4 +1,5 @@
 import { defineConfig } from 'vite';
+import path from 'path';
 import react from '@vitejs/plugin-react';
 import svgrPlugin from '@arco-plugins/vite-plugin-svgr';
 
@@ -14,7 +15,18 @@ export default defineConfig({
     __VERSION__: JSON.stringify(require('../package.json').version),
   },
   resolve: {
-    alias: [{ find: '@', replacement: '/src' }],
+    alias: {
+      '@': '/src',
+      '@visactor/vchart-ve-o-theme': path.resolve(__dirname, '../src/index.ts'),
+      '@visactor/vchart-arco-theme': path.resolve(
+        __dirname,
+        '../../vchart-arco-theme/src/index.ts'
+      ),
+      '@visactor/vchart-theme-utils': path.resolve(
+        __dirname,
+        '../../vchart-theme-utils/src/index.ts'
+      ),
+    },
   },
   plugins: [
     react(),

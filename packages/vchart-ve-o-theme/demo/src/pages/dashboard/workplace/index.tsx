@@ -2,15 +2,14 @@ import React, { useEffect, useState } from 'react';
 import { Card, Grid, Select, Typography } from '@arco-design/web-react';
 import Chart from './chart';
 import { charts } from '../../../chart-list';
-import { allLightThemes } from '../../../../../src/light';
 import {
   ColorSchemeType,
   initVChartVeOTheme,
   registerBarMarker,
+  specialDataScheme,
 } from '@visactor/vchart-ve-o-theme';
 import { observeAttribute } from '@visactor/vchart-theme-utils';
 import { VChartCore } from '@visactor/react-vchart';
-import { specialDataScheme } from '../../../../../src/common/data-scheme';
 
 registerBarMarker();
 

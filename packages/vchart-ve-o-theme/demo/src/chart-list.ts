@@ -1,6 +1,6 @@
 import { scatter, gauge } from '@internal/chart-demo';
 import { IAreaChartSpec } from '@visactor/vchart';
-import { VeOColor, VeOSymbolType } from '../../src/common';
+import { VeOColor, VeOSymbolType } from '@visactor/vchart-ve-o-theme';
 
 export const charts = [
   {

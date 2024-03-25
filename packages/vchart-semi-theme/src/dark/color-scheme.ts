@@ -41,9 +41,9 @@ export const colorScheme: IThemeColorScheme = {
       axisMarkerFontColor: '#16161a',
 
       /** 轴网格线颜色 */
-      axisGridColor: 'rgba(255,255,255,0.08)',
+      axisGridColor: 'rgba(65, 70, 76, 1)', //用上边定义的lineColor2
       /** 轴线颜色 */
-      axisDomainColor: 'rgba(85, 91, 97, 1)',
+      axisDomainColor: 'rgba(85, 91, 97, 1)', //用上边定义的lineColor1
 
       /** 十字准星背景色 */
       crosshairBackgroundColor: 'rgba(55,58,67,0.05)',
@@ -61,7 +61,7 @@ export const colorScheme: IThemeColorScheme = {
       /** 标注标签背景颜色 */
       markLabelBackgroundColor: 'rgba(255,255,255,0.08)',
       /** 标注线颜色 */
-      markLineStrokeColor: 'rgba(249,249,249,0.8)',
+      markLineStrokeColor: 'rgba(249,249,249,0.8)', //用上边定义的lineColor0
 
       /** 危险色 */
       dangerColor: 'rgba(252,114,90,1)',

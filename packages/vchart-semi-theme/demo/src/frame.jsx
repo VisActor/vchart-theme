@@ -136,7 +136,7 @@ const Frame = () => {
           />
         </Nav>
         <div className={styles.right}>
-          <p className={styles.item}>Reporting</p>
+          <p className={styles.item}>VChart Demo</p>
           <div className={styles.frame1321317607}>
             <Charts />
           </div>

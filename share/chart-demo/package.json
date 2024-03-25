@@ -22,11 +22,11 @@
     "test-watch": "DEBUG_MODE=1 jest --watch"
   },
   "peerDependencies": {
-    "@visactor/vchart": "~1.10.0"
+    "@visactor/vchart": "~1.10.2-alpha.3"
   },
   "devDependencies": {
-    "@visactor/vchart": "~1.10.0",
-    "@visactor/vchart-types": "~1.10.0",
+    "@visactor/vchart": "~1.10.2-alpha.3",
+    "@visactor/vchart-types": "~1.10.2-alpha.3",
     "@internal/bundler": "workspace:*",
     "@internal/eslint-config": "workspace:*",
     "@internal/ts-config": "workspace:*",

@@ -25,7 +25,7 @@
     "test-watch": "DEBUG_MODE=1 jest --watch"
   },
   "peerDependencies": {
-    "@visactor/vchart": "~1.10.0"
+    "@visactor/vchart": "~1.10.2-alpha.3"
   },
   "dependencies": {
     "@visactor/vchart-theme-utils": "workspace:1.9.4"
@@ -77,8 +77,8 @@
     "react-router-dom": "^5.2.0",
     "react-device-detect": "^2.2.2",
     "redux": "^4.1.2",
-    "@visactor/vchart": "~1.10.0",
-    "@visactor/react-vchart": "~1.10.0",
+    "@visactor/vchart": "~1.10.2-alpha.3",
+    "@visactor/react-vchart": "~1.10.2-alpha.3",
     "@arco-design/webpack-plugin": "^1.6.0",
     "@arco-plugins/vite-plugin-svgr": "^0.7.2",
     "@svgr/webpack": "^5.5.0",

@@ -81,7 +81,7 @@ function Workplace() {
         {charts.map((chart, i) => {
           return (
             <Col span={12} key={i} style={{ marginBottom: 16 }}>
-              <Chart {...chart} />
+              <Chart {...chart} index={i} />
             </Col>
           );
         })}

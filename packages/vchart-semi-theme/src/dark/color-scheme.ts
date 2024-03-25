@@ -1,15 +1,19 @@
-import type { BuiltinColorPalette, IColorSchemeStruct, IThemeColorScheme } from '@visactor/vchart';
-// eslint-disable-next-line no-duplicate-imports
-import { lightTheme } from '@visactor/vchart';
+import type { BuiltinColorPalette, IThemeColorScheme } from '@visactor/vchart';
+import { dataScheme } from '../common/data-scheme';
 
 export const colorScheme: IThemeColorScheme = {
   default: {
-    dataScheme: (lightTheme.colorScheme.default as IColorSchemeStruct).dataScheme,
+    dataScheme,
     palette: {
       /** 背景色 */
       backgroundColor: '#16161a',
       /** 图表边框色 */
       borderColor: 'rgba(255,255,255,0.08)',
+
+      lineColor0: '#757880',
+      lineColor1: '#ACAFB6',
+      lineColor2: '#CACCD1',
+
       /** 默认阴影颜色 */
       shadowColor: 'rgba(0,0,0,0.25)',
       /** 鼠标 hover 项背景颜色 */
@@ -39,7 +43,10 @@ export const colorScheme: IThemeColorScheme = {
       /** 轴网格线颜色 */
       axisGridColor: 'rgba(255,255,255,0.08)',
       /** 轴线颜色 */
-      axisDomainColor: 'rgba(255,255,255,0.08)',
+      axisDomainColor: '#ACAFB6',
+
+      /** 十字准星背景色 */
+      crosshairBackgroundColor: 'rgba(55,58,67,0.05)',
 
       /** 缩略轴滑块描边颜色 */
       dataZoomHandleStrokeColor: 'rgba(46,50,56,0.13)',

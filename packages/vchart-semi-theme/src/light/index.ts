@@ -2,6 +2,8 @@ import type { ITheme } from '@visactor/vchart';
 import { colorScheme } from './color-scheme';
 import { markByName } from '../common/mark';
 import { token } from '../common/token';
+import { series } from '../common/series';
+import { component } from '../common/component';
 
 export const semiDesignLight: ITheme = {
   name: 'semiDesignLight',
@@ -9,5 +11,7 @@ export const semiDesignLight: ITheme = {
   type: 'light',
   token,
   colorScheme,
-  markByName
+  markByName,
+  series,
+  component
 };

@@ -43,5 +43,6 @@ export const area: ISeriesTheme['area'] = {
     style: {
       fill: { type: 'palette', key: 'secondaryFontColor' }
     }
-  }
+  },
+  seriesMark: 'line'
 };

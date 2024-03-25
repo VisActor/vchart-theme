@@ -2,6 +2,7 @@ import React from 'react';
 import { isMobile } from 'react-device-detect';
 import { charts } from './chart-list';
 import { VChart } from '@visactor/react-vchart';
+import { Card } from '@douyinfe/semi-ui';
 
 const chartHeight = 400;
 
@@ -14,16 +15,16 @@ const Charts = () => {
             key={i}
             className="card"
             style={{
-              width: '50%',
+              width: '100%',
               padding: '30px',
               display: 'inline-block'
             }}
           >
-            <div className="chartContainer" style={{ outline: `1px solid #404349` }}>
+            <Card className="chartContainer" padding="0" bordered={false} headerLine={true} title={chart.title}>
               <VChart
                 spec={{
-                  height: chartHeight,
-                  ...chart.spec
+                  ...chart.spec,
+                  height: chartHeight
                 }}
                 options={{
                   ...chart.option,
@@ -32,7 +33,7 @@ const Charts = () => {
                   // logLevel: 5
                 }}
               />
-            </div>
+            </Card>
           </div>
         );
       })}

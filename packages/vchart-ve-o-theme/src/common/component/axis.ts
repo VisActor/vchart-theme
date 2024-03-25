@@ -1,4 +1,4 @@
-import type { IComponentTheme } from '@visactor/vchart';
+import type { ICartesianBandAxisSpec, IComponentTheme } from '@visactor/vchart';
 
 export const axisTheme: IComponentTheme = {
   axis: {
@@ -30,6 +30,7 @@ export const axisTheme: IComponentTheme = {
   axisBand: {
     domainLine: {
       visible: true
-    }
-  }
+    },
+    trimPadding: true
+  } as ICartesianBandAxisSpec
 };

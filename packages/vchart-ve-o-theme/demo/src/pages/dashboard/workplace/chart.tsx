@@ -30,6 +30,9 @@ function Chart(props: any) {
           // onError: null,
           // logLevel: 5,
         }}
+        onReady={(instance) => {
+          window[`vchart_${props.index}`] = instance;
+        }}
       />
     </Card>
   );

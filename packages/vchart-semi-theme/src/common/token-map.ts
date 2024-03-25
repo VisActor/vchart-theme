@@ -6,9 +6,9 @@ export const paletteTokenMap: PaletteTokenMap = {
   /** 图表边框色 */
   borderColor: '--semi-color-border',
 
-  lineColor0: '--semi-color-data-line-0',
-  lineColor1: '--semi-color-data-line-1',
-  lineColor2: '--semi-color-data-line-2',
+  lineColor0: '--semi-grey-5',
+  lineColor1: '--semi-grey-3',
+  lineColor2: '--semi-grey-2',
 
   /** 鼠标 hover 项背景颜色 */
   hoverBackgroundColor: '--semi-color-fill-0',

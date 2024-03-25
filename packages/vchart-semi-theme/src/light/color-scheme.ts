@@ -10,9 +10,9 @@ export const colorScheme: IThemeColorScheme = {
       /** 图表边框色 */
       borderColor: 'rgba(28,31,35,0.08)',
 
-      lineColor0: '#757880',
-      lineColor1: '#ACAFB6',
-      lineColor2: '#CACCD1',
+      lineColor0: 'rgba(107, 112, 117, 1)',
+      lineColor1: 'rgba(167, 171, 176, 1)',
+      lineColor2: 'rgba(198, 202, 205, 1)',
 
       /** 默认阴影颜色 */
       shadowColor: 'rgba(33,37,44,0.1)',
@@ -41,9 +41,9 @@ export const colorScheme: IThemeColorScheme = {
       axisMarkerFontColor: 'rgba(255,255,255,1)',
 
       /** 轴网格线颜色 */
-      axisGridColor: '#CACCD1', //用上边定义的lineColor2
+      axisGridColor: 'rgba(198, 202, 205, 1)', //用上边定义的lineColor2
       /** 轴线颜色 */
-      axisDomainColor: '#ACAFB6', //用上边定义的lineColor1
+      axisDomainColor: 'rgba(167, 171, 176, 1)', //用上边定义的lineColor1
 
       /** 十字准星背景色 */
       crosshairBackgroundColor: 'rgba(55,58,67,0.05)',
@@ -61,7 +61,7 @@ export const colorScheme: IThemeColorScheme = {
       /** 标注标签背景颜色 */
       markLabelBackgroundColor: '#f1f2f5',
       /** 标注线颜色 */
-      markLineStrokeColor: '#757880', //用上边定义的lineColor0
+      markLineStrokeColor: 'rgba(107, 112, 117, 1)', //用上边定义的lineColor0
 
       /** 危险色 */
       dangerColor: '#D63125',

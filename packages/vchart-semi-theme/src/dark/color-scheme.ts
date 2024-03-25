@@ -10,9 +10,9 @@ export const colorScheme: IThemeColorScheme = {
       /** 图表边框色 */
       borderColor: 'rgba(255,255,255,0.08)',
 
-      lineColor0: '#757880',
-      lineColor1: '#ACAFB6',
-      lineColor2: '#CACCD1',
+      lineColor0: 'rgba(136, 141, 146, 1)',
+      lineColor1: 'rgba(85, 91, 97, 1)',
+      lineColor2: 'rgba(65, 70, 76, 1)',
 
       /** 默认阴影颜色 */
       shadowColor: 'rgba(0,0,0,0.25)',
@@ -43,7 +43,7 @@ export const colorScheme: IThemeColorScheme = {
       /** 轴网格线颜色 */
       axisGridColor: 'rgba(255,255,255,0.08)',
       /** 轴线颜色 */
-      axisDomainColor: '#ACAFB6',
+      axisDomainColor: 'rgba(85, 91, 97, 1)',
 
       /** 十字准星背景色 */
       crosshairBackgroundColor: 'rgba(55,58,67,0.05)',

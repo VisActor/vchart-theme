@@ -1,11 +1,12 @@
 import type { IInitVChartSemiThemeOption } from './interface';
-import type { IThemeQueryOption } from '@visactor/vchart-theme-utils';
+import type { IThemeQueryOption, ThemeMode } from '@visactor/vchart-theme-utils';
 // eslint-disable-next-line no-duplicate-imports
 import { VChartExtendThemeHelper } from '@visactor/vchart-theme-utils';
 import { semiDesignLight } from './light';
 import { semiDesignDark } from './dark';
 import { dataSchemeTokenMap, paletteTokenMap } from './common/token-map';
 import { observeThemeSwitch } from './util';
+import type { ITheme } from '@visactor/vchart';
 
 export class VChartSemiThemeHelper extends VChartExtendThemeHelper {
   static themeModeAttribute = 'theme-mode';
@@ -13,7 +14,7 @@ export class VChartSemiThemeHelper extends VChartExtendThemeHelper {
   themeModeAttribute = VChartSemiThemeHelper.themeModeAttribute;
   themeNamePrefix = VChartSemiThemeHelper.themeNamePrefix;
 
-  baseTheme = {
+  baseTheme: Record<ThemeMode, ITheme> = {
     light: semiDesignLight,
     dark: semiDesignDark
   };

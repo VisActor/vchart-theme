@@ -33,7 +33,7 @@ importers:
       '@typescript-eslint/parser': 5.30.0
       '@visactor/react-vchart': ~1.10.2
       '@visactor/vchart': ~1.10.2
-      '@visactor/vchart-theme-utils': workspace:1.9.4
+      '@visactor/vchart-theme-utils': workspace:1.10.2
       '@vitejs/plugin-react': ^4.1.1
       '@vitejs/plugin-react-swc': ^3.4.1
       classnames: ^2.3.1
@@ -166,7 +166,7 @@ importers:
       '@types/offscreencanvas': 2019.6.4
       '@visactor/react-vchart': ~1.10.2
       '@visactor/vchart': ~1.10.2
-      '@visactor/vchart-theme-utils': workspace:1.9.4
+      '@visactor/vchart-theme-utils': workspace:1.10.2
       '@vitejs/plugin-react': ^4.1.1
       '@vitejs/plugin-react-swc': ^3.4.1
       eslint: ~8.18.0
@@ -240,11 +240,11 @@ importers:
       '@types/node': '*'
       '@types/offscreencanvas': 2019.6.4
       '@visactor/vchart': ~1.10.2
-      '@visactor/vchart-arco-theme': workspace:1.9.4
-      '@visactor/vchart-semi-theme': workspace:1.9.4
-      '@visactor/vchart-tt-platform-theme': workspace:1.9.4
+      '@visactor/vchart-arco-theme': workspace:1.10.2
+      '@visactor/vchart-semi-theme': workspace:1.10.2
+      '@visactor/vchart-tt-platform-theme': workspace:1.10.2
       '@visactor/vchart-types': ~1.10.2
-      '@visactor/vchart-ve-o-theme': workspace:1.9.4
+      '@visactor/vchart-ve-o-theme': workspace:1.10.2
       eslint: ~8.18.0
       husky: 7.0.4
       jest: ~29.5.0
@@ -370,8 +370,8 @@ importers:
       '@types/offscreencanvas': 2019.6.4
       '@visactor/react-vchart': ~1.10.2
       '@visactor/vchart': ~1.10.2
-      '@visactor/vchart-semi-theme': workspace:1.9.4
-      '@visactor/vchart-theme-utils': workspace:1.9.4
+      '@visactor/vchart-semi-theme': workspace:1.10.2
+      '@visactor/vchart-theme-utils': workspace:1.10.2
       '@vitejs/plugin-react': ^4.1.1
       '@vitejs/plugin-react-swc': ^3.4.1
       eslint: ~8.18.0
@@ -464,8 +464,8 @@ importers:
       '@typescript-eslint/parser': 5.30.0
       '@visactor/react-vchart': ~1.10.2
       '@visactor/vchart': ~1.10.2
-      '@visactor/vchart-arco-theme': workspace:1.9.4
-      '@visactor/vchart-theme-utils': workspace:1.9.4
+      '@visactor/vchart-arco-theme': workspace:1.10.2
+      '@visactor/vchart-theme-utils': workspace:1.10.2
       '@vitejs/plugin-react': ^4.1.1
       '@vitejs/plugin-react-swc': ^3.4.1
       classnames: ^2.3.1
@@ -5089,6 +5089,7 @@ packages:
 
   /bindings/1.5.0:
     resolution: {integrity: sha512-p2q/t/mhvuOj/UeLlV6566GD/guowlr0hHxClI0W9m7MWYkL1F0hLo+0Aexs9HSPCtR1SXQ0TD3MMKrXZajbiQ==}
+    requiresBuild: true
     dependencies:
       file-uri-to-path: 1.0.0
     dev: false
@@ -6780,6 +6781,7 @@ packages:
 
   /file-uri-to-path/1.0.0:
     resolution: {integrity: sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==}
+    requiresBuild: true
     dev: false
     optional: true
 

@@ -6,11 +6,7 @@
     "baseUrl": "./",
     "rootDir": "./src",
     "outDir": "./es",
-    "composite": true,
-    "paths": {
-      "@visactor/vchart-semi-theme": ["../vchart-semi-theme/src"],
-      "@visactor/vchart-theme-utils": ["../vchart-theme-utils/src"]
-    }
+    "composite": true
   },
   "ts-node": {
     "transpileOnly": true,
@@ -18,13 +14,5 @@
       "module": "commonjs"
     }
   },
-  "references": [
-    {
-      "path": "../vchart-semi-theme"
-    },
-    {
-      "path": "../vchart-theme-utils"
-    }
-  ],
   "include": ["src"]
 }

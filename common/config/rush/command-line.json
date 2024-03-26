@@ -91,7 +91,7 @@
       "summary": "Start the development server",
       "description": "Run this command to start vchart-theme development server",
 
-      "shellCommand": "rush run -p @visactor/vchart-theme-utils -s build && rush run -p @visactor/vchart-theme -s start"
+      "shellCommand": "rush run -p @visactor/vchart-theme -s start"
     },
     {
       "commandKind": "global",
@@ -100,7 +100,7 @@
       "summary": "Start the development server",
       "description": "Run this command to start vchart-semi-theme development server",
 
-      "shellCommand": "rush run -p @visactor/vchart-theme-utils -s build && rush run -p @visactor/vchart-semi-theme -s start"
+      "shellCommand": "rush run -p @visactor/vchart-semi-theme -s start"
     },
     {
       "commandKind": "global",
@@ -109,7 +109,7 @@
       "summary": "Start the development server",
       "description": "Run this command to start vchart-arco-theme development server",
 
-      "shellCommand": "rush run -p @visactor/vchart-theme-utils -s build && rush run -p @visactor/vchart-arco-theme -s start"
+      "shellCommand": "rush run -p @visactor/vchart-arco-theme -s start"
     },
     {
       "commandKind": "global",
@@ -118,7 +118,16 @@
       "summary": "Start the development server",
       "description": "Run this command to start vchart-tt-platform-theme development server",
 
-      "shellCommand": "rush run -p @visactor/vchart-theme-utils -s build && rush run -p @visactor/vchart-tt-platform-theme -s start"
+      "shellCommand": "rush run -p @visactor/vchart-tt-platform-theme -s start"
+    },
+    {
+      "commandKind": "global",
+
+      "name": "veo",
+      "summary": "Start the development server",
+      "description": "Run this command to start vchart-ve-o-theme development server",
+
+      "shellCommand": "rush run -p @visactor/vchart-ve-o-theme -s start"
     },
     {
       "name": "change-all",

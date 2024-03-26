@@ -1,64 +1,13 @@
-import type { ITheme } from '@visactor/vchart';
-// eslint-disable-next-line no-duplicate-imports
-import { ThemeManager } from '@visactor/vchart';
-import type { IInitVChartTTPlatformThemeOption } from './interface';
-import { generateThemeName, getCurrentMode, observeAttribute, observeThemeSwitch } from './util';
-import { generateVChartTTPlatformTheme } from './generator';
-import { THEME_MODE_ATTRIBUTE } from './common/constants';
+import type { IInitVChartSemiThemeOption } from '@visactor/vchart-semi-theme';
+import { VChartTTPlatformThemeHelper } from './theme-helper';
 
+export * from './theme-helper';
 export * from './theme-map';
-export * from './generator';
 export * from './light';
 export * from './dark';
 
-export const initVChartTTPlatformTheme = (options?: IInitVChartTTPlatformThemeOption) => {
-  const {
-    defaultMode,
-    isWatchingMode = true,
-    isWatchingThemeSwitch = false,
-    themeManager = ThemeManager
-  } = options ?? {};
-
-  switchVChartTTPlatformTheme(themeManager, false, defaultMode);
-
-  if (isWatchingMode) {
-    observeAttribute(document.body, THEME_MODE_ATTRIBUTE, () => switchVChartTTPlatformTheme(themeManager));
-  }
-  if (isWatchingThemeSwitch) {
-    observeThemeSwitch(() => {
-      const mode = getCurrentMode();
-      const cacheColorScheme = JSON.stringify(generateVChartTTPlatformTheme(mode).colorScheme);
-      // 轮询直到监测到主题变化
-      let times = 0;
-      const timer = setInterval(() => {
-        const theme = generateVChartTTPlatformTheme(mode);
-        if (times > 50 || cacheColorScheme !== JSON.stringify(theme.colorScheme)) {
-          switchVChartTTPlatformTheme(themeManager, true, mode, theme);
-          clearInterval(timer);
-        }
-        times++;
-      }, 100);
-    });
-  }
-};
-
-export const switchVChartTTPlatformTheme = (
-  themeManager: typeof ThemeManager,
-  force?: boolean,
-  mode?: 'light' | 'dark',
-  theme?: ITheme
-) => {
-  if (!mode) {
-    mode = getCurrentMode();
-  }
-  const themeName = generateThemeName(mode);
-  if (!force && themeManager.getCurrentTheme() === themeName) {
-    return;
-  } else if (force) {
-    themeManager.removeTheme(themeName);
-  }
-  if (!themeManager.themeExist(themeName)) {
-    themeManager.registerTheme(themeName, theme ?? generateVChartTTPlatformTheme(mode));
-  }
-  themeManager.setCurrentTheme(themeName);
+export const initVChartTTPlatformTheme = (options?: IInitVChartSemiThemeOption) => {
+  const helper = new VChartTTPlatformThemeHelper(options ?? {});
+  helper.init();
+  return helper;
 };

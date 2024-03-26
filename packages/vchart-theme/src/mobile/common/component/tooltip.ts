@@ -1,5 +1,4 @@
 import type { ITooltipTheme } from '@visactor/vchart-types';
-import { THEME_CONSTANTS } from '../constants';
 
 export const tooltip: ITooltipTheme = {
   offset: {
@@ -16,8 +15,6 @@ export const tooltip: ITooltipTheme = {
   },
   spaceRow: 6,
   titleLabel: {
-    fontSize: THEME_CONSTANTS.l4FontSize,
-    lineHeight: THEME_CONSTANTS.l4LineHeight,
     spacing: 0
   },
   shape: {
@@ -25,13 +22,9 @@ export const tooltip: ITooltipTheme = {
     spacing: 6
   },
   keyLabel: {
-    fontSize: THEME_CONSTANTS.l4FontSize,
-    lineHeight: THEME_CONSTANTS.l4LineHeight,
     spacing: 26
   },
   valueLabel: {
-    fontSize: THEME_CONSTANTS.l4FontSize,
-    lineHeight: THEME_CONSTANTS.l4LineHeight,
     spacing: 0
   }
 };

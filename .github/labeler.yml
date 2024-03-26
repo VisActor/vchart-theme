@@ -18,6 +18,10 @@ vchart-arco-theme:
 vchart-tt-platform-theme:
   - packages/vchart-tt-platform-theme/**
 
+# Add 'vchart-ve-o-theme' label to any change within the 'vchart-ve-o-theme' package
+vchart-ve-o-theme:
+  - packages/vchart-ve-o-theme/**
+
 # Add 'test' label to any change to packages/*/__tests__/* files within the source dir
 test:
   - packages/*/__tests__/*

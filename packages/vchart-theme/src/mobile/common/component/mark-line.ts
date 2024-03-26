@@ -1,5 +1,4 @@
 import type { IMarkLineTheme } from '@visactor/vchart-types';
-import { THEME_CONSTANTS } from '../constants';
 
 export const markLine: IMarkLineTheme = {
   startSymbol: {
@@ -12,10 +11,6 @@ export const markLine: IMarkLineTheme = {
   },
   label: {
     refY: 5,
-    style: {
-      fontSize: THEME_CONSTANTS.l4FontSize
-      // lineHeight: THEME_CONSTANTS.l4LineHeight,
-    },
     labelBackground: {
       padding: {
         top: 2,

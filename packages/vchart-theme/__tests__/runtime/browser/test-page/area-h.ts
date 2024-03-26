@@ -1,7 +1,7 @@
 import { isMobile } from 'react-device-detect';
-import type { IAreaChartSpec } from '../../../../../vchart/src/index';
+import type { IAreaChartSpec } from '@visactor/vchart';
 // eslint-disable-next-line no-duplicate-imports
-import { default as VChart } from '../../../../../vchart/src/index';
+import { default as VChart } from '@visactor/vchart';
 
 const getSpec = (): IAreaChartSpec => ({
   type: 'area',

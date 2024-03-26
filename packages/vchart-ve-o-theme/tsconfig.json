@@ -1,0 +1,30 @@
+{
+  "extends": "@internal/ts-config/tsconfig.base.json",
+  "compilerOptions": {
+    "types": ["jest", "offscreencanvas", "node"],
+    "lib": ["DOM", "ESNext"],
+    "baseUrl": "./",
+    "rootDir": "./src",
+    "outDir": "./es",
+    "composite": true,
+    "paths": {
+      "@visactor/vchart-arco-theme": ["../vchart-arco-theme/src"],
+      "@visactor/vchart-theme-utils": ["../vchart-theme-utils/src"]
+    }
+  },
+  "ts-node": {
+    "transpileOnly": true,
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  },
+  "references": [
+    {
+      "path": "../vchart-arco-theme"
+    },
+    {
+      "path": "../vchart-theme-utils"
+    }
+  ],
+  "include": ["src"]
+}

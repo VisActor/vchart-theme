@@ -1,15 +1,19 @@
-import type { BuiltinColorPalette, IColorSchemeStruct, IThemeColorScheme } from '@visactor/vchart';
-// eslint-disable-next-line no-duplicate-imports
-import { lightTheme } from '@visactor/vchart';
+import type { BuiltinColorPalette, IThemeColorScheme } from '@visactor/vchart';
+import { dataScheme } from '../common/data-scheme';
 
 export const colorScheme: IThemeColorScheme = {
   default: {
-    dataScheme: (lightTheme.colorScheme.default as IColorSchemeStruct).dataScheme,
+    dataScheme,
     palette: {
       /** 背景色 */
       backgroundColor: '#16161a',
       /** 图表边框色 */
       borderColor: 'rgba(255,255,255,0.08)',
+
+      lineColor0: 'rgba(136, 141, 146, 1)',
+      lineColor1: 'rgba(85, 91, 97, 1)',
+      lineColor2: 'rgba(65, 70, 76, 1)',
+
       /** 默认阴影颜色 */
       shadowColor: 'rgba(0,0,0,0.25)',
       /** 鼠标 hover 项背景颜色 */
@@ -37,9 +41,12 @@ export const colorScheme: IThemeColorScheme = {
       axisMarkerFontColor: '#16161a',
 
       /** 轴网格线颜色 */
-      axisGridColor: 'rgba(255,255,255,0.08)',
+      axisGridColor: 'rgba(65, 70, 76, 1)', //用上边定义的lineColor2
       /** 轴线颜色 */
-      axisDomainColor: 'rgba(255,255,255,0.08)',
+      axisDomainColor: 'rgba(85, 91, 97, 1)', //用上边定义的lineColor1
+
+      /** 十字准星背景色 */
+      crosshairBackgroundColor: 'rgba(55,58,67,0.05)',
 
       /** 缩略轴滑块描边颜色 */
       dataZoomHandleStrokeColor: 'rgba(46,50,56,0.13)',
@@ -54,7 +61,7 @@ export const colorScheme: IThemeColorScheme = {
       /** 标注标签背景颜色 */
       markLabelBackgroundColor: 'rgba(255,255,255,0.08)',
       /** 标注线颜色 */
-      markLineStrokeColor: 'rgba(249,249,249,0.8)',
+      markLineStrokeColor: 'rgba(249,249,249,0.8)', //用上边定义的lineColor0
 
       /** 危险色 */
       dangerColor: 'rgba(252,114,90,1)',

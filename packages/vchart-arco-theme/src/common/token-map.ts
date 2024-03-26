@@ -1,4 +1,4 @@
-import type { DataSchemeTokenMap, PaletteTokenMap } from '@visactor/vchart-theme-utils/esm/interface';
+import type { DataSchemeTokenMap, PaletteTokenMap } from '@visactor/vchart-theme-utils';
 
 export const getPaletteTokenMap = (prefix?: string): PaletteTokenMap => {
   const prefixStr = prefix ? `${prefix}${prefix[prefix.length - 1] === '-' ? '' : '-'}` : '';

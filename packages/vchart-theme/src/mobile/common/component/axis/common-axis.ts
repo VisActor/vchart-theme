@@ -1,5 +1,4 @@
 import type { IAxisCommonTheme } from '@visactor/vchart-types';
-import { THEME_CONSTANTS } from '../../constants';
 
 export const commonAxis: IAxisCommonTheme = {
   domainLine: {
@@ -13,25 +12,17 @@ export const commonAxis: IAxisCommonTheme = {
   },
   tick: {
     visible: false,
-    tickSize: THEME_CONSTANTS.axisTickSize
+    tickSize: 0
   },
   subTick: {
     visible: false,
-    tickSize: THEME_CONSTANTS.axisTickSize / 2
+    tickSize: 0
   },
   label: {
     visible: true,
-    space: 6,
-    style: {
-      fontSize: THEME_CONSTANTS.l5FontSize
-      // lineHeight: THEME_CONSTANTS.l5LineHeight,
-    }
+    space: 6
   },
   title: {
-    space: 6,
-    style: {
-      fontSize: THEME_CONSTANTS.l5FontSize,
-      lineHeight: THEME_CONSTANTS.l5LineHeight
-    }
+    space: 6
   }
 };

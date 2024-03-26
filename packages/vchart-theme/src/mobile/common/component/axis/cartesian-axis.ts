@@ -1,5 +1,4 @@
 import type { ICartesianAxisCommonTheme } from '@visactor/vchart-types';
-import { THEME_CONSTANTS } from '../../constants';
 
 export const axisX: ICartesianAxisCommonTheme = {
   label: {
@@ -9,10 +8,7 @@ export const axisX: ICartesianAxisCommonTheme = {
     space: 4
   },
   unit: {
-    visible: false,
-    style: {
-      fontSize: THEME_CONSTANTS.l5FontSize
-    }
+    visible: false
   }
 };
 
@@ -24,10 +20,7 @@ export const axisY: ICartesianAxisCommonTheme = {
     space: 6
   },
   unit: {
-    visible: false,
-    style: {
-      fontSize: THEME_CONSTANTS.l5FontSize
-    }
+    visible: false
   }
 };
 

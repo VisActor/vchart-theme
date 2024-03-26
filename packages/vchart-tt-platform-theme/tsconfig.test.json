@@ -1,5 +1,9 @@
 {
   "extends": "./tsconfig.json",
-  "compilerOptions": {},
+  "compilerOptions": {
+    "paths": {
+      "@visactor/vchart-semi-theme": ["../vchart-semi-theme/src"]
+    }
+  },
   "references": []
 }

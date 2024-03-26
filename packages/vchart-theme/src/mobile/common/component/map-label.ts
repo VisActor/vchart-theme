@@ -1,5 +1,4 @@
 import type { IMapLabelTheme } from '@visactor/vchart-types';
-import { THEME_CONSTANTS } from '../constants';
 
 export const mapLabel: IMapLabelTheme = {
   visible: true,
@@ -7,18 +6,10 @@ export const mapLabel: IMapLabelTheme = {
   position: 'top',
   space: 10,
   nameLabel: {
-    visible: true,
-    style: {
-      fontSize: THEME_CONSTANTS.l6FontSize
-      // lineHeight: THEME_CONSTANTS.l6LineHeight,
-    }
+    visible: true
   },
   valueLabel: {
-    visible: true,
-    style: {
-      fontSize: THEME_CONSTANTS.l6FontSize
-      // lineHeight: THEME_CONSTANTS.l6LineHeight,
-    }
+    visible: true
   },
   background: {
     visible: true,

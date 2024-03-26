@@ -5,13 +5,21 @@ import fs from 'fs';
 import path from 'path';
 import { ThemeManager } from '@visactor/vchart';
 import { allThemeMap } from '../src';
-import { allThemeMap as semiAllThemeMap } from '../../vchart-semi-theme/src';
-import { allThemeMap as arcoAllThemeMap } from '../../vchart-arco-theme/src';
-import { allThemeMap as ttPlatformAllThemeMap } from '../../vchart-tt-platform-theme/src';
+import { allThemeMap as semiAllThemeMap } from '@visactor/vchart-semi-theme';
+import { allThemeMap as arcoAllThemeMap } from '@visactor/vchart-arco-theme';
+import { allThemeMap as ttPlatformAllThemeMap } from '@visactor/vchart-tt-platform-theme';
+import { allThemeMap as veOAllThemeMap } from '@visactor/vchart-ve-o-theme/cjs/theme-map';
 
 const VCHART_THEME_PROJECT_ROOT = process.cwd();
 const targetPaths = [path.resolve(VCHART_THEME_PROJECT_ROOT, './public')];
-const allMaps = [ThemeManager.themes, allThemeMap, semiAllThemeMap, arcoAllThemeMap, ttPlatformAllThemeMap];
+const allMaps = [
+  ThemeManager.themes,
+  allThemeMap,
+  semiAllThemeMap,
+  arcoAllThemeMap,
+  ttPlatformAllThemeMap,
+  veOAllThemeMap
+];
 
 const result: string[] = [];
 allMaps.forEach(themeMap =>

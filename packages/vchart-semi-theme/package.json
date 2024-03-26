@@ -1,6 +1,6 @@
 {
   "name": "@visactor/vchart-semi-theme",
-  "version": "1.9.4",
+  "version": "1.10.2",
   "description": "Extended themes for VChart",
   "sideEffects": false,
   "main": "cjs/index.js",
@@ -18,17 +18,17 @@
     "build": "bundle && npm run export",
     "export": "ts-node scripts/export-theme.ts",
     "dev": "bundle --clean -f es -w",
-    "start": "vite serve __tests__/runtime/browser",
+    "start": "vite serve demo",
     "test": "jest",
     "test-cov": "jest -w 16 --coverage",
     "test-live": "npm run test-watch __tests__/unit/",
     "test-watch": "DEBUG_MODE=1 jest --watch"
   },
   "peerDependencies": {
-    "@visactor/vchart": "~1.9.4"
+    "@visactor/vchart": "~1.10.2"
   },
   "dependencies": {
-    "@visactor/vchart-theme-utils": "workspace:1.9.4"
+    "@visactor/vchart-theme-utils": "workspace:1.10.2"
   },
   "devDependencies": {
     "@esbuild-plugins/node-globals-polyfill": "0.1.1",
@@ -63,8 +63,8 @@
     "vite": "^4.5.0",
     "vite-plugin-svgr": "^4.1.0",
     "@babel/runtime": "latest",
-    "@visactor/vchart": "~1.9.4",
-    "@visactor/react-vchart": "~1.9.4",
+    "@visactor/vchart": "~1.10.2",
+    "@visactor/react-vchart": "~1.10.2",
     "@douyinfe/semi-ui": "^2.51.3",
     "@douyinfe/semi-icons": "latest",
     "@douyinfe/semi-icons-lab": "latest"

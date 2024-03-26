@@ -1,10 +1,10 @@
-import type { IThemeConstants } from '@visactor/vchart-types';
+import type { BuiltinTokenMap } from '@visactor/vchart';
 
-export const THEME_CONSTANTS: IThemeConstants = {
-  defaultFontFamily:
+export const token: BuiltinTokenMap = {
+  fontFamily:
     // eslint-disable-next-line max-len
     'PingFang SC,Helvetica Neue,Microsoft Yahei,system-ui,-apple-system,segoe ui,Roboto,Helvetica,Arial,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol',
-  defaultFontSize: 12,
+  fontSize: 12,
 
   l1FontSize: 30,
   l1LineHeight: '150%',
@@ -22,9 +22,5 @@ export const THEME_CONSTANTS: IThemeConstants = {
   l5LineHeight: '130%',
 
   l6FontSize: 8,
-  l6LineHeight: '120%',
-
-  axisTickSize: 0,
-
-  areaOpacity: 0.2
+  l6LineHeight: '120%'
 };

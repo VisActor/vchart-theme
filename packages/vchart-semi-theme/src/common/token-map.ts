@@ -30,16 +30,16 @@ export const paletteTokenMap: PaletteTokenMap = {
   /** 第三字色 */
   tertiaryFontColor: '--semi-color-text-2',
   /** 轴标签字色 */
-  axisLabelFontColor: '--semi-color-text-0',
+  axisLabelFontColor: '--semi-color-text-2',
   /** 禁用字色 */
   disableFontColor: '--semi-color-disabled-text',
   /** 轴高亮标记字色 */
   axisMarkerFontColor: '--semi-color-bg-0',
 
   /** 轴网格线颜色 */
-  axisGridColor: '--semi-color-line-2',
+  axisGridColor: '--semi-grey-2', //用上边定义的lineColor2
   /** 轴线颜色 */
-  axisDomainColor: '--semi-color-line-1',
+  axisDomainColor: '--semi-grey-3', //用上边定义的lineColor1
 
   /** 十字准星背景色 */
   crosshairBackgroundColor: '--semi-color-fill-0',
@@ -59,7 +59,7 @@ export const paletteTokenMap: PaletteTokenMap = {
   /** 标注标签背景颜色 */
   markLabelBackgroundColor: '--semi-color-border',
   /** 标注线颜色 */
-  markLineStrokeColor: '--semi-color-line-0',
+  markLineStrokeColor: '--semi-grey-5', //用上边定义的lineColor0
 
   /** 危险色 */
   dangerColor: '--semi-color-danger',

@@ -18,6 +18,7 @@ VChart 的扩展主题
 | [@visactor/vchart-semi-theme](https://github.com/VisActor/vchart-theme/tree/main/packages/vchart-semi-theme)               |                  [![npm Version](https://img.shields.io/npm/v/@visactor/vchart-semi-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-semi-theme) [![npm Download](https://img.shields.io/npm/dm/@visactor/vchart-semi-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-semi-theme) [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/visactor/vchart-semi-theme/blob/main/LICENSE)                   |
 | [@visactor/vchart-arco-theme](https://github.com/VisActor/vchart-theme/tree/main/packages/vchart-arco-theme)               |                  [![npm Version](https://img.shields.io/npm/v/@visactor/vchart-arco-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-arco-theme) [![npm Download](https://img.shields.io/npm/dm/@visactor/vchart-arco-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-arco-theme) [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/visactor/vchart-arco-theme/blob/main/LICENSE)                   |
 | [@visactor/vchart-tt-platform-theme](https://github.com/VisActor/vchart-theme/tree/main/packages/vchart-tt-platform-theme) | [![npm Version](https://img.shields.io/npm/v/@visactor/vchart-tt-platform-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-tt-platform-theme) [![npm Download](https://img.shields.io/npm/dm/@visactor/vchart-tt-platform-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-tt-platform-theme) [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/visactor/vchart-tt-platform-theme/blob/main/LICENSE) |
+| [@visactor/vchart-ve-o-theme](https://github.com/VisActor/vchart-theme/tree/main/packages/vchart-ve-o-theme)               |                  [![npm Version](https://img.shields.io/npm/v/@visactor/vchart-ve-o-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-ve-o-theme) [![npm Download](https://img.shields.io/npm/dm/@visactor/vchart-ve-o-theme.svg)](https://www.npmjs.com/package/@visactor/vchart-ve-o-theme) [![license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/visactor/vchart-ve-o-theme/blob/main/LICENSE)                   |
 
 </div>
 
@@ -33,6 +34,7 @@ VChart 的扩展主题
 2. [vchart-semi-theme](https://github.com/VisActor/vchart-theme/tree/develop/packages/vchart-semi-theme)：和 [Semi Design](https://github.com/DouyinFE/semi-design) 搭配使用的动态图表主题
 3. [vchart-arco-theme](https://github.com/VisActor/vchart-theme/tree/develop/packages/vchart-arco-theme)：和 [ArcoDesign](https://github.com/arco-design) 搭配使用的动态图表主题
 4. [vchart-tt-platform-theme](https://github.com/VisActor/vchart-theme/tree/develop/packages/vchart-tt-platform-theme)：和 [Semi Design](https://github.com/DouyinFE/semi-design) 搭配使用的、TT Platform 风格的动态图表主题
+5. [vchart-ve-o-theme](https://github.com/VisActor/vchart-theme/tree/develop/packages/vchart-ve-o-theme)：和 [ArcoDesign](https://github.com/arco-design) 搭配使用的、源力设计风格的动态图表主题
 
 # 使用
 

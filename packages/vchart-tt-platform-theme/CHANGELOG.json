@@ -2,6 +2,12 @@
   "name": "@visactor/vchart-tt-platform-theme",
   "entries": [
     {
+      "version": "1.11.0",
+      "tag": "@visactor/vchart-tt-platform-theme_v1.11.0",
+      "date": "Wed, 15 May 2024 04:09:02 GMT",
+      "comments": {}
+    },
+    {
       "version": "1.10.3",
       "tag": "@visactor/vchart-tt-platform-theme_v1.10.3",
       "date": "Thu, 11 Apr 2024 03:30:34 GMT",

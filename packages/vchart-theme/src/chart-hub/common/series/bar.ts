@@ -2,7 +2,8 @@ import type { ISeriesTheme, SeriesTypeEnum, SeriesTypeForThemeEnum } from '@visa
 
 const bar: ISeriesTheme['bar'] = {
   barWidth: 8,
-  barGapInGroup: 4,
+  // @ts-ignore
+  barGapInGroup: 4, // FIXME: typeError
   label: {
     style: {
       fill: { type: 'palette', key: 'secondaryFontColor' }
@@ -11,7 +12,8 @@ const bar: ISeriesTheme['bar'] = {
 };
 
 const bar_horizontal: ISeriesTheme['bar'] = {
-  stackCornerRadius: [0, 1, 1, 0],
+  // @ts-ignore
+  stackCornerRadius: [0, 1, 1, 0], // FIXME: typeError
   label: {
     position: 'right',
     offset: 4
@@ -19,7 +21,8 @@ const bar_horizontal: ISeriesTheme['bar'] = {
 };
 
 const bar_vertical: ISeriesTheme['bar'] = {
-  stackCornerRadius: [1, 1, 0, 0],
+  // @ts-ignore
+  stackCornerRadius: [1, 1, 0, 0], // FIXME: typeError
   label: {
     position: 'top',
     offset: 4

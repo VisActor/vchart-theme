@@ -1,16 +1,22 @@
 import type { ISeriesTheme } from '@visactor/vchart';
 
 export const gauge: ISeriesTheme = {
-  gauge: {
-    // FIXME: 不生效
-    outerRadius: 0.8,
-    innerRadius: 0.6,
-    // FIXME: 不生效
-    segment: {
+  circularProgress: {
+    // FIXME: not work
+    // radius: 1,
+    // innerRadius: 0.1,
+    progress: {
       style: {
-        fill: 'red',
-        fillOpacity: 1,
-        cornerRadius: 100
+        cornerRadius: 100,
+        fill: { type: 'palette', key: 'bandColor' }
+      }
+    },
+    track: {
+      interactive: false,
+      style: {
+        cornerRadius: 100,
+        fill: '#DCDEE1',
+        fillOpacity: 1
       }
     }
   },

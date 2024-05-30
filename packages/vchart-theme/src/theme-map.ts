@@ -1,4 +1,4 @@
-import type { ITheme } from '@visactor/vchart-types';
+import type { ITheme } from '@visactor/vchart';
 import { vScreenThemeList } from './v-screen';
 import { legacyDarkTheme, legacyLightTheme } from './legacy';
 import { mobileDarkTheme, mobileLightTheme } from './mobile';

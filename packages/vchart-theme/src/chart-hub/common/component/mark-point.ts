@@ -2,7 +2,8 @@ import type { IMarkPointTheme } from '@visactor/vchart';
 
 export const markPoint: IMarkPointTheme = {
   itemContent: {
-    autoRotate: false,
+    // @ts-ignore
+    autoRotate: false, // FIXME: type error
     offsetY: -16,
     text: {
       style: {

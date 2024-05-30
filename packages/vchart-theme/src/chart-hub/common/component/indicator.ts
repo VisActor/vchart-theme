@@ -13,7 +13,6 @@ export const indicator: IIndicatorTheme = {
     visible: true,
     style: {
       fill: '#85878A',
-      // fill: { type: 'palette', key: 'blackColors65' },
       fontWeight: 400,
       fontSize: 12
     }

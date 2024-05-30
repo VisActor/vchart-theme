@@ -54,6 +54,5 @@ export const chartHubLightTheme: ITheme = {
     treemap,
     heatmap
   },
-  // mark: markByType,
   markByName
 };

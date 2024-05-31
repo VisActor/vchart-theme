@@ -23,6 +23,7 @@ import { markArea } from './common/component/mark-area';
 import { markPoint } from './common/component/mark-point';
 import { dataZoom } from './common/component/data-zoom';
 import { scrollBar } from './common/component/scroll-bar';
+import { radar } from './common/series/radar';
 
 export const chartHubLightTheme: ITheme = {
   name: 'chartHubLight',
@@ -52,7 +53,8 @@ export const chartHubLightTheme: ITheme = {
     pie,
     funnel,
     treemap,
-    heatmap
+    heatmap,
+    radar
   },
   markByName
 };

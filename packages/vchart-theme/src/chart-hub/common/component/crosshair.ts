@@ -8,7 +8,8 @@ export const crosshair: ICrosshairTheme = {
       visible: true,
       style: {
         fill: '#CCD7EB',
-        fillOpacity: 0.4
+        fillOpacity: 0.4,
+        lineDash: []
       }
     },
     label: {

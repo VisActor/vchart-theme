@@ -53,7 +53,8 @@ export const legend: Partial<IComponentTheme> = {
           fill: '#85878A',
           fontSize: 12,
           lineHeight: 12,
-          opacity: 1
+          opacity: 1,
+          fontWeight: 400
         },
         state: {
           unSelected: {

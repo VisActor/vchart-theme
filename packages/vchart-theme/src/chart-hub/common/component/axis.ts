@@ -49,7 +49,7 @@ export const axis: Pick<
       style: {
         fontSize: 12,
         fill: { type: 'palette', key: 'blackColors45' },
-        fontWeight: 'normal',
+        fontWeight: 400,
         fillOpacity: 1
       }
     },

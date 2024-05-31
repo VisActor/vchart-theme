@@ -7,7 +7,12 @@ export const area: Pick<
   area: {
     point: {
       style: {
-        visible: false
+        visible: false,
+        size: 12,
+        lineWidth: 2,
+        shadowColor: 'rgba(0, 0, 0, 0.1)',
+        shadowBlur: 3,
+        stroke: { type: 'palette', key: 'whiteColors100' }
       }
     },
     line: {
@@ -25,25 +30,6 @@ export const area: Pick<
         selected: {
           fillOpacity: 0.5
         }
-      }
-    }
-  },
-  area_horizontal: {
-    seriesMark: 'line',
-    area: {
-      style: {
-        fillOpacity: 0.25,
-        lineWidth: 2
-      },
-      state: {
-        selected: {
-          fillOpacity: 0.5
-        }
-      }
-    },
-    point: {
-      style: {
-        visible: false
       }
     }
   }

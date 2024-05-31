@@ -1,10 +1,9 @@
 import type { ISeriesTheme } from '@visactor/vchart';
 
-export const line: ISeriesTheme['line'] = {
+export const radar: ISeriesTheme['radar'] = {
   line: {
     style: {
-      lineWidth: 2,
-      curveType: 'monotone'
+      lineWidth: 1
     }
   },
   point: {
@@ -16,6 +15,9 @@ export const line: ISeriesTheme['line'] = {
       shadowBlur: 3,
       stroke: { type: 'palette', key: 'whiteColors100' }
     }
+  },
+  area: {
+    visible: true
   },
   label: {
     position: 'top',

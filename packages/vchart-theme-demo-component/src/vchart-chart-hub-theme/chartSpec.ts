@@ -444,7 +444,7 @@ export const ringSpec = {
     }
   },
   label: {
-    formatMethod: (value, data) => {
+    formatMethod: (value: any, data: any) => {
       return {
         type: 'rich',
         text: [
@@ -508,7 +508,7 @@ export const pieSpec = {
     }
   },
   label: {
-    formatMethod: (value, data) => {
+    formatMethod: (value: any, data: any) => {
       return {
         type: 'rich',
         text: [
@@ -912,12 +912,12 @@ export const horizontalBarSpec = {
       dataId: 'barData',
       visible: true,
       style: {
-        text: datum => datum.value,
+        text: (datum: any) => datum.value,
         fontSize: 12,
-        x: (datum, ctx) => {
+        x: (datum: any, ctx: any) => {
           return ctx.getRegion().getLayoutRect().width + 10;
         },
-        y: (datum, ctx) => {
+        y: (datum: any, ctx: any) => {
           return ctx.valueToY([datum.province]) + ctx.yBandwidth() / 2;
         },
         textBaseline: 'middle',
@@ -1203,12 +1203,12 @@ export const indicatorSankeySpec = {
       fillOpacity: 0,
       lineWidth: 1,
       stroke: '#1664FF',
-      html: (datum, a, c) => {
+      html: (datum: any, a: any, c: any) => {
         const color = '#1664FF';
         const hasSource = datum.targetLinks && datum.targetLinks.length;
 
         return {
-          style: ({ width, height }) => {
+          style: ({ width, height }: any) => {
             return {
               'border-right': `8px solid ${color}`,
               width: `${width}px`,

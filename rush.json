@@ -20,11 +20,6 @@
   "allowedProjectTags": ["tool", "share", "package", "doc"],
   "projects": [
     {
-      "packageName": "@visactor/test",
-      "projectFolder": "packages/test",
-      "shouldPublish": false
-    },
-    {
       "packageName": "@visactor/vchart-theme-demo-component",
       "projectFolder": "packages/vchart-theme-demo-component",
       "shouldPublish": false

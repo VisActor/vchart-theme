@@ -23,7 +23,7 @@ const Charts = () => {
       {charts.map((chart, i) => {
         return (
           <Col span={12} key={i} style={{ marginBottom: 16 }}>
-            <Card className="chartContainer" padding="0" bordered={false} headerLine={true} title={chart.title}>
+            <Card className="chartContainer" bordered={false} headerLine={true} title={chart.title}>
               <VChartComponent
                 spec={{
                   ...chart.spec,

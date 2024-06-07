@@ -2,12 +2,9 @@
  * @type {Partial<import('@internal/bundler').Config>}
  */
 module.exports = {
-  formats: ['cjs', 'es', 'umd'],
+  formats: ['cjs', 'es'],
   outputDir: {
     es: 'esm',
-    cjs: 'cjs',
-    umd: 'build'
-  },
-  name: 'vchart-theme-demo-component',
-  umdOutputFilename: 'index'
+    cjs: 'cjs'
+  }
 };

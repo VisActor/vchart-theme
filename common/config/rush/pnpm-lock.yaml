@@ -306,6 +306,9 @@ importers:
       '@internal/eslint-config': workspace:*
       '@internal/ts-config': workspace:*
       '@rushstack/eslint-patch': ~1.1.4
+      '@types/jest': ~29.5.0
+      '@types/node': '*'
+      '@types/offscreencanvas': 2019.6.4
       '@types/react': ^17.0.0
       '@types/react-dom': ^17.0.0
       '@visactor/react-vchart': 1.11.0
@@ -321,8 +324,8 @@ importers:
       vite: ^4.5.0
     dependencies:
       '@arco-design/web-react': 2.61.2_42iwexueogtmu5amowprdpoisy
-      '@douyinfe/semi-icons': 2.59.1_react@18.2.0
-      '@douyinfe/semi-icons-lab': 2.59.1_biqbaboplfbrettd7655fr4n2y
+      '@douyinfe/semi-icons': 2.60.0_react@18.2.0
+      '@douyinfe/semi-icons-lab': 2.60.0_biqbaboplfbrettd7655fr4n2y
       '@douyinfe/semi-ui': 2.55.5_biqbaboplfbrettd7655fr4n2y
       '@visactor/react-vchart': 1.11.0_biqbaboplfbrettd7655fr4n2y
       '@visactor/vchart': 1.11.0
@@ -333,6 +336,9 @@ importers:
       '@internal/eslint-config': link:../../share/eslint-config
       '@internal/ts-config': link:../../share/ts-config
       '@rushstack/eslint-patch': 1.1.4
+      '@types/jest': 29.5.12
+      '@types/node': 20.12.7
+      '@types/offscreencanvas': 2019.6.4
       '@types/react': 17.0.80
       '@types/react-dom': 17.0.25
       '@vitejs/plugin-react': 4.2.1_vite@4.5.3
@@ -341,7 +347,7 @@ importers:
       react-device-detect: 2.2.3_biqbaboplfbrettd7655fr4n2y
       react-dom: 18.2.0_react@18.2.0
       typescript: 4.9.5
-      vite: 4.5.3
+      vite: 4.5.3_@types+node@20.12.7
 
   ../../packages/vchart-theme-utils:
     specifiers:
@@ -12281,41 +12287,6 @@ packages:
       - rollup
       - supports-color
       - typescript
-    dev: true
-
-  /vite/4.5.3:
-    resolution: {integrity: sha512-kQL23kMeX92v3ph7IauVkXkikdDRsYMGTVl5KY2E9OY4ONLvkHf04MDTbnfo6NKxZiDLWzVpP5oTa8hQD8U3dg==}
-    engines: {node: ^14.18.0 || >=16.0.0}
-    hasBin: true
-    peerDependencies:
-      '@types/node': '>= 14'
-      less: '*'
-      lightningcss: ^1.21.0
-      sass: '*'
-      stylus: '*'
-      sugarss: '*'
-      terser: ^5.4.0
-    peerDependenciesMeta:
-      '@types/node':
-        optional: true
-      less:
-        optional: true
-      lightningcss:
-        optional: true
-      sass:
-        optional: true
-      stylus:
-        optional: true
-      sugarss:
-        optional: true
-      terser:
-        optional: true
-    dependencies:
-      esbuild: 0.18.20
-      postcss: 8.4.38
-      rollup: 3.29.4
-    optionalDependencies:
-      fsevents: 2.3.3
     dev: true
 
   /vite/4.5.3_@types+node@20.12.7:

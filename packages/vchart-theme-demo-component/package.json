@@ -1,6 +1,6 @@
 {
   "name": "@visactor/vchart-theme-demo-component",
-  "version": "0.0.1",
+  "version": "0.0.1-alpha.0",
   "description": "theme demo page in vchart site",
   "sideEffects": false,
   "main": "cjs/index.js",
@@ -46,5 +46,8 @@
     "@types/jest": "~29.5.0",
     "@types/offscreencanvas": "2019.6.4",
     "@types/node": "*"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }

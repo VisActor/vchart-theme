@@ -1,7 +1,7 @@
 import React from 'react';
 import { Nav, Avatar } from '@douyinfe/semi-ui';
 import { IconFeishuLogo, IconHelpCircle, IconBell } from '@douyinfe/semi-icons';
-import './style.css';
+import './style/style';
 import Charts from './charts.jsx';
 
 const Frame = () => {

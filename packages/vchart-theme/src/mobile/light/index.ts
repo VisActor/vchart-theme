@@ -1,4 +1,4 @@
-import type { ITheme } from '@visactor/vchart-types';
+import type { ITheme } from '@visactor/vchart';
 import { component } from '../common/component';
 import { markByName, markByType } from '../common/mark';
 import { token } from '../common/constants';

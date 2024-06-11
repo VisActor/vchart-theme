@@ -14,6 +14,7 @@
     "compile": "tsc --noEmit",
     "eslint": "eslint --debug --fix src/",
     "build": "bundle",
+    "buildLess": "DEBUG='Bundler*' bundle --less true",
     "dev": "bundle --clean -f es -w",
     "start": "vite ./vite",
     "start1": "vite ./vite1",

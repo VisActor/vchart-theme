@@ -94,3 +94,5 @@ tsconfig.tsbuildinfo
 
 # git-hook
 common/scripts/pre-commit
+
+.vite

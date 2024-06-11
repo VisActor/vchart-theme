@@ -11,7 +11,8 @@ import markLine from './charts/mark-line';
 import markPoint from './charts/mark-point';
 import gauge from './charts/gauge';
 import funnel from './charts/funnel';
+import treemap from './charts/treemap';
 
-export { area, column, pie, bar, rose, radar, scatter, heatmap, gauge, funnel, markArea, markLine, markPoint };
+export { area, column, pie, bar, rose, radar, scatter, heatmap, gauge, funnel, markArea, markLine, markPoint, treemap };
 
 export * from './charts/interface';

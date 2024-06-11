@@ -1,4 +1,4 @@
-import type { ITheme } from '@visactor/vchart-types';
+import type { ITheme } from '@visactor/vchart';
 import { markByName } from './mark';
 import { axis } from './component/axis';
 import { crosshair } from './component/crosshair';
@@ -13,6 +13,7 @@ export const getVScreenCommonTheme = (name: string, description: string, dataSch
   type: 'dark',
   colorScheme: getColorScheme(dataScheme),
   markByName,
+  // @ts-ignore
   series: {
     ...bar,
     ...area

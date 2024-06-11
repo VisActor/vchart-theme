@@ -7,6 +7,7 @@ import { chartHubLightTheme } from '@visactor/vchart-theme';
 
 import { Card } from '@douyinfe/semi-ui';
 import { Grid } from '@arco-design/web-react';
+import '@arco-design/web-react/dist/css/arco.css';
 
 const { Row, Col } = Grid;
 
@@ -17,7 +18,7 @@ const gutter = 16;
 VChart.ThemeManager.registerTheme('chart-hub-light', chartHubLightTheme);
 VChart.ThemeManager.setCurrentTheme('chart-hub-light');
 
-const Charts = () => {
+export const Charts = () => {
   return (
     <Row gutter={gutter}>
       {charts.map((chart, i) => {
@@ -41,5 +42,3 @@ const Charts = () => {
     </Row>
   );
 };
-
-export default Charts;

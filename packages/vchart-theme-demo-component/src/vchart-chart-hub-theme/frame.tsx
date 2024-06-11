@@ -2,9 +2,9 @@ import React from 'react';
 import { Nav, Avatar } from '@douyinfe/semi-ui';
 import { IconFeishuLogo, IconHelpCircle, IconBell } from '@douyinfe/semi-icons';
 import './style/style';
-import Charts from './charts.jsx';
+import { Charts } from './charts';
 
-const Frame = () => {
+export const Frame = () => {
   return (
     <div className="rootSidenav">
       <Nav
@@ -40,4 +40,4 @@ const Frame = () => {
   );
 };
 
-export default Frame;
+// export default Frame;

@@ -1,1 +1,1 @@
-export * as ChartHubThemePage from './frame';
+export * from './frame';

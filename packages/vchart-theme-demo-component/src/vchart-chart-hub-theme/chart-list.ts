@@ -1,19 +1,17 @@
 import type { IChartInfo } from '../interface';
-import {
-  areaSpec,
-  barGroupHorizontalSpec,
-  barGroupSpec,
-  barStackedHorizontalSpec,
-  barStackedSpec,
-  lineSpec,
-  ringSpec,
-  pieSpec,
-  radarSpec,
-  gaugeSpec,
-  horizontalBarSpec,
-  scatterSpec,
-  indicatorSankeySpec
-} from './chartSpec';
+import { areaSpec } from '../spec/area';
+import { barGroupSpec } from '../spec/barGroup';
+import { barGroupHorizontalSpec } from '../spec/barGroupHorizontal';
+import { barStackedSpec } from '../spec/barStacked';
+import { barStackedHorizontalSpec } from '../spec/barStackedHorizontal';
+import { gaugeSpec } from '../spec/gauge';
+import { horizontalBarSpec } from '../spec/horizontalBar';
+import { indicatorSankeySpec } from '../spec/indicatorSankey';
+import { lineSpec } from '../spec/line';
+import { pieSpec } from '../spec/pie';
+import { radarSpec } from '../spec/radar';
+import { ringSpec } from '../spec/ring';
+import { scatterSpec } from '../spec/scatter';
 
 export const charts: IChartInfo[] = [
   {

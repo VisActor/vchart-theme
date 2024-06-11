@@ -1,6 +1,11 @@
 # Change Log - @visactor/vchart-theme
 
-This log was last generated on Wed, 15 May 2024 04:09:02 GMT and should not be manually modified.
+This log was last generated on Tue, 11 Jun 2024 12:08:57 GMT and should not be manually modified.
+
+## 1.11.1
+Tue, 11 Jun 2024 12:08:57 GMT
+
+_Version update only_
 
 ## 1.11.0
 Wed, 15 May 2024 04:09:02 GMT

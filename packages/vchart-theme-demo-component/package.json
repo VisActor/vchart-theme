@@ -15,8 +15,7 @@
     "eslint": "eslint --debug --fix src/",
     "build": "bundle --clean --less true",
     "dev": "bundle --clean -f es -w",
-    "start": "vite ./vite",
-    "start1": "vite ./vite1",
+    "start": "vite ./demo",
     "prepublishOnly": "npm run build"
   },
   "dependencies": {

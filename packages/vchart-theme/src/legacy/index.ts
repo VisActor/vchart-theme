@@ -1,6 +1,6 @@
 import { colorLegend } from './legend/color-legend';
 import { sizeLegend } from './legend/size-legend';
-import type { ITheme } from '@visactor/vchart-types';
+import type { ITheme } from '@visactor/vchart';
 
 export const legacyLightTheme: ITheme = {
   name: 'legacyLight',

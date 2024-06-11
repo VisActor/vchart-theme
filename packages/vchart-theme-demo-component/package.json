@@ -1,6 +1,6 @@
 {
   "name": "@visactor/vchart-theme-demo-component",
-  "version": "0.0.1-alpha.2",
+  "version": "0.0.1-alpha.3",
   "description": "theme demo page in vchart site",
   "sideEffects": false,
   "main": "cjs/index.js",

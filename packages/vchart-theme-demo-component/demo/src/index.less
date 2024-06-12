@@ -1,0 +1,30 @@
+.theme-demo-container {
+  width: 100%;
+  height: 100%;
+  background: var(--color-fill-2);
+  display: flex;
+  flex-direction: column;
+}
+
+@theme-demo-iframe-margin: 30px;
+
+.theme-demo-iframe {
+  margin: @theme-demo-iframe-margin;
+  width: calc(100% - @theme-demo-iframe-margin * 2);
+  height: calc(100% - @theme-demo-iframe-margin * 2);
+  border: 1px solid var(--color-neutral-3);
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  min-width: 1100px;
+}
+
+.theme-demo-description {
+  margin: -20px @theme-demo-iframe-margin - 10px -10px;
+  a {
+    color: rgb(var(--arcoblue-6));
+  }
+}
+
+.theme-demo-description h2 {
+  margin-top: 1em !important;
+}

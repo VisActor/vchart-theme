@@ -38,7 +38,7 @@ export function buildStyle(
         // see file type: https://www.npmjs.com/package/vinyl
         through2.obj(function foo(file, _encoding, next) {
           this.push(file.clone());
-          if (file.path.match(/(\/|\\)style(\/|\\)index\.less$/)) {
+          if (file.path.match(/(\/|\\)style\.less$/)) {
             // contact output entry less file
             const relativePath = path.relative(`${outputDir.umd}/css`, outputDir.es!);
             lessEntry.push(`@import '${relativePath}/${file.relative}';`);

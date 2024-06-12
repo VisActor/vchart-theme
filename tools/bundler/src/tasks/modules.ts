@@ -139,7 +139,7 @@ export function compile(
         .pipe(
           through2.obj(function z(file, encoding, next) {
             this.push(file.clone());
-            if (file.path.match(/(\/|\\)style(\/|\\)index\.js/)) {
+            if (file.path.match(/(\/|\\)style\.js/)) {
               DebugCompile('CSS inject for', file.path);
 
               const content = file.contents.toString(encoding);

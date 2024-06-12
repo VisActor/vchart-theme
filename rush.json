@@ -22,7 +22,7 @@
     {
       "packageName": "@visactor/vchart-theme-demo-component",
       "projectFolder": "packages/vchart-theme-demo-component",
-      "shouldPublish": false
+      "shouldPublish": true
     },
     {
       "packageName": "@visactor/vchart-theme",

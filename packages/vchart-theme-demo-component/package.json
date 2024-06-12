@@ -1,6 +1,6 @@
 {
   "name": "@visactor/vchart-theme-demo-component",
-  "version": "0.0.1-alpha.5",
+  "version": "1.11.1",
   "description": "theme demo page in vchart site",
   "sideEffects": false,
   "main": "cjs/index.js",
@@ -23,8 +23,8 @@
     "@douyinfe/semi-icons": "latest",
     "@douyinfe/semi-icons-lab": "latest",
     "@arco-design/web-react": "^2.32.2",
-    "@visactor/vchart-theme-utils": "1.11.1-alpha.2",
-    "@visactor/vchart-theme": "1.11.1-alpha.2",
+    "@visactor/vchart-theme-utils": "workspace:1.11.1",
+    "@visactor/vchart-theme": "workspace:1.11.1",
     "@visactor/vchart": "1.11.0",
     "@visactor/react-vchart": "1.11.0"
   },
@@ -33,6 +33,10 @@
     "react-dom": ">=16.0.0"
   },
   "devDependencies": {
+    "@internal/bundler": "workspace:*",
+    "@internal/eslint-config": "workspace:*",
+    "@internal/ts-config": "workspace:*",
+    "@internal/jest-config": "workspace:*",
     "@rushstack/eslint-patch": "~1.1.4",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",

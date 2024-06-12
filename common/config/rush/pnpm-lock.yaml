@@ -1,8 +1,5 @@
 lockfileVersion: 5.4
 
-overrides:
-  '@visactor/vchart-theme': 1.11.1-alpha.2
-
 importers:
 
   .:
@@ -304,6 +301,7 @@ importers:
       '@douyinfe/semi-ui': ^2.51.3
       '@internal/bundler': workspace:*
       '@internal/eslint-config': workspace:*
+      '@internal/jest-config': workspace:*
       '@internal/ts-config': workspace:*
       '@rushstack/eslint-patch': ~1.1.4
       '@types/jest': ~29.5.0
@@ -313,8 +311,8 @@ importers:
       '@types/react-dom': ^17.0.0
       '@visactor/react-vchart': 1.11.0
       '@visactor/vchart': 1.11.0
-      '@visactor/vchart-theme': 1.11.1-alpha.2
-      '@visactor/vchart-theme-utils': workspace:1.11.0
+      '@visactor/vchart-theme': workspace:1.11.1
+      '@visactor/vchart-theme-utils': workspace:1.11.1
       '@vitejs/plugin-react': ^4.1.1
       eslint: ~8.18.0
       react: ^18.0.0
@@ -329,11 +327,12 @@ importers:
       '@douyinfe/semi-ui': 2.55.5_biqbaboplfbrettd7655fr4n2y
       '@visactor/react-vchart': 1.11.0_biqbaboplfbrettd7655fr4n2y
       '@visactor/vchart': 1.11.0
-      '@visactor/vchart-theme': 1.11.1-alpha.2_@visactor+vchart@1.11.0
+      '@visactor/vchart-theme': link:../vchart-theme
       '@visactor/vchart-theme-utils': link:../vchart-theme-utils
     devDependencies:
       '@internal/bundler': link:../../tools/bundler
       '@internal/eslint-config': link:../../share/eslint-config
+      '@internal/jest-config': link:../../share/jest-config
       '@internal/ts-config': link:../../share/ts-config
       '@rushstack/eslint-patch': 1.1.4
       '@types/jest': 29.5.12
@@ -4242,14 +4241,6 @@ packages:
       react-dom: 18.2.0_react@18.2.0
       react-is: 18.2.0
 
-  /@visactor/vchart-theme/1.11.1-alpha.2_@visactor+vchart@1.11.0:
-    resolution: {integrity: sha512-sq5Tqr9AVe7tY42OKZB5oA1RFeFSl3fRfYjfM7AfnxeXudkLbOSKb1IxLhxC/a7TnXkblw+DMsv40t0iQmj9CA==}
-    peerDependencies:
-      '@visactor/vchart': '>=1.10.4'
-    dependencies:
-      '@visactor/vchart': 1.11.0
-    dev: false
-
   /@visactor/vchart-types/1.11.0:
     resolution: {integrity: sha512-YAcYvfy2rv/HZYOEFjFb7s/Rcx1kDQs4Q77nZa/2+0lgcLwEhwmJymUFT8giklGxlKzwvqj0dkM0AplUs767uA==}
     dev: true
@@ -5883,7 +5874,6 @@ packages:
     engines: {node: '>=0.11'}
     dependencies:
       '@babel/runtime': 7.24.7
-    dev: true
 
   /date-time/3.1.0:
     resolution: {integrity: sha512-uqCUKXE5q1PNBXjPqvwhwJf9SwMoAHBgWJ6DcrnS5o+W2JOiIILl0JEdVD8SGujrNS02GGxgwAg2PN2zONgtjg==}

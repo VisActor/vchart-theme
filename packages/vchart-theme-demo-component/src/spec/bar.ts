@@ -14,7 +14,6 @@ export const barSpec = {
       { type: 'Autocracies', year: '2018', value: 80 }
     ]
   },
-  height: 500,
   xField: ['year', 'type'],
   yField: 'value',
   seriesField: 'type',

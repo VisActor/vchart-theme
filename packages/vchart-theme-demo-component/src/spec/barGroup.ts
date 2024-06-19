@@ -34,7 +34,6 @@ export const barGroupSpec = {
       { type: 'Price', year: '2018', value: 99 }
     ]
   },
-  height: 500,
   xField: ['year', 'type'],
   yField: 'value',
   seriesField: 'type',

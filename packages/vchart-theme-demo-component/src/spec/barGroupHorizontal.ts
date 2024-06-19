@@ -18,7 +18,6 @@ export const barGroupHorizontalSpec = {
       { type: 'Democracies', year: '1990', value: 57 }
     ]
   },
-  height: 500,
   direction: 'horizontal',
   xField: 'value',
   yField: ['year', 'type'],

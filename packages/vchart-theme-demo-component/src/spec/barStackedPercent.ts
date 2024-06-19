@@ -36,7 +36,6 @@ export const barStackedPercentSpec = {
       { type: 'Price', year: '2018', value: 99 }
     ]
   },
-  height: 500,
   xField: 'year',
   yField: 'value',
   seriesField: 'type',

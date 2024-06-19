@@ -4,7 +4,7 @@ import { IconFeishuLogo, IconHelpCircle, IconBell } from '@douyinfe/semi-icons';
 import './style/style';
 import { Charts } from './charts';
 
-export const Frame = () => {
+export function Frame(props: { language?: 'zh' | 'en' }) {
   return (
     <div className="rootSidenav">
       <Nav
@@ -32,12 +32,10 @@ export const Frame = () => {
       <div className="main">
         <div className="right">
           <div className="frame1321317607">
-            <Charts />
+            <Charts language={props.language} />
           </div>
         </div>
       </div>
     </div>
   );
-};
-
-// export default Frame;
+}

@@ -2,6 +2,12 @@
   "name": "@visactor/vchart-ve-o-theme",
   "entries": [
     {
+      "version": "1.11.3",
+      "tag": "@visactor/vchart-ve-o-theme_v1.11.3",
+      "date": "Wed, 19 Jun 2024 11:37:42 GMT",
+      "comments": {}
+    },
+    {
       "version": "1.11.2",
       "tag": "@visactor/vchart-ve-o-theme_v1.11.2",
       "date": "Wed, 12 Jun 2024 06:24:15 GMT",

@@ -40,7 +40,6 @@ export const barStackedHorizontalSpec = {
       { type: 'E', year: '1990', value: 60 }
     ]
   },
-  height: 500,
   direction: 'horizontal',
   xField: 'value',
   yField: 'year',

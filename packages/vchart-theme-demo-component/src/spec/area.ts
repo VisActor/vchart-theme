@@ -32,7 +32,6 @@ export const areaSpec = {
       { type: 'Mascara', country: 'USA', value: 11261 }
     ]
   },
-  height: 600,
   xField: ['type'],
   yField: 'value',
   seriesField: 'country',

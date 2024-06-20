@@ -16,55 +16,68 @@ import { scatterSpec } from '../spec/scatter';
 export const charts: IChartInfo[] = [
   {
     title: 'Line Chart',
-    spec: lineSpec
+    spec: lineSpec,
+    fileName: 'line'
   },
   {
     title: 'Area Chart',
-    spec: areaSpec
+    spec: areaSpec,
+    fileName: 'area'
   },
   {
     title: 'Grouped Bar Chart',
-    spec: barGroupSpec
+    spec: barGroupSpec,
+    fileName: 'barGroup'
   },
   {
     title: 'Stacked Bar Chart',
-    spec: barStackedSpec
+    spec: barStackedSpec,
+    fileName: 'barStacked'
   },
   {
     title: 'Horizontal Grouped Bar Chart',
-    spec: barGroupHorizontalSpec
+    spec: barGroupHorizontalSpec,
+    fileName: 'horizontalBar'
   },
   {
     title: 'Horizontal Stacked Bar Chart',
-    spec: barStackedHorizontalSpec
+    spec: barStackedHorizontalSpec,
+    fileName: 'barStackedHorizontal'
   },
   {
     title: 'Pie Chart',
-    spec: pieSpec
+    spec: pieSpec,
+    fileName: 'pie'
   },
   {
     title: 'Ring Chart',
-    spec: ringSpec
+    spec: ringSpec,
+    fileName: 'ring'
   },
   {
     title: 'Gauge Chart',
-    spec: gaugeSpec
+    spec: gaugeSpec,
+    fileName: 'gauge'
   },
   {
     title: 'Horizontal Bar Chart',
-    spec: horizontalBarSpec
+    spec: horizontalBarSpec,
+    fileName: 'horizontalBar'
   },
   {
     title: 'Scatter Chart',
-    spec: scatterSpec
+    spec: scatterSpec,
+    fileName: 'scatter'
   },
   {
     title: 'Radar Chart',
-    spec: radarSpec
+    spec: radarSpec,
+    fileName: 'radar'
   },
   {
     title: 'Indicator Sankey Chart',
     spec: indicatorSankeySpec,
+    fileName: 'indicatorSankey',
     option: {
       enableHtmlAttribute: true
     }

@@ -39,6 +39,7 @@ export function Charts(props: IProps) {
     if (option) {
       url += `&initOption=${JSON.stringify(option)}`;
     }
+    url += `&theme=chartHubLight`;
     window.open(url);
   }, []);
 

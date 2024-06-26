@@ -20,6 +20,11 @@
   "allowedProjectTags": ["tool", "share", "package", "doc"],
   "projects": [
     {
+      "packageName": "@visactor/vchart-theme-converter",
+      "projectFolder": "packages/vchart-theme-converter",
+      "shouldPublish": false
+    },
+    {
       "packageName": "@visactor/vchart-theme-demo-component",
       "projectFolder": "packages/vchart-theme-demo-component",
       "tags": ["package"],

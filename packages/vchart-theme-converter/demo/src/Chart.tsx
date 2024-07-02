@@ -1,22 +1,17 @@
 import React, { useEffect, useRef } from 'react';
 import * as echarts from 'echarts';
 import VChart from '@visactor/vchart';
-import { initVChartSemiTheme } from '@visactor/vchart-semi-theme';
-import { EC2VC, VC2EC } from '../../src/index';
-import { theme as echartsLight } from './theme/echarts-light';
+import { VC2EC } from '../../src';
 
-initVChartSemiTheme({ isWatchingMode: true });
-
-// const echartsTheme = VC2EC(VChart.ThemeManager.getCurrentTheme());
-
-const echartsTheme = echartsLight;
-
-VChart.ThemeManager.registerTheme('echarts-light', EC2VC(echartsLight));
-VChart.ThemeManager.setCurrentTheme('echarts-light');
-console.log('echarts theme:', echartsLight);
-console.log('vchart theme:', VChart.ThemeManager.getCurrentTheme());
-export function Charts(props: { echartsOption: any; vchartSpec: any }) {
-  const { echartsOption, vchartSpec } = props;
+export function Charts(props: {
+  echartsOption: any;
+  vchartSpec: any;
+  themeName: string;
+  themeType: string;
+  echartsTheme: any;
+  vchartTheme: any;
+}) {
+  const { echartsOption, vchartSpec, echartsTheme, themeName, vchartTheme } = props;
   const ecRef = useRef(null);
   const vcRef = useRef(null);
 
@@ -24,7 +19,14 @@ export function Charts(props: { echartsOption: any; vchartSpec: any }) {
 
   useEffect(() => {
     if (echartsOption && ecRef.current) {
-      const myChart = echarts.init(ecRef.current, echartsTheme);
+      let theme = echartsTheme;
+      if (themeName.includes('vchart')) {
+        VChart.ThemeManager.registerTheme('__temp__', vchartTheme);
+        theme = VC2EC(VChart.ThemeManager.getTheme('__temp__'));
+        VChart.ThemeManager.removeTheme('__temp__');
+      }
+      console.log(theme, vchartTheme);
+      const myChart = echarts.init(ecRef.current, theme);
       myChart.setOption(echartsOption);
       const resizeOb = new ResizeObserver(entries => {
         for (const entry of entries) {
@@ -42,7 +44,12 @@ export function Charts(props: { echartsOption: any; vchartSpec: any }) {
 
   useEffect(() => {
     if (vchartSpec && vcRef.current) {
-      const vchart = new VChart(vchartSpec, { dom: vcRef.current });
+      // if (!VChart.ThemeManager.getTheme(themeName)) {
+      //   VChart.ThemeManager.registerTheme(themeName, vchartTheme);
+      //   console.log('register theme:', themeName);
+      // }
+      // VChart.ThemeManager.setCurrentTheme(themeName);
+      const vchart = new VChart(vchartSpec, { dom: vcRef.current, theme: vchartTheme });
       vchart.renderSync();
       window['vchart'] = vchart;
 
@@ -50,7 +57,7 @@ export function Charts(props: { echartsOption: any; vchartSpec: any }) {
         vchart.release();
       };
     }
-  }, []);
+  });
 
   return (
     <>

@@ -59,7 +59,7 @@ export function VC2EC(vchartTheme: IVChartTheme): IEChartsTheme {
   return echartsTheme;
 }
 
-export function EC2VC(echartsTheme: IEChartsTheme): IVChartTheme {
+export function EC2VC(echartsTheme: IEChartsTheme, type: 'light' | 'dark' = 'light'): IVChartTheme {
   if (!echartsTheme) {
     return {};
   }
@@ -70,6 +70,7 @@ export function EC2VC(echartsTheme: IEChartsTheme): IVChartTheme {
   // 1. 色板转换
   vchartTheme.colorScheme = { default: { dataScheme: color } };
   // 2. 基本转换
+  vchartTheme.type = type;
   vchartTheme.background = backgroundColor;
   vchartTheme.mark = {
     text: {

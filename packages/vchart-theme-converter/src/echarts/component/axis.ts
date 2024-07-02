@@ -1,9 +1,8 @@
+import type { IEChartsTheme } from './../index';
 import type { IAxisCommonTheme, ITheme } from '@visactor/vchart';
-import { merge } from '@visactor/vutils';
-import { convertThemeTokenItem } from '../../util/token';
-import { axisLineStyleMap, labelStyleMap, lineStyleMap, postProcessors } from '../convertMap';
-import type { IEChartsTheme } from '..';
-import { convertToVChartGraphicStyle } from '../utils';
+import { isValid, merge } from '@visactor/vutils';
+import { axisLineStyleMap, labelStyleMap } from '../convertMap';
+import { convertToItemStyle, convertToVChartGraphicStyle } from '../utils';
 
 export function axisConverter(component: ITheme['component'], theme: ITheme) {
   const axisTheme = {} as any;
@@ -28,67 +27,65 @@ function convertCategoryAxis(component: ITheme['component'], theme: ITheme) {
   if (domainLine) {
     const { visible, style } = domainLine;
     categoryAxis.axisLine = {
-      show: visible,
-      lineStyle: {}
+      lineStyle: convertToItemStyle(style, axisLineStyleMap, theme)
     };
-    for (const key in style) {
-      categoryAxis.axisLine.lineStyle[axisLineStyleMap[key] ?? key] = convertThemeTokenItem(style[key], theme);
+    if (isValid(visible)) {
+      categoryAxis.axisLine.show = visible;
     }
   }
 
   if (grid) {
     const { visible, style } = grid;
     categoryAxis.splitLine = {
-      show: visible,
-      lineStyle: {}
+      lineStyle: convertToItemStyle(style, axisLineStyleMap, theme)
     };
-    for (const key in style) {
-      categoryAxis.splitLine.lineStyle[axisLineStyleMap[key] ?? key] = convertThemeTokenItem(style[key], theme);
+    if (isValid(visible)) {
+      categoryAxis.splitLine.show = visible;
     }
   }
 
   if (subGrid) {
     const { visible, style } = subGrid;
     categoryAxis.minorSplitLine = {
-      show: visible,
-      lineStyle: {}
+      lineStyle: convertToItemStyle(style, axisLineStyleMap, theme)
     };
-    for (const key in style) {
-      categoryAxis.minorSplitLine[axisLineStyleMap[key] ?? key] = convertThemeTokenItem(style[key], theme);
+    if (isValid(visible)) {
+      categoryAxis.minorSplitLine.show = visible;
     }
   }
 
   if (label) {
     const { visible, style, space } = label;
     categoryAxis.axisLabel = {
-      show: visible,
-      margin: space
+      margin: space,
+      ...convertToItemStyle(style, labelStyleMap, theme)
     };
-    for (const key in style) {
-      categoryAxis.axisLabel[labelStyleMap[key] ?? key] = convertThemeTokenItem(style[key], theme);
+    if (isValid(visible)) {
+      categoryAxis.axisLabel.show = visible;
     }
   }
+
   if (tick) {
     const { visible, style, tickSize, alignWithLabel } = tick;
     categoryAxis.axisTick = {
-      show: visible,
       alignWithLabel,
-      length: tickSize
+      length: tickSize,
+      lineStyle: convertToItemStyle(style, axisLineStyleMap, theme)
     };
-    for (const key in style) {
-      categoryAxis.axisTick[lineStyleMap[key] ?? key] = convertThemeTokenItem(style[key], theme);
+    if (isValid(visible)) {
+      categoryAxis.axisTick.show = visible;
     }
   }
 
   if (subTick) {
     const { visible, style, tickSize, tickCount } = subTick;
     categoryAxis.minorTick = {
-      show: visible,
       length: tickSize,
-      splitNumber: tickCount
+      splitNumber: tickCount,
+      lineStyle: convertToItemStyle(style, axisLineStyleMap, theme)
     };
-    for (const key in style) {
-      categoryAxis.minorTick[lineStyleMap[key] ?? key] = convertThemeTokenItem(style[key], theme);
+    if (isValid(visible)) {
+      categoryAxis.minorTick.show = visible;
     }
   }
 
@@ -97,17 +94,7 @@ function convertCategoryAxis(component: ITheme['component'], theme: ITheme) {
     categoryAxis.nameLocation = position ?? 'middle';
     // nameGap 是标题到轴线的距离
     categoryAxis.nameGap = space + (categoryAxis.axisLabel?.margin ?? 0) + (categoryAxis.axisTick?.length ?? 0);
-    categoryAxis.nameTextStyle = {};
-    for (const key in style) {
-      const styleValue = convertThemeTokenItem(style[key], theme);
-      if (key === 'lineHeight' && styleValue.includes('%')) {
-        // 百分比 lineHeight 在 echarts 不支持
-        // TODO: 支持百分比 lineHeight 解析
-        // categoryAxis.nameTextStyle.lineHeight = 18; // fontSize * percent
-      } else {
-        categoryAxis.nameTextStyle[labelStyleMap[key] ?? key] = styleValue;
-      }
-    }
+    categoryAxis.nameTextStyle = convertToItemStyle(style, labelStyleMap, theme);
   }
 
   return categoryAxis;
@@ -125,67 +112,65 @@ function convertLinearAxis(component: ITheme['component'], theme: ITheme) {
   if (domainLine) {
     const { visible, style } = domainLine;
     valueAxis.axisLine = {
-      show: visible,
-      lineStyle: {}
+      lineStyle: convertToItemStyle(style, axisLineStyleMap, theme)
     };
-    for (const key in style) {
-      valueAxis.axisLine.lineStyle[axisLineStyleMap[key] ?? key] = convertThemeTokenItem(style[key], theme);
+    if (isValid(visible)) {
+      valueAxis.axisLine.show = visible;
     }
   }
 
   if (grid) {
     const { visible, style } = grid;
     valueAxis.splitLine = {
-      show: visible,
-      lineStyle: {}
+      lineStyle: convertToItemStyle(style, axisLineStyleMap, theme)
     };
-    for (const key in style) {
-      valueAxis.splitLine.lineStyle[axisLineStyleMap[key] ?? key] = convertThemeTokenItem(style[key], theme);
+    if (isValid(visible)) {
+      valueAxis.splitLine.show = visible;
     }
   }
 
   if (subGrid) {
     const { visible, style } = subGrid;
     valueAxis.minorSplitLine = {
-      show: visible,
-      lineStyle: {}
+      lineStyle: convertToItemStyle(style, axisLineStyleMap, theme)
     };
-    for (const key in style) {
-      valueAxis.minorSplitLine[axisLineStyleMap[key] ?? key] = convertThemeTokenItem(style[key], theme);
+    if (isValid(visible)) {
+      valueAxis.minorSplitLine.show = visible;
     }
   }
 
   if (label) {
     const { visible, style, space } = label;
     valueAxis.axisLabel = {
-      show: visible,
-      margin: space
+      margin: space,
+      ...convertToItemStyle(style, labelStyleMap, theme)
     };
-    for (const key in style) {
-      valueAxis.axisLabel[labelStyleMap[key] ?? key] = convertThemeTokenItem(style[key], theme);
+    if (isValid(visible)) {
+      valueAxis.axisLabel.show = visible;
     }
   }
+
   if (tick) {
     const { visible, style, tickSize, alignWithLabel } = tick;
     valueAxis.axisTick = {
-      show: visible,
       alignWithLabel,
-      length: tickSize
+      length: tickSize,
+      lineStyle: convertToItemStyle(style, axisLineStyleMap, theme)
     };
-    for (const key in style) {
-      valueAxis.axisTick[axisLineStyleMap[key] ?? key] = convertThemeTokenItem(style[key], theme);
+    if (isValid(visible)) {
+      valueAxis.axisTick.show = visible;
     }
   }
 
   if (subTick) {
     const { visible, style, tickSize, tickCount } = subTick;
     valueAxis.minorTick = {
-      show: visible,
       length: tickSize,
-      splitNumber: tickCount
+      splitNumber: tickCount,
+      lineStyle: convertToItemStyle(style, axisLineStyleMap, theme)
     };
-    for (const key in style) {
-      valueAxis.minorTick[axisLineStyleMap[key] ?? key] = convertThemeTokenItem(style[key], theme);
+    if (isValid(visible)) {
+      valueAxis.minorTick.show = visible;
     }
   }
 
@@ -194,14 +179,7 @@ function convertLinearAxis(component: ITheme['component'], theme: ITheme) {
     valueAxis.nameLocation = position ?? 'middle';
     // nameGap 是标题到轴线的距离
     valueAxis.nameGap = space + (valueAxis.axisLabel?.margin ?? 0) + (valueAxis.axisTick?.length ?? 0);
-    valueAxis.nameTextStyle = {};
-    for (const key in style) {
-      let styleValue = convertThemeTokenItem(style[key], theme);
-      if (key === 'lineHeight') {
-        styleValue = postProcessors[key](styleValue);
-      }
-      valueAxis.nameTextStyle[labelStyleMap[key] ?? key] = styleValue;
-    }
+    valueAxis.nameTextStyle = convertToItemStyle(style, labelStyleMap, theme);
   }
 
   return valueAxis;

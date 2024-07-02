@@ -66,7 +66,7 @@ export function discreteLegendConverter(component: ITheme['component'], theme: I
             vertical: [preShape, nextShape]
           };
           legendTheme.pageIconColor = convertThemeTokenItem(style.fill, theme);
-          legendTheme.pageIconInactiveColor = convertThemeTokenItem(state.disable.fill, theme);
+          legendTheme.pageIconInactiveColor = convertThemeTokenItem(state.disable?.fill, theme);
         }
       }
     }

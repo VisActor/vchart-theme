@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { spec as vchartLineSpec } from './spec/vchart/line';
 import { spec as echartsLineOption } from './spec/echarts/line';
 import { spec as vchartBarSpec } from './spec/vchart/bar';
@@ -8,7 +8,14 @@ import { spec as echartsPieOption } from './spec/echarts/pie';
 import { spec as vchartFunnelSpec } from './spec/vchart/funnel';
 import { spec as echartsFunnelOption } from './spec/echarts/funnel';
 import { Charts } from './Chart';
+import { theme as echartsShine } from './theme/echarts-shine';
+import { theme as echartsDark } from './theme/echarts-dark';
+import { theme as echartsVintage } from './theme/echarts-vintage';
+import { chartHubLightTheme } from '@visactor/vchart-theme';
+
 import './index.css';
+import { EC2VC, VC2EC } from '../../src';
+import { semiDesignDark, semiDesignLight } from '@visactor/vchart-semi-theme';
 
 const demoList = [
   { vchartSpec: vchartLineSpec, echartsOption: echartsLineOption },
@@ -17,12 +24,58 @@ const demoList = [
   { vchartSpec: vchartFunnelSpec, echartsOption: echartsFunnelOption }
 ];
 
+const themeList = [
+  { name: 'vchart-semi-light', type: 'light', vchartTheme: semiDesignLight, echartsTheme: VC2EC(semiDesignLight) },
+  { name: 'echarts-shine', type: 'light', echartsTheme: echartsShine, vchartTheme: EC2VC(echartsShine) },
+  { name: 'echarts-vintage', type: 'light', echartsTheme: echartsVintage, vchartTheme: EC2VC(echartsVintage) },
+  { name: 'vchart-chartHub', type: 'light', echartsTheme: VC2EC(chartHubLightTheme), vchartTheme: chartHubLightTheme }
+
+  // { name: 'echarts-dark', type: 'dark', echartsTheme: echartsDark, vchartTheme: EC2VC(echartsLight, 'dark') },
+  // { name: 'vchart-semi-dark', type: 'dark', vchartTheme: semiDesignDark, echartsTheme: VC2EC(semiDesignDark) }
+];
+
+console.log(themeList);
+
 function App() {
+  const [themeName, setThemeName] = useState('vchart-semi-light');
+  const [themeType, setThemeType] = useState('light');
+  const [ecTheme, setECTheme] = useState(themeList.find(theme => theme.name === 'vchart-semi-light')?.echartsTheme);
+  const [vcTheme, setVCTheme] = useState(themeList.find(theme => theme.name === 'vchart-semi-light')?.vchartTheme);
+
+  const handleChange = (event: any) => {
+    setThemeName(event.target.value);
+  };
+
+  useEffect(() => {
+    const theme = themeList.find(theme => theme.name === themeName);
+    if (theme) {
+      const { type, echartsTheme, vchartTheme } = theme;
+      setThemeType(type);
+      setECTheme(echartsTheme);
+      setVCTheme(vchartTheme);
+    }
+  }, [themeName]);
+
   return (
     <>
+      <select value={themeName} onChange={handleChange}>
+        {themeList.map(theme => {
+          return <option value={theme.name}>{theme.name}</option>;
+        })}
+      </select>
       {demoList.map((demo, i) => {
         const { vchartSpec, echartsOption } = demo;
-        return <Charts key={i} vchartSpec={vchartSpec} echartsOption={echartsOption}></Charts>;
+        return (
+          <Charts
+            key={i}
+            vchartSpec={vchartSpec}
+            echartsOption={echartsOption}
+            themeName={themeName}
+            themeType={themeType}
+            echartsTheme={ecTheme}
+            vchartTheme={vcTheme}
+          ></Charts>
+        );
       })}
     </>
   );

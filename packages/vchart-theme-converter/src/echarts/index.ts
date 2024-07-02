@@ -1,6 +1,6 @@
 import type { ITheme as IVChartTheme } from '@visactor/vchart';
 import { convertObjectColor, convertColorPlatte as convertColorPalette } from '../util/color';
-import { isObject, merge } from '@visactor/vutils';
+import { isObject, isValidNumber, merge, normalizePadding } from '@visactor/vutils';
 import { convertTextStyle } from './textStyleConverter';
 import { convertSeries } from './seriesConverter';
 import { convertComponent } from './componentConverter';
@@ -14,7 +14,7 @@ export function VC2EC(vchartTheme: IVChartTheme): IEChartsTheme {
 
   let echartsTheme: IEChartsTheme = {};
 
-  const { colorScheme, token, background, mark = {}, series, component } = vchartTheme;
+  const { colorScheme, token, background, padding, mark = {}, series, component } = vchartTheme;
 
   // 1. 色板转换
   const color = convertColorPalette(colorScheme, token);
@@ -27,14 +27,23 @@ export function VC2EC(vchartTheme: IVChartTheme): IEChartsTheme {
     echartsTheme.backgroundColor = isObject(background) ? convertObjectColor(background, vchartTheme) : background;
   }
 
+  // padding 效果不一致，暂不转换
+  // if (padding) {
+  //   const _padding = normalizePadding(padding as any);
+  //   const grid = {};
+  //   const direction = ['top', 'right', 'bottom', 'left'];
+  //   _padding.forEach((pad, index) => {
+  //     grid[direction[index]] = pad;
+  //   });
+  //   echartsTheme.grid = grid;
+  // }
+
   /**
    *   2.1 textStyle
    * 目前已知会影响：数据标签、crosshair 标签、图例标签
    * 确认不会影响：标题、轴标签、tooltip 标签
    */
   echartsTheme.textStyle = convertTextStyle(mark.text?.style, vchartTheme);
-
-  // 1.2 系列色板转换
 
   // 3. 系列样式转换
   echartsTheme = merge(echartsTheme, convertSeries(series, vchartTheme));

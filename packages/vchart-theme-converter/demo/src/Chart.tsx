@@ -7,8 +7,6 @@ import { VC2EC } from '../../src/index';
 initVChartSemiTheme({ isWatchingMode: true });
 
 const echartsTheme = VC2EC(VChart.ThemeManager.getCurrentTheme());
-console.log(echartsTheme);
-console.log(VChart.ThemeManager.getCurrentTheme());
 
 export function Charts(props: { echartsOption: any; vchartSpec: any }) {
   const { echartsOption, vchartSpec } = props;

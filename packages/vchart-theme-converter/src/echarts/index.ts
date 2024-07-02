@@ -1,11 +1,13 @@
 import type { ITheme as IVChartTheme } from '@visactor/vchart';
 import { convertObjectColor, convertColorPlatte as convertColorPalette } from '../util/color';
 import { isObject, isValidNumber, merge, normalizePadding } from '@visactor/vutils';
-import { convertTextStyle } from './textStyleConverter';
-import { convertSeries } from './seriesConverter';
-import { convertComponent } from './componentConverter';
+import { convertSeries, toVChartConverter } from './seriesConverter';
+import { convertComponent, toVChartComponentConverter } from './componentConverter';
+import { convertThemeTokenItem } from '../util/token';
+import { convertToItemStyle } from './utils';
+import { textStyleMap } from './convertMap';
 
-type IEChartsTheme = Record<string, any>;
+export type IEChartsTheme = Record<string, any>;
 
 export function VC2EC(vchartTheme: IVChartTheme): IEChartsTheme {
   if (!vchartTheme) {
@@ -43,7 +45,10 @@ export function VC2EC(vchartTheme: IVChartTheme): IEChartsTheme {
    * 目前已知会影响：数据标签、crosshair 标签、图例标签
    * 确认不会影响：标题、轴标签、tooltip 标签
    */
-  echartsTheme.textStyle = convertTextStyle(mark.text?.style, vchartTheme);
+  echartsTheme.textStyle = {
+    fontFamily: convertThemeTokenItem(vchartTheme.fontFamily, vchartTheme),
+    ...convertToItemStyle(mark.text?.style, textStyleMap, vchartTheme)
+  };
 
   // 3. 系列样式转换
   echartsTheme = merge(echartsTheme, convertSeries(series, vchartTheme));
@@ -52,4 +57,43 @@ export function VC2EC(vchartTheme: IVChartTheme): IEChartsTheme {
   echartsTheme = merge(echartsTheme, convertComponent(component, vchartTheme));
 
   return echartsTheme;
+}
+
+export function EC2VC(echartsTheme: IEChartsTheme): IVChartTheme {
+  if (!echartsTheme) {
+    return {};
+  }
+
+  const vchartTheme: IVChartTheme = { series: {}, component: {} };
+
+  const { color, backgroundColor, textStyle } = echartsTheme;
+  // 1. 色板转换
+  vchartTheme.colorScheme = { default: { dataScheme: color } };
+  // 2. 基本转换
+  vchartTheme.background = backgroundColor;
+  vchartTheme.mark = {
+    text: {
+      style: textStyle
+    }
+  };
+
+  // 3. 系列转换
+  ['line', 'pie', 'bar', 'funnel'].forEach(series => {
+    if (echartsTheme[series] && toVChartConverter[series]) {
+      vchartTheme.series[series] = toVChartConverter[series](echartsTheme[series]);
+      if (series === 'line') {
+        vchartTheme.series.area = vchartTheme.series[series];
+        // @ts-ignore
+        delete vchartTheme.series.line.area;
+      }
+    }
+  });
+
+  // 4. 组件转换
+  Object.values(toVChartComponentConverter).forEach(converter => {
+    // @ts-ignore
+    vchartTheme.component = { ...vchartTheme.component, ...converter(echartsTheme) };
+  });
+
+  return vchartTheme;
 }

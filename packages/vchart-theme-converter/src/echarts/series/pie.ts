@@ -1,9 +1,8 @@
 import type { ITheme } from '@visactor/vchart';
-import { covertThemeItem } from '../../util/token';
-import { attributeMap, labelStyleMap, postProcessors } from '../convertMap';
-import { IGradientColor } from '../../util/color';
-import { isNumber, isObject } from '@visactor/vutils';
-import { convertToItemStyle } from '../utils';
+import { convertThemeTokenItem } from '../../util/token';
+import { attributeMap, labelStyleMap } from '../convertMap';
+import { isNumber } from '@visactor/vutils';
+import { convertToVChartGraphicStyle, convertToItemStyle } from '../utils';
 
 export function pieSeriesConverter(pieSeries: ITheme['series']['pie'], theme: ITheme) {
   if (!pieSeries) {
@@ -33,4 +32,26 @@ export function pieSeriesConverter(pieSeries: ITheme['series']['pie'], theme: IT
     pieTheme.label = echartsLabel;
   }
   return pieTheme;
+}
+
+export function toVChartPie(pieSeries: any): ITheme['series']['pie'] {
+  if (!pieSeries) {
+    return {};
+  }
+  const { itemStyle, label: echartsLabel } = pieSeries;
+  const pie = {
+    style: {
+      ...convertToVChartGraphicStyle(itemStyle, attributeMap)
+    }
+  } as any;
+
+  const label = {
+    visible: echartsLabel?.show ?? true,
+    position: echartsLabel?.position ?? 'outside',
+    style: {
+      ...convertToVChartGraphicStyle(echartsLabel, labelStyleMap)
+    }
+  };
+  // outerRadius: 0.9 echarts 默认值
+  return { pie, label, outerRadius: 0.9 };
 }

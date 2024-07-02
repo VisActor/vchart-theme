@@ -1,7 +1,8 @@
-import type { ITheme } from '@visactor/vchart';
-import { attributeMap, labelBackgroundStyleMap } from '../convertMap';
+import type { ICrosshairTheme, ITheme } from '@visactor/vchart';
+import { attributeMap, labelBackgroundStyleMap, lineStyleMap } from '../convertMap';
 import { normalizePadding } from '@visactor/vutils';
-import { convertToItemStyle } from '../utils';
+import { convertToItemStyle, convertToVChartGraphicStyle } from '../utils';
+import type { IEChartsTheme } from '..';
 
 export function crosshairConverter(component: ITheme['component'], theme: ITheme) {
   const axisPointerTheme = {
@@ -42,4 +43,21 @@ export function crosshairConverter(component: ITheme['component'], theme: ITheme
   }
 
   return { axisPointer: axisPointerTheme };
+}
+
+export function toVChartCrosshair(echartsTheme: IEChartsTheme): Partial<ITheme['component']> {
+  if (!echartsTheme) {
+    return {};
+  }
+
+  const { tooltip = {} } = echartsTheme;
+  const { axisPointer } = tooltip;
+  // 无法等价转换
+  const crosshair: ICrosshairTheme = {
+    categoryField: {
+      line: { style: convertToVChartGraphicStyle(axisPointer?.lineStyle, lineStyleMap) }
+    }
+  };
+
+  return { crosshair };
 }

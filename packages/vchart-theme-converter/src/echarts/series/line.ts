@@ -1,8 +1,9 @@
 import type { ITheme } from '@visactor/vchart';
 
-import { covertThemeItem } from '../../util/token';
-import { labelStyleMap, lineStyleMap } from '../convertMap';
-import { convertToItemStyle } from '../utils';
+import { convertThemeTokenItem } from '../../util/token';
+import { areaStyleMap, labelStyleMap, lineStyleMap, symbolStyleMap } from '../convertMap';
+import type { IEChartsTheme } from '..';
+import { convertToItemStyle, convertToVChartGraphicStyle } from '../utils';
 
 export function lineSeriesConverter(lineSeries: ITheme['series']['line'], theme: ITheme) {
   if (!lineSeries) {
@@ -42,7 +43,7 @@ export function lineSeriesConverter(lineSeries: ITheme['series']['line'], theme:
     }
 
     if ('size' in style) {
-      const symbolSize = covertThemeItem(style.size, theme);
+      const symbolSize = convertThemeTokenItem(style.size, theme);
       lineTheme.symbolSize = symbolSize;
     }
   }
@@ -59,4 +60,75 @@ export function lineSeriesConverter(lineSeries: ITheme['series']['line'], theme:
   }
 
   return lineTheme;
+}
+
+export function toVChartLine(lineSeries: IEChartsTheme): ITheme['series']['line'] {
+  if (!lineSeries) {
+    return {};
+  }
+
+  const { lineStyle = {}, areaStyle = {}, itemStyle = {}, labelStyle = {} } = lineSeries;
+  const { symbol = 'circle', symbolSize, smooth, step, showSymbol } = lineSeries;
+
+  const line = {
+    style: {
+      ...convertToVChartGraphicStyle(lineStyle, lineStyleMap),
+      curveType:
+        smooth === true
+          ? 'monotone'
+          : (step => {
+              switch (step) {
+                case 'middle':
+                  return 'step';
+                case 'end':
+                  return 'stepAfter';
+                case 'start':
+                  return 'stepBefore';
+                default:
+                  return 'linear';
+              }
+            })(step)
+    }
+  };
+
+  const area = {
+    style: {
+      ...convertToVChartGraphicStyle(areaStyle, areaStyleMap),
+      curveType:
+        smooth === true
+          ? 'monotone'
+          : (step => {
+              switch (step) {
+                case 'middle':
+                  return 'step';
+                case 'end':
+                  return 'stepAfter';
+                case 'start':
+                  return 'stepBefore';
+                default:
+                  return 'linear';
+              }
+            })(step)
+    }
+  };
+
+  const point = {
+    visible: showSymbol,
+    style: {
+      ...convertToVChartGraphicStyle(itemStyle, symbolStyleMap),
+      symbolType: symbol === 'emptyCircle' ? 'circle' : symbol,
+      fill: symbol === 'emptyCircle' ? 'white' : null,
+      stroke: symbol === 'emptyCircle' ? null : undefined,
+      size: symbolSize
+    }
+  };
+
+  const label = {
+    position: labelStyle?.position,
+    style: {
+      ...convertToVChartGraphicStyle(labelStyle, labelStyleMap)
+    }
+  };
+  // @ts-ignore
+  return { line, point, label, area };
 }

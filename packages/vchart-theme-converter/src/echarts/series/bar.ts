@@ -1,6 +1,6 @@
 import type { ITheme } from '@visactor/vchart';
 import { attributeMap, labelStyleMap } from '../convertMap';
-import { convertToItemStyle } from '../utils';
+import { convertToItemStyle, convertToVChartGraphicStyle } from '../utils';
 
 export function barSeriesConverter(barSeries: ITheme['series']['bar'], theme: ITheme) {
   if (!barSeries) {
@@ -48,3 +48,26 @@ const labelPositionMap = {
   'bottom-right': 'bottomRight',
   'bottom-left': 'bottomLeft'
 };
+
+export function toVChartBar(barSeries: any): ITheme['series']['bar'] {
+  if (!barSeries) {
+    return {};
+  }
+  const { itemStyle, labelStyle, barWidth, barMinWidth, barMaxWidth } = barSeries;
+  const bar = {
+    barWidth: barWidth,
+    barMinWidth: barMinWidth,
+    barMaxWidth: barMaxWidth,
+    style: {
+      ...convertToVChartGraphicStyle(itemStyle, attributeMap)
+    }
+  } as any;
+
+  const label = {
+    position: labelStyle?.position ?? 'inside',
+    style: {
+      ...convertToVChartGraphicStyle(labelStyle, labelStyleMap)
+    }
+  };
+  return { bar, label };
+}

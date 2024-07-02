@@ -30,7 +30,7 @@ export function isTokenOrPalette(value: ITokenKey | IColorKey | any): boolean {
   return value?.type === 'palette' || value?.type === 'token';
 }
 
-export function covertThemeItem(vchartStyle: ITokenKey | IColorKey | any, theme: ITheme) {
+export function convertThemeTokenItem(vchartStyle: ITokenKey | IColorKey | any, theme: ITheme) {
   if (!isValid(vchartStyle)) {
     return;
   }

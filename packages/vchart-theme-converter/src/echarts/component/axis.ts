@@ -1,7 +1,9 @@
 import type { IAxisCommonTheme, ITheme } from '@visactor/vchart';
 import { merge } from '@visactor/vutils';
-import { covertThemeItem } from '../../util/token';
+import { convertThemeTokenItem } from '../../util/token';
 import { axisLineStyleMap, labelStyleMap, lineStyleMap, postProcessors } from '../convertMap';
+import type { IEChartsTheme } from '..';
+import { convertToVChartGraphicStyle } from '../utils';
 
 export function axisConverter(component: ITheme['component'], theme: ITheme) {
   const axisTheme = {} as any;
@@ -30,7 +32,7 @@ function convertCategoryAxis(component: ITheme['component'], theme: ITheme) {
       lineStyle: {}
     };
     for (const key in style) {
-      categoryAxis.axisLine.lineStyle[axisLineStyleMap[key] ?? key] = covertThemeItem(style[key], theme);
+      categoryAxis.axisLine.lineStyle[axisLineStyleMap[key] ?? key] = convertThemeTokenItem(style[key], theme);
     }
   }
 
@@ -41,7 +43,7 @@ function convertCategoryAxis(component: ITheme['component'], theme: ITheme) {
       lineStyle: {}
     };
     for (const key in style) {
-      categoryAxis.splitLine.lineStyle[axisLineStyleMap[key] ?? key] = covertThemeItem(style[key], theme);
+      categoryAxis.splitLine.lineStyle[axisLineStyleMap[key] ?? key] = convertThemeTokenItem(style[key], theme);
     }
   }
 
@@ -52,7 +54,7 @@ function convertCategoryAxis(component: ITheme['component'], theme: ITheme) {
       lineStyle: {}
     };
     for (const key in style) {
-      categoryAxis.minorSplitLine[axisLineStyleMap[key] ?? key] = covertThemeItem(style[key], theme);
+      categoryAxis.minorSplitLine[axisLineStyleMap[key] ?? key] = convertThemeTokenItem(style[key], theme);
     }
   }
 
@@ -63,7 +65,7 @@ function convertCategoryAxis(component: ITheme['component'], theme: ITheme) {
       margin: space
     };
     for (const key in style) {
-      categoryAxis.axisLabel[labelStyleMap[key] ?? key] = covertThemeItem(style[key], theme);
+      categoryAxis.axisLabel[labelStyleMap[key] ?? key] = convertThemeTokenItem(style[key], theme);
     }
   }
   if (tick) {
@@ -74,7 +76,7 @@ function convertCategoryAxis(component: ITheme['component'], theme: ITheme) {
       length: tickSize
     };
     for (const key in style) {
-      categoryAxis.axisTick[lineStyleMap[key] ?? key] = covertThemeItem(style[key], theme);
+      categoryAxis.axisTick[lineStyleMap[key] ?? key] = convertThemeTokenItem(style[key], theme);
     }
   }
 
@@ -86,7 +88,7 @@ function convertCategoryAxis(component: ITheme['component'], theme: ITheme) {
       splitNumber: tickCount
     };
     for (const key in style) {
-      categoryAxis.minorTick[lineStyleMap[key] ?? key] = covertThemeItem(style[key], theme);
+      categoryAxis.minorTick[lineStyleMap[key] ?? key] = convertThemeTokenItem(style[key], theme);
     }
   }
 
@@ -97,7 +99,7 @@ function convertCategoryAxis(component: ITheme['component'], theme: ITheme) {
     categoryAxis.nameGap = space + (categoryAxis.axisLabel?.margin ?? 0) + (categoryAxis.axisTick?.length ?? 0);
     categoryAxis.nameTextStyle = {};
     for (const key in style) {
-      const styleValue = covertThemeItem(style[key], theme);
+      const styleValue = convertThemeTokenItem(style[key], theme);
       if (key === 'lineHeight' && styleValue.includes('%')) {
         // 百分比 lineHeight 在 echarts 不支持
         // TODO: 支持百分比 lineHeight 解析
@@ -127,7 +129,7 @@ function convertLinearAxis(component: ITheme['component'], theme: ITheme) {
       lineStyle: {}
     };
     for (const key in style) {
-      valueAxis.axisLine.lineStyle[axisLineStyleMap[key] ?? key] = covertThemeItem(style[key], theme);
+      valueAxis.axisLine.lineStyle[axisLineStyleMap[key] ?? key] = convertThemeTokenItem(style[key], theme);
     }
   }
 
@@ -138,7 +140,7 @@ function convertLinearAxis(component: ITheme['component'], theme: ITheme) {
       lineStyle: {}
     };
     for (const key in style) {
-      valueAxis.splitLine.lineStyle[axisLineStyleMap[key] ?? key] = covertThemeItem(style[key], theme);
+      valueAxis.splitLine.lineStyle[axisLineStyleMap[key] ?? key] = convertThemeTokenItem(style[key], theme);
     }
   }
 
@@ -149,7 +151,7 @@ function convertLinearAxis(component: ITheme['component'], theme: ITheme) {
       lineStyle: {}
     };
     for (const key in style) {
-      valueAxis.minorSplitLine[axisLineStyleMap[key] ?? key] = covertThemeItem(style[key], theme);
+      valueAxis.minorSplitLine[axisLineStyleMap[key] ?? key] = convertThemeTokenItem(style[key], theme);
     }
   }
 
@@ -160,7 +162,7 @@ function convertLinearAxis(component: ITheme['component'], theme: ITheme) {
       margin: space
     };
     for (const key in style) {
-      valueAxis.axisLabel[labelStyleMap[key] ?? key] = covertThemeItem(style[key], theme);
+      valueAxis.axisLabel[labelStyleMap[key] ?? key] = convertThemeTokenItem(style[key], theme);
     }
   }
   if (tick) {
@@ -171,7 +173,7 @@ function convertLinearAxis(component: ITheme['component'], theme: ITheme) {
       length: tickSize
     };
     for (const key in style) {
-      valueAxis.axisTick[lineStyleMap[key] ?? key] = covertThemeItem(style[key], theme);
+      valueAxis.axisTick[axisLineStyleMap[key] ?? key] = convertThemeTokenItem(style[key], theme);
     }
   }
 
@@ -183,7 +185,7 @@ function convertLinearAxis(component: ITheme['component'], theme: ITheme) {
       splitNumber: tickCount
     };
     for (const key in style) {
-      valueAxis.minorTick[lineStyleMap[key] ?? key] = covertThemeItem(style[key], theme);
+      valueAxis.minorTick[axisLineStyleMap[key] ?? key] = convertThemeTokenItem(style[key], theme);
     }
   }
 
@@ -194,7 +196,7 @@ function convertLinearAxis(component: ITheme['component'], theme: ITheme) {
     valueAxis.nameGap = space + (valueAxis.axisLabel?.margin ?? 0) + (valueAxis.axisTick?.length ?? 0);
     valueAxis.nameTextStyle = {};
     for (const key in style) {
-      let styleValue = covertThemeItem(style[key], theme);
+      let styleValue = convertThemeTokenItem(style[key], theme);
       if (key === 'lineHeight') {
         styleValue = postProcessors[key](styleValue);
       }
@@ -203,4 +205,39 @@ function convertLinearAxis(component: ITheme['component'], theme: ITheme) {
   }
 
   return valueAxis;
+}
+
+export function toVChartAxis(echartsTheme: IEChartsTheme): Partial<ITheme['component']> {
+  if (!echartsTheme) {
+    return {};
+  }
+  const { categoryAxis = {}, valueAxis = {} } = echartsTheme;
+  const axis = (axisConfig: any): IAxisCommonTheme => {
+    return {
+      domainLine: {
+        visible: axisConfig.axisLine?.show,
+        style: convertToVChartGraphicStyle(axisConfig.axisLine?.lineStyle, axisLineStyleMap)
+      },
+      tick: {
+        visible: axisConfig.axisTick?.show,
+        style: convertToVChartGraphicStyle(axisConfig.axisTick?.lineStyle, axisLineStyleMap)
+      },
+      label: {
+        visible: axisConfig.axisLabel?.show,
+        style: convertToVChartGraphicStyle(axisConfig.axisLabel, labelStyleMap)
+      },
+      grid: {
+        visible: axisConfig.splitLine?.show,
+        style: convertToVChartGraphicStyle(axisConfig.splitLine?.lineStyle, axisLineStyleMap)
+      },
+      title: {
+        visible: axisConfig.nameTextStyle?.show,
+        style: convertToVChartGraphicStyle(axisConfig.nameTextStyle, labelStyleMap)
+      }
+    };
+  };
+  const axisBand: IAxisCommonTheme = axis(categoryAxis);
+  const axisLinear: IAxisCommonTheme = axis(valueAxis);
+
+  return { axisBand, axisLinear };
 }

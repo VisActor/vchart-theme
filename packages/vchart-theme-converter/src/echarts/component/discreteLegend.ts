@@ -1,8 +1,9 @@
 import type { ITheme } from '@visactor/vchart';
 import { labelStyleMap, symbolStyleMap } from '../convertMap';
-import { covertThemeItem } from '../../util/token';
-import type { IPager } from '@visactor/vchart/esm/component/legend';
-import { convertToItemStyle } from '../utils';
+import { convertThemeTokenItem } from '../../util/token';
+import type { IDiscreteLegendTheme, IPager } from '@visactor/vchart/esm/component/legend';
+import { convertToItemStyle, convertToVChartGraphicStyle } from '../utils';
+import type { IEChartsTheme } from '..';
 
 export function discreteLegendConverter(component: ITheme['component'], theme: ITheme) {
   const legendTheme = {
@@ -64,12 +65,36 @@ export function discreteLegendConverter(component: ITheme['component'], theme: I
             horizontal: [preShape, nextShape],
             vertical: [preShape, nextShape]
           };
-          legendTheme.pageIconColor = covertThemeItem(style.fill, theme);
-          legendTheme.pageIconInactiveColor = covertThemeItem(state.disable.fill, theme);
+          legendTheme.pageIconColor = convertThemeTokenItem(style.fill, theme);
+          legendTheme.pageIconInactiveColor = convertThemeTokenItem(state.disable.fill, theme);
         }
       }
     }
   }
 
   return { legend: legendTheme };
+}
+
+export function toVChartDiscreteLegend(echartsTheme: IEChartsTheme): Partial<ITheme['component']> {
+  if (!echartsTheme) {
+    return {};
+  }
+
+  const { legend = {} } = echartsTheme;
+  const { textStyle, itemStyle, pageTextStyle } = legend;
+  const discreteLegend: IDiscreteLegendTheme = {
+    item: {
+      label: {
+        style: convertToVChartGraphicStyle(textStyle, labelStyleMap)
+      },
+      shape: {
+        style: convertToVChartGraphicStyle(itemStyle, symbolStyleMap)
+      }
+    },
+    pager: {
+      textStyle: convertToVChartGraphicStyle(pageTextStyle, labelStyleMap)
+    }
+  };
+
+  return { discreteLegend };
 }

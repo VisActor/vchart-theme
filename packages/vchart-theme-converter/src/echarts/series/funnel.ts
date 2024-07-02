@@ -1,6 +1,6 @@
 import type { ITheme } from '@visactor/vchart';
 import { attributeMap, labelStyleMap } from '../convertMap';
-import { convertToItemStyle } from '../utils';
+import { convertToItemStyle, convertToVChartGraphicStyle } from '../utils';
 
 export function funnelSeriesConverter(funnelSeries: ITheme['series']['funnel'], theme: ITheme) {
   if (!funnelSeries) {
@@ -24,4 +24,25 @@ export function funnelSeriesConverter(funnelSeries: ITheme['series']['funnel'], 
     funnelStyle.label = echartsLabel;
   }
   return funnelStyle;
+}
+
+export function toVChartFunnel(funnelSeries: any): ITheme['series']['funnel'] {
+  if (!funnelSeries) {
+    return {};
+  }
+  const { itemStyle, label: echartsLabel } = funnelSeries;
+  const funnel = {
+    style: {
+      ...convertToVChartGraphicStyle(itemStyle, attributeMap)
+    }
+  } as any;
+
+  const label = {
+    visible: echartsLabel?.show ?? false,
+    style: {
+      ...convertToVChartGraphicStyle(echartsLabel, labelStyleMap)
+    }
+  };
+
+  return { funnel, label };
 }

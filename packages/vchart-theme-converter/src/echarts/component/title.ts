@@ -1,6 +1,7 @@
-import type { ITheme } from '@visactor/vchart';
+import type { ITheme, ITitleTheme } from '@visactor/vchart';
 import { labelStyleMap } from '../convertMap';
-import { convertToItemStyle } from '../utils';
+import { convertToItemStyle, convertToVChartGraphicStyle } from '../utils';
+import type { IEChartsTheme } from '..';
 
 export function titleConverter(component: ITheme['component'], theme: ITheme) {
   const titleTheme = {} as any;
@@ -18,4 +19,18 @@ export function titleConverter(component: ITheme['component'], theme: ITheme) {
   }
 
   return { title: titleTheme };
+}
+
+export function toVChartTitle(echartsTheme: IEChartsTheme): Partial<ITheme['component']> {
+  if (!echartsTheme) {
+    return {};
+  }
+
+  const { title: echartsTitle = {} } = echartsTheme;
+  const title: ITitleTheme = {
+    textStyle: convertToVChartGraphicStyle(echartsTitle.textStyle, labelStyleMap),
+    subtextStyle: convertToVChartGraphicStyle(echartsTitle.subtextStyle, labelStyleMap)
+  };
+
+  return { title };
 }

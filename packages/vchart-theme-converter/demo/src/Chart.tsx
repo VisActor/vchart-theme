@@ -2,10 +2,10 @@ import React, { useEffect, useRef } from 'react';
 import * as echarts from 'echarts';
 import VChart from '@visactor/vchart';
 import { initVChartSemiTheme } from '@visactor/vchart-semi-theme';
-import { ECTheme } from '../public/echarts-theme';
 import { VC2EC } from '../../src/index';
 
 initVChartSemiTheme({ isWatchingMode: true });
+
 const echartsTheme = VC2EC(VChart.ThemeManager.getCurrentTheme());
 console.log(echartsTheme);
 console.log(VChart.ThemeManager.getCurrentTheme());
@@ -54,8 +54,8 @@ export function Charts(props: { echartsOption: any; vchartSpec: any }) {
           display: 'flex'
         }}
       >
-        <div id={`vchart_${id}`} ref={vcRef} style={{ height: '500px', width: '100%' }}></div>
-        <div id={`echarts_${id}`} ref={ecRef} style={{ height: '500px', width: '100%' }}></div>
+        <div id={`vchart_${id}`} ref={vcRef} style={{ height: '400px', width: '100%' }}></div>
+        <div id={`echarts_${id}`} ref={ecRef} style={{ height: '400px', width: '100%' }}></div>
       </div>
     </>
   );

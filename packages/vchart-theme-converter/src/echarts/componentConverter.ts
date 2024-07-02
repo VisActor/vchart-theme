@@ -6,6 +6,7 @@ import { axisConverter } from './component/axis';
 import { titleConverter } from './component/title';
 import { discreteLegendConverter } from './component/discreteLegend';
 import { tooltipConverter } from './component/tooltip';
+import { crosshairConverter } from './component/crosshair';
 
 const VCHART_COMPONENT_TYPES = [...Object.keys(ComponentTypeEnum).filter(type => !type.includes('Axis')), 'axis'];
 
@@ -13,7 +14,8 @@ const componentConverter = {
   axis: axisConverter,
   title: titleConverter,
   discreteLegend: discreteLegendConverter,
-  tooltip: tooltipConverter
+  tooltip: tooltipConverter,
+  cartesianCrosshair: crosshairConverter
 };
 
 export function convertComponent(component: ITheme['component'], theme: ITheme) {

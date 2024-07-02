@@ -3,12 +3,18 @@ import { SeriesTypeEnum } from '@visactor/vchart';
 import { lineSeriesConverter } from './series/line';
 import { merge } from '@visactor/vutils';
 import { areaSeriesConverter } from './series/area';
+import { barSeriesConverter } from './series/bar';
+import { pieSeriesConverter } from './series/pie';
+import { funnelSeriesConverter } from './series/funnel';
 
 const VCHART_SERIES_TYPES = Object.keys(SeriesTypeEnum);
 
 const seriesConverter = {
   line: lineSeriesConverter,
-  area: areaSeriesConverter
+  area: areaSeriesConverter,
+  bar: barSeriesConverter,
+  pie: pieSeriesConverter,
+  funnel: funnelSeriesConverter
 };
 
 export function convertSeries(series: ITheme['series'], theme: ITheme) {
@@ -16,13 +22,13 @@ export function convertSeries(series: ITheme['series'], theme: ITheme) {
 
   VCHART_SERIES_TYPES.forEach(type => {
     if (seriesConverter[type]) {
-      // 这里后续可能存在问题：vchart series type 和 echarts series type 不一致
       if (type === 'area') {
         if (!result.line) {
           result.line = {};
         }
-        result.line.areaStyle = seriesConverter[type](series[type], theme);
+        result.line = merge(result.line, seriesConverter[type](series[type], theme));
       } else {
+        // 这里后续可能存在问题：vchart series type 和 echarts series type 不一致
         result[type] = merge(result[type] ?? {}, seriesConverter[type](series[type], theme));
       }
     }

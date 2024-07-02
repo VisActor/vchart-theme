@@ -1,12 +1,9 @@
 export const spec = {
   tooltip: {
-    trigger: 'axis',
-    axisPointer: {
-      type: 'cross',
-      label: {
-        backgroundColor: '#6a7985'
-      }
-    }
+    // trigger: 'axis'
+  },
+  axisPointer: {
+    label: { show: true }
   },
   title: {
     visible: true,

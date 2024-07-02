@@ -1,5 +1,5 @@
 import type { ITokenKey, IColorKey, ITheme as IVChartTheme, IColorSchemeStruct, ITheme } from '@visactor/vchart';
-import { isValid } from '@visactor/vutils';
+import { Color, isValid } from '@visactor/vutils';
 
 export function tokenOrPaletteToValue(object: ITokenKey | IColorKey, theme: IVChartTheme) {
   if (object.type === 'palette') {
@@ -7,9 +7,15 @@ export function tokenOrPaletteToValue(object: ITokenKey | IColorKey, theme: IVCh
     if (colorScheme) {
       const { palette } = (colorScheme.default ?? {}) as IColorSchemeStruct;
       if (palette) {
-        return palette[object.key] ?? object.default;
+        let color = (palette[object.key] ?? object.default) as string;
+        if (object.a) {
+          color = new Color(color).setOpacity(object.a).toRGBA();
+        }
+        if (object.l) {
+          color = new Color(color).brighter(object.l).toRGBA();
+        }
+        return color;
       }
-      // TODO: 处理 l（亮度）/a（透明度）
     }
   } else if (object.type === 'token') {
     const { token } = theme;

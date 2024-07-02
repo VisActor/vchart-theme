@@ -1,29 +1,35 @@
 import type { ITheme } from '@visactor/vchart';
-import { covertThemeItem } from '../../util/token';
 import { areaStyleMap } from '../convertMap';
-import type { IGradientColor } from '../../util/color';
+import { convertToItemStyle } from '../utils';
 
 export function areaSeriesConverter(areaSeries: ITheme['series']['area'], theme: ITheme) {
   if (!areaSeries) {
     return {};
   }
-  const areaStyle = {} as any;
-  const { area = {} } = areaSeries;
+  const areaTheme = {} as any;
+  const { area, line } = areaSeries;
   if (area) {
     const { style = {} } = area;
-    for (const key in style) {
-      if (areaStyleMap[key]) {
-        areaStyle[areaStyleMap[key]] = covertThemeItem(style[key], theme);
-        if (key === 'fill') {
-          if ('gradient' in (style[key] as IGradientColor)) {
-            console.warn('[Converter] gradient color is not supported ');
-            delete areaStyle.color;
-            areaStyle.opacity = 0.1;
-          }
-        }
+    const areaStyle = convertToItemStyle(style, areaStyleMap, theme);
+    const curveType = line?.style?.curveType ?? style.curveType;
+    if (curveType) {
+      switch (curveType) {
+        case 'monotone':
+        case 'monotoneX':
+        case 'monotoneY':
+          areaTheme.smooth = true;
+          break;
+        case 'step':
+          areaTheme.step = 'middle';
+          break;
+        case 'stepAfter':
+          areaTheme.step = 'end';
+          break;
+        case 'stepBefore':
+          areaTheme.step = 'start';
       }
     }
+    areaTheme.areaStyle = areaStyle;
   }
-
-  return areaStyle;
+  return areaTheme;
 }

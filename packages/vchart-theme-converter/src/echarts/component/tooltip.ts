@@ -1,12 +1,9 @@
 import type { ITheme } from '@visactor/vchart';
-import { labelStyleMap, postProcessors } from '../convertMap';
 import { covertThemeItem } from '../../util/token';
 import { normalizePadding } from '@visactor/vutils';
 
 export function tooltipConverter(component: ITheme['component'], theme: ITheme) {
-  const tooltipTheme = {
-    axisPointer: {}
-  } as any;
+  const tooltipTheme = {} as any;
 
   const { tooltip } = component;
 

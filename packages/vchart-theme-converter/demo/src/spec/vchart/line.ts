@@ -54,7 +54,21 @@ export const spec = {
   xField: 'type',
   yField: 'value',
   seriesField: 'country',
-  legends: [{ visible: true, position: 'middle', orient: 'top' }],
+  legends: [{ visible: true, position: 'middle' }],
+  crosshair: {
+    xField: {
+      visible: true,
+      label: {
+        visible: true // label is off by default
+      }
+    },
+    yField: {
+      visible: true,
+      label: {
+        visible: true // label is off by default
+      }
+    }
+  },
   axes: [
     {
       orient: 'bottom',

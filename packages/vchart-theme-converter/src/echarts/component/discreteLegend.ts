@@ -1,8 +1,8 @@
 import type { ITheme } from '@visactor/vchart';
-import { IDiscreteLegendTheme } from '@visactor/vchart';
-import { labelStyleMap, postProcessors, symbolStyleMap } from '../convertMap';
+import { labelStyleMap, symbolStyleMap } from '../convertMap';
 import { covertThemeItem } from '../../util/token';
 import type { IPager } from '@visactor/vchart/esm/component/legend';
+import { convertToItemStyle } from '../utils';
 
 export function discreteLegendConverter(component: ITheme['component'], theme: ITheme) {
   const legendTheme = {
@@ -17,6 +17,7 @@ export function discreteLegendConverter(component: ITheme['component'], theme: I
       } else {
         legendTheme.orient = 'horizontal';
       }
+      legendTheme[orient] = orient;
     }
     if (padding) {
       legendTheme.padding = padding;
@@ -34,29 +35,18 @@ export function discreteLegendConverter(component: ITheme['component'], theme: I
 
       if (label) {
         const { space, style: labelStyle } = label;
-        legendTheme.textStyle = {};
-        for (const key in labelStyle) {
-          let style = covertThemeItem(labelStyle[key], theme);
-          if (key === 'lineHeight') {
-            style = postProcessors[key](style);
-          }
-          legendTheme.textStyle[labelStyleMap[key] ?? key] = style;
-        }
+        legendTheme.textStyle = convertToItemStyle(labelStyle, labelStyleMap, theme);
       }
 
       if (shape) {
         const { style, space } = shape;
-        legendTheme.itemStyle = {};
-        for (const key in style) {
-          const styleValue = covertThemeItem(style[key], theme);
-          if (key === 'size') {
-            legendTheme.itemWidth = styleValue;
-            legendTheme.itemHeight = styleValue;
-          } else if (key === 'symbolType') {
-            legendTheme.icon = styleValue;
-          } else {
-            legendTheme.itemStyle[symbolStyleMap[key] ?? key] = styleValue;
-          }
+        legendTheme.itemStyle = convertToItemStyle(style, symbolStyleMap, theme);
+        if ('size' in style) {
+          legendTheme.itemWidth = legendTheme.itemStyle.size;
+          legendTheme.itemHeight = legendTheme.itemStyle.size;
+        }
+        if ('symbolType' in style) {
+          legendTheme.icon = legendTheme.itemStyle.symbolType;
         }
       }
 
@@ -64,13 +54,7 @@ export function discreteLegendConverter(component: ITheme['component'], theme: I
         const { textStyle, handler, space } = pager as IPager;
         legendTheme.pageButtonGap = space;
         if (textStyle) {
-          for (const key in textStyle) {
-            let style = covertThemeItem(textStyle[key], theme);
-            if (key === 'lineHeight') {
-              style = postProcessors[key](style);
-            }
-            legendTheme.pageTextStyle[labelStyleMap[key] ?? key] = style;
-          }
+          legendTheme.pageTextStyle = convertToItemStyle(textStyle, labelStyleMap, theme);
         }
 
         if (handler) {

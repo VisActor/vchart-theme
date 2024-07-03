@@ -61,12 +61,18 @@ export function discreteLegendConverter(component: ITheme['component'], theme: I
         if (handler) {
           const { space, preShape, nextShape, style = {}, state = {} } = handler;
           legendTheme.pageButtonItemGap = space;
-          legendTheme.pageIcons = {
-            horizontal: [preShape, nextShape],
-            vertical: [preShape, nextShape]
-          };
-          legendTheme.pageIconColor = convertThemeTokenItem(style.fill, theme);
-          legendTheme.pageIconInactiveColor = convertThemeTokenItem(state.disable?.fill, theme);
+          if (preShape && nextShape) {
+            legendTheme.pageIcons = {
+              horizontal: [preShape, nextShape],
+              vertical: [preShape, nextShape]
+            };
+          }
+          if (style.fil) {
+            legendTheme.pageIconColor = convertThemeTokenItem(style.fill, theme);
+          }
+          if (state.disable?.fill) {
+            legendTheme.pageIconInactiveColor = convertThemeTokenItem(state.disable.fill, theme);
+          }
         }
       }
     }

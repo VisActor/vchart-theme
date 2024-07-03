@@ -98,7 +98,6 @@ const series = [
 
 export const spec = {
   legend: {
-    bottom: 0,
     type: 'scroll',
     showBackground: true
   },

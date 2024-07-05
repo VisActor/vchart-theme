@@ -17,12 +17,6 @@ export const spec = {
       saveAsImage: {}
     }
   },
-  grid: {
-    left: '3%',
-    right: '4%',
-    bottom: '3%',
-    containLabel: true
-  },
   xAxis: [
     {
       type: 'category',
@@ -37,7 +31,13 @@ export const spec = {
         'Foundation',
         'Lip gloss',
         'Mascara'
-      ]
+      ],
+      axisLine: {
+        lineStyle: {
+          type: 'solid',
+          color: ['red']
+        }
+      }
     }
   ],
   yAxis: [

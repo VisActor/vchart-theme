@@ -23,9 +23,11 @@ export function Charts(props: {
       if (themeName.includes('vchart')) {
         VChart.ThemeManager.registerTheme('__temp__', vchartTheme);
         theme = VC2EC(VChart.ThemeManager.getTheme('__temp__'));
+        console.log(VChart.ThemeManager.getTheme('__temp__'), theme);
         VChart.ThemeManager.removeTheme('__temp__');
+      } else {
+        console.log(VChart.ThemeManager.getCurrentTheme(), theme);
       }
-      console.log(theme, vchartTheme);
       const myChart = echarts.init(ecRef.current, theme);
       myChart.setOption(echartsOption);
       const resizeOb = new ResizeObserver(entries => {

@@ -28,10 +28,9 @@ const themeList = [
   { name: 'vchart-semi-light', type: 'light', vchartTheme: semiDesignLight, echartsTheme: VC2EC(semiDesignLight) },
   { name: 'echarts-shine', type: 'light', echartsTheme: echartsShine, vchartTheme: EC2VC(echartsShine) },
   { name: 'echarts-vintage', type: 'light', echartsTheme: echartsVintage, vchartTheme: EC2VC(echartsVintage) },
-  { name: 'vchart-chartHub', type: 'light', echartsTheme: VC2EC(chartHubLightTheme), vchartTheme: chartHubLightTheme }
-
-  // { name: 'echarts-dark', type: 'dark', echartsTheme: echartsDark, vchartTheme: EC2VC(echartsLight, 'dark') },
-  // { name: 'vchart-semi-dark', type: 'dark', vchartTheme: semiDesignDark, echartsTheme: VC2EC(semiDesignDark) }
+  { name: 'vchart-chartHub', type: 'light', echartsTheme: VC2EC(chartHubLightTheme), vchartTheme: chartHubLightTheme },
+  { name: 'echarts-dark', type: 'dark', echartsTheme: echartsDark, vchartTheme: EC2VC(echartsDark, 'dark') },
+  { name: 'vchart-semi-dark', type: 'dark', vchartTheme: semiDesignDark, echartsTheme: VC2EC(semiDesignDark) }
 ];
 
 console.log(themeList);

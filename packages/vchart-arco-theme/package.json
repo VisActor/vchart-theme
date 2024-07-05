@@ -77,7 +77,7 @@
     "react-router-dom": "^5.2.0",
     "react-device-detect": "^2.2.2",
     "redux": "^4.1.2",
-    "@visactor/vchart": "1.11.0",
+    "@visactor/vchart": "1.11.6",
     "@visactor/react-vchart": "1.11.0",
     "@arco-design/webpack-plugin": "^1.6.0",
     "@arco-plugins/vite-plugin-svgr": "^0.7.2",

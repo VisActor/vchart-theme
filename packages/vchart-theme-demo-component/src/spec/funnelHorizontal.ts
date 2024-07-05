@@ -1,23 +1,23 @@
-// @ts-nocheck
 export const horizontalFunnelSpec = {
   type: 'common',
+  padding: { left: 20, right: 60 },
   data: [
     {
       id: 'funnel',
       values: [
         {
           value: 100,
-          name: 'Resume Screening',
+          name: 'Screening',
           percent: 1
         },
         {
           value: 80,
-          name: 'Resume Evaluation',
+          name: 'Evaluating',
           percent: 0.8
         },
         {
           value: 50,
-          name: 'Evaluation Passed',
+          name: 'Passed',
           percent: 0.5
         },
         {
@@ -94,7 +94,7 @@ export const horizontalFunnelSpec = {
                     fill: 'black'
                   },
                   {
-                    text: `Take percent: ${datum.percent * 10}%`,
+                    text: `Percent: ${datum.percent * 10}%`,
                     fontWeight: 'bold',
                     lineHeight: 30
                   }

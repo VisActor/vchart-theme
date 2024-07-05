@@ -4,6 +4,7 @@ import { barGroupSpec } from '../spec/barGroup';
 import { barGroupHorizontalSpec } from '../spec/barGroupHorizontal';
 import { barStackedSpec } from '../spec/barStacked';
 import { barStackedHorizontalSpec } from '../spec/barStackedHorizontal';
+import { horizontalFunnelSpec } from '../spec/funnelHorizontal';
 import { gaugeSpec } from '../spec/gauge';
 import { horizontalBarSpec } from '../spec/horizontalBar';
 import { indicatorSankeySpec } from '../spec/indicatorSankey';
@@ -81,5 +82,10 @@ export const charts: IChartInfo[] = [
     option: {
       enableHtmlAttribute: true
     }
+  },
+  {
+    title: 'Horizontal Funnel',
+    spec: horizontalFunnelSpec,
+    fileName: 'funnelHorizontal'
   }
 ];

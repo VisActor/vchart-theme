@@ -37,7 +37,7 @@ export const charts: IChartInfo[] = [
   {
     title: 'Horizontal Grouped Bar Chart',
     spec: barGroupHorizontalSpec,
-    fileName: 'horizontalBar'
+    fileName: 'barGroupHorizontal'
   },
   {
     title: 'Horizontal Stacked Bar Chart',

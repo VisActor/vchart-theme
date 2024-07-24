@@ -33,7 +33,7 @@ importers:
       '@typescript-eslint/parser': 5.30.0
       '@visactor/react-vchart': 1.11.0
       '@visactor/vchart': 1.11.6
-      '@visactor/vchart-theme-utils': workspace:1.11.5
+      '@visactor/vchart-theme-utils': workspace:1.11.6-alpha.1
       '@vitejs/plugin-react': ^4.1.1
       '@vitejs/plugin-react-swc': ^3.4.1
       classnames: ^2.3.1
@@ -166,7 +166,7 @@ importers:
       '@types/offscreencanvas': 2019.6.4
       '@visactor/react-vchart': 1.11.0
       '@visactor/vchart': 1.11.6
-      '@visactor/vchart-theme-utils': workspace:1.11.5
+      '@visactor/vchart-theme-utils': workspace:1.11.6-alpha.1
       '@vitejs/plugin-react': ^4.1.1
       '@vitejs/plugin-react-swc': ^3.4.1
       eslint: ~8.18.0
@@ -240,11 +240,11 @@ importers:
       '@types/node': '*'
       '@types/offscreencanvas': 2019.6.4
       '@visactor/vchart': 1.11.6
-      '@visactor/vchart-arco-theme': workspace:1.11.5
-      '@visactor/vchart-semi-theme': workspace:1.11.5
-      '@visactor/vchart-tt-platform-theme': workspace:1.11.5
+      '@visactor/vchart-arco-theme': workspace:1.11.6-alpha.1
+      '@visactor/vchart-semi-theme': workspace:1.11.6-alpha.1
+      '@visactor/vchart-tt-platform-theme': workspace:1.11.6-alpha.1
       '@visactor/vchart-types': 1.11.6
-      '@visactor/vchart-ve-o-theme': workspace:1.11.5
+      '@visactor/vchart-ve-o-theme': workspace:1.11.6-alpha.1
       eslint: ~8.18.0
       husky: 7.0.4
       jest: ~29.5.0
@@ -322,8 +322,8 @@ importers:
       '@typescript-eslint/parser': 5.30.0
       '@visactor/react-vchart': 1.11.0
       '@visactor/vchart': 1.11.6
-      '@visactor/vchart-semi-theme': workspace:1.11.5
-      '@visactor/vchart-theme': workspace:1.11.5
+      '@visactor/vchart-semi-theme': workspace:1.11.6-alpha.1
+      '@visactor/vchart-theme': workspace:1.11.6-alpha.1
       '@visactor/vutils': ~0.18.9
       '@vitejs/plugin-react': ^4.1.1
       '@vitejs/plugin-react-swc': ^3.4.1
@@ -460,8 +460,8 @@ importers:
       '@types/react-dom': ^17.0.0
       '@visactor/react-vchart': 1.11.0
       '@visactor/vchart': 1.11.6
-      '@visactor/vchart-theme': workspace:1.11.5
-      '@visactor/vchart-theme-utils': workspace:1.11.5
+      '@visactor/vchart-theme': workspace:1.11.6-alpha.1
+      '@visactor/vchart-theme-utils': workspace:1.11.6-alpha.1
       '@vitejs/plugin-react': ^4.1.1
       eslint: ~8.18.0
       react: ^18.0.0
@@ -574,8 +574,8 @@ importers:
       '@types/offscreencanvas': 2019.6.4
       '@visactor/react-vchart': 1.11.0
       '@visactor/vchart': 1.11.6
-      '@visactor/vchart-semi-theme': workspace:1.11.5
-      '@visactor/vchart-theme-utils': workspace:1.11.5
+      '@visactor/vchart-semi-theme': workspace:1.11.6-alpha.1
+      '@visactor/vchart-theme-utils': workspace:1.11.6-alpha.1
       '@vitejs/plugin-react': ^4.1.1
       '@vitejs/plugin-react-swc': ^3.4.1
       eslint: ~8.18.0
@@ -668,8 +668,8 @@ importers:
       '@typescript-eslint/parser': 5.30.0
       '@visactor/react-vchart': 1.11.0
       '@visactor/vchart': 1.11.6
-      '@visactor/vchart-arco-theme': workspace:1.11.5
-      '@visactor/vchart-theme-utils': workspace:1.11.5
+      '@visactor/vchart-arco-theme': workspace:1.11.6-alpha.1
+      '@visactor/vchart-theme-utils': workspace:1.11.6-alpha.1
       '@vitejs/plugin-react': ^4.1.1
       '@vitejs/plugin-react-swc': ^3.4.1
       classnames: ^2.3.1

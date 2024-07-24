@@ -1,6 +1,6 @@
 {
   "name": "@visactor/vchart-theme-converter",
-  "version": "1.11.5",
+  "version": "1.11.6-alpha.1",
   "description": "VChart theme converter between popular visualization libraries",
   "sideEffects": false,
   "main": "cjs/index.js",
@@ -24,8 +24,8 @@
   },
   "devDependencies": {
     "@visactor/vchart": "1.11.6",
-    "@visactor/vchart-semi-theme": "workspace:1.11.5",
-    "@visactor/vchart-theme": "workspace:1.11.5",
+    "@visactor/vchart-semi-theme": "workspace:1.11.6-alpha.1",
+    "@visactor/vchart-theme": "workspace:1.11.6-alpha.1",
     "echarts": "5.5.0",
     "@types/echarts": "4.9.22",
     "@esbuild-plugins/node-globals-polyfill": "0.1.1",

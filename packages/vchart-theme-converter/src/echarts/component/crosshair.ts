@@ -5,6 +5,10 @@ import { convertToItemStyle, convertToVChartGraphicStyle } from '../utils';
 import type { IEChartsTheme } from '..';
 
 export function toEChartsAxisPointer(component: ITheme['component'], theme: ITheme) {
+  if (!component) {
+    return {};
+  }
+
   const axisPointerTheme = {
     type: 'shadow',
     trigger: 'axis',
@@ -25,14 +29,14 @@ export function toEChartsAxisPointer(component: ITheme['component'], theme: IThe
         axisPointerTheme.shadowStyle = lineStyle;
       }
       if (label) {
-        const { style, visible, labelBackground } = label;
+        const { style = {}, visible, labelBackground } = label;
         let echartsLabel = {
           show: visible,
           ...convertToItemStyle(style, attributeMap, theme)
         } as any;
 
         if (labelBackground) {
-          const { padding, style = {} } = labelBackground;
+          const { padding = [], style = {} } = labelBackground;
           echartsLabel.padding = normalizePadding(padding);
 
           echartsLabel = { ...echartsLabel, ...convertToItemStyle(style, labelBackgroundStyleMap, theme) };

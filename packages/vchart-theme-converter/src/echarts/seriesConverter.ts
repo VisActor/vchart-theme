@@ -9,7 +9,7 @@ import { toEChartsFunnel, toVChartFunnel } from './series/funnel';
 
 const VCHART_SERIES_TYPES = Object.keys(SeriesTypeEnum);
 
-const toEChartsConverter = {
+const toEChartsConverter: Record<string, (...args: any) => any> = {
   line: toEChartsLine,
   area: toEChartsArea,
   bar: toEChartsBar,
@@ -17,7 +17,7 @@ const toEChartsConverter = {
   funnel: toEChartsFunnel
 };
 
-export const toVChartConverter = {
+export const toVChartConverter: Record<string, (...args: any) => any> = {
   line: toVChartLine,
   bar: toVChartBar,
   pie: toVChartPie,
@@ -25,6 +25,9 @@ export const toVChartConverter = {
 };
 
 export function convertSeries(series: ITheme['series'], theme: ITheme) {
+  if (!series) {
+    return {};
+  }
   const result = {} as any;
 
   VCHART_SERIES_TYPES.forEach(type => {
@@ -36,7 +39,7 @@ export function convertSeries(series: ITheme['series'], theme: ITheme) {
         result.line = merge(result.line, toEChartsConverter[type](series[type], theme));
       } else {
         // 这里后续可能存在问题：vchart series type 和 echarts series type 不一致
-        result[type] = merge(result[type] ?? {}, toEChartsConverter[type](series[type], theme));
+        result[type] = merge(result[type] ?? {}, toEChartsConverter[type]((series as any)[type], theme));
       }
     }
   });

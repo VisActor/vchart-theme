@@ -10,7 +10,7 @@ import { toEChartsAxisPointer, toVChartCrosshair } from './component/crosshair';
 
 const VCHART_COMPONENT_TYPES = [...Object.keys(ComponentTypeEnum).filter(type => !type.includes('Axis')), 'axis'];
 
-const componentConverter = {
+const componentConverter: Record<string, any> = {
   axis: toEChartsAxis,
   title: toEChartsTitle,
   discreteLegend: toEChartsLegend,

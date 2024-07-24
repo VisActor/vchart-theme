@@ -1,9 +1,9 @@
-import type { ITheme } from '@visactor/vchart';
+import type { ITheme, ISeriesTheme } from '@visactor/vchart';
 import { attributeMap, labelStyleMap } from '../convertMap';
 import { isNumber } from '@visactor/vutils';
 import { convertToVChartGraphicStyle, convertToItemStyle } from '../utils';
 
-export function toEChartsPie(pieSeries: ITheme['series']['pie'], theme: ITheme) {
+export function toEChartsPie(pieSeries: ISeriesTheme['pie'], theme: ITheme) {
   if (!pieSeries) {
     return {};
   }
@@ -33,7 +33,7 @@ export function toEChartsPie(pieSeries: ITheme['series']['pie'], theme: ITheme) 
   return pieTheme;
 }
 
-export function toVChartPie(pieSeries: any): ITheme['series']['pie'] {
+export function toVChartPie(pieSeries: any): ISeriesTheme['pie'] {
   if (!pieSeries) {
     return {};
   }

@@ -47,7 +47,7 @@ export function vchartToEcharts(vchartTheme: IVChartTheme): IEChartsTheme {
    */
   echartsTheme.textStyle = {
     fontFamily: convertThemeTokenItem(vchartTheme.fontFamily, vchartTheme),
-    ...convertToItemStyle(mark.text?.style, textStyleMap, vchartTheme)
+    ...convertToItemStyle(mark?.text?.style ?? {}, textStyleMap, vchartTheme)
   };
 
   // 3. 系列样式转换
@@ -64,7 +64,7 @@ export function echartsToVChart(echartsTheme: IEChartsTheme, type: 'light' | 'da
     return {};
   }
 
-  const vchartTheme: IVChartTheme = { series: {}, component: {} };
+  const vchartTheme = { series: {}, component: {} } as IVChartTheme;
 
   const { color, backgroundColor, textStyle } = echartsTheme;
   // 1. 色板转换
@@ -81,9 +81,9 @@ export function echartsToVChart(echartsTheme: IEChartsTheme, type: 'light' | 'da
   // 3. 系列转换
   ['line', 'pie', 'bar', 'funnel'].forEach(series => {
     if (echartsTheme[series] && toVChartConverter[series]) {
-      vchartTheme.series[series] = toVChartConverter[series](echartsTheme[series]);
+      (vchartTheme.series as any)[series] = toVChartConverter[series](echartsTheme[series]);
       if (series === 'line') {
-        vchartTheme.series.area = vchartTheme.series[series];
+        vchartTheme.series!.area = vchartTheme.series![series];
         // @ts-ignore
         delete vchartTheme.series.line.area;
       }

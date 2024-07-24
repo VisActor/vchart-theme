@@ -9,6 +9,11 @@ export function toEChartsLegend(component: ITheme['component'], theme: ITheme) {
   const legendTheme = {
     type: 'scroll'
   } as any;
+
+  if (!component) {
+    return legendTheme;
+  }
+
   const { discreteLegend } = component;
   if (discreteLegend) {
     const { item, orient, padding, pager } = discreteLegend;
@@ -35,12 +40,12 @@ export function toEChartsLegend(component: ITheme['component'], theme: ITheme) {
       }
 
       if (label) {
-        const { space, style: labelStyle } = label;
+        const { space, style: labelStyle = {} } = label;
         legendTheme.textStyle = convertToItemStyle(labelStyle, labelStyleMap, theme);
       }
 
       if (shape) {
-        const { style, space } = shape;
+        const { style = {}, space } = shape;
         legendTheme.itemStyle = convertToItemStyle(style, symbolStyleMap, theme);
         if ('size' in style) {
           legendTheme.itemWidth = legendTheme.itemStyle.size;

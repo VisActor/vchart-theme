@@ -1,11 +1,10 @@
-import type { ITheme } from '@visactor/vchart';
-
+import type { ITheme, ISeriesTheme } from '@visactor/vchart';
+import type { IEChartsTheme } from '..';
 import { convertThemeTokenItem } from '../../util/token';
 import { areaStyleMap, labelStyleMap, lineStyleMap, symbolStyleMap } from '../convertMap';
-import type { IEChartsTheme } from '..';
 import { convertToItemStyle, convertToVChartGraphicStyle } from '../utils';
 
-export function toEChartsLine(lineSeries: ITheme['series']['line'], theme: ITheme) {
+export function toEChartsLine(lineSeries: ISeriesTheme['line'], theme: ITheme) {
   if (!lineSeries) {
     return {};
   }
@@ -62,7 +61,7 @@ export function toEChartsLine(lineSeries: ITheme['series']['line'], theme: IThem
   return lineTheme;
 }
 
-export function toVChartLine(lineSeries: IEChartsTheme): ITheme['series']['line'] {
+export function toVChartLine(lineSeries: IEChartsTheme): ISeriesTheme['line'] {
   if (!lineSeries) {
     return {};
   }

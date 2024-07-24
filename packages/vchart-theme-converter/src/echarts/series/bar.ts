@@ -1,8 +1,8 @@
-import type { ITheme } from '@visactor/vchart';
+import type { ITheme, ISeriesTheme } from '@visactor/vchart';
 import { attributeMap, labelStyleMap } from '../convertMap';
 import { convertToItemStyle, convertToVChartGraphicStyle } from '../utils';
 
-export function toEChartsBar(barSeries: ITheme['series']['bar'], theme: ITheme) {
+export function toEChartsBar(barSeries: ISeriesTheme['bar'], theme: ITheme) {
   if (!barSeries) {
     return {};
   }
@@ -38,7 +38,7 @@ export function toEChartsBar(barSeries: ITheme['series']['bar'], theme: ITheme) 
   return barTheme;
 }
 
-const labelPositionMap = {
+const labelPositionMap: Record<string, string> = {
   'inside-top': 'insideTop',
   'inside-bottom': 'insideBottom',
   'inside-right': 'insideRight',
@@ -49,7 +49,7 @@ const labelPositionMap = {
   'bottom-left': 'bottomLeft'
 };
 
-export function toVChartBar(barSeries: any): ITheme['series']['bar'] {
+export function toVChartBar(barSeries: any): ISeriesTheme['bar'] {
   if (!barSeries) {
     return {};
   }

@@ -4,6 +4,9 @@ import { normalizePadding } from '@visactor/vutils';
 import type { IEChartsTheme } from '..';
 
 export function toEChartsTooltip(component: ITheme['component'], theme: ITheme) {
+  if (!component) {
+    return {};
+  }
   const tooltipTheme = {} as any;
 
   const { tooltip } = component;
@@ -11,7 +14,7 @@ export function toEChartsTooltip(component: ITheme['component'], theme: ITheme) 
   if (tooltip) {
     const { panel, shape, titleLabel, keyLabel, valueLabel, spaceRow } = tooltip;
     if (panel) {
-      const { padding, backgroundColor, border = {}, shadow } = panel;
+      const { padding = [], backgroundColor, border = {}, shadow } = panel;
       tooltipTheme.padding = normalizePadding(padding);
       tooltipTheme.backgroundColor = convertThemeTokenItem(backgroundColor, theme);
       tooltipTheme.borderColor = convertThemeTokenItem(border.color, theme);

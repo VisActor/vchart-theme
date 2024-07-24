@@ -13,6 +13,9 @@ export function toEChartsAxis(component: ITheme['component'], theme: ITheme) {
 }
 
 function convertCategoryAxis(component: ITheme['component'], theme: ITheme) {
+  if (!component) {
+    return {};
+  }
   const { axis, axisBand } = component;
 
   // TODO: how to process axisX/axisY
@@ -25,7 +28,7 @@ function convertCategoryAxis(component: ITheme['component'], theme: ITheme) {
   } as any;
 
   if (domainLine) {
-    const { visible, style } = domainLine;
+    const { visible, style = {} } = domainLine;
     categoryAxis.axisLine = {
       lineStyle: convertToItemStyle(style, axisLineStyleMap, theme)
     };
@@ -35,7 +38,7 @@ function convertCategoryAxis(component: ITheme['component'], theme: ITheme) {
   }
 
   if (grid) {
-    const { visible, style } = grid;
+    const { visible, style = {} } = grid;
     categoryAxis.splitLine = {
       lineStyle: convertToItemStyle(style, axisLineStyleMap, theme)
     };
@@ -45,7 +48,7 @@ function convertCategoryAxis(component: ITheme['component'], theme: ITheme) {
   }
 
   if (subGrid) {
-    const { visible, style } = subGrid;
+    const { visible, style = {} } = subGrid;
     categoryAxis.minorSplitLine = {
       lineStyle: convertToItemStyle(style, axisLineStyleMap, theme)
     };
@@ -55,7 +58,7 @@ function convertCategoryAxis(component: ITheme['component'], theme: ITheme) {
   }
 
   if (label) {
-    const { visible, style, space } = label;
+    const { visible, style = {}, space } = label;
     categoryAxis.axisLabel = {
       margin: space,
       ...convertToItemStyle(style, labelStyleMap, theme)
@@ -66,7 +69,7 @@ function convertCategoryAxis(component: ITheme['component'], theme: ITheme) {
   }
 
   if (tick) {
-    const { visible, style, tickSize, alignWithLabel } = tick;
+    const { visible, style = {}, tickSize, alignWithLabel } = tick;
     categoryAxis.axisTick = {
       alignWithLabel,
       length: tickSize,
@@ -78,7 +81,7 @@ function convertCategoryAxis(component: ITheme['component'], theme: ITheme) {
   }
 
   if (subTick) {
-    const { visible, style, tickSize, tickCount } = subTick;
+    const { visible, style = {}, tickSize, tickCount } = subTick;
     categoryAxis.minorTick = {
       length: tickSize,
       splitNumber: tickCount,
@@ -90,7 +93,7 @@ function convertCategoryAxis(component: ITheme['component'], theme: ITheme) {
   }
 
   if (title) {
-    const { style, space, position } = title;
+    const { style = {}, space, position } = title;
     categoryAxis.nameLocation = position ?? 'middle';
     // nameGap 是标题到轴线的距离
     categoryAxis.nameGap = space + (categoryAxis.axisLabel?.margin ?? 0) + (categoryAxis.axisTick?.length ?? 0);
@@ -101,6 +104,9 @@ function convertCategoryAxis(component: ITheme['component'], theme: ITheme) {
 }
 
 function convertLinearAxis(component: ITheme['component'], theme: ITheme) {
+  if (!component) {
+    return {};
+  }
   const { axis, axisLinear } = component;
 
   // TODO: how to process axisX/axisY
@@ -110,7 +116,7 @@ function convertLinearAxis(component: ITheme['component'], theme: ITheme) {
   const valueAxis = {} as any;
 
   if (domainLine) {
-    const { visible, style } = domainLine;
+    const { visible, style = {} } = domainLine;
     valueAxis.axisLine = {
       lineStyle: convertToItemStyle(style, axisLineStyleMap, theme)
     };
@@ -120,7 +126,7 @@ function convertLinearAxis(component: ITheme['component'], theme: ITheme) {
   }
 
   if (grid) {
-    const { visible, style } = grid;
+    const { visible, style = {} } = grid;
     valueAxis.splitLine = {
       lineStyle: convertToItemStyle(style, axisLineStyleMap, theme)
     };
@@ -130,7 +136,7 @@ function convertLinearAxis(component: ITheme['component'], theme: ITheme) {
   }
 
   if (subGrid) {
-    const { visible, style } = subGrid;
+    const { visible, style = {} } = subGrid;
     valueAxis.minorSplitLine = {
       lineStyle: convertToItemStyle(style, axisLineStyleMap, theme)
     };
@@ -140,7 +146,7 @@ function convertLinearAxis(component: ITheme['component'], theme: ITheme) {
   }
 
   if (label) {
-    const { visible, style, space } = label;
+    const { visible, style = {}, space } = label;
     valueAxis.axisLabel = {
       margin: space,
       ...convertToItemStyle(style, labelStyleMap, theme)
@@ -151,7 +157,7 @@ function convertLinearAxis(component: ITheme['component'], theme: ITheme) {
   }
 
   if (tick) {
-    const { visible, style, tickSize, alignWithLabel } = tick;
+    const { visible, style = {}, tickSize, alignWithLabel } = tick;
     valueAxis.axisTick = {
       alignWithLabel,
       length: tickSize,
@@ -163,7 +169,7 @@ function convertLinearAxis(component: ITheme['component'], theme: ITheme) {
   }
 
   if (subTick) {
-    const { visible, style, tickSize, tickCount } = subTick;
+    const { visible, style = {}, tickSize, tickCount } = subTick;
     valueAxis.minorTick = {
       length: tickSize,
       splitNumber: tickCount,
@@ -175,7 +181,7 @@ function convertLinearAxis(component: ITheme['component'], theme: ITheme) {
   }
 
   if (title) {
-    const { style, space, position } = title;
+    const { style = {}, space, position } = title;
     valueAxis.nameLocation = position ?? 'middle';
     // nameGap 是标题到轴线的距离
     valueAxis.nameGap = space + (valueAxis.axisLabel?.margin ?? 0) + (valueAxis.axisTick?.length ?? 0);

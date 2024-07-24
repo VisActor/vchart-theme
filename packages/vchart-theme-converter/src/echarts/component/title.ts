@@ -4,6 +4,10 @@ import { convertToItemStyle, convertToVChartGraphicStyle } from '../utils';
 import type { IEChartsTheme } from '..';
 
 export function toEChartsTitle(component: ITheme['component'], theme: ITheme) {
+  if (!component) {
+    return {};
+  }
+
   const titleTheme = {} as any;
   const { title } = component;
 

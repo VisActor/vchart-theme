@@ -22,7 +22,9 @@
     {
       "packageName": "@visactor/vchart-theme-converter",
       "projectFolder": "packages/vchart-theme-converter",
-      "shouldPublish": false
+      "tags": ["package"],
+      "shouldPublish": true,
+      "versionPolicyName": "vchartThemeMain"
     },
     {
       "packageName": "@visactor/vchart-theme-demo-component",

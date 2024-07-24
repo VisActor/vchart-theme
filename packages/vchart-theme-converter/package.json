@@ -23,9 +23,9 @@
     "@visactor/vutils": "~0.18.9"
   },
   "devDependencies": {
-    "@visactor/vchart": "1.11.0",
-    "@visactor/vchart-semi-theme": "workspace:1.11.4",
-    "@visactor/vchart-theme": "workspace:1.11.4",
+    "@visactor/vchart": "1.11.6",
+    "@visactor/vchart-semi-theme": "workspace:1.11.5",
+    "@visactor/vchart-theme": "workspace:1.11.5",
     "echarts": "5.5.0",
     "@types/echarts": "4.9.22",
     "@esbuild-plugins/node-globals-polyfill": "0.1.1",

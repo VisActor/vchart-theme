@@ -8,7 +8,7 @@ export const allThemeMap = new Map([
   // 移动端主题
   [mobileLightTheme.name, mobileLightTheme],
   [mobileDarkTheme.name, mobileDarkTheme],
-  // 传统主题
+  // // 传统主题
   [legacyLightTheme.name, legacyLightTheme],
   [legacyDarkTheme.name, legacyDarkTheme],
   // 大屏主题

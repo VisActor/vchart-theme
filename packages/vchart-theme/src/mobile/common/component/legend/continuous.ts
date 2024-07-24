@@ -1,4 +1,4 @@
-import type { IContinuousLegendTheme } from '@visactor/vchart-types';
+import type { IContinuousLegendTheme } from '@visactor/vchart';
 
 export const DEFAULT_CONTINUOUS_LEGEND_THEME: IContinuousLegendTheme = {
   orient: 'right',

@@ -1,4 +1,4 @@
-import type { ISeriesTheme, SeriesTypeEnum, SeriesTypeForThemeEnum } from '@visactor/vchart-types';
+import type { ISeriesTheme, SeriesTypeEnum, SeriesTypeForThemeEnum } from '@visactor/vchart';
 
 export const area: Pick<
   ISeriesTheme,

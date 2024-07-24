@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@visactor/vchart": "1.11.6",
-    "@visactor/vchart-types": "1.11.0",
+    "@visactor/vchart-types": "1.11.6",
     "@internal/bundler": "workspace:*",
     "@internal/eslint-config": "workspace:*",
     "@internal/ts-config": "workspace:*",

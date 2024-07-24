@@ -1,4 +1,4 @@
-import type { ITitleTheme } from '@visactor/vchart-types';
+import type { ITitleTheme } from '@visactor/vchart';
 
 export const title: ITitleTheme = {
   padding: {

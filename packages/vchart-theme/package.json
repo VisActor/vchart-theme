@@ -39,7 +39,7 @@
     "@types/jest": "~29.5.0",
     "@rushstack/eslint-patch": "~1.1.4",
     "@visactor/vchart": "1.11.6",
-    "@visactor/vchart-types": "1.11.0",
+    "@visactor/vchart-types": "1.11.6",
     "eslint": "~8.18.0",
     "vite": "^4.5.0",
     "typescript": "4.9.5",

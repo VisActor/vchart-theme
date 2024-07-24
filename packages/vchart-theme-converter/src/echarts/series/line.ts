@@ -5,7 +5,7 @@ import { areaStyleMap, labelStyleMap, lineStyleMap, symbolStyleMap } from '../co
 import type { IEChartsTheme } from '..';
 import { convertToItemStyle, convertToVChartGraphicStyle } from '../utils';
 
-export function lineSeriesConverter(lineSeries: ITheme['series']['line'], theme: ITheme) {
+export function toEChartsLine(lineSeries: ITheme['series']['line'], theme: ITheme) {
   if (!lineSeries) {
     return {};
   }

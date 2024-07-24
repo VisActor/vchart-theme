@@ -2,7 +2,7 @@ import type { ITheme } from '@visactor/vchart';
 import { attributeMap, labelStyleMap } from '../convertMap';
 import { convertToItemStyle, convertToVChartGraphicStyle } from '../utils';
 
-export function funnelSeriesConverter(funnelSeries: ITheme['series']['funnel'], theme: ITheme) {
+export function toEChartsFunnel(funnelSeries: ITheme['series']['funnel'], theme: ITheme) {
   if (!funnelSeries) {
     return {};
   }

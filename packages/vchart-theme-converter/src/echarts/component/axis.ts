@@ -4,7 +4,7 @@ import { isValid, merge } from '@visactor/vutils';
 import { axisLineStyleMap, labelStyleMap } from '../convertMap';
 import { convertToItemStyle, convertToVChartGraphicStyle } from '../utils';
 
-export function axisConverter(component: ITheme['component'], theme: ITheme) {
+export function toEChartsAxis(component: ITheme['component'], theme: ITheme) {
   const axisTheme = {} as any;
 
   axisTheme.categoryAxis = convertCategoryAxis(component, theme);

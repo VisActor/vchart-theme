@@ -2,7 +2,7 @@ import type { ITheme } from '@visactor/vchart';
 import { attributeMap, labelStyleMap } from '../convertMap';
 import { convertToItemStyle, convertToVChartGraphicStyle } from '../utils';
 
-export function barSeriesConverter(barSeries: ITheme['series']['bar'], theme: ITheme) {
+export function toEChartsBar(barSeries: ITheme['series']['bar'], theme: ITheme) {
   if (!barSeries) {
     return {};
   }

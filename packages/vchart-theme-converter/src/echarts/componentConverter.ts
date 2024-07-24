@@ -2,20 +2,20 @@ import type { ITheme } from '@visactor/vchart';
 // FIXME:
 import { ComponentTypeEnum } from '@visactor/vchart/esm/component/interface/type';
 import { merge } from '@visactor/vutils';
-import { axisConverter, toVChartAxis } from './component/axis';
-import { titleConverter, toVChartTitle } from './component/title';
-import { discreteLegendConverter, toVChartDiscreteLegend } from './component/discreteLegend';
-import { toVChartTooltip, tooltipConverter } from './component/tooltip';
-import { crosshairConverter, toVChartCrosshair } from './component/crosshair';
+import { toEChartsAxis, toVChartAxis } from './component/axis';
+import { toEChartsTitle, toVChartTitle } from './component/title';
+import { toEChartsLegend, toVChartDiscreteLegend } from './component/discreteLegend';
+import { toVChartTooltip, toEChartsTooltip } from './component/tooltip';
+import { toEChartsAxisPointer, toVChartCrosshair } from './component/crosshair';
 
 const VCHART_COMPONENT_TYPES = [...Object.keys(ComponentTypeEnum).filter(type => !type.includes('Axis')), 'axis'];
 
 const componentConverter = {
-  axis: axisConverter,
-  title: titleConverter,
-  discreteLegend: discreteLegendConverter,
-  tooltip: tooltipConverter,
-  cartesianCrosshair: crosshairConverter
+  axis: toEChartsAxis,
+  title: toEChartsTitle,
+  discreteLegend: toEChartsLegend,
+  tooltip: toEChartsTooltip,
+  cartesianCrosshair: toEChartsAxisPointer
 };
 
 export const toVChartComponentConverter = {

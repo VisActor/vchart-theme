@@ -2,7 +2,7 @@ import type { ITheme } from '@visactor/vchart';
 import { areaStyleMap } from '../convertMap';
 import { convertToItemStyle } from '../utils';
 
-export function areaSeriesConverter(areaSeries: ITheme['series']['area'], theme: ITheme) {
+export function toEChartsArea(areaSeries: ITheme['series']['area'], theme: ITheme) {
   if (!areaSeries) {
     return {};
   }

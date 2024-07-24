@@ -3,7 +3,7 @@ import { labelStyleMap } from '../convertMap';
 import { convertToItemStyle, convertToVChartGraphicStyle } from '../utils';
 import type { IEChartsTheme } from '..';
 
-export function titleConverter(component: ITheme['component'], theme: ITheme) {
+export function toEChartsTitle(component: ITheme['component'], theme: ITheme) {
   const titleTheme = {} as any;
   const { title } = component;
 

@@ -1,20 +1,20 @@
 import type { ITheme } from '@visactor/vchart';
 import { SeriesTypeEnum } from '@visactor/vchart';
-import { toVChartLine, lineSeriesConverter } from './series/line';
 import { merge } from '@visactor/vutils';
-import { areaSeriesConverter } from './series/area';
-import { barSeriesConverter, toVChartBar } from './series/bar';
-import { pieSeriesConverter, toVChartPie } from './series/pie';
-import { funnelSeriesConverter, toVChartFunnel } from './series/funnel';
+import { toVChartLine, toEChartsLine } from './series/line';
+import { toEChartsArea } from './series/area';
+import { toEChartsBar, toVChartBar } from './series/bar';
+import { toEChartsPie, toVChartPie } from './series/pie';
+import { toEChartsFunnel, toVChartFunnel } from './series/funnel';
 
 const VCHART_SERIES_TYPES = Object.keys(SeriesTypeEnum);
 
 const toEChartsConverter = {
-  line: lineSeriesConverter,
-  area: areaSeriesConverter,
-  bar: barSeriesConverter,
-  pie: pieSeriesConverter,
-  funnel: funnelSeriesConverter
+  line: toEChartsLine,
+  area: toEChartsArea,
+  bar: toEChartsBar,
+  pie: toEChartsPie,
+  funnel: toEChartsFunnel
 };
 
 export const toVChartConverter = {

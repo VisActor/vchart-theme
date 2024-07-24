@@ -3,7 +3,7 @@ import { convertThemeTokenItem } from '../../util/token';
 import { normalizePadding } from '@visactor/vutils';
 import type { IEChartsTheme } from '..';
 
-export function tooltipConverter(component: ITheme['component'], theme: ITheme) {
+export function toEChartsTooltip(component: ITheme['component'], theme: ITheme) {
   const tooltipTheme = {} as any;
 
   const { tooltip } = component;

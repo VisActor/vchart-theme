@@ -1,10 +1,9 @@
 import type { ITheme } from '@visactor/vchart';
-import { convertThemeTokenItem } from '../../util/token';
 import { attributeMap, labelStyleMap } from '../convertMap';
 import { isNumber } from '@visactor/vutils';
 import { convertToVChartGraphicStyle, convertToItemStyle } from '../utils';
 
-export function pieSeriesConverter(pieSeries: ITheme['series']['pie'], theme: ITheme) {
+export function toEChartsPie(pieSeries: ITheme['series']['pie'], theme: ITheme) {
   if (!pieSeries) {
     return {};
   }

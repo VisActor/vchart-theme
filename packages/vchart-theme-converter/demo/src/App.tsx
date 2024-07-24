@@ -14,7 +14,7 @@ import { theme as echartsVintage } from './theme/echarts-vintage';
 import { chartHubLightTheme } from '@visactor/vchart-theme';
 
 import './index.css';
-import { EC2VC, VC2EC } from '../../src';
+import { echartsToVChart, vchartToEcharts } from '../../src';
 import { semiDesignDark, semiDesignLight } from '@visactor/vchart-semi-theme';
 
 const demoList = [
@@ -25,12 +25,27 @@ const demoList = [
 ];
 
 const themeList = [
-  { name: 'vchart-semi-light', type: 'light', vchartTheme: semiDesignLight, echartsTheme: VC2EC(semiDesignLight) },
-  { name: 'echarts-shine', type: 'light', echartsTheme: echartsShine, vchartTheme: EC2VC(echartsShine) },
-  { name: 'echarts-vintage', type: 'light', echartsTheme: echartsVintage, vchartTheme: EC2VC(echartsVintage) },
-  { name: 'vchart-chartHub', type: 'light', echartsTheme: VC2EC(chartHubLightTheme), vchartTheme: chartHubLightTheme },
-  { name: 'echarts-dark', type: 'dark', echartsTheme: echartsDark, vchartTheme: EC2VC(echartsDark, 'dark') },
-  { name: 'vchart-semi-dark', type: 'dark', vchartTheme: semiDesignDark, echartsTheme: VC2EC(semiDesignDark) }
+  {
+    name: 'vchart-semi-light',
+    type: 'light',
+    vchartTheme: semiDesignLight,
+    echartsTheme: vchartToEcharts(semiDesignLight)
+  },
+  { name: 'echarts-shine', type: 'light', echartsTheme: echartsShine, vchartTheme: echartsToVChart(echartsShine) },
+  {
+    name: 'echarts-vintage',
+    type: 'light',
+    echartsTheme: echartsVintage,
+    vchartTheme: echartsToVChart(echartsVintage)
+  },
+  {
+    name: 'vchart-chartHub',
+    type: 'light',
+    echartsTheme: vchartToEcharts(chartHubLightTheme),
+    vchartTheme: chartHubLightTheme
+  },
+  { name: 'echarts-dark', type: 'dark', echartsTheme: echartsDark, vchartTheme: echartsToVChart(echartsDark, 'dark') },
+  { name: 'vchart-semi-dark', type: 'dark', vchartTheme: semiDesignDark, echartsTheme: vchartToEcharts(semiDesignDark) }
 ];
 
 console.log(themeList);

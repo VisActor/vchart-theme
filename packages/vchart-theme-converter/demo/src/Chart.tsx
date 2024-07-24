@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from 'react';
 import * as echarts from 'echarts';
 import VChart from '@visactor/vchart';
-import { VC2EC } from '../../src';
+import { vchartToEcharts } from '../../src';
 
 export function Charts(props: {
   echartsOption: any;
@@ -22,7 +22,7 @@ export function Charts(props: {
       let theme = echartsTheme;
       if (themeName.includes('vchart')) {
         VChart.ThemeManager.registerTheme('__temp__', vchartTheme);
-        theme = VC2EC(VChart.ThemeManager.getTheme('__temp__'));
+        theme = vchartToEcharts(VChart.ThemeManager.getTheme('__temp__'));
         console.log(VChart.ThemeManager.getTheme('__temp__'), theme);
         VChart.ThemeManager.removeTheme('__temp__');
       } else {

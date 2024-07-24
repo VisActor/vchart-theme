@@ -5,7 +5,7 @@ import type { IDiscreteLegendTheme, IPager } from '@visactor/vchart/esm/componen
 import { convertToItemStyle, convertToVChartGraphicStyle } from '../utils';
 import type { IEChartsTheme } from '..';
 
-export function discreteLegendConverter(component: ITheme['component'], theme: ITheme) {
+export function toEChartsLegend(component: ITheme['component'], theme: ITheme) {
   const legendTheme = {
     type: 'scroll'
   } as any;

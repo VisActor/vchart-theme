@@ -1,6 +1,6 @@
 import type { ITheme as IVChartTheme } from '@visactor/vchart';
 import { convertObjectColor, convertColorPlatte as convertColorPalette } from '../util/color';
-import { isObject, isValidNumber, merge, normalizePadding } from '@visactor/vutils';
+import { isObject, merge } from '@visactor/vutils';
 import { convertSeries, toVChartConverter } from './seriesConverter';
 import { convertComponent, toVChartComponentConverter } from './componentConverter';
 import { convertThemeTokenItem } from '../util/token';
@@ -9,7 +9,7 @@ import { textStyleMap } from './convertMap';
 
 export type IEChartsTheme = Record<string, any>;
 
-export function VC2EC(vchartTheme: IVChartTheme): IEChartsTheme {
+export function vchartToEcharts(vchartTheme: IVChartTheme): IEChartsTheme {
   if (!vchartTheme) {
     return {};
   }
@@ -59,7 +59,7 @@ export function VC2EC(vchartTheme: IVChartTheme): IEChartsTheme {
   return echartsTheme;
 }
 
-export function EC2VC(echartsTheme: IEChartsTheme, type: 'light' | 'dark' = 'light'): IVChartTheme {
+export function echartsToVChart(echartsTheme: IEChartsTheme, type: 'light' | 'dark' = 'light'): IVChartTheme {
   if (!echartsTheme) {
     return {};
   }

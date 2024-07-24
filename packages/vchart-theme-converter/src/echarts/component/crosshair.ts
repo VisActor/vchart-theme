@@ -4,7 +4,7 @@ import { normalizePadding } from '@visactor/vutils';
 import { convertToItemStyle, convertToVChartGraphicStyle } from '../utils';
 import type { IEChartsTheme } from '..';
 
-export function crosshairConverter(component: ITheme['component'], theme: ITheme) {
+export function toEChartsAxisPointer(component: ITheme['component'], theme: ITheme) {
   const axisPointerTheme = {
     type: 'shadow',
     trigger: 'axis',

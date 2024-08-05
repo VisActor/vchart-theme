@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@visactor/vchart-theme",
+      "comment": "fix: fix series color not work in chartHub theme",
+      "type": "none"
+    }
+  ],
+  "packageName": "@visactor/vchart-theme"
+}

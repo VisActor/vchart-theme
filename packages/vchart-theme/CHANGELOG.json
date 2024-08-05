@@ -2,6 +2,18 @@
   "name": "@visactor/vchart-theme",
   "entries": [
     {
+      "version": "1.11.5",
+      "tag": "@visactor/vchart-theme_v1.11.5",
+      "date": "Mon, 05 Aug 2024 08:45:51 GMT",
+      "comments": {
+        "none": [
+          {
+            "comment": "fix: fix series color not work in chartHub theme"
+          }
+        ]
+      }
+    },
+    {
       "version": "1.11.3",
       "tag": "@visactor/vchart-theme_v1.11.3",
       "date": "Wed, 19 Jun 2024 11:37:42 GMT",

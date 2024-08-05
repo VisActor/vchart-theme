@@ -25,8 +25,8 @@
     "@arco-design/web-react": "^2.32.2",
     "@visactor/vchart-theme-utils": "workspace:1.11.5",
     "@visactor/vchart-theme": "workspace:1.11.5",
-    "@visactor/vchart": "1.11.6",
-    "@visactor/react-vchart": "1.11.0"
+    "@visactor/vchart": "1.11.10",
+    "@visactor/react-vchart": "1.11.10"
   },
   "peerDependencies": {
     "react": ">=16.0.0",

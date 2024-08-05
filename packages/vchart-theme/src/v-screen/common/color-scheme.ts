@@ -1,4 +1,4 @@
-import type { IThemeColorScheme } from '@visactor/vchart-types';
+import type { IThemeColorScheme } from '@visactor/vchart';
 import { palette } from './palette';
 
 export const getColorScheme = (dataScheme: string[]): IThemeColorScheme => ({

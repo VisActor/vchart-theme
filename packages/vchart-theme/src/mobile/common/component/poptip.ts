@@ -1,4 +1,4 @@
-import type { IPoptipTheme } from '@visactor/vchart-types';
+import type { IPoptipTheme } from '@visactor/vchart';
 
 export const poptip: IPoptipTheme = {
   visible: true,

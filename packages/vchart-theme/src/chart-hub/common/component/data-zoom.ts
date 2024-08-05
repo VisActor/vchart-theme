@@ -1,4 +1,4 @@
-import type { IDataZoomTheme } from '@visactor/vchart-types';
+import type { IDataZoomTheme } from '@visactor/vchart';
 
 export const dataZoom: IDataZoomTheme = {
   height: 44,

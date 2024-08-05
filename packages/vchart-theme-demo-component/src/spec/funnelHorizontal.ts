@@ -52,10 +52,10 @@ export const horizontalFunnelSpec = {
         visible: true,
         style: {
           lineHeight: 16,
-          limit: (datum, ctx) => Math.abs(ctx.getPoints(datum)[0].x - ctx.getPoints(datum)[3].x),
-          text: datum => `${datum.percent * 100}%`,
-          x: (datum, ctx) => ctx.getPoints(datum)[0].x + 10,
-          y: (datum, ctx) => ctx.getPoints(datum)[0].y - 10,
+          limit: (datum: any, ctx: any) => Math.abs(ctx.getPoints(datum)[0].x - ctx.getPoints(datum)[3].x),
+          text: (datum: any) => `${datum.percent * 100}%`,
+          x: (datum: any, ctx: any) => ctx.getPoints(datum)[0].x + 10,
+          y: (datum: any, ctx: any) => ctx.getPoints(datum)[0].y - 10,
           textAlign: 'left',
           textBaseline: 'bottom',
           fontSize: 20,
@@ -67,7 +67,7 @@ export const horizontalFunnelSpec = {
           type: 'polygon',
           dataId: 'funnel',
           style: {
-            points: (datum, ctx) => {
+            points: (datum: any, ctx: any) => {
               const start = ctx.getPoints(datum)[1];
               const end = { x: start.x, y: 0 };
               return [start, end];
@@ -81,7 +81,7 @@ export const horizontalFunnelSpec = {
           type: 'text',
           dataId: 'funnel',
           style: {
-            text: (datum, ctx) => {
+            text: (datum: any, ctx: any) => {
               return {
                 type: 'rich',
                 text: [
@@ -101,8 +101,8 @@ export const horizontalFunnelSpec = {
                 ]
               };
             },
-            x: (datum, ctx) => ctx.getPoints(datum)[0].x + 10,
-            width: (datum, ctx) => {
+            x: (datum: any, ctx: any) => ctx.getPoints(datum)[0].x + 10,
+            width: (datum: any, ctx: any) => {
               return ctx.getPoints(datum)[3].x - ctx.getPoints(datum)[0].x;
             },
             textAlign: 'left',
@@ -119,7 +119,7 @@ export const horizontalFunnelSpec = {
           style: {
             image:
               'https://sf16-scmcdn-sg.ibytedtos.com/obj/static-sg/visactor-site/sg/client/img/visactor/vrender-icon.svg',
-            x: (datum, ctx) =>
+            x: (datum: any, ctx: any) =>
               ctx.getPoints(datum)[2].x + (ctx.getPoints(datum)[2].x - ctx.getPoints(datum)[1].x) * 0.5 - 36,
             y: 10,
             align: 'right',

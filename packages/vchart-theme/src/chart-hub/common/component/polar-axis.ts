@@ -1,4 +1,4 @@
-import type { IPolarAxisCommonTheme } from '@visactor/vchart-types';
+import type { IPolarAxisCommonTheme } from '@visactor/vchart';
 
 const axisRadius: IPolarAxisCommonTheme = {
   domainLine: {},

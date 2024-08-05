@@ -1,4 +1,4 @@
-import type { IBandAxisTheme } from '@visactor/vchart-types';
+import type { IBandAxisTheme } from '@visactor/vchart';
 
 export const axisBand: IBandAxisTheme = {
   domainLine: {

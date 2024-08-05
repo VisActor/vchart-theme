@@ -1,4 +1,4 @@
-import type { ITooltipTheme } from '@visactor/vchart-types';
+import type { ITooltipTheme } from '@visactor/vchart';
 
 export const tooltip: ITooltipTheme = {
   offset: {

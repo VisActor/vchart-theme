@@ -1,4 +1,4 @@
-import type { IIndicatorTheme } from '@visactor/vchart-types';
+import type { IIndicatorTheme } from '@visactor/vchart';
 
 export const indicator: IIndicatorTheme = {
   title: {

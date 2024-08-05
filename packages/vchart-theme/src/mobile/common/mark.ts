@@ -1,4 +1,4 @@
-import type { IGlobalMarkThemeByName, IGlobalMarkThemeByType } from '@visactor/vchart-types';
+import type { IGlobalMarkThemeByName, IGlobalMarkThemeByType } from '@visactor/vchart';
 
 export const markByType: IGlobalMarkThemeByType = {
   text: {

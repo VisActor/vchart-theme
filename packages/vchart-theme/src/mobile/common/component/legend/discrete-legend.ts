@@ -1,4 +1,4 @@
-import type { IDiscreteLegendTheme } from '@visactor/vchart-types';
+import type { IDiscreteLegendTheme } from '@visactor/vchart';
 
 export const discreteLegend: IDiscreteLegendTheme = {
   orient: 'top',

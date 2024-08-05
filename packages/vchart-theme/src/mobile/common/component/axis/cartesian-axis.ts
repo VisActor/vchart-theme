@@ -1,4 +1,4 @@
-import type { ICartesianAxisCommonTheme } from '@visactor/vchart-types';
+import type { ICartesianAxisCommonTheme } from '@visactor/vchart';
 
 export const axisX: ICartesianAxisCommonTheme = {
   label: {

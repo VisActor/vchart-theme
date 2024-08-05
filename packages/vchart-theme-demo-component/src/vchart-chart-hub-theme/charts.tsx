@@ -68,6 +68,7 @@ export function Charts(props: IProps) {
                   ...chart.spec,
                   height: chartHeight
                 }}
+                // @ts-ignore
                 options={{
                   ...chart.option,
                   mode: isMobile ? 'mobile-browser' : 'desktop-browser'

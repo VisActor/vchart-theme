@@ -1,4 +1,4 @@
-import type { IColorLegendTheme } from '@visactor/vchart-types';
+import type { IColorLegendTheme } from '@visactor/vchart';
 import { DEFAULT_CONTINUOUS_LEGEND_THEME } from './continuous';
 
 export const colorLegend: IColorLegendTheme = {

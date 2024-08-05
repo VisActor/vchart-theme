@@ -1,6 +1,13 @@
 # Change Log - @visactor/vchart-theme
 
-This log was last generated on Wed, 19 Jun 2024 11:37:42 GMT and should not be manually modified.
+This log was last generated on Mon, 05 Aug 2024 08:45:51 GMT and should not be manually modified.
+
+## 1.11.5
+Mon, 05 Aug 2024 08:45:51 GMT
+
+### Updates
+
+- fix: fix series color not work in chartHub theme
 
 ## 1.11.3
 Wed, 19 Jun 2024 11:37:42 GMT

@@ -1,4 +1,4 @@
-import type { IComponentTheme } from '@visactor/vchart-types';
+import type { IComponentTheme } from '@visactor/vchart';
 import { axisBand } from './axis/band-axis';
 import { axisX, axisY, axisZ } from './axis/cartesian-axis';
 import { commonAxis } from './axis/common-axis';

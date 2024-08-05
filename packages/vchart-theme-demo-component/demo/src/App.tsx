@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="theme-demo-container">
       <div className="theme-demo-iframe">
-        <ChartHubThemePage />;
+        <ChartHubThemePage />
       </div>
     </div>
   );

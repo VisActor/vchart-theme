@@ -1,6 +1,6 @@
 {
   "name": "@visactor/vchart-semi-theme",
-  "version": "1.11.5",
+  "version": "1.11.6",
   "description": "Extended themes for VChart",
   "sideEffects": false,
   "main": "cjs/index.js",
@@ -28,7 +28,7 @@
     "@visactor/vchart": ">=1.10.4"
   },
   "dependencies": {
-    "@visactor/vchart-theme-utils": "workspace:1.11.5"
+    "@visactor/vchart-theme-utils": "workspace:1.11.6"
   },
   "devDependencies": {
     "@esbuild-plugins/node-globals-polyfill": "0.1.1",
@@ -63,8 +63,8 @@
     "vite": "^4.5.0",
     "vite-plugin-svgr": "^4.1.0",
     "@babel/runtime": "latest",
-    "@visactor/vchart": "1.11.0",
-    "@visactor/react-vchart": "1.11.0",
+    "@visactor/vchart": "1.11.10",
+    "@visactor/react-vchart": "1.11.10",
     "@douyinfe/semi-ui": "^2.51.3",
     "@douyinfe/semi-icons": "latest",
     "@douyinfe/semi-icons-lab": "latest"

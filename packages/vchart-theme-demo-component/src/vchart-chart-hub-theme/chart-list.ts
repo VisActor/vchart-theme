@@ -4,6 +4,7 @@ import { barGroupSpec } from '../spec/barGroup';
 import { barGroupHorizontalSpec } from '../spec/barGroupHorizontal';
 import { barStackedSpec } from '../spec/barStacked';
 import { barStackedHorizontalSpec } from '../spec/barStackedHorizontal';
+import { horizontalFunnelSpec } from '../spec/funnelHorizontal';
 import { gaugeSpec } from '../spec/gauge';
 import { horizontalBarSpec } from '../spec/horizontalBar';
 import { indicatorSankeySpec } from '../spec/indicatorSankey';
@@ -12,6 +13,9 @@ import { pieSpec } from '../spec/pie';
 import { radarSpec } from '../spec/radar';
 import { ringSpec } from '../spec/ring';
 import { scatterSpec } from '../spec/scatter';
+import { funnelSpec } from '../spec/funnel';
+import { CombinationSpec } from '../spec/combination';
+import { businessFunnelSpec } from '../spec/businessFunnel';
 
 export const charts: IChartInfo[] = [
   {
@@ -37,7 +41,7 @@ export const charts: IChartInfo[] = [
   {
     title: 'Horizontal Grouped Bar Chart',
     spec: barGroupHorizontalSpec,
-    fileName: 'horizontalBar'
+    fileName: 'barGroupHorizontal'
   },
   {
     title: 'Horizontal Stacked Bar Chart',
@@ -81,5 +85,25 @@ export const charts: IChartInfo[] = [
     option: {
       enableHtmlAttribute: true
     }
+  },
+  {
+    title: 'Horizontal Funnel',
+    spec: horizontalFunnelSpec,
+    fileName: 'funnelHorizontal'
+  },
+  {
+    title: '漏斗图',
+    spec: funnelSpec,
+    fileName: 'funnel'
+  },
+  {
+    title: '基础组合图',
+    spec: CombinationSpec,
+    fileName: 'combination'
+  },
+  {
+    title: '业务漏斗图',
+    spec: businessFunnelSpec,
+    fileName: 'businessFunnel'
   }
 ];

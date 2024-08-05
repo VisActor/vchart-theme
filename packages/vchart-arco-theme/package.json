@@ -1,6 +1,6 @@
 {
   "name": "@visactor/vchart-arco-theme",
-  "version": "1.11.5",
+  "version": "1.11.6",
   "description": "Extended themes for VChart",
   "sideEffects": false,
   "main": "cjs/index.js",
@@ -28,7 +28,7 @@
     "@visactor/vchart": ">=1.10.4"
   },
   "dependencies": {
-    "@visactor/vchart-theme-utils": "workspace:1.11.5"
+    "@visactor/vchart-theme-utils": "workspace:1.11.6"
   },
   "devDependencies": {
     "@esbuild-plugins/node-globals-polyfill": "0.1.1",
@@ -77,8 +77,8 @@
     "react-router-dom": "^5.2.0",
     "react-device-detect": "^2.2.2",
     "redux": "^4.1.2",
-    "@visactor/vchart": "1.11.0",
-    "@visactor/react-vchart": "1.11.0",
+    "@visactor/vchart": "1.11.10",
+    "@visactor/react-vchart": "1.11.10",
     "@arco-design/webpack-plugin": "^1.6.0",
     "@arco-plugins/vite-plugin-svgr": "^0.7.2",
     "@svgr/webpack": "^5.5.0",

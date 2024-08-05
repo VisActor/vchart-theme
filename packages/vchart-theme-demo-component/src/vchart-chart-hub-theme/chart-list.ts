@@ -15,6 +15,7 @@ import { ringSpec } from '../spec/ring';
 import { scatterSpec } from '../spec/scatter';
 import { funnelSpec } from '../spec/funnel';
 import { CombinationSpec } from '../spec/combination';
+import { businessFunnelSpec } from '../spec/businessFunnel';
 
 export const charts: IChartInfo[] = [
   {
@@ -93,11 +94,16 @@ export const charts: IChartInfo[] = [
   {
     title: '漏斗图',
     spec: funnelSpec,
-    fileName: 'funnel',
+    fileName: 'funnel'
   },
   {
     title: '基础组合图',
     spec: CombinationSpec,
-    fileName: 'combination',
+    fileName: 'combination'
+  },
+  {
+    title: '业务漏斗图',
+    spec: businessFunnelSpec,
+    fileName: 'businessFunnel'
   }
 ];

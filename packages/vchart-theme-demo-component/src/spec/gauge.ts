@@ -17,6 +17,7 @@ export const gaugeSpec = {
   innerRadius: 0.7,
   startAngle: -180,
   endAngle: 0,
+  centerY: '60%',
   indicator: [
     {
       visible: true,

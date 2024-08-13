@@ -33,10 +33,11 @@ export function convertSeries(series: ITheme['series'], theme: ITheme) {
   VCHART_SERIES_TYPES.forEach(type => {
     if (toEChartsConverter[type]) {
       if (type === 'area') {
-        if (!result.line) {
-          result.line = {};
-        }
-        result.line = merge(result.line, toEChartsConverter[type](series[type], theme));
+        // 暂不处理 area 系列配置，原因：echarts.line.areaStyle 一旦有默认值，折线图就会默认变成面积图
+        // if (!result.line) {
+        //   result.line = {};
+        // }
+        // result.line = merge(result.line, toEChartsConverter[type](series[type], theme));
       } else {
         // 这里后续可能存在问题：vchart series type 和 echarts series type 不一致
         result[type] = merge(result[type] ?? {}, toEChartsConverter[type]((series as any)[type], theme));

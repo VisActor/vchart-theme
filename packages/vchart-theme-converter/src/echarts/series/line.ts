@@ -35,7 +35,10 @@ export function toEChartsLine(lineSeries: ISeriesTheme['line'], theme: ITheme) {
 
   if (point) {
     const { style = {} } = point;
-    const itemStyle = convertToItemStyle(style, lineStyleMap, theme);
+    const itemStyle = convertToItemStyle(style, symbolStyleMap, theme);
+    // vchart 的空心点需要配置 color: 'white', stroke: 'auto' (示意)，直接转换到 echarts 会导致 fill 和 stroke 都是白色；
+    // echarts 的空心点与实心点，通过 symbolType 控制，无法根据主题识别；需要用户自己处理
+    delete itemStyle.color;
     lineTheme.itemStyle = itemStyle;
     if ('symbolType' in style) {
       lineTheme.symbol = style.symbolType;

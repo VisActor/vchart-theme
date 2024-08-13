@@ -12,7 +12,7 @@ export function toEChartsAxisPointer(component: ITheme['component'], theme: IThe
   const axisPointerTheme = {
     type: 'shadow',
     trigger: 'axis',
-    show: true
+    z: 0
   } as any;
 
   const { crosshair } = component;

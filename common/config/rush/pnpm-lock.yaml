@@ -33,7 +33,7 @@ importers:
       '@typescript-eslint/parser': 5.30.0
       '@visactor/react-vchart': 1.11.0
       '@visactor/vchart': 1.11.6
-      '@visactor/vchart-theme-utils': workspace:1.11.5
+      '@visactor/vchart-theme-utils': workspace:1.11.6-alpha.2
       '@vitejs/plugin-react': ^4.1.1
       '@vitejs/plugin-react-swc': ^3.4.1
       classnames: ^2.3.1
@@ -83,7 +83,7 @@ importers:
       '@arco-design/webpack-plugin': 1.7.0
       '@arco-plugins/vite-plugin-svgr': 0.7.2_vite@4.5.3
       '@arco-themes/react-arco-pro': 0.0.7_pa7uxehr42623f73endqjggywi
-      '@babel/runtime': 7.24.8
+      '@babel/runtime': 7.25.0
       '@esbuild-plugins/node-globals-polyfill': 0.1.1
       '@esbuild-plugins/node-modules-polyfill': 0.1.4
       '@internal/bundler': link:../../tools/bundler
@@ -166,7 +166,7 @@ importers:
       '@types/offscreencanvas': 2019.6.4
       '@visactor/react-vchart': 1.11.0
       '@visactor/vchart': 1.11.6
-      '@visactor/vchart-theme-utils': workspace:1.11.5
+      '@visactor/vchart-theme-utils': workspace:1.11.6-alpha.2
       '@vitejs/plugin-react': ^4.1.1
       '@vitejs/plugin-react-swc': ^3.4.1
       eslint: ~8.18.0
@@ -189,9 +189,9 @@ importers:
     dependencies:
       '@visactor/vchart-theme-utils': link:../vchart-theme-utils
     devDependencies:
-      '@babel/runtime': 7.24.8
-      '@douyinfe/semi-icons': 2.62.1_react@18.2.0
-      '@douyinfe/semi-icons-lab': 2.62.1_biqbaboplfbrettd7655fr4n2y
+      '@babel/runtime': 7.25.0
+      '@douyinfe/semi-icons': 2.64.0_react@18.2.0
+      '@douyinfe/semi-icons-lab': 2.64.0_biqbaboplfbrettd7655fr4n2y
       '@douyinfe/semi-ui': 2.55.5_biqbaboplfbrettd7655fr4n2y
       '@esbuild-plugins/node-globals-polyfill': 0.1.1
       '@esbuild-plugins/node-modules-polyfill': 0.1.4
@@ -240,11 +240,11 @@ importers:
       '@types/node': '*'
       '@types/offscreencanvas': 2019.6.4
       '@visactor/vchart': 1.11.6
-      '@visactor/vchart-arco-theme': workspace:1.11.5
-      '@visactor/vchart-semi-theme': workspace:1.11.5
-      '@visactor/vchart-tt-platform-theme': workspace:1.11.5
+      '@visactor/vchart-arco-theme': workspace:1.11.6-alpha.2
+      '@visactor/vchart-semi-theme': workspace:1.11.6-alpha.2
+      '@visactor/vchart-tt-platform-theme': workspace:1.11.6-alpha.2
       '@visactor/vchart-types': 1.11.6
-      '@visactor/vchart-ve-o-theme': workspace:1.11.5
+      '@visactor/vchart-ve-o-theme': workspace:1.11.6-alpha.2
       eslint: ~8.18.0
       husky: 7.0.4
       jest: ~29.5.0
@@ -322,8 +322,8 @@ importers:
       '@typescript-eslint/parser': 5.30.0
       '@visactor/react-vchart': 1.11.0
       '@visactor/vchart': 1.11.6
-      '@visactor/vchart-semi-theme': workspace:1.11.5
-      '@visactor/vchart-theme': workspace:1.11.5
+      '@visactor/vchart-semi-theme': workspace:1.11.6-alpha.2
+      '@visactor/vchart-theme': workspace:1.11.6-alpha.2
       '@visactor/vutils': ~0.18.9
       '@vitejs/plugin-react': ^4.1.1
       '@vitejs/plugin-react-swc': ^3.4.1
@@ -375,7 +375,7 @@ importers:
       '@arco-design/webpack-plugin': 1.7.0
       '@arco-plugins/vite-plugin-svgr': 0.7.2_vite@4.5.3
       '@arco-themes/react-arco-pro': 0.0.7_pa7uxehr42623f73endqjggywi
-      '@babel/runtime': 7.24.8
+      '@babel/runtime': 7.25.0
       '@esbuild-plugins/node-globals-polyfill': 0.1.1
       '@esbuild-plugins/node-modules-polyfill': 0.1.4
       '@internal/bundler': link:../../tools/bundler
@@ -460,8 +460,8 @@ importers:
       '@types/react-dom': ^17.0.0
       '@visactor/react-vchart': 1.11.0
       '@visactor/vchart': 1.11.6
-      '@visactor/vchart-theme': workspace:1.11.5
-      '@visactor/vchart-theme-utils': workspace:1.11.5
+      '@visactor/vchart-theme': workspace:1.11.6-alpha.2
+      '@visactor/vchart-theme-utils': workspace:1.11.6-alpha.2
       '@vitejs/plugin-react': ^4.1.1
       eslint: ~8.18.0
       react: ^18.0.0
@@ -471,8 +471,8 @@ importers:
       vite: ^4.5.0
     dependencies:
       '@arco-design/web-react': 2.61.2_42iwexueogtmu5amowprdpoisy
-      '@douyinfe/semi-icons': 2.62.1_react@18.2.0
-      '@douyinfe/semi-icons-lab': 2.62.1_biqbaboplfbrettd7655fr4n2y
+      '@douyinfe/semi-icons': 2.64.0_react@18.2.0
+      '@douyinfe/semi-icons-lab': 2.64.0_biqbaboplfbrettd7655fr4n2y
       '@douyinfe/semi-ui': 2.55.5_biqbaboplfbrettd7655fr4n2y
       '@visactor/react-vchart': 1.11.0_biqbaboplfbrettd7655fr4n2y
       '@visactor/vchart': 1.11.6
@@ -574,8 +574,8 @@ importers:
       '@types/offscreencanvas': 2019.6.4
       '@visactor/react-vchart': 1.11.0
       '@visactor/vchart': 1.11.6
-      '@visactor/vchart-semi-theme': workspace:1.11.5
-      '@visactor/vchart-theme-utils': workspace:1.11.5
+      '@visactor/vchart-semi-theme': workspace:1.11.6-alpha.2
+      '@visactor/vchart-theme-utils': workspace:1.11.6-alpha.2
       '@vitejs/plugin-react': ^4.1.1
       '@vitejs/plugin-react-swc': ^3.4.1
       eslint: ~8.18.0
@@ -600,9 +600,9 @@ importers:
       '@visactor/vchart-semi-theme': link:../vchart-semi-theme
       '@visactor/vchart-theme-utils': link:../vchart-theme-utils
     devDependencies:
-      '@babel/runtime': 7.24.8
-      '@douyinfe/semi-icons': 2.62.1_react@18.2.0
-      '@douyinfe/semi-icons-lab': 2.62.1_biqbaboplfbrettd7655fr4n2y
+      '@babel/runtime': 7.25.0
+      '@douyinfe/semi-icons': 2.64.0_react@18.2.0
+      '@douyinfe/semi-icons-lab': 2.64.0_biqbaboplfbrettd7655fr4n2y
       '@douyinfe/semi-ui': 2.55.5_biqbaboplfbrettd7655fr4n2y
       '@esbuild-plugins/node-globals-polyfill': 0.1.1
       '@esbuild-plugins/node-modules-polyfill': 0.1.4
@@ -668,8 +668,8 @@ importers:
       '@typescript-eslint/parser': 5.30.0
       '@visactor/react-vchart': 1.11.0
       '@visactor/vchart': 1.11.6
-      '@visactor/vchart-arco-theme': workspace:1.11.5
-      '@visactor/vchart-theme-utils': workspace:1.11.5
+      '@visactor/vchart-arco-theme': workspace:1.11.6-alpha.2
+      '@visactor/vchart-theme-utils': workspace:1.11.6-alpha.2
       '@vitejs/plugin-react': ^4.1.1
       '@vitejs/plugin-react-swc': ^3.4.1
       classnames: ^2.3.1
@@ -716,7 +716,7 @@ importers:
       '@arco-design/webpack-plugin': 1.7.0
       '@arco-plugins/vite-plugin-svgr': 0.7.2_vite@4.5.3
       '@arco-themes/react-arco-pro': 0.0.7_pa7uxehr42623f73endqjggywi
-      '@babel/runtime': 7.24.8
+      '@babel/runtime': 7.25.0
       '@esbuild-plugins/node-globals-polyfill': 0.1.1
       '@esbuild-plugins/node-modules-polyfill': 0.1.4
       '@internal/bundler': link:../../tools/bundler
@@ -1038,7 +1038,7 @@ packages:
       react-dom: '>=16'
     dependencies:
       '@arco-design/color': 0.4.0
-      '@babel/runtime': 7.24.8
+      '@babel/runtime': 7.25.0
       b-tween: 0.3.3
       b-validate: 1.5.3
       compute-scroll-into-view: 1.0.20
@@ -2282,8 +2282,8 @@ packages:
   /@babel/regjsgen/0.8.0:
     resolution: {integrity: sha512-x/rqGMdzj+fWZvCOYForTghzbtqPDZ5gPwaoNGHdgDfF2QA/XZbCBp4Moo5scrkAMPhB7z26XM/AaHuIJdgauA==}
 
-  /@babel/runtime/7.24.8:
-    resolution: {integrity: sha512-5F7SDGs1T72ZczbRwbGO9lQi0NLjQxzl6i4lJxLxfW9U5UluCSyEJeniWvnhl3/euNiqQVbo8zruhsDfid0esA==}
+  /@babel/runtime/7.25.0:
+    resolution: {integrity: sha512-7dRy4DwXwtzBrPbZflqxnvfxLF8kdZXPkhymtDeFoFqE6ldzjQFgYTtYIFARcLEYDrqfBfYcZt1WqFxRoyC9Rw==}
     engines: {node: '>=6.9.0'}
     dependencies:
       regenerator-runtime: 0.14.1
@@ -2406,8 +2406,8 @@ packages:
       memoize-one: 5.2.1
       scroll-into-view-if-needed: 2.2.31
 
-  /@douyinfe/semi-icons-lab/2.62.1_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-HHy2Jde6zdi+4Z+YMWjZu5y+wjKjENsMVO8d0p28BzRZJPSLQxQ2FsPCH7MInQJ2O8fgulrgpsCj2+mWSqcWyw==}
+  /@douyinfe/semi-icons-lab/2.64.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-Mfq/K0/VdWOwWro9MeE8DH5UczEhh7wdCYWFk/rcxmhnQFGOp7QHP8YXzrkiSH2djXNSW+IwfxZA39mtOh6CsQ==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
@@ -2423,8 +2423,8 @@ packages:
       classnames: 2.5.1
       react: 18.2.0
 
-  /@douyinfe/semi-icons/2.62.1_react@18.2.0:
-    resolution: {integrity: sha512-mwDNe42imzKDmQsVSfikqlilSE/62K0j2TZMvpPuigD3Chu9NoaEWReDzKdYQ2IES7PHBttQ9YJSbb3EtJ1cRw==}
+  /@douyinfe/semi-icons/2.64.0_react@18.2.0:
+    resolution: {integrity: sha512-BtnfPV7ZaSUWq6taxfApG9K3+RfpuEyojUEnpc233JOI+sNlB1ymSpo9aPgL+5co86752t9YpFV4Q7cGOdEMOQ==}
     peerDependencies:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
@@ -3057,7 +3057,7 @@ packages:
     peerDependencies:
       react: ^16.3.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@babel/runtime': 7.24.8
+      '@babel/runtime': 7.25.0
       hoist-non-react-statics: 3.3.2
       react: 18.2.0
       react-is: 16.13.1
@@ -6196,7 +6196,7 @@ packages:
     resolution: {integrity: sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==}
     engines: {node: '>=0.11'}
     dependencies:
-      '@babel/runtime': 7.24.8
+      '@babel/runtime': 7.25.0
 
   /date-time/3.1.0:
     resolution: {integrity: sha512-uqCUKXE5q1PNBXjPqvwhwJf9SwMoAHBgWJ6DcrnS5o+W2JOiIILl0JEdVD8SGujrNS02GGxgwAg2PN2zONgtjg==}
@@ -6395,7 +6395,7 @@ packages:
   /dom-helpers/5.2.1:
     resolution: {integrity: sha512-nRCa7CK3VTrM2NmGkIy4cbK7IZlgBE/PYMn55rrXefr5xXDP0LdtfPnblFDoVdcAfslJ7or6iqAUnx0CCGIWQA==}
     dependencies:
-      '@babel/runtime': 7.24.8
+      '@babel/runtime': 7.25.0
       csstype: 3.1.3
 
   /dom-serializer/0.2.2:
@@ -7775,7 +7775,7 @@ packages:
   /history/4.10.1:
     resolution: {integrity: sha512-36nwAD620w12kuzPAsyINPWJqlNbij+hpK1k9XRloDtym8mxzGYl2c17LnV6IAGB2Dmg4tEa7G7DlawS0+qjew==}
     dependencies:
-      '@babel/runtime': 7.24.8
+      '@babel/runtime': 7.25.0
       loose-envify: 1.4.0
       resolve-pathname: 3.0.0
       tiny-invariant: 1.3.3
@@ -10485,7 +10485,7 @@ packages:
     peerDependencies:
       react: ^15.3.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@babel/runtime': 7.24.8
+      '@babel/runtime': 7.25.0
       react: 18.2.0
 
   /react-color/2.19.3_react@18.2.0:
@@ -10553,7 +10553,7 @@ packages:
       '@types/react':
         optional: true
     dependencies:
-      '@babel/runtime': 7.24.8
+      '@babel/runtime': 7.25.0
       '@types/react': 17.0.80
       focus-lock: 1.3.5
       prop-types: 15.8.1
@@ -10584,7 +10584,7 @@ packages:
       react-native:
         optional: true
     dependencies:
-      '@babel/runtime': 7.24.8
+      '@babel/runtime': 7.25.0
       '@types/react-redux': 7.1.33
       hoist-non-react-statics: 3.3.2
       loose-envify: 1.4.0
@@ -10615,7 +10615,7 @@ packages:
     peerDependencies:
       react: '>=15'
     dependencies:
-      '@babel/runtime': 7.24.8
+      '@babel/runtime': 7.25.0
       history: 4.10.1
       loose-envify: 1.4.0
       prop-types: 15.8.1
@@ -10630,7 +10630,7 @@ packages:
     peerDependencies:
       react: '>=15'
     dependencies:
-      '@babel/runtime': 7.24.8
+      '@babel/runtime': 7.25.0
       history: 4.10.1
       hoist-non-react-statics: 3.3.2
       loose-envify: 1.4.0
@@ -10648,7 +10648,7 @@ packages:
       react: '>=16.6.0'
       react-dom: '>=16.6.0'
     dependencies:
-      '@babel/runtime': 7.24.8
+      '@babel/runtime': 7.25.0
       dom-helpers: 5.2.1
       loose-envify: 1.4.0
       prop-types: 15.8.1
@@ -10662,7 +10662,7 @@ packages:
       react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
       react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@babel/runtime': 7.24.8
+      '@babel/runtime': 7.25.0
       memoize-one: 5.2.1
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -10776,7 +10776,7 @@ packages:
   /redux/4.2.1:
     resolution: {integrity: sha512-LAUYz4lc+Do8/g7aeRa8JkyDErK6ekstQaqWQrNRW//MY1TvCEpMtpTWvlQ+FPbWCx+Xixu/6SHt5N0HR+SB4w==}
     dependencies:
-      '@babel/runtime': 7.24.8
+      '@babel/runtime': 7.25.0
     dev: true
 
   /regenerate-unicode-properties/10.1.1:
@@ -10794,7 +10794,7 @@ packages:
   /regenerator-transform/0.15.2:
     resolution: {integrity: sha512-hfMp2BoF0qOk3uc5V20ALGDS2ddjQaLrdl7xrGXvAIow7qeWRM2VA2HuCHkUKk9slq3VwEwLNK3DFBqDfPGYtg==}
     dependencies:
-      '@babel/runtime': 7.24.8
+      '@babel/runtime': 7.25.0
 
   /regex-not/1.0.2:
     resolution: {integrity: sha512-J6SDjUgDxQj5NusnOtdFxDwN/+HWykR8GELwctJ7mdqhcyy1xEc4SRFHUXvxTp661YaVKAjfRLZ9cCqS6tn32A==}

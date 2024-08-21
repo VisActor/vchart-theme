@@ -1,4 +1,4 @@
-import type { IPlayerTheme } from '@visactor/vchart-types';
+import type { IPlayerTheme } from '@visactor/vchart';
 
 export const player: IPlayerTheme = {
   visible: true,

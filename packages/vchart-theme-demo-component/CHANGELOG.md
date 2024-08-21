@@ -1,9 +1,9 @@
 # Change Log - @visactor/vchart-theme-demo-component
 
-This log was last generated on Mon, 05 Aug 2024 08:45:51 GMT and should not be manually modified.
+This log was last generated on Wed, 21 Aug 2024 03:22:09 GMT and should not be manually modified.
 
-## 1.11.5
-Mon, 05 Aug 2024 08:45:51 GMT
+## 1.12.0
+Wed, 21 Aug 2024 03:22:09 GMT
 
 ### Updates
 

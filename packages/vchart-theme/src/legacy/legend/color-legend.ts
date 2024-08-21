@@ -1,4 +1,4 @@
-import type { IColorLegendTheme, IContinuousLegendTheme } from '@visactor/vchart-types';
+import type { IColorLegendTheme, IContinuousLegendTheme } from '@visactor/vchart';
 import { DEFAULT_CONTINUOUS_LEGEND_THEME } from './continuous';
 
 const handlerTheme: IContinuousLegendTheme['handler'] = {

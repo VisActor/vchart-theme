@@ -320,11 +320,11 @@ importers:
       '@types/react-dom': ^17.0.0
       '@typescript-eslint/eslint-plugin': 5.30.0
       '@typescript-eslint/parser': 5.30.0
-      '@visactor/react-vchart': 1.11.0
-      '@visactor/vchart': 1.11.6
+      '@visactor/react-vchart': 1.12.1
+      '@visactor/vchart': 1.12.1
       '@visactor/vchart-semi-theme': workspace:1.11.5
       '@visactor/vchart-theme': workspace:1.11.5
-      '@visactor/vutils': ~0.18.9
+      '@visactor/vutils': ~0.18.15
       '@vitejs/plugin-react': ^4.1.1
       '@vitejs/plugin-react-swc': ^3.4.1
       classnames: ^2.3.1
@@ -368,14 +368,14 @@ importers:
       vite: ^4.5.0
       vite-plugin-svgr: ^4.1.0
     dependencies:
-      '@visactor/vutils': 0.18.9
+      '@visactor/vutils': 0.18.15
     devDependencies:
       '@arco-design/color': 0.4.0
       '@arco-design/web-react': 2.61.2_42iwexueogtmu5amowprdpoisy
       '@arco-design/webpack-plugin': 1.7.0
       '@arco-plugins/vite-plugin-svgr': 0.7.2_vite@4.5.3
       '@arco-themes/react-arco-pro': 0.0.7_pa7uxehr42623f73endqjggywi
-      '@babel/runtime': 7.24.8
+      '@babel/runtime': 7.25.0
       '@esbuild-plugins/node-globals-polyfill': 0.1.1
       '@esbuild-plugins/node-modules-polyfill': 0.1.4
       '@internal/bundler': link:../../tools/bundler
@@ -395,8 +395,8 @@ importers:
       '@types/react-dom': 17.0.25
       '@typescript-eslint/eslint-plugin': 5.30.0_cow5zg7tx6c3eisi5a4ud5kwia
       '@typescript-eslint/parser': 5.30.0_vwud3sodsb5zxmzckoj7rdwdbq
-      '@visactor/react-vchart': 1.11.0_biqbaboplfbrettd7655fr4n2y
-      '@visactor/vchart': 1.11.6
+      '@visactor/react-vchart': 1.12.1_biqbaboplfbrettd7655fr4n2y
+      '@visactor/vchart': 1.12.1
       '@visactor/vchart-semi-theme': link:../vchart-semi-theme
       '@visactor/vchart-theme': link:../vchart-theme
       '@vitejs/plugin-react': 4.2.1_vite@4.5.3
@@ -3959,13 +3959,11 @@ packages:
 
   /@turf/helpers/6.5.0:
     resolution: {integrity: sha512-VbI1dV5bLFzohYYdgqwikdMVpe7pJ9X3E+dlr425wa2/sMJqYDhTO++ec38/pcPvPE6oD9WEEeU3Xu3gza+VPw==}
-    dev: true
 
   /@turf/invariant/6.5.0:
     resolution: {integrity: sha512-Wv8PRNCtPD31UVbdJE/KVAWKe7l6US+lJItRR/HOEW3eh+U/JwRCSUl/KZ7bmjM/C+zLNoreM2TU6OoLACs4eg==}
     dependencies:
       '@turf/helpers': 6.5.0
-    dev: true
 
   /@turf/meta/3.14.0:
     resolution: {integrity: sha512-OtXqLQuR9hlQ/HkAF/OdzRea7E0eZK1ay8y8CBXkoO2R6v34CsDrWYLMSo0ZzMsaQDpKo76NPP2GGo+PyG1cSg==}
@@ -4595,14 +4593,6 @@ packages:
 
   /@visactor/vutils/0.18.15:
     resolution: {integrity: sha512-gTw8n14SU4avmqZ6VwpHwqoDfOCq044M2QA43rViNaHBnOQ/ePOPRZHl0heSfGQoMIJSZUD7SowLnn5NJjVXYw==}
-    dependencies:
-      '@turf/helpers': 6.5.0
-      '@turf/invariant': 6.5.0
-      eventemitter3: 4.0.7
-    dev: true
-
-  /@visactor/vutils/0.18.9:
-    resolution: {integrity: sha512-+CPwBATTQUPtXQ0KVXFRz8SCwAY9m5aR9QmtsVqya+mgaay3moFaAPNTbdkLBuZM5ewRYVcv/3fsDxuH+NXfFg==}
     dependencies:
       '@turf/helpers': 6.5.0
       '@turf/invariant': 6.5.0
@@ -6797,7 +6787,6 @@ packages:
 
   /eventemitter3/4.0.7:
     resolution: {integrity: sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==}
-    dev: true
 
   /execa/4.1.0:
     resolution: {integrity: sha512-j5W0//W7f8UxAn8hXVnwG8tLwdiUy4FJLcSupCg6maBYZDpyBvTApK7KyuI4bKj8KOh1r2YH+6ucuYtJv1bTZA==}

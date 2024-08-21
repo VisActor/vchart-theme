@@ -7,8 +7,7 @@ export const gauge: ISeriesTheme = {
     // innerRadius: 0.1,
     progress: {
       style: {
-        cornerRadius: 100,
-        fill: { type: 'palette', key: 'bandColor' }
+        cornerRadius: 100
       }
     },
     track: {

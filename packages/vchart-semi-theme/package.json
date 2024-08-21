@@ -63,8 +63,8 @@
     "vite": "^4.5.0",
     "vite-plugin-svgr": "^4.1.0",
     "@babel/runtime": "latest",
-    "@visactor/vchart": "1.11.6",
-    "@visactor/react-vchart": "1.11.0",
+    "@visactor/vchart": "1.12.1",
+    "@visactor/react-vchart": "1.12.1",
     "@douyinfe/semi-ui": "^2.51.3",
     "@douyinfe/semi-icons": "latest",
     "@douyinfe/semi-icons-lab": "latest"

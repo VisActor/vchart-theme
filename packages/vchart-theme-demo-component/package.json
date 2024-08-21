@@ -24,13 +24,13 @@
     "@douyinfe/semi-icons-lab": "latest",
     "@arco-design/web-react": "^2.32.2",
     "@visactor/vchart-theme-utils": "workspace:1.11.5",
-    "@visactor/vchart-theme": "workspace:1.11.5",
-    "@visactor/vchart": "1.11.6",
-    "@visactor/react-vchart": "1.11.0"
+    "@visactor/vchart-theme": "workspace:1.11.5"
   },
   "peerDependencies": {
     "react": ">=16.0.0",
-    "react-dom": ">=16.0.0"
+    "react-dom": ">=16.0.0",
+    "@visactor/vchart": ">=1.10.4",
+    "@visactor/react-vchart": ">=1.10.4"
   },
   "devDependencies": {
     "@internal/bundler": "workspace:*",
@@ -49,7 +49,9 @@
     "react-device-detect": "^2.2.2",
     "@types/jest": "~29.5.0",
     "@types/offscreencanvas": "2019.6.4",
-    "@types/node": "*"
+    "@types/node": "*",
+    "@visactor/vchart": "1.12.1",
+    "@visactor/react-vchart": "1.12.1"
   },
   "publishConfig": {
     "access": "public"

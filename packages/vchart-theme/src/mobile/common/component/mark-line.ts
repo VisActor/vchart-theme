@@ -1,4 +1,4 @@
-import type { IMarkLineTheme } from '@visactor/vchart-types';
+import type { IMarkLineTheme } from '@visactor/vchart';
 
 export const markLine: IMarkLineTheme = {
   startSymbol: {

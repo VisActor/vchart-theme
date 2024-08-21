@@ -1,9 +1,5 @@
-import type { ICrosshairTheme } from '@visactor/vchart-types';
-import type {
-  ICrosshairCategoryFieldSpec,
-  ICrosshairLabelSpec,
-  ICrosshairValueFieldSpec
-} from '@visactor/vchart-types/types/component/crosshair';
+import type { ICrosshairTheme } from '@visactor/vchart';
+import type { ICrosshairLabelSpec } from '@visactor/vchart-types/types/component/crosshair';
 
 const getLabelSpec = (): ICrosshairLabelSpec => ({
   visible: false,
@@ -17,14 +13,14 @@ const getLabelSpec = (): ICrosshairLabelSpec => ({
   }
 });
 
-const getBandField = (): ICrosshairCategoryFieldSpec => ({
+const getBandField = (): ICrosshairTheme['bandField'] => ({
   visible: false,
-  label: getLabelSpec()
+  label: getLabelSpec() as any
 });
 
-const getLinearField = (): ICrosshairValueFieldSpec => ({
+const getLinearField = (): ICrosshairTheme['linearField'] => ({
   visible: false,
-  label: getLabelSpec()
+  label: getLabelSpec() as any
 });
 
 export const crosshair: ICrosshairTheme = {

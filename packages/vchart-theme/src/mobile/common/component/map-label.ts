@@ -1,4 +1,4 @@
-import type { IMapLabelTheme } from '@visactor/vchart-types';
+import type { IMapLabelTheme } from '@visactor/vchart';
 
 export const mapLabel: IMapLabelTheme = {
   visible: true,

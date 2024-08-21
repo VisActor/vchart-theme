@@ -1,4 +1,4 @@
-import type { IAxisCommonTheme } from '@visactor/vchart-types';
+import type { IAxisCommonTheme } from '@visactor/vchart';
 
 export const axisLinear: IAxisCommonTheme = {
   domainLine: {

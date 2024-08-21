@@ -1,4 +1,4 @@
-import type { ITotalLabelTheme } from '@visactor/vchart-types';
+import type { ITotalLabelTheme } from '@visactor/vchart';
 
 export const totalLabel: ITotalLabelTheme = {
   visible: false,

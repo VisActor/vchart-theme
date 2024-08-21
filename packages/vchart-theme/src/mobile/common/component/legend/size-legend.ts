@@ -1,4 +1,4 @@
-import type { ISizeLegendTheme } from '@visactor/vchart-types';
+import type { ISizeLegendTheme } from '@visactor/vchart';
 import { DEFAULT_CONTINUOUS_LEGEND_THEME } from './continuous';
 
 export const sizeLegend: ISizeLegendTheme = {

@@ -1,4 +1,4 @@
-import type { IPolarAxisCommonTheme } from '@visactor/vchart-types';
+import type { IPolarAxisCommonTheme } from '@visactor/vchart';
 
 export const axisRadius: IPolarAxisCommonTheme = {
   grid: {

@@ -293,6 +293,155 @@ importers:
       typescript: 4.9.5
       vite: 4.5.3_@types+node@20.12.7
 
+  ../../packages/vchart-theme-converter:
+    specifiers:
+      '@arco-design/color': ^0.4.0
+      '@arco-design/web-react': ^2.32.2
+      '@arco-design/webpack-plugin': ^1.6.0
+      '@arco-plugins/vite-plugin-svgr': ^0.7.2
+      '@arco-themes/react-arco-pro': ^0.0.7
+      '@babel/runtime': latest
+      '@esbuild-plugins/node-globals-polyfill': 0.1.1
+      '@esbuild-plugins/node-modules-polyfill': 0.1.4
+      '@internal/bundler': workspace:*
+      '@internal/chart-demo': workspace:*
+      '@internal/eslint-config': workspace:*
+      '@internal/jest-config': workspace:*
+      '@internal/ts-config': workspace:*
+      '@jest/globals': ~29.5.0
+      '@loadable/component': ^5.13.2
+      '@rushstack/eslint-patch': ~1.1.4
+      '@svgr/webpack': ^5.5.0
+      '@types/echarts': 4.9.22
+      '@types/jest': ~29.5.0
+      '@types/node': '*'
+      '@types/offscreencanvas': 2019.6.4
+      '@types/react': ^17.0.0
+      '@types/react-dom': ^17.0.0
+      '@typescript-eslint/eslint-plugin': 5.30.0
+      '@typescript-eslint/parser': 5.30.0
+      '@visactor/react-vchart': 1.12.1
+      '@visactor/vchart': 1.12.1
+      '@visactor/vchart-semi-theme': workspace:1.11.5
+      '@visactor/vchart-theme': workspace:1.11.5
+      '@visactor/vutils': ~0.18.15
+      '@vitejs/plugin-react': ^4.1.1
+      '@vitejs/plugin-react-swc': ^3.4.1
+      classnames: ^2.3.1
+      copy-to-clipboard: ^3.3.1
+      echarts: 5.5.0
+      eslint: ~8.18.0
+      eslint-config-prettier: 8.5.0
+      eslint-plugin-babel: ^5.3.1
+      eslint-plugin-prettier: ^4.0.0
+      eslint-plugin-react: 7.30.1
+      eslint-plugin-react-hooks: 4.6.0
+      husky: 7.0.4
+      jest: ~29.5.0
+      less: 4.1.3
+      less-loader: 7.3.0
+      lint-staged: 12.3.7
+      lodash: 4.17.21
+      magic-string: ^0.25.7
+      nprogress: ^0.2.0
+      postcss-less: '4'
+      prettier: 2.6.1
+      pretty-quick: ^3.1.2
+      query-string: ^6.13.8
+      react: ^18.0.0
+      react-color: ^2.18.1
+      react-device-detect: ^2.2.2
+      react-dom: ^18.0.0
+      react-redux: ^7.2.6
+      react-router: ^5.2.0
+      react-router-dom: ^5.2.0
+      redux: ^4.1.2
+      stylelint: ^14.1.0
+      stylelint-config-prettier: ^9.0.3
+      stylelint-config-standard: ^24.0.0
+      ts-jest: ~29.1.0
+      ts-loader: 8.0.2
+      ts-node: 10.9.0
+      tslib: 2.3.1
+      tslint: 5.12.1
+      typescript: 4.9.5
+      vite: ^4.5.0
+      vite-plugin-svgr: ^4.1.0
+    dependencies:
+      '@visactor/vutils': 0.18.15
+    devDependencies:
+      '@arco-design/color': 0.4.0
+      '@arco-design/web-react': 2.61.2_42iwexueogtmu5amowprdpoisy
+      '@arco-design/webpack-plugin': 1.7.0
+      '@arco-plugins/vite-plugin-svgr': 0.7.2_vite@4.5.3
+      '@arco-themes/react-arco-pro': 0.0.7_pa7uxehr42623f73endqjggywi
+      '@babel/runtime': 7.25.0
+      '@esbuild-plugins/node-globals-polyfill': 0.1.1
+      '@esbuild-plugins/node-modules-polyfill': 0.1.4
+      '@internal/bundler': link:../../tools/bundler
+      '@internal/chart-demo': link:../../share/chart-demo
+      '@internal/eslint-config': link:../../share/eslint-config
+      '@internal/jest-config': link:../../share/jest-config
+      '@internal/ts-config': link:../../share/ts-config
+      '@jest/globals': 29.5.0
+      '@loadable/component': 5.16.3_react@18.2.0
+      '@rushstack/eslint-patch': 1.1.4
+      '@svgr/webpack': 5.5.0
+      '@types/echarts': 4.9.22
+      '@types/jest': 29.5.12
+      '@types/node': 20.12.7
+      '@types/offscreencanvas': 2019.6.4
+      '@types/react': 17.0.80
+      '@types/react-dom': 17.0.25
+      '@typescript-eslint/eslint-plugin': 5.30.0_cow5zg7tx6c3eisi5a4ud5kwia
+      '@typescript-eslint/parser': 5.30.0_vwud3sodsb5zxmzckoj7rdwdbq
+      '@visactor/react-vchart': 1.12.1_biqbaboplfbrettd7655fr4n2y
+      '@visactor/vchart': 1.12.1
+      '@visactor/vchart-semi-theme': link:../vchart-semi-theme
+      '@visactor/vchart-theme': link:../vchart-theme
+      '@vitejs/plugin-react': 4.2.1_vite@4.5.3
+      '@vitejs/plugin-react-swc': 3.6.0_vite@4.5.3
+      classnames: 2.5.1
+      copy-to-clipboard: 3.3.3
+      echarts: 5.5.0
+      eslint: 8.18.0
+      eslint-config-prettier: 8.5.0_eslint@8.18.0
+      eslint-plugin-babel: 5.3.1_eslint@8.18.0
+      eslint-plugin-prettier: 4.2.1_ollsvcshtsdnwd6q5dk6p5tq5m
+      eslint-plugin-react: 7.30.1_eslint@8.18.0
+      eslint-plugin-react-hooks: 4.6.0_eslint@8.18.0
+      husky: 7.0.4
+      jest: 29.5.0_nfgaym6ygctcxvhgdn7jfhc2pq
+      less: 4.1.3
+      less-loader: 7.3.0_less@4.1.3
+      lint-staged: 12.3.7
+      lodash: 4.17.21
+      magic-string: 0.25.9
+      nprogress: 0.2.0
+      postcss-less: 4.0.1
+      prettier: 2.6.1
+      pretty-quick: 3.3.1_prettier@2.6.1
+      query-string: 6.14.1
+      react: 18.2.0
+      react-color: 2.19.3_react@18.2.0
+      react-device-detect: 2.2.3_biqbaboplfbrettd7655fr4n2y
+      react-dom: 18.2.0_react@18.2.0
+      react-redux: 7.2.9_biqbaboplfbrettd7655fr4n2y
+      react-router: 5.3.4_react@18.2.0
+      react-router-dom: 5.3.4_react@18.2.0
+      redux: 4.2.1
+      stylelint: 14.16.1
+      stylelint-config-prettier: 9.0.5_stylelint@14.16.1
+      stylelint-config-standard: 24.0.0_stylelint@14.16.1
+      ts-jest: 29.1.2_doipufordlnvh5g4adbwayvyvy
+      ts-loader: 8.0.2_typescript@4.9.5
+      ts-node: 10.9.0_misjo77sqtw74jgpkxp7bulu2q
+      tslib: 2.3.1
+      tslint: 5.12.1_typescript@4.9.5
+      typescript: 4.9.5
+      vite: 4.5.3_bby3wderf736tel7qp3evndmrm
+      vite-plugin-svgr: 4.2.0_phsvvvlejkpjhjvgxznbnrvcoa
+
   ../../packages/vchart-theme-demo-component:
     specifiers:
       '@arco-design/web-react': ^2.32.2
@@ -3810,13 +3959,11 @@ packages:
 
   /@turf/helpers/6.5.0:
     resolution: {integrity: sha512-VbI1dV5bLFzohYYdgqwikdMVpe7pJ9X3E+dlr425wa2/sMJqYDhTO++ec38/pcPvPE6oD9WEEeU3Xu3gza+VPw==}
-    dev: true
 
   /@turf/invariant/6.5.0:
     resolution: {integrity: sha512-Wv8PRNCtPD31UVbdJE/KVAWKe7l6US+lJItRR/HOEW3eh+U/JwRCSUl/KZ7bmjM/C+zLNoreM2TU6OoLACs4eg==}
     dependencies:
       '@turf/helpers': 6.5.0
-    dev: true
 
   /@turf/meta/3.14.0:
     resolution: {integrity: sha512-OtXqLQuR9hlQ/HkAF/OdzRea7E0eZK1ay8y8CBXkoO2R6v34CsDrWYLMSo0ZzMsaQDpKo76NPP2GGo+PyG1cSg==}
@@ -3894,6 +4041,12 @@ packages:
     resolution: {integrity: sha512-9AonUzyTjXXhEOa0DnqpzZi6VHlqKMswga9EXjpXnnqxwLtdvPPtlO8evrI5D9S6asFRCQ6v+wpiUKbw+vKqyg==}
     dependencies:
       '@types/ms': 0.7.31
+    dev: true
+
+  /@types/echarts/4.9.22:
+    resolution: {integrity: sha512-7Fo6XdWpoi8jxkwP7BARUOM7riq8bMhmsCtSG8gzUcJmFhLo387tihoBYS/y5j7jl3PENT5RxeWZdN9RiwO7HQ==}
+    dependencies:
+      '@types/zrender': 4.0.6
     dev: true
 
   /@types/estree/1.0.5:
@@ -4128,6 +4281,10 @@ packages:
     resolution: {integrity: sha512-xQ67Yc/laOG5uMfX/093MRlGGCIBzZMarVa+gfNKJxWAIgykYpVGkBdbqEzGDDfCrVUj6Hiff4mTZ5BA6TmAog==}
     dependencies:
       '@types/yargs-parser': 21.0.0
+
+  /@types/zrender/4.0.6:
+    resolution: {integrity: sha512-1jZ9bJn2BsfmYFPBHtl5o3uV+ILejAtGrDcYSpT4qaVKEI/0YY+arw3XHU04Ebd8Nca3SQ7uNcLaqiL+tTFVMg==}
+    dev: true
 
   /@typescript-eslint/eslint-plugin/5.30.0_cow5zg7tx6c3eisi5a4ud5kwia:
     resolution: {integrity: sha512-lvhRJ2pGe2V9MEU46ELTdiHgiAFZPKtLhiU5wlnaYpMc2+c1R8fh8i80ZAa665drvjHKUJyRRGg3gEm1If54ow==}
@@ -4440,7 +4597,6 @@ packages:
       '@turf/helpers': 6.5.0
       '@turf/invariant': 6.5.0
       eventemitter3: 4.0.7
-    dev: true
 
   /@vitejs/plugin-react-swc/3.6.0_vite@4.5.3:
     resolution: {integrity: sha512-XFRbsGgpGxGzEV5i5+vRiro1bwcIaZDIdBRP16qwm+jP68ue/S8FJTBEgOeojtVDYrbSua3XFp71kC8VJE6v+g==}
@@ -6164,6 +6320,13 @@ packages:
     resolution: {integrity: sha512-I88TYZWc9XiYHRQ4/3c5rjjfgkjhLyW2luGIheGERbNQ6OY7yTybanSpDXZa8y7VUP9YmDcYa+eyq4ca7iLqWA==}
     dev: true
 
+  /echarts/5.5.0:
+    resolution: {integrity: sha512-rNYnNCzqDAPCr4m/fqyUFv7fD9qIsd50S6GDFgO1DxZhncCsNsG7IfUlAlvZe5oSEQxtsjnHiUuppzccry93Xw==}
+    dependencies:
+      tslib: 2.3.0
+      zrender: 5.5.0
+    dev: true
+
   /electron-to-chromium/1.4.733:
     resolution: {integrity: sha512-gUI9nhI2iBGF0OaYYLKOaOtliFMl+Bt1rY7VmEjwxOxqoYLub/D9xmduPEhbw2imE6gYkJKhIE5it+KE2ulVxQ==}
 
@@ -6624,7 +6787,6 @@ packages:
 
   /eventemitter3/4.0.7:
     resolution: {integrity: sha512-8guHBZCwKnFhYdHr2ysuRWErTwhoN2X8XELRlrRwpmfeY2jjuUN4taQMsULKUVo1K4DvZl+0pgfyoysHxvmvEw==}
-    dev: true
 
   /execa/4.1.0:
     resolution: {integrity: sha512-j5W0//W7f8UxAn8hXVnwG8tLwdiUy4FJLcSupCg6maBYZDpyBvTApK7KyuI4bKj8KOh1r2YH+6ucuYtJv1bTZA==}
@@ -11890,6 +12052,10 @@ packages:
   /tslib/1.14.1:
     resolution: {integrity: sha512-Xni35NKzjgMrwevysHTCArtLDpPvye8zV/0E4EyYn43P7/7qvQwPh9BGkHewbMulVntbigmcT7rdX3BNo9wRJg==}
 
+  /tslib/2.3.0:
+    resolution: {integrity: sha512-N82ooyxVNm6h1riLCoyS9e3fuJ3AMG2zIZs2Gd1ATcSFjSA23Q0fzjjZeh0jbJvWVDZ0cJT8yaNNaaXHzueNjg==}
+    dev: true
+
   /tslib/2.3.1:
     resolution: {integrity: sha512-77EbyPPpMz+FRFRuAFlWMtmgUWGe9UOG2Z25NqCwiIjRhOf5iKGuzSe5P2w1laq+FkRy4p+PCuVkJSGkzTEKVw==}
 
@@ -12701,4 +12867,10 @@ packages:
   /yocto-queue/1.0.0:
     resolution: {integrity: sha512-9bnSc/HEW2uRy67wc+T8UwauLuPJVn28jb+GtJY16iiKWyvmYJRXVT4UamsAEGQfPohgr2q4Tq0sQbQlxTfi1g==}
     engines: {node: '>=12.20'}
+    dev: true
+
+  /zrender/5.5.0:
+    resolution: {integrity: sha512-O3MilSi/9mwoovx77m6ROZM7sXShR/O/JIanvzTwjN3FORfLSr81PsUGd7jlaYOeds9d8tw82oP44+3YucVo+w==}
+    dependencies:
+      tslib: 2.3.0
     dev: true

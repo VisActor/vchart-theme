@@ -40,8 +40,6 @@ export const CombinationSpec = {
       dataIndex: 0,
       label: { visible: true },
       seriesField: 'type',
-      //@ts-ignore
-      dataIndex: 0,
       xField: ['x', 'type'],
       yField: 'y'
     },

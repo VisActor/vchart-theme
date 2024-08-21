@@ -1,4 +1,4 @@
-import type { IMarkAreaTheme } from '@visactor/vchart-types';
+import type { IMarkAreaTheme } from '@visactor/vchart';
 
 export const markArea: IMarkAreaTheme = {
   label: {

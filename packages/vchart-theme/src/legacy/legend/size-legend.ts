@@ -1,5 +1,5 @@
 // eslint-disable-next-line no-duplicate-imports
-import type { IContinuousLegendTheme, ISizeLegendTheme } from '@visactor/vchart-types';
+import type { IContinuousLegendTheme, ISizeLegendTheme } from '@visactor/vchart';
 import { DEFAULT_CONTINUOUS_LEGEND_THEME } from './continuous';
 
 const getHandlerTheme = (align?: 'top' | 'bottom' | 'left' | 'right'): IContinuousLegendTheme['handler'] => ({

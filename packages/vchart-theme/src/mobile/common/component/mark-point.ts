@@ -1,4 +1,4 @@
-import type { IMarkPointTheme } from '@visactor/vchart-types';
+import type { IMarkPointTheme } from '@visactor/vchart';
 
 export const markPoint: IMarkPointTheme = {
   itemLine: {

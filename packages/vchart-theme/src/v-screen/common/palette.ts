@@ -1,4 +1,4 @@
-import type { BuiltinColorPalette } from '@visactor/vchart-types';
+import type { BuiltinColorPalette } from '@visactor/vchart';
 
 export const palette: Partial<BuiltinColorPalette> = {
   /** 背景色 */

@@ -1,7 +1,7 @@
 import type { ISeriesTheme, SeriesTypeEnum, SeriesTypeForThemeEnum } from '@visactor/vchart';
 
 const bar: ISeriesTheme['bar'] = {
-  barWidth: 8,
+  barMaxWidth: 8,
   // @ts-ignore
   barGapInGroup: 4, // FIXME: typeError
   label: {

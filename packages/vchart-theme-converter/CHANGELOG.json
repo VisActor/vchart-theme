@@ -2,6 +2,12 @@
   "name": "@visactor/vchart-theme-converter",
   "entries": [
     {
+      "version": "1.12.2",
+      "tag": "@visactor/vchart-theme-converter_v1.12.2",
+      "date": "Mon, 28 Oct 2024 11:11:29 GMT",
+      "comments": {}
+    },
+    {
       "version": "1.12.1",
       "tag": "@visactor/vchart-theme-converter_v1.12.1",
       "date": "Mon, 02 Sep 2024 07:44:31 GMT",

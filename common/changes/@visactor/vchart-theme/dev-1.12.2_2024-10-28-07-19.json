@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "packageName": "@visactor/vchart-theme",
+      "comment": "fix: unexpected datazoom height in charthub theme",
+      "type": "none"
+    }
+  ],
+  "packageName": "@visactor/vchart-theme"
+}

@@ -1,7 +1,6 @@
 import type { IDataZoomTheme } from '@visactor/vchart';
 
-export const dataZoom: IDataZoomTheme = {
-  height: 44,
+export const dataZoomCommon: IDataZoomTheme = {
   middleHandler: {
     visible: false
   },
@@ -54,5 +53,16 @@ export const dataZoom: IDataZoomTheme = {
   },
   endText: {
     visible: false
+  }
+};
+
+export const dataZoom: IDataZoomTheme = {
+  horizontal: {
+    ...dataZoomCommon,
+    height: 44
+  },
+  vertical: {
+    ...dataZoomCommon,
+    width: 44
   }
 };

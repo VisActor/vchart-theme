@@ -100,25 +100,28 @@ jobs:
           echo "full=$full" >> "$GITHUB_OUTPUT"
           echo "branch=pre-release/$full" >> "$GITHUB_OUTPUT"
 
-      - name: Create prerelease branch from develop and merge test-release changes
+      - name: Create prerelease branch from merged PR commit
         env:
           PRERELEASE_BRANCH: ${{ steps.next.outputs.branch }}
+          MERGE_SHA: ${{ github.event.pull_request.merge_commit_sha }}
         run: |
           if [ -z "$PRERELEASE_BRANCH" ]; then
             echo "PRERELEASE_BRANCH is empty, abort."
             exit 1
           fi
 
-          git fetch origin develop test-release
-          git checkout -b "$PRERELEASE_BRANCH" origin/develop
-
-          if ! git merge --no-ff origin/test-release -m "chore: merge test-release into prerelease $PRERELEASE_BRANCH"; then
-            echo "Merge conflict when merging test-release into $PRERELEASE_BRANCH. Please resolve manually."
+          if [ -z "$MERGE_SHA" ]; then
+            echo "MERGE_SHA is empty, abort."
             exit 1
           fi
 
+          git fetch origin --prune
+
+          # 以 PR 的 merge commit 作为预发布分支的基线
+          git checkout -b "$PRERELEASE_BRANCH" "$MERGE_SHA"
           git push origin "$PRERELEASE_BRANCH"
-          echo "Pushed prerelease branch $PRERELEASE_BRANCH. Pre-release CI will handle build & npm publish."
+
+          echo "Pushed prerelease branch $PRERELEASE_BRANCH from merged commit $MERGE_SHA. Pre-release CI will handle build & npm publish."
 
   sync_test_release:
     needs: create_prerelease_branch

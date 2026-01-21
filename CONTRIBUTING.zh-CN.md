@@ -68,6 +68,10 @@ VisActor 团队会关注所有的 pull request，我们会 review 以及合并�
 6. 确保你的代码通过了 lint 检查 `rush lint`. 小贴士: Lint 会在你 git commit 的时候自动运行（通过 Git Hooks）。
 7. 运行 `rush compile` 进行 ts 类型检测。
 
+### 如何提交发布 alpha 版本
+
+1. 将你的pr目标分支设置为 `test-release` 分支。
+
 ## 开发流程
 
 在你 clone 了 vchart-theme 的代码并且使用 `rush update --full` 安装完依赖后，你还可以运行下面几个常用的命令：

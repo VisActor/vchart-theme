@@ -100,10 +100,12 @@ jobs:
           echo "full=$full" >> "$GITHUB_OUTPUT"
           echo "branch=pre-release/$full" >> "$GITHUB_OUTPUT"
 
-      - name: Create prerelease branch from merged PR commit
+      - name: Create prerelease branch from merged PR commit (using PAT)
         env:
           PRERELEASE_BRANCH: ${{ steps.next.outputs.branch }}
           MERGE_SHA: ${{ github.event.pull_request.merge_commit_sha }}
+          RELEASE_PUSH_PAT: ${{ secrets.RELEASE_PUSH_PAT }}
+          REPO: ${{ github.repository }}
         run: |
           if [ -z "$PRERELEASE_BRANCH" ]; then
             echo "PRERELEASE_BRANCH is empty, abort."
@@ -115,11 +117,18 @@ jobs:
             exit 1
           fi
 
+          if [ -z "$RELEASE_PUSH_PAT" ]; then
+            echo "RELEASE_PUSH_PAT is empty, abort."
+            exit 1
+          fi
+
           git fetch origin --prune
 
           # 以 PR 的 merge commit 作为预发布分支的基线
           git checkout -b "$PRERELEASE_BRANCH" "$MERGE_SHA"
-          git push origin "$PRERELEASE_BRANCH"
+
+          # 使用 PAT 推送，使 push 事件能触发 pre-release workflow
+          git push "https://x-access-token:${RELEASE_PUSH_PAT}@github.com/${REPO}.git" "$PRERELEASE_BRANCH"
 
           echo "Pushed prerelease branch $PRERELEASE_BRANCH from merged commit $MERGE_SHA. Pre-release CI will handle build & npm publish."
 

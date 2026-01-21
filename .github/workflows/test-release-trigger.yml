@@ -69,31 +69,29 @@ jobs:
             exit 1
           fi
 
-          N=$(node - << 'NODE'
-const { execSync } = require("child_process");
-const base = process.env.BASE;
-const type = process.env.TYPE;
-let versions = [];
-try {
-  const out = execSync("npm view @visactor/vchart-theme versions --json", { encoding: "utf8" });
-  versions = JSON.parse(out || "[]");
-} catch (e) {
-  versions = [];
-}
-const regex = new RegExp("^" + base.replace(/\\./g, "\\\.") + "-" + type + "\\\.(\\\d+)$");
-let max = -1;
-for (const v of versions) {
-  const m = regex.exec(v);
-  if (m) {
-    const n = parseInt(m[1], 10);
-    if (!Number.isNaN(n) && n > max) {
-      max = n;
-    }
-  }
-}
-console.log(max + 1);
-NODE
-          )
+          N=$(node -e "
+            const { execSync } = require('child_process');
+            const base = process.env.BASE;
+            const type = process.env.TYPE;
+            let versions = [];
+            try {
+              const out = execSync('npm view @visactor/vchart-theme versions --json', { encoding: 'utf8' });
+              versions = JSON.parse(out || '[]');
+            } catch (e) {
+              versions = [];
+            }
+            const regex = new RegExp('^' + base.replace(/\\\./g, '\\\\\\.') + '-' + type + '\\\\\\.(\\\\\\d+)$');
+            let max = -1;
+            for (const v of versions) {
+              const m = regex.exec(v);
+              if (m) {
+                const n = parseInt(m[1], 10);
+                if (!Number.isNaN(n) && n > max) max = n;
+              }
+            }
+            const next = max + 1;
+            console.log(String(next));
+          ")
 
           echo "Next sequence N=$N"
           full="${BASE}-${TYPE}.${N}"

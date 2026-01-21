@@ -69,18 +69,18 @@ jobs:
             exit 1
           fi
 
-          N=$(node -e "
-            const { execSync } = require('child_process');
+          N=$(node -e '
+            const { execSync } = require("child_process");
             const base = process.env.BASE;
             const type = process.env.TYPE;
             let versions = [];
             try {
-              const out = execSync('npm view @visactor/vchart-theme versions --json', { encoding: 'utf8' });
-              versions = JSON.parse(out || '[]');
+              const out = execSync("npm view @visactor/vchart-theme versions --json", { encoding: "utf8" });
+              versions = JSON.parse(out || "[]");
             } catch (e) {
               versions = [];
             }
-            const regex = new RegExp('^' + base.replace(/\\\./g, '\\\\\\.') + '-' + type + '\\\\\\.(\\\\\\d+)$');
+            const regex = new RegExp("^" + base.replace(/\\\./g, "\\\.") + "-" + type + "\\\.(\\\d+)$");
             let max = -1;
             for (const v of versions) {
               const m = regex.exec(v);
@@ -91,7 +91,7 @@ jobs:
             }
             const next = max + 1;
             console.log(String(next));
-          ")
+          ')
 
           echo "Next sequence N=$N"
           full="${BASE}-${TYPE}.${N}"
@@ -120,7 +120,19 @@ jobs:
           git push origin "$PRERELEASE_BRANCH"
           echo "Pushed prerelease branch $PRERELEASE_BRANCH. Pre-release CI will handle build & npm publish."
 
-      - name: Sync test-release branch with develop
+  sync_test_release:
+    needs: create_prerelease_branch
+    if: always()
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Sync test-release to develop
         env:
           GITHUB_ACTOR: ${{ github.actor }}
         run: |

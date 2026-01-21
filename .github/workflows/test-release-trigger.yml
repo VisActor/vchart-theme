@@ -1,0 +1,134 @@
+name: Test Release Trigger
+
+on:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - test-release
+
+jobs:
+  create_prerelease_branch:
+    if: github.event.pull_request.merged == true
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    strategy:
+      matrix:
+        node-version: [18.x]
+    concurrency:
+      group: test-release-publish
+      cancel-in-progress: false
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install jq
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y jq
+
+      - name: Detect prerelease type from labels
+        id: detect
+        run: |
+          labels=$(jq -r '.pull_request.labels[].name' "$GITHUB_EVENT_PATH" 2>/dev/null || echo "")
+          echo "PR labels: $labels"
+
+          type=""
+          if [[ "$labels" == *"release:alpha"* ]]; then
+            type="alpha"
+          elif [[ "$labels" == *"release:beta"* ]]; then
+            type="beta"
+          elif [[ "$labels" == *"release:rc"* ]]; then
+            type="rc"
+          else
+            type="alpha"
+          fi
+
+          echo "type=$type" >> "$GITHUB_OUTPUT"
+
+      - name: Read base version from vchart-theme package
+        id: ver
+        uses: xile611/read-package-version-action@main
+        with:
+          path: packages/vchart-theme
+
+      - name: Compute prerelease version string
+        id: next
+        env:
+          BASE: ${{ steps.ver.outputs.current_version }}
+          TYPE: ${{ steps.detect.outputs.type }}
+        run: |
+          if [ -z "$BASE" ]; then
+            echo "Base version is empty, abort."
+            exit 1
+          fi
+
+          N=$(node - << 'NODE'
+const { execSync } = require("child_process");
+const base = process.env.BASE;
+const type = process.env.TYPE;
+let versions = [];
+try {
+  const out = execSync("npm view @visactor/vchart-theme versions --json", { encoding: "utf8" });
+  versions = JSON.parse(out || "[]");
+} catch (e) {
+  versions = [];
+}
+const regex = new RegExp("^" + base.replace(/\\./g, "\\\.") + "-" + type + "\\\.(\\\d+)$");
+let max = -1;
+for (const v of versions) {
+  const m = regex.exec(v);
+  if (m) {
+    const n = parseInt(m[1], 10);
+    if (!Number.isNaN(n) && n > max) {
+      max = n;
+    }
+  }
+}
+console.log(max + 1);
+NODE
+          )
+
+          echo "Next sequence N=$N"
+          full="${BASE}-${TYPE}.${N}"
+          echo "Use prerelease version: $full"
+
+          echo "full=$full" >> "$GITHUB_OUTPUT"
+          echo "branch=pre-release/$full" >> "$GITHUB_OUTPUT"
+
+      - name: Create prerelease branch from develop and merge test-release changes
+        env:
+          PRERELEASE_BRANCH: ${{ steps.next.outputs.branch }}
+        run: |
+          if [ -z "$PRERELEASE_BRANCH" ]; then
+            echo "PRERELEASE_BRANCH is empty, abort."
+            exit 1
+          fi
+
+          git fetch origin develop test-release
+          git checkout -b "$PRERELEASE_BRANCH" origin/develop
+
+          if ! git merge --no-ff origin/test-release -m "chore: merge test-release into prerelease $PRERELEASE_BRANCH"; then
+            echo "Merge conflict when merging test-release into $PRERELEASE_BRANCH. Please resolve manually."
+            exit 1
+          fi
+
+          git push origin "$PRERELEASE_BRANCH"
+          echo "Pushed prerelease branch $PRERELEASE_BRANCH. Pre-release CI will handle build & npm publish."
+
+      - name: Sync test-release branch with develop
+        env:
+          GITHUB_ACTOR: ${{ github.actor }}
+        run: |
+          git config user.name "$GITHUB_ACTOR"
+          git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+
+          git fetch origin develop test-release
+          git checkout -B sync-temp origin/develop
+          git push origin +sync-temp:test-release

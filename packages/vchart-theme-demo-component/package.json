@@ -1,6 +1,6 @@
 {
   "name": "@visactor/vchart-theme-demo-component",
-  "version": "1.12.2",
+  "version": "1.12.3",
   "description": "theme demo page in vchart site",
   "sideEffects": false,
   "main": "cjs/index.js",
@@ -23,8 +23,8 @@
     "@douyinfe/semi-icons": "latest",
     "@douyinfe/semi-icons-lab": "latest",
     "@arco-design/web-react": "^2.32.2",
-    "@visactor/vchart-theme-utils": "workspace:1.12.2",
-    "@visactor/vchart-theme": "workspace:1.12.2"
+    "@visactor/vchart-theme-utils": "workspace:1.12.3",
+    "@visactor/vchart-theme": "workspace:1.12.3"
   },
   "peerDependencies": {
     "react": ">=16.0.0",
@@ -55,5 +55,6 @@
   },
   "publishConfig": {
     "access": "public"
-  }
+  },
+  "license": "MIT"
 }

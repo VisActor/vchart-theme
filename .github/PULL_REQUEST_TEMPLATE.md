@@ -27,6 +27,20 @@ Thank you!
 - [ ] Chore
 - [ ] Other (about what?)
 
+### 🧪 Do you need to publish a test version (npm pre-release package)?
+
+<!--
+If this change needs to be tested internally through an npm test version, please check the box and add the corresponding label to the PR:
+- `release:alpha`: Early verification test version
+- `release:beta`: Relatively stable test version
+- `release:rc`: Release candidate version close to official release
+
+When the PR is merged into the `test-release` branch with the above label, the test release process will be automatically triggered.
+-->
+
+- [ ] No, local verification only
+- [ ] Need test release (please ensure appropriate `release:*` label has been added)
+
 ### 🔗 Related issue link
 
 <!--

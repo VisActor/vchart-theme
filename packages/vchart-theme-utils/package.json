@@ -1,6 +1,6 @@
 {
   "name": "@visactor/vchart-theme-utils",
-  "version": "1.12.3",
+  "version": "1.12.3-alpha.2",
   "description": "Utils of extended themes for VChart",
   "sideEffects": false,
   "main": "cjs/index.js",

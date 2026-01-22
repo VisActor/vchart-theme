@@ -20,11 +20,19 @@ jobs:
       group: test-release-publish
       cancel-in-progress: false
     steps:
+      # 1. 生成 GitHub App Token
+      - name: Generate GitHub App Token
+        id: app-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.RELEASE_APP_ID }}
+          private-key: ${{ secrets.RELEASE_APP_PRIVATE_KEY }}
+
+      # 2. 使用 App Token 进行 Checkout
       - name: Checkout repository
         uses: actions/checkout@v3
         with:
-          # 【关键修改】使用 PAT 进行 checkout，确保后续 push 能触发其他 workflow
-          token: ${{ secrets.RELEASE_PUSH_PAT }}
+          token: ${{ steps.app-token.outputs.token }} # 这里使用生成的 App Token
           fetch-depth: 0
 
       - name: Setup Node.js
@@ -104,7 +112,7 @@ jobs:
           echo "full=$full" >> "$GITHUB_OUTPUT"
           echo "branch=pre-release/$full" >> "$GITHUB_OUTPUT"
 
-      - name: Create prerelease branch from merged PR commit (using PAT)
+      - name: Create prerelease branch from merged PR commit
         env:
           PRERELEASE_BRANCH: ${{ steps.next.outputs.branch }}
           MERGE_SHA: ${{ github.event.pull_request.merge_commit_sha }}
@@ -114,22 +122,19 @@ jobs:
             exit 1
           fi
 
-          if [ -z "$MERGE_SHA" ]; then
-            echo "MERGE_SHA is empty, abort."
-            exit 1
-          fi
+          # 配置 Git 用户信息 (使用 GitHub Actions Bot 身份，或者你可以自定义为 Bot 名)
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
 
-          # 配置 Git 用户信息 (使用 GitHub Actions Bot 或 Actor)
-          git config user.name "${{ github.actor }}"
-          git config user.email "${{ github.actor }}@users.noreply.github.com"
-
-          # 以 PR 的 merge commit 作为预发布分支的基线
+          # 切分支
           git checkout -b "$PRERELEASE_BRANCH" "$MERGE_SHA"
 
-          # 【关键修改】直接 push。由于 Checkout 步骤使用了 PAT，这里会自动使用 PAT 权限
+          # 推送
+          # 因为 Checkout 步骤已经使用了 App Token，这里的 push 会自动复用该权限
+          # 且 App Token 推送会触发后续 workflow
           git push origin "$PRERELEASE_BRANCH"
 
-          echo "Pushed prerelease branch $PRERELEASE_BRANCH from merged commit $MERGE_SHA. Pre-release CI should now trigger."
+          echo "Pushed prerelease branch $PRERELEASE_BRANCH"
 
   sync_test_release:
     needs: create_prerelease_branch

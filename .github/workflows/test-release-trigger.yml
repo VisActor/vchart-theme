@@ -22,6 +22,10 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with:
+          # 【关键修改】使用 PAT 进行 checkout，确保后续 push 能触发其他 workflow
+          token: ${{ secrets.RELEASE_PUSH_PAT }}
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v3
@@ -104,8 +108,6 @@ jobs:
         env:
           PRERELEASE_BRANCH: ${{ steps.next.outputs.branch }}
           MERGE_SHA: ${{ github.event.pull_request.merge_commit_sha }}
-          RELEASE_PUSH_PAT: ${{ secrets.RELEASE_PUSH_PAT }}
-          REPO: ${{ github.repository }}
         run: |
           if [ -z "$PRERELEASE_BRANCH" ]; then
             echo "PRERELEASE_BRANCH is empty, abort."
@@ -117,20 +119,17 @@ jobs:
             exit 1
           fi
 
-          if [ -z "$RELEASE_PUSH_PAT" ]; then
-            echo "RELEASE_PUSH_PAT is empty, abort."
-            exit 1
-          fi
-
-          git fetch origin --prune
+          # 配置 Git 用户信息 (使用 GitHub Actions Bot 或 Actor)
+          git config user.name "${{ github.actor }}"
+          git config user.email "${{ github.actor }}@users.noreply.github.com"
 
           # 以 PR 的 merge commit 作为预发布分支的基线
           git checkout -b "$PRERELEASE_BRANCH" "$MERGE_SHA"
 
-          # 使用 PAT 推送，使 push 事件能触发 pre-release workflow
-          git push "https://x-access-token:${RELEASE_PUSH_PAT}@github.com/${REPO}.git" "$PRERELEASE_BRANCH"
+          # 【关键修改】直接 push。由于 Checkout 步骤使用了 PAT，这里会自动使用 PAT 权限
+          git push origin "$PRERELEASE_BRANCH"
 
-          echo "Pushed prerelease branch $PRERELEASE_BRANCH from merged commit $MERGE_SHA. Pre-release CI will handle build & npm publish."
+          echo "Pushed prerelease branch $PRERELEASE_BRANCH from merged commit $MERGE_SHA. Pre-release CI should now trigger."
 
   sync_test_release:
     needs: create_prerelease_branch

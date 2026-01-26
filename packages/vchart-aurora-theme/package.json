@@ -1,6 +1,6 @@
 {
   "name": "@visactor/vchart-aurora-theme",
-  "version": "1.0.0",
+  "version": "1.12.2",
   "description": "Extended themes for VChart",
   "sideEffects": false,
   "main": "cjs/index.js",

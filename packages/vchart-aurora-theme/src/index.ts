@@ -58,3 +58,5 @@ export const chartAuroraTheme: ITheme = {
   },
   markByName
 };
+
+export const allThemeMap = new Map([[chartAuroraTheme.name, chartAuroraTheme]]) as Map<string, ITheme>;

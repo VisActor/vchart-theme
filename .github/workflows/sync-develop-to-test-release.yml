@@ -1,0 +1,33 @@
+name: Sync develop to test-release
+
+on:
+  push:
+    branches:
+      - develop
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Sync test-release to develop
+        env:
+          GITHUB_ACTOR: ${{ github.actor }}
+        run: |
+          git config user.name "$GITHUB_ACTOR"
+          git config user.email "$GITHUB_ACTOR@users.noreply.github.com"
+
+          # 拉取最新的 develop 和 test-release
+          git fetch origin develop test-release
+
+          # 基于最新 develop 创建/重置本地临时分支
+          git checkout -B sync-temp origin/develop
+
+          # 强制将远端 test-release 覆盖为 develop 当前状态
+          git push origin +sync-temp:test-release

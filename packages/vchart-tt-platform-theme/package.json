@@ -1,6 +1,6 @@
 {
   "name": "@visactor/vchart-tt-platform-theme",
-  "version": "1.12.3",
+  "version": "1.12.3-alpha.3",
   "description": "Extended themes for VChart",
   "sideEffects": false,
   "main": "cjs/index.js",
@@ -28,8 +28,8 @@
     "@visactor/vchart": ">=1.10.4"
   },
   "dependencies": {
-    "@visactor/vchart-semi-theme": "workspace:1.12.3",
-    "@visactor/vchart-theme-utils": "workspace:1.12.3"
+    "@visactor/vchart-semi-theme": "workspace:1.12.3-alpha.3",
+    "@visactor/vchart-theme-utils": "workspace:1.12.3-alpha.3"
   },
   "devDependencies": {
     "@esbuild-plugins/node-globals-polyfill": "0.1.1",

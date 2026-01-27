@@ -28,7 +28,7 @@
     "@visactor/vchart": ">=1.10.4"
   },
   "dependencies": {
-    "@visactor/vchart-theme-utils": "workspace:1.12.2"
+    "@visactor/vchart-theme-utils": "workspace:1.12.3"
   },
   "devDependencies": {
     "@esbuild-plugins/node-globals-polyfill": "0.1.1",

@@ -166,7 +166,7 @@ importers:
       '@types/offscreencanvas': 2019.6.4
       '@visactor/react-vchart': 1.12.1
       '@visactor/vchart': 1.12.1
-      '@visactor/vchart-theme-utils': workspace:1.12.2
+      '@visactor/vchart-theme-utils': workspace:1.12.3
       '@vitejs/plugin-react': ^4.1.1
       '@vitejs/plugin-react-swc': ^3.4.1
       eslint: ~8.18.0

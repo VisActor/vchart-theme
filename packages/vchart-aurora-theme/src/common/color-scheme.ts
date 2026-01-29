@@ -2,16 +2,15 @@ import type { BuiltinColorPalette, IThemeColorScheme } from '@visactor/vchart';
 
 const defaultColor = [
   // 定义分类主题色
-  '#1443FF',
-  '#33CCB2',
-  '#FFD500',
-  '#FFAA33',
-  '#FF7733',
-  '#F65656',
-  '#E93DBD',
-  '#9933FF',
-  '#5533FF',
-  '#A3ABC2'
+  '#3377FF',
+  '#1FE7F9',
+  '#53F3B3',
+  '#FFCD50',
+  '#ADB8D6',
+  '#B46FF4',
+  '#867AFF',
+  '#FAA64D',
+  '#F25E68'
 ];
 
 const BLACK_COLORS = {
@@ -36,15 +35,15 @@ const WHITE_COLORS = {
   6: '#0F0F0F'
 };
 
-const blackColorPalettes = {};
-for (const key in BLACK_COLORS) {
-  blackColorPalettes[`blackColors${key}`] = BLACK_COLORS[key];
-}
+const blackColorPalettes: Record<string, string> = {};
+Object.entries(BLACK_COLORS).forEach(([key, value]) => {
+  blackColorPalettes[`blackColors${key}`] = value;
+});
 
-const whiteColorPalettes = {};
-for (const key in WHITE_COLORS) {
-  whiteColorPalettes[`whiteColors${key}`] = WHITE_COLORS[key];
-}
+const whiteColorPalettes: Record<string, string> = {};
+Object.entries(WHITE_COLORS).forEach(([key, value]) => {
+  whiteColorPalettes[`whiteColors${key}`] = value;
+});
 
 export const colorScheme: IThemeColorScheme = {
   default: {
@@ -64,6 +63,6 @@ export const colorScheme: IThemeColorScheme = {
 
       ...blackColorPalettes,
       ...whiteColorPalettes
-    } as Partial<BuiltinColorPalette>
+    } as unknown as BuiltinColorPalette
   }
 };

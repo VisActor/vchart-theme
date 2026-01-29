@@ -8,6 +8,6 @@ module.exports = {
     cjs: 'cjs',
     umd: 'build'
   },
-  name: 'vchart-semi-theme',
+  name: 'vchart-aurora-theme',
   umdOutputFilename: 'index'
 };

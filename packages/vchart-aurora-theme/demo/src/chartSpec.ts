@@ -823,6 +823,9 @@ export const areaSpec = {
 
 export const areaSimpleSpec = {
   type: 'area',
+  hover: {
+    enable: false
+  },
   seriesMark: 'line',
   data: {
     values: [
@@ -853,6 +856,13 @@ export const areaSimpleSpec = {
   xField: ['type'],
   yField: 'value',
   seriesField: 'country',
+  point: {
+    state: {
+      dimension_hover: {
+        visible: false
+      }
+    }
+  },
   legends: {
     visible: false
   },
@@ -860,7 +870,9 @@ export const areaSimpleSpec = {
     visible: false
   },
   crosshair: {
-    visible: false
+    xField: {
+      visible: false
+    }
   }
 };
 

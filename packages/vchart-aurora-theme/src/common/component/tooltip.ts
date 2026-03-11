@@ -1,8 +1,8 @@
 import type { ITooltipTheme } from '@visactor/vchart';
 
 export const tooltip: ITooltipTheme = {
-  dimension: {
+  shape: {
     shapeType: 'circle',
-    shapeSize: 8
+    size: 8
   }
 };

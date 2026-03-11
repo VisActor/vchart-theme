@@ -50,8 +50,8 @@
     "@types/jest": "~29.5.0",
     "@types/offscreencanvas": "2019.6.4",
     "@types/node": "*",
-    "@visactor/vchart": "1.12.1",
-    "@visactor/react-vchart": "1.12.1"
+    "@visactor/vchart": "2.0.19",
+    "@visactor/react-vchart": "2.0.19"
   },
   "publishConfig": {
     "access": "public"

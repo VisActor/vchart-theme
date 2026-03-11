@@ -12,24 +12,62 @@ export const area: Pick<
         lineWidth: 2,
         shadowColor: 'rgba(0, 0, 0, 0.1)',
         shadowBlur: 3,
-        stroke: { type: 'palette', key: 'whiteColors100' }
+        stroke: '#fff'
+      },
+      state: {
+        dimension_hover: {
+          visible: true
+        }
       }
     },
     line: {
       style: {
         curveType: 'monotone',
-        lineWidth: 2
+        lineWidth: 2,
+        stroke: {
+          gradient: 'linear',
+          x0: 0,
+          y0: 0,
+          x1: 1,
+          y1: 0,
+          stops: [
+            {
+              offset: 0,
+              opacity: 0.7
+            },
+            {
+              offset: 1,
+              opacity: 1
+            }
+          ]
+        }
       }
     },
     area: {
       style: {
-        fillOpacity: 0.25,
-        lineWidth: 2
+        // lineWidth: 2,
+        fill: {
+          gradient: 'linear',
+          x0: 0,
+          y0: 0,
+          x1: 0,
+          y1: 1,
+          stops: [
+            {
+              offset: 0,
+              opacity: 0.7
+            },
+            {
+              offset: 1,
+              opacity: 0
+            }
+          ]
+        }
       },
       state: {
-        selected: {
-          fillOpacity: 0.5
-        }
+        // selected: {
+        //   fillOpacity: 0.5
+        // }
       }
     }
   }

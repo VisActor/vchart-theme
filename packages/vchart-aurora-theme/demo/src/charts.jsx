@@ -1,15 +1,18 @@
 import React from 'react';
 import { isMobile } from 'react-device-detect';
-import { charts } from './chart-list';
 import { VChart } from '@visactor/react-vchart';
 import { Card } from '@douyinfe/semi-ui';
 
 const chartHeight = 400;
 
-const Charts = () => {
+const Charts = ({ charts = [] }) => {
+  if (charts.length === 0) {
+    return <div style={{ textAlign: 'center', padding: '50px', color: 'var(--semi-color-text-2)' }}>暂无图表数据</div>;
+  }
+
   return (
     <div>
-      {charts.map((chart, i) => {
+      {charts?.map((chart, i) => {
         return (
           <div
             key={i}

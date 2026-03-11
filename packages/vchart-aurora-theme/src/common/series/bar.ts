@@ -1,19 +1,46 @@
 import type { ISeriesTheme, SeriesTypeEnum, SeriesTypeForThemeEnum } from '@visactor/vchart';
 
 const bar: ISeriesTheme['bar'] = {
-  barMaxWidth: 8,
-  // @ts-ignore
-  barGapInGroup: 4, // FIXME: typeError
-  label: {
+  barMaxWidth: 16,
+  barGapInGroup: 2,
+  // barMinHeight: 2,
+  bar: {
     style: {
-      fill: { type: 'palette', key: 'secondaryFontColor' }
+      // @ts-ignore
+      visible: datum => datum.value > 0, // 数据为0时隐藏柱子
+      outerBorder: {
+        stroke: ['white', false, false, false],
+        lineWidth: 1
+      }
+    }
+  },
+  legends: {
+    visible: true,
+    item: {
+      shape: {
+        visible: true,
+        style: {
+          symbolType: 'circle'
+        }
+      }
+    }
+  },
+  tooltip: {
+    visible: true,
+    activeType: 'dimension',
+    mark: {
+      shapeType: 'circle'
+    },
+    dimension: {
+      visible: true,
+      shapeType: 'circle'
     }
   }
 };
 
 const bar_horizontal: ISeriesTheme['bar'] = {
   // @ts-ignore
-  stackCornerRadius: [0, 1, 1, 0], // FIXME: typeError
+  stackCornerRadius: [0, 2, 2, 0], // FIXME: typeError
   label: {
     position: 'right',
     offset: 4
@@ -22,7 +49,7 @@ const bar_horizontal: ISeriesTheme['bar'] = {
 
 const bar_vertical: ISeriesTheme['bar'] = {
   // @ts-ignore
-  stackCornerRadius: [1, 1, 0, 0], // FIXME: typeError
+  stackCornerRadius: [2, 2, 0, 0], // FIXME: typeError,
   label: {
     position: 'top',
     offset: 4

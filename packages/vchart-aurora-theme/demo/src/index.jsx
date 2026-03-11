@@ -2,6 +2,7 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import Frame from './frame.jsx';
 import './normalize.css';
+import './font.css';
 import VChart from '@visactor/vchart';
 import { chartAuroraTheme } from '../../src/index.ts';
 

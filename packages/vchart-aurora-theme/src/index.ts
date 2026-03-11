@@ -1,5 +1,5 @@
 import type { ITheme } from '@visactor/vchart';
-import { colorScheme } from './common/color-scheme';
+import { colorScheme, colorList, nestColorList } from './common/color-scheme';
 import { axis } from './common/component/axis';
 import { axisPolar } from './common/component/polar-axis';
 
@@ -28,35 +28,37 @@ import { radar } from './common/series/radar';
 export const chartAuroraTheme: ITheme = {
   name: 'aurora',
   type: 'light',
-  description: 'light theme for ChartHub.',
+  description: 'light theme for Aurora.',
   colorScheme,
-  token,
+  // token,
   component: {
-    ...axis,
+    // ...axis,
     ...legend,
-    ...axisPolar,
+    // ...axisPolar,
     tooltip,
-    crosshair,
-    indicator,
-    markLine,
-    markArea,
-    markPoint,
-    dataZoom,
-    scrollBar
+    crosshair
+    // indicator,
+    // markLine,
+    // markArea,
+    // markPoint,
+    // dataZoom,
+    // scrollBar
   },
   series: {
-    ...area,
-    ...bar,
-    ...gauge,
-    line,
-    scatter,
     pie,
-    funnel,
-    treemap,
-    heatmap,
-    radar
-  },
-  markByName
+    ...bar,
+    ...area,
+    line
+
+    // ...gauge,
+    // scatter,
+    // funnel,
+    // treemap,
+    // heatmap,
+    // radar
+  }
 };
+
+export { colorList, nestColorList };
 
 export const allThemeMap = new Map([[chartAuroraTheme.name, chartAuroraTheme]]) as Map<string, ITheme>;

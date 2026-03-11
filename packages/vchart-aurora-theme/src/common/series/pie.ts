@@ -8,7 +8,8 @@ export const pie: ISeriesTheme['pie'] = {
       padAngle: 0,
       stroke: '#fff',
       lineWidth: 2,
-      lineJoin: 'round'
+      lineJoin: 'round',
+      cornerRadius: 2
     },
     state: {
       hover: {
@@ -23,6 +24,41 @@ export const pie: ISeriesTheme['pie'] = {
   },
   label: {
     visible: true,
-    position: 'outside'
+    position: 'outside',
+    formatMethod: (label, data) => {
+      return {
+        type: 'rich',
+        text: [
+          {
+            text: `${data?.value}\n`,
+            fill: '#111',
+            fontSize: 16,
+            fontWeight: 500,
+            fontFamily: 'douyinNumber',
+            stroke: false
+          },
+          {
+            text: data?.type,
+            fill: '#606165',
+            fontSize: 12,
+            fontWeight: 400,
+            stroke: false
+          }
+        ]
+      };
+    },
+    line: {
+      style: {
+        lineWidth: 2
+      }
+    },
+    style: {
+      type: 'rich',
+      boundsPadding: [6, 0, 6, 0]
+    },
+    legend: {
+      visible: true,
+      orient: 'bottom'
+    }
   }
 };

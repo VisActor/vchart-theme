@@ -1,6 +1,6 @@
 import type { ICrosshairTheme } from '@visactor/vchart';
 
-export const crosshair: ICrosshairTheme = {
+export const barCrosshair: ICrosshairTheme = {
   xField: {
     line: {
       type: 'rect', // 设置为矩形类型
@@ -16,6 +16,20 @@ export const crosshair: ICrosshairTheme = {
             { offset: 1, color: 'rgba(118, 164, 255, 0.1)' }
           ]
         }
+      }
+    }
+  }
+};
+
+export const lineCrosshair: ICrosshairTheme = {
+  bandField: {
+    line: {
+      type: 'line',
+      width: 1,
+      style: {
+        lineWidth: 1,
+        stroke: '#DCDEE1',
+        lineDash: [2, 2]
       }
     }
   }

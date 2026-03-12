@@ -13,6 +13,19 @@ export const colorList = [
   '#B46FF4'
 ];
 
+export const barColorList = [
+  // 定义分类主题色
+  '#3377FF',
+  '#1FE7F9',
+  '#FFCD50',
+  '#53F3B3',
+  '#ADB8D6',
+  '#867AFF',
+  '#FAA64D',
+  '#FF8082',
+  '#B46FF4'
+];
+
 export const nestColorList = [
   ['#3377FF', '#5587FD', '#76A4FF', '#A0C0FF', '#BFD4FF', '#E5EEFF'],
   ['#1FE7F9', '#71F1FF', '#A2F5FF', '#BCF8FF', '#D2FAFF', '#E5FDFF'],

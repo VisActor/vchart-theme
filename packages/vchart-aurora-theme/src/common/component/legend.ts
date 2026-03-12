@@ -16,18 +16,32 @@ export const legend: Partial<IComponentTheme> = {
       },
       shape: {
         style: {
-          size: 8,
           symbolType: 'circle'
         }
+      }
+    },
+    allowAllCanceled: false
+  }
+};
+
+export const lineLegend: Partial<IComponentTheme> = {
+  discreteLegend: {
+    visible: true,
+    orient: 'top',
+    position: 'middle',
+    maxRow: 1,
+    title: {
+      visible: false
+    },
+    item: {
+      visible: true,
+      background: {
+        visible: false
       },
-      label: {
+      shape: {
         style: {
-          fill: '#585858'
-        },
-        state: {
-          unSelected: {
-            opacity: 1
-          }
+          size: [8, 2],
+          symbolType: 'rect'
         }
       }
     },

@@ -241,62 +241,73 @@ export const benchmarkSpec = {
         {
           reason: '价格问题',
           value: 250,
-          bench: 230
+          type: '退款金额'
         },
         {
           reason: '物流问题',
           value: 200,
-          bench: 230
+          type: '退款金额'
         },
         {
           reason: '不想要了',
           value: 100,
-          bench: 120
+          type: '退款金额'
         },
         {
           reason: '其他',
           value: 20,
-          bench: 10
+          type: '退款金额'
+        }
+      ]
+    },
+    {
+      id: 'bench',
+      values: [
+        {
+          reason: '价格问题',
+          value: 230,
+          type: '同行标杆'
+        },
+        {
+          reason: '物流问题',
+          value: 230,
+          type: '同行标杆'
+        },
+        {
+          reason: '不想要了',
+          value: 120,
+          type: '同行标杆'
+        },
+        {
+          reason: '其他',
+          value: 10,
+          type: '同行标杆'
         }
       ]
     }
   ],
   series: [
     {
-      id: '退款金额',
+      id: 'base',
       type: 'bar',
+      dataId: 'base',
+      seriesField: 'type',
       xField: 'reason',
       yField: 'value',
       barMaxWidth: 16,
-      barGapInGroup: 2,
-      tooltip: {
-        dimension: {
-          content: {
-            key: '退款金额',
-            value: datum => datum.value
-          }
-        }
-      }
+      barGapInGroup: 2
     },
     {
-      id: '同行标杆退款金额',
+      id: 'bench',
       type: 'scatter',
+      dataId: 'bench',
+      seriesField: 'type',
       xField: 'reason',
-      yField: 'bench',
-      tooltip: {
-        dimension: {
-          content: {
-            key: '同行标杆退款金额',
-            value: datum => datum.bench
-          }
-        }
-      },
+      yField: 'value',
       point: {
         style: {
           shape: 'rect',
-          size: [16, 2],
-          fill: '#2850C6',
-          stroke: '#2850C6'
+          size: [16, 2]
         }
       }
     }
@@ -413,6 +424,48 @@ export const lineSpec = {
       { type: 'Mascara', country: 'USA', value: 11261 }
     ]
   },
+  customMark: [
+    {
+      type: 'rect',
+      zIndex: 1,
+      style: {
+        x: (datum, ctx) => {
+          const region = ctx.chart.getAllRegions()[0];
+          return region.getLayoutStartPoint().x;
+        },
+        y: (datum, ctx) => {
+          const region = ctx.chart.getAllRegions()[0];
+          return region.getLayoutStartPoint().y - 12;
+        },
+        width: (datum, ctx) => {
+          const region = ctx.chart.getAllRegions()[0];
+          return region.getLayoutRect().width;
+        },
+        height: (datum, ctx) => {
+          const region = ctx.chart.getAllRegions()[0];
+          return region.getLayoutRect().height + 12;
+        },
+        cornerRadius: 12,
+        fill: {
+          gradient: 'linear',
+          x0: 0,
+          y0: 0,
+          x1: 0,
+          y1: 1,
+          stops: [
+            {
+              offset: 0,
+              color: '#F5F9FF'
+            },
+            {
+              offset: 1,
+              color: '#fff'
+            }
+          ]
+        }
+      }
+    }
+  ],
   height: 600,
   xField: ['type'],
   yField: 'value',

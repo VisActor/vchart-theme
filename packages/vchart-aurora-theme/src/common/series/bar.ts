@@ -7,33 +7,11 @@ const bar: ISeriesTheme['bar'] = {
   bar: {
     style: {
       // @ts-ignore
-      visible: datum => datum.value > 0, // 数据为0时隐藏柱子
-      outerBorder: {
-        stroke: ['white', false, false, false],
-        lineWidth: 1
-      }
-    }
-  },
-  legends: {
-    visible: true,
-    item: {
-      shape: {
-        visible: true,
-        style: {
-          symbolType: 'circle'
-        }
-      }
-    }
-  },
-  tooltip: {
-    visible: true,
-    activeType: 'dimension',
-    mark: {
-      shapeType: 'circle'
-    },
-    dimension: {
-      visible: true,
-      shapeType: 'circle'
+      visible: datum => datum.value > 0 // 数据为0时隐藏柱子
+      // outerBorder: {
+      //   stroke: ['white', false, false, false],
+      //   lineWidth: 1
+      // }
     }
   }
 };

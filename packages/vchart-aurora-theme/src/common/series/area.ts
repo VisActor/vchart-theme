@@ -23,29 +23,11 @@ export const area: Pick<
     line: {
       style: {
         curveType: 'monotone',
-        lineWidth: 2,
-        stroke: {
-          gradient: 'linear',
-          x0: 0,
-          y0: 0,
-          x1: 1,
-          y1: 0,
-          stops: [
-            {
-              offset: 0,
-              opacity: 0.7
-            },
-            {
-              offset: 1,
-              opacity: 1
-            }
-          ]
-        }
+        lineWidth: 2
       }
     },
     area: {
       style: {
-        // lineWidth: 2,
         fill: {
           gradient: 'linear',
           x0: 0,
@@ -63,11 +45,6 @@ export const area: Pick<
             }
           ]
         }
-      },
-      state: {
-        // selected: {
-        //   fillOpacity: 0.5
-        // }
       }
     }
   }

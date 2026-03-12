@@ -7,6 +7,7 @@ import {
   barGroupHorizontalSpec,
   barGroupSpec,
   benchmarkSpec,
+  dualAxisBarSpec,
   barStackedSpec,
   funnelSpec,
   lineSpec,
@@ -39,6 +40,10 @@ export const barCharts: IChartInfo[] = [
   {
     title: '带同行标杆柱状图',
     spec: benchmarkSpec
+  },
+  {
+    title: '双轴图（金额/比率）',
+    spec: dualAxisBarSpec
   },
   {
     title: '水平分组柱状图',

@@ -8,10 +8,6 @@ const bar: ISeriesTheme['bar'] = {
     style: {
       // @ts-ignore
       visible: datum => datum.value > 0 // 数据为0时隐藏柱子
-      // outerBorder: {
-      //   stroke: ['white', false, false, false],
-      //   lineWidth: 1
-      // }
     }
   }
 };

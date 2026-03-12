@@ -30,13 +30,6 @@
 
 <!-- 请在下方添加你的新任务 -->
 
-- [ ] **Task: 修复 Line/Area 图例和 Tooltip 颜色渐变问题**
-  - **描述**: 在 Line 和 Area 图表中，由于 Series 样式使用了渐变色，导致 Legends 和 Tooltip 的图形也呈现渐变。需修改主题配置，使其显示为纯色。
-  - **文件**: `src/common/series/line.ts`, `src/common/series/area.ts`
-  - **优先级**: 高
-
----
-
 ## 🔄 进行中 (In Progress)
 
 <!-- AI 正在执行的任务 -->
@@ -46,6 +39,21 @@
 ## ✅ 已完成 (Completed)
 
 <!-- 已完成的任务历史 -->
+
+- [x] **Task: 修复 Line/Area 图例和 Tooltip 颜色渐变问题**
+  - **描述**: 在 Line 和 Area 图表中，由于 Series 样式使用了渐变色，导致 Legends 和 Tooltip 的图形也呈现渐变。需修改主题配置，使其显示为纯色。
+  - **文件**: `src/common/series/line.ts`, `src/common/series/area.ts`
+  - **优先级**: 高
+
+- [x] **Task: 新增柱状图双Y轴Demo**
+  - **描述**: 新增一个柱状图的demo，包含两个y轴，左边单位金额，右边单位百分比，比如退款金额、退款率。spec参考benchmarkSpec。
+  - **文件**: `demo/src/chartSpec.ts`, `demo/src/chart-list.ts`
+  - **验证**: Demo 页面出现双Y轴柱状图。
+
+- [x] **Task: legend取消选中时，shape有border**
+  - **描述**: legend取消选中时，shape有border，填充色变为白色，边框颜色保持原色。
+  - **文件**: `src/common/component/legend.ts`
+  - **优先级**: 中
 
 - [x] **Task: 禁用迷你面积图 Hover 效果 (Demo Only)**
 

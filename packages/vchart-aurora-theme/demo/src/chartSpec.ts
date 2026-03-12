@@ -833,6 +833,88 @@ export const funnelSpec = {
   }
 };
 
+export const dualAxisBarSpec = {
+  type: 'common',
+  data: [
+    {
+      id: 'dualAxisDataLeft',
+      values: [
+        { category: '1月', type: '退款金额', value: 12.3 },
+        { category: '2月', type: '退款金额', value: 15.8 },
+        { category: '3月', type: '退款金额', value: 10.2 },
+        { category: '4月', type: '退款金额', value: 18.6 },
+        { category: '5月', type: '退款金额', value: 16.4 },
+        { category: '6月', type: '退款金额', value: 20.1 }
+      ]
+    },
+    {
+      id: 'dualAxisDataRight',
+      values: [
+        { category: '1月', type: '退款率', value: 32.5 },
+        { category: '2月', type: '退款率', value: 45.1 },
+        { category: '3月', type: '退款率', value: 28.4 },
+        { category: '4月', type: '退款率', value: 55.0 },
+        { category: '5月', type: '退款率', value: 48.3 },
+        { category: '6月', type: '退款率', value: 62.7 }
+      ]
+    }
+  ],
+  series: [
+    {
+      type: 'bar',
+      id: 'amountBar',
+      name: '金额',
+      dataIndex: 0,
+      xField: ['category', 'type'],
+      yField: 'value'
+    },
+    {
+      type: 'bar',
+      id: 'percentBar',
+      name: '占比',
+      dataIndex: 1,
+      xField: ['category', 'type'],
+      yField: 'value'
+    }
+  ],
+  axes: [
+    {
+      orient: 'bottom',
+      type: 'band',
+      label: {
+        visible: true
+      }
+    },
+    {
+      orient: 'left',
+      type: 'linear',
+      seriesId: ['amountBar'],
+      label: {
+        visible: true,
+        formatMethod: val => val.toFixed(1) + '万'
+      },
+      grid: {
+        visible: true
+      }
+    },
+    {
+      orient: 'right',
+      type: 'linear',
+      seriesId: ['percentBar'],
+      label: {
+        visible: true,
+        formatMethod: val => val.toFixed(1) + '%'
+      },
+      grid: {
+        visible: false
+      }
+    }
+  ],
+  legends: {
+    visible: true
+  }
+};
+
 export const areaSpec = {
   type: 'area',
   seriesMark: 'line',

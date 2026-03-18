@@ -38,7 +38,7 @@ export const pie: ISeriesTheme['pie'] = {
             text: `${data?.value}\n`,
             fill: '#111',
             fontSize: 16,
-            fontWeight: 500,
+            fontWeight: '500',
             fontFamily: 'douyinNumber',
             stroke: false,
             textAlign: cos < 0 ? 'right' : 'left'
@@ -47,7 +47,7 @@ export const pie: ISeriesTheme['pie'] = {
             text: data?.type,
             fill: '#606165',
             fontSize: 12,
-            fontWeight: 400,
+            fontWeight: '400',
             stroke: false,
             textAlign: cos < 0 ? 'right' : 'left'
           }
@@ -65,10 +65,10 @@ export const pie: ISeriesTheme['pie'] = {
     style: {
       type: 'rich',
       boundsPadding: [6, 0, 6, 0]
-    },
-    legend: {
-      visible: true,
-      orient: 'bottom'
     }
+    // legend: {
+    //   visible: true,
+    //   orient: 'bottom'
+    // }
   }
 };

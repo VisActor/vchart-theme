@@ -1,5 +1,5 @@
 {
-  "name": "@visactor/vchart-ve-o-theme",
+  "name": "@visactor/vchart-aurora-theme",
   "version": "1.12.3",
   "description": "Extended themes for VChart",
   "sideEffects": false,
@@ -28,7 +28,6 @@
     "@visactor/vchart": ">=1.10.4"
   },
   "dependencies": {
-    "@visactor/vchart-arco-theme": "workspace:1.12.3",
     "@visactor/vchart-theme-utils": "workspace:1.12.3"
   },
   "devDependencies": {
@@ -52,6 +51,9 @@
     "lint-staged": "12.3.7",
     "magic-string": "^0.25.7",
     "prettier": "2.6.1",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-device-detect": "^2.2.2",
     "ts-loader": "8.0.2",
     "ts-node": "10.9.0",
     "tslib": "2.3.1",
@@ -60,41 +62,13 @@
     "@vitejs/plugin-react-swc": "^3.4.1",
     "vite": "^4.5.0",
     "vite-plugin-svgr": "^4.1.0",
+    "sass": "^1.63.6",
     "@babel/runtime": "latest",
-    "@arco-design/color": "^0.4.0",
-    "@arco-design/web-react": "^2.32.2",
-    "@loadable/component": "^5.13.2",
-    "@arco-themes/react-arco-pro": "^0.0.7",
-    "classnames": "^2.3.1",
-    "copy-to-clipboard": "^3.3.1",
-    "lodash": "4.17.21",
-    "react": "^18.0.0",
-    "react-color": "^2.18.1",
-    "react-dom": "^18.0.0",
-    "react-redux": "^7.2.6",
-    "react-device-detect": "^2.2.2",
-    "redux": "^4.1.2",
     "@visactor/vchart": "2.0.19",
     "@visactor/react-vchart": "2.0.19",
-    "@arco-design/webpack-plugin": "^1.6.0",
-    "@arco-plugins/vite-plugin-svgr": "^0.7.2",
-    "@svgr/webpack": "^5.5.0",
-    "@types/react": "^17.0.0",
-    "@types/react-dom": "^17.0.0",
-    "@typescript-eslint/eslint-plugin": "5.30.0",
-    "@typescript-eslint/parser": "5.30.0",
-    "eslint-config-prettier": "8.5.0",
-    "eslint-plugin-babel": "^5.3.1",
-    "eslint-plugin-prettier": "^4.0.0",
-    "eslint-plugin-react": "7.30.1",
-    "eslint-plugin-react-hooks": "4.6.0",
-    "less": "4.1.3",
-    "less-loader": "7.3.0",
-    "postcss-less": "4",
-    "pretty-quick": "^3.1.2",
-    "stylelint": "^14.1.0",
-    "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-standard": "^24.0.0"
+    "@douyinfe/semi-ui": "^2.51.3",
+    "@douyinfe/semi-icons": "latest",
+    "@douyinfe/semi-icons-lab": "latest"
   },
   "publishConfig": {
     "access": "public"
@@ -104,7 +78,7 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/VisActor/vchart-theme.git",
-    "directory": "packages/vchart-ve-o-theme"
+    "directory": "packages/vchart-aurora-theme"
   },
   "author": {
     "name": "VisActor",

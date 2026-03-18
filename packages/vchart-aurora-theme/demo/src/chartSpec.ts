@@ -517,7 +517,7 @@ export const pieSpec = {
     }
   },
   legends: {
-    visible: true
+    visible: false
   },
   label: {
     visible: true
@@ -569,31 +569,45 @@ export const nestPieSpec = {
       values: subDatum
     }
   ],
+  title: {
+    visible: true,
+    text: '数据分布',
+    subtext: '可视化图表副标题一到两行文字'
+  },
   series: [
     {
       type: 'pie',
       dataIndex: 0,
-      outerRadius: 0.75,
+      outerRadius: 0.7,
       innerRadius: 0,
       valueField: 'value',
       categoryField: 'type',
 
       label: {
+        interactive: false,
         position: 'inside',
         formatMethod: (label, data) => {
           return data?.type;
         },
+
+        smartInvert: false,
         visible: true,
-        rotate: false
+        rotate: false,
+        style: {
+          fill: '#585858'
+        }
       },
       color: nestColorList.map(item => item[item.length - 1]),
       pie: {
         state: {
           hover: {
-            outerRadius: 0.75
+            outerRadius: 0.7
           },
           selected: {
-            outerRadius: 0.75
+            outerRadius: 0.7
+          },
+          hover_reverse: {
+            opacity: 0.5
           }
         },
         style: {
@@ -606,14 +620,22 @@ export const nestPieSpec = {
     {
       type: 'pie',
       dataIndex: 1,
-      outerRadius: 0.85,
-      innerRadius: 0.75,
+      outerRadius: 0.8,
+      innerRadius: 0.7,
       valueField: 'value',
       categoryField: 'type',
       label: {
         visible: true
       },
       pie: {
+        state: {
+          hover: {
+            outerRadius: 0.85
+          },
+          selected: {
+            outerRadius: 0.85
+          }
+        },
         style: {
           fill: datum => {
             return datum.color;
@@ -641,8 +663,8 @@ export const metricPieSpec = {
       ]
     }
   ],
-  outerRadius: 0.85,
-  innerRadius: 0.75,
+  outerRadius: 0.8,
+  innerRadius: 0.7,
   valueField: 'value',
   categoryField: 'type',
   title: {
@@ -659,7 +681,7 @@ export const metricPieSpec = {
       autoFit: false,
       style: {
         fontWeight: '500',
-        fontFamily: 'Douyin Number ABC',
+        fontFamily: 'douyinNumber',
         fill: '#111',
         fontSize: 32,
         lineHeight: 46,

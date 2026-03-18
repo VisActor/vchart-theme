@@ -5,6 +5,7 @@ export const area: Pick<
   SeriesTypeEnum.area | SeriesTypeForThemeEnum.area_vertical | SeriesTypeForThemeEnum.area_horizontal
 > = {
   area: {
+    seriesMark: 'line',
     point: {
       style: {
         visible: false,

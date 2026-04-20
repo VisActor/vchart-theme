@@ -54,11 +54,13 @@ const Frame = () => {
         >
           <Nav.Item itemKey="pie" text="饼图" className={styles.navItem3} />
           <Nav.Item itemKey="bar" text="柱状图" className={styles.navItem} />
+          <Nav.Item itemKey="bar_horizontal" text="条形图" />
           <Nav.Item itemKey="area" text="面积图" className={styles.navItem2} />
           <Nav.Item itemKey="line" text="折线图" className={styles.navItem1} />
-
-          {/* <Nav.Item itemKey="radar" text="雷达图" className={styles.navItem4} />
-          <Nav.Item itemKey="funnel" text="漏斗图" className={styles.navItem5} /> */}
+          <Nav.Item itemKey="scatter" text="散点图" />
+          <Nav.Item itemKey="wordCloud" text="词云" />
+          <Nav.Item itemKey="radar" text="雷达图" />
+          {/* <Nav.Item itemKey="funnel" text="漏斗图" /> */}
         </Nav>
         <div className={styles.right}>
           <p className={styles.item}>{getCategoryTitle(selectedKey)}</p>

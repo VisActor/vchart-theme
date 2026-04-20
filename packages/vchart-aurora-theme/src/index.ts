@@ -11,6 +11,7 @@ import { line } from './common/series/line';
 import { scatter } from './common/series/scatter';
 import { pie } from './common/series/pie';
 import { funnel } from './common/series/funnel';
+import { axis } from './common/component/axis';
 import { treemap } from './common/series/treemap';
 import { gauge } from './common/series/gauge';
 import { heatmap } from './common/series/heatmap';
@@ -23,7 +24,8 @@ export const chartAuroraTheme: ITheme = {
   colorScheme,
   component: {
     ...legend,
-    tooltip
+    tooltip,
+    ...axis
   },
   chart: {
     line: {
@@ -53,7 +55,9 @@ export const chartAuroraTheme: ITheme = {
     pie,
     ...bar,
     ...area,
-    line
+    line,
+    radar,
+    scatter
   }
 };
 

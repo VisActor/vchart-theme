@@ -14,7 +14,9 @@ import {
   pieSpec,
   nestPieSpec,
   metricPieSpec,
-  radarSpec
+  radarSpec,
+  scatterSpec,
+  wordCloudSpec
 } from './chartSpec';
 
 export interface IChartCategory {
@@ -30,7 +32,7 @@ export const barCharts: IChartInfo[] = [
     spec: barSpec
   },
   {
-    title: '基础柱状图',
+    title: '分组柱状图',
     spec: barGroupSpec
   },
   {
@@ -44,9 +46,13 @@ export const barCharts: IChartInfo[] = [
   {
     title: '双轴图（金额/比率）',
     spec: dualAxisBarSpec
-  },
+  }
+];
+
+// 条形图系列
+export const barHorizontalCharts: IChartInfo[] = [
   {
-    title: '水平分组柱状图',
+    title: '水平分组条形图',
     spec: barGroupHorizontalSpec
   }
 ];
@@ -91,6 +97,22 @@ export const pieCharts: IChartInfo[] = [
   }
 ];
 
+// 散点图系列
+export const scatterCharts: IChartInfo[] = [
+  {
+    title: '基础散点图',
+    spec: scatterSpec
+  }
+];
+
+// 词云系列
+export const wordCloudCharts: IChartInfo[] = [
+  {
+    title: '基础词云',
+    spec: wordCloudSpec
+  }
+];
+
 // 雷达图系列
 export const radarCharts: IChartInfo[] = [
   {
@@ -120,6 +142,11 @@ export const chartCategories: IChartCategory[] = [
     charts: barCharts
   },
   {
+    key: 'bar_horizontal',
+    title: '条形图',
+    charts: barHorizontalCharts
+  },
+  {
     key: 'line',
     title: '折线图',
     charts: lineCharts
@@ -128,13 +155,22 @@ export const chartCategories: IChartCategory[] = [
     key: 'area',
     title: '面积图',
     charts: areaCharts
+  },
+  {
+    key: 'scatter',
+    title: '散点图',
+    charts: scatterCharts
+  },
+  {
+    key: 'wordCloud',
+    title: '词云',
+    charts: wordCloudCharts
+  },
+  {
+    key: 'radar',
+    title: '雷达图',
+    charts: radarCharts
   }
-
-  // {
-  //   key: 'radar',
-  //   title: '雷达图',
-  //   charts: radarCharts
-  // },
   // {
   //   key: 'funnel',
   //   title: '漏斗图',
@@ -145,9 +181,12 @@ export const chartCategories: IChartCategory[] = [
 // 所有图表（向后兼容）
 export const charts: IChartInfo[] = [
   ...barCharts,
+  ...barHorizontalCharts,
   ...lineCharts,
   ...areaCharts,
   ...pieCharts,
+  ...scatterCharts,
+  ...wordCloudCharts,
   ...radarCharts,
   ...funnelCharts
 ];

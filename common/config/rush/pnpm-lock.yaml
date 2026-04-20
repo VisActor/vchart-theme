@@ -31,8 +31,8 @@ importers:
       '@types/react-dom': ^17.0.0
       '@typescript-eslint/eslint-plugin': 5.30.0
       '@typescript-eslint/parser': 5.30.0
-      '@visactor/react-vchart': 2.0.19
-      '@visactor/vchart': 2.0.19
+      '@visactor/react-vchart': 2.0.22
+      '@visactor/vchart': 2.0.22
       '@visactor/vchart-theme-utils': workspace:1.12.3
       '@vitejs/plugin-react': ^4.1.1
       '@vitejs/plugin-react-swc': ^3.4.1
@@ -83,7 +83,7 @@ importers:
       '@arco-design/webpack-plugin': 1.7.0
       '@arco-plugins/vite-plugin-svgr': 0.7.2_vite@4.5.3
       '@arco-themes/react-arco-pro': 0.0.7_pa7uxehr42623f73endqjggywi
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
       '@esbuild-plugins/node-globals-polyfill': 0.1.1
       '@esbuild-plugins/node-modules-polyfill': 0.1.4
       '@internal/bundler': link:../../tools/bundler
@@ -102,8 +102,8 @@ importers:
       '@types/react-dom': 17.0.25
       '@typescript-eslint/eslint-plugin': 5.30.0_cow5zg7tx6c3eisi5a4ud5kwia
       '@typescript-eslint/parser': 5.30.0_vwud3sodsb5zxmzckoj7rdwdbq
-      '@visactor/react-vchart': 2.0.19_biqbaboplfbrettd7655fr4n2y
-      '@visactor/vchart': 2.0.19
+      '@visactor/react-vchart': 2.0.22_biqbaboplfbrettd7655fr4n2y
+      '@visactor/vchart': 2.0.22
       '@vitejs/plugin-react': 4.2.1_vite@4.5.3
       '@vitejs/plugin-react-swc': 3.6.0_vite@4.5.3
       classnames: 2.5.1
@@ -164,8 +164,8 @@ importers:
       '@types/jest': ~29.5.0
       '@types/node': '*'
       '@types/offscreencanvas': 2019.6.4
-      '@visactor/react-vchart': 2.0.19
-      '@visactor/vchart': 2.0.19
+      '@visactor/react-vchart': 2.0.22
+      '@visactor/vchart': 2.0.22
       '@visactor/vchart-theme-utils': workspace:1.12.3
       '@vitejs/plugin-react': ^4.1.1
       '@vitejs/plugin-react-swc': ^3.4.1
@@ -190,9 +190,9 @@ importers:
     dependencies:
       '@visactor/vchart-theme-utils': link:../vchart-theme-utils
     devDependencies:
-      '@babel/runtime': 7.28.6
-      '@douyinfe/semi-icons': 2.92.2_react@18.2.0
-      '@douyinfe/semi-icons-lab': 2.92.2_biqbaboplfbrettd7655fr4n2y
+      '@babel/runtime': 7.29.2
+      '@douyinfe/semi-icons': 2.95.0_react@18.2.0
+      '@douyinfe/semi-icons-lab': 2.95.0_biqbaboplfbrettd7655fr4n2y
       '@douyinfe/semi-ui': 2.55.5_biqbaboplfbrettd7655fr4n2y
       '@esbuild-plugins/node-globals-polyfill': 0.1.1
       '@esbuild-plugins/node-modules-polyfill': 0.1.4
@@ -206,8 +206,8 @@ importers:
       '@types/jest': 29.5.12
       '@types/node': 20.12.7
       '@types/offscreencanvas': 2019.6.4
-      '@visactor/react-vchart': 2.0.19_biqbaboplfbrettd7655fr4n2y
-      '@visactor/vchart': 2.0.19
+      '@visactor/react-vchart': 2.0.22_biqbaboplfbrettd7655fr4n2y
+      '@visactor/vchart': 2.0.22
       '@vitejs/plugin-react': 4.2.1_vite@4.5.3
       '@vitejs/plugin-react-swc': 3.6.0_vite@4.5.3
       eslint: 8.18.0
@@ -247,8 +247,8 @@ importers:
       '@types/jest': ~29.5.0
       '@types/node': '*'
       '@types/offscreencanvas': 2019.6.4
-      '@visactor/react-vchart': 2.0.19
-      '@visactor/vchart': 2.0.19
+      '@visactor/react-vchart': 2.0.22
+      '@visactor/vchart': 2.0.22
       '@visactor/vchart-theme-utils': workspace:1.12.3
       '@vitejs/plugin-react': ^4.1.1
       '@vitejs/plugin-react-swc': ^3.4.1
@@ -272,9 +272,9 @@ importers:
     dependencies:
       '@visactor/vchart-theme-utils': link:../vchart-theme-utils
     devDependencies:
-      '@babel/runtime': 7.28.6
-      '@douyinfe/semi-icons': 2.92.2_react@18.2.0
-      '@douyinfe/semi-icons-lab': 2.92.2_biqbaboplfbrettd7655fr4n2y
+      '@babel/runtime': 7.29.2
+      '@douyinfe/semi-icons': 2.95.0_react@18.2.0
+      '@douyinfe/semi-icons-lab': 2.95.0_biqbaboplfbrettd7655fr4n2y
       '@douyinfe/semi-ui': 2.55.5_biqbaboplfbrettd7655fr4n2y
       '@esbuild-plugins/node-globals-polyfill': 0.1.1
       '@esbuild-plugins/node-modules-polyfill': 0.1.4
@@ -288,8 +288,8 @@ importers:
       '@types/jest': 29.5.12
       '@types/node': 20.12.7
       '@types/offscreencanvas': 2019.6.4
-      '@visactor/react-vchart': 2.0.19_biqbaboplfbrettd7655fr4n2y
-      '@visactor/vchart': 2.0.19
+      '@visactor/react-vchart': 2.0.22_biqbaboplfbrettd7655fr4n2y
+      '@visactor/vchart': 2.0.22
       '@vitejs/plugin-react': 4.2.1_vite@4.5.3
       '@vitejs/plugin-react-swc': 3.6.0_vite@4.5.3
       eslint: 8.18.0
@@ -322,7 +322,7 @@ importers:
       '@types/jest': ~29.5.0
       '@types/node': '*'
       '@types/offscreencanvas': 2019.6.4
-      '@visactor/vchart': 2.0.19
+      '@visactor/vchart': 2.0.22
       '@visactor/vchart-arco-theme': workspace:1.12.3
       '@visactor/vchart-semi-theme': workspace:1.12.3
       '@visactor/vchart-tt-platform-theme': workspace:1.12.3
@@ -354,7 +354,7 @@ importers:
       '@types/jest': 29.5.12
       '@types/node': 20.12.7
       '@types/offscreencanvas': 2019.6.4
-      '@visactor/vchart': 2.0.19
+      '@visactor/vchart': 2.0.22
       '@visactor/vchart-arco-theme': link:../vchart-arco-theme
       '@visactor/vchart-semi-theme': link:../vchart-semi-theme
       '@visactor/vchart-tt-platform-theme': link:../vchart-tt-platform-theme
@@ -403,8 +403,8 @@ importers:
       '@types/react-dom': ^17.0.0
       '@typescript-eslint/eslint-plugin': 5.30.0
       '@typescript-eslint/parser': 5.30.0
-      '@visactor/react-vchart': 2.0.19
-      '@visactor/vchart': 2.0.19
+      '@visactor/react-vchart': 2.0.22
+      '@visactor/vchart': 2.0.22
       '@visactor/vchart-semi-theme': workspace:1.12.3
       '@visactor/vchart-theme': workspace:1.12.3
       '@visactor/vutils': ~0.18.15
@@ -458,7 +458,7 @@ importers:
       '@arco-design/webpack-plugin': 1.7.0
       '@arco-plugins/vite-plugin-svgr': 0.7.2_vite@4.5.3
       '@arco-themes/react-arco-pro': 0.0.7_pa7uxehr42623f73endqjggywi
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
       '@esbuild-plugins/node-globals-polyfill': 0.1.1
       '@esbuild-plugins/node-modules-polyfill': 0.1.4
       '@internal/bundler': link:../../tools/bundler
@@ -478,8 +478,8 @@ importers:
       '@types/react-dom': 17.0.25
       '@typescript-eslint/eslint-plugin': 5.30.0_cow5zg7tx6c3eisi5a4ud5kwia
       '@typescript-eslint/parser': 5.30.0_vwud3sodsb5zxmzckoj7rdwdbq
-      '@visactor/react-vchart': 2.0.19_biqbaboplfbrettd7655fr4n2y
-      '@visactor/vchart': 2.0.19
+      '@visactor/react-vchart': 2.0.22_biqbaboplfbrettd7655fr4n2y
+      '@visactor/vchart': 2.0.22
       '@visactor/vchart-semi-theme': link:../vchart-semi-theme
       '@visactor/vchart-theme': link:../vchart-theme
       '@vitejs/plugin-react': 4.2.1_vite@4.5.3
@@ -541,8 +541,8 @@ importers:
       '@types/offscreencanvas': 2019.6.4
       '@types/react': ^17.0.0
       '@types/react-dom': ^17.0.0
-      '@visactor/react-vchart': 2.0.19
-      '@visactor/vchart': 2.0.19
+      '@visactor/react-vchart': 2.0.22
+      '@visactor/vchart': 2.0.22
       '@visactor/vchart-theme': workspace:1.12.3
       '@visactor/vchart-theme-utils': workspace:1.12.3
       '@vitejs/plugin-react': ^4.1.1
@@ -554,8 +554,8 @@ importers:
       vite: ^4.5.0
     dependencies:
       '@arco-design/web-react': 2.61.2_42iwexueogtmu5amowprdpoisy
-      '@douyinfe/semi-icons': 2.92.2_react@18.2.0
-      '@douyinfe/semi-icons-lab': 2.92.2_biqbaboplfbrettd7655fr4n2y
+      '@douyinfe/semi-icons': 2.95.0_react@18.2.0
+      '@douyinfe/semi-icons-lab': 2.95.0_biqbaboplfbrettd7655fr4n2y
       '@douyinfe/semi-ui': 2.55.5_biqbaboplfbrettd7655fr4n2y
       '@visactor/vchart-theme': link:../vchart-theme
       '@visactor/vchart-theme-utils': link:../vchart-theme-utils
@@ -570,8 +570,8 @@ importers:
       '@types/offscreencanvas': 2019.6.4
       '@types/react': 17.0.80
       '@types/react-dom': 17.0.25
-      '@visactor/react-vchart': 2.0.19_biqbaboplfbrettd7655fr4n2y
-      '@visactor/vchart': 2.0.19
+      '@visactor/react-vchart': 2.0.22_biqbaboplfbrettd7655fr4n2y
+      '@visactor/vchart': 2.0.22
       '@vitejs/plugin-react': 4.2.1_vite@4.5.3
       eslint: 8.18.0
       react: 18.2.0
@@ -591,7 +591,7 @@ importers:
       '@types/jest': ~29.5.0
       '@types/node': '*'
       '@types/offscreencanvas': 2019.6.4
-      '@visactor/vchart': 2.0.19
+      '@visactor/vchart': 2.0.22
       '@visactor/vchart-types': 2.0.19
       eslint: ~8.18.0
       husky: 7.0.4
@@ -618,7 +618,7 @@ importers:
       '@types/jest': 29.5.12
       '@types/node': 20.12.7
       '@types/offscreencanvas': 2019.6.4
-      '@visactor/vchart': 2.0.19
+      '@visactor/vchart': 2.0.22
       '@visactor/vchart-types': 2.0.19
       eslint: 8.18.0
       husky: 7.0.4
@@ -655,8 +655,8 @@ importers:
       '@types/jest': ~29.5.0
       '@types/node': '*'
       '@types/offscreencanvas': 2019.6.4
-      '@visactor/react-vchart': 2.0.19
-      '@visactor/vchart': 2.0.19
+      '@visactor/react-vchart': 2.0.22
+      '@visactor/vchart': 2.0.22
       '@visactor/vchart-semi-theme': workspace:1.12.3
       '@visactor/vchart-theme-utils': workspace:1.12.3
       '@vitejs/plugin-react': ^4.1.1
@@ -683,9 +683,9 @@ importers:
       '@visactor/vchart-semi-theme': link:../vchart-semi-theme
       '@visactor/vchart-theme-utils': link:../vchart-theme-utils
     devDependencies:
-      '@babel/runtime': 7.28.6
-      '@douyinfe/semi-icons': 2.92.2_react@18.2.0
-      '@douyinfe/semi-icons-lab': 2.92.2_biqbaboplfbrettd7655fr4n2y
+      '@babel/runtime': 7.29.2
+      '@douyinfe/semi-icons': 2.95.0_react@18.2.0
+      '@douyinfe/semi-icons-lab': 2.95.0_biqbaboplfbrettd7655fr4n2y
       '@douyinfe/semi-ui': 2.55.5_biqbaboplfbrettd7655fr4n2y
       '@esbuild-plugins/node-globals-polyfill': 0.1.1
       '@esbuild-plugins/node-modules-polyfill': 0.1.4
@@ -700,8 +700,8 @@ importers:
       '@types/jest': 29.5.12
       '@types/node': 20.12.7
       '@types/offscreencanvas': 2019.6.4
-      '@visactor/react-vchart': 2.0.19_biqbaboplfbrettd7655fr4n2y
-      '@visactor/vchart': 2.0.19
+      '@visactor/react-vchart': 2.0.22_biqbaboplfbrettd7655fr4n2y
+      '@visactor/vchart': 2.0.22
       '@vitejs/plugin-react': 4.2.1_vite@4.5.3
       '@vitejs/plugin-react-swc': 3.6.0_vite@4.5.3
       eslint: 8.18.0
@@ -749,8 +749,8 @@ importers:
       '@types/react-dom': ^17.0.0
       '@typescript-eslint/eslint-plugin': 5.30.0
       '@typescript-eslint/parser': 5.30.0
-      '@visactor/react-vchart': 2.0.19
-      '@visactor/vchart': 2.0.19
+      '@visactor/react-vchart': 2.0.22
+      '@visactor/vchart': 2.0.22
       '@visactor/vchart-arco-theme': workspace:1.12.3
       '@visactor/vchart-theme-utils': workspace:1.12.3
       '@vitejs/plugin-react': ^4.1.1
@@ -799,7 +799,7 @@ importers:
       '@arco-design/webpack-plugin': 1.7.0
       '@arco-plugins/vite-plugin-svgr': 0.7.2_vite@4.5.3
       '@arco-themes/react-arco-pro': 0.0.7_pa7uxehr42623f73endqjggywi
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
       '@esbuild-plugins/node-globals-polyfill': 0.1.1
       '@esbuild-plugins/node-modules-polyfill': 0.1.4
       '@internal/bundler': link:../../tools/bundler
@@ -818,8 +818,8 @@ importers:
       '@types/react-dom': 17.0.25
       '@typescript-eslint/eslint-plugin': 5.30.0_cow5zg7tx6c3eisi5a4ud5kwia
       '@typescript-eslint/parser': 5.30.0_vwud3sodsb5zxmzckoj7rdwdbq
-      '@visactor/react-vchart': 2.0.19_biqbaboplfbrettd7655fr4n2y
-      '@visactor/vchart': 2.0.19
+      '@visactor/react-vchart': 2.0.22_biqbaboplfbrettd7655fr4n2y
+      '@visactor/vchart': 2.0.22
       '@vitejs/plugin-react': 4.2.1_vite@4.5.3
       '@vitejs/plugin-react-swc': 3.6.0_vite@4.5.3
       classnames: 2.5.1
@@ -869,7 +869,7 @@ importers:
       '@types/jest': ~29.5.0
       '@types/node': '*'
       '@types/offscreencanvas': 2019.6.4
-      '@visactor/vchart': 2.0.19
+      '@visactor/vchart': 2.0.22
       '@visactor/vchart-types': 2.0.19
       eslint: ~8.18.0
       husky: 7.0.4
@@ -894,7 +894,7 @@ importers:
       '@types/jest': 29.5.12
       '@types/node': 20.12.7
       '@types/offscreencanvas': 2019.6.4
-      '@visactor/vchart': 2.0.19
+      '@visactor/vchart': 2.0.22
       '@visactor/vchart-types': 2.0.19
       eslint: 8.18.0
       husky: 7.0.4
@@ -1121,7 +1121,7 @@ packages:
       react-dom: '>=16'
     dependencies:
       '@arco-design/color': 0.4.0
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
       b-tween: 0.3.3
       b-validate: 1.5.3
       compute-scroll-into-view: 1.0.20
@@ -2365,8 +2365,8 @@ packages:
   /@babel/regjsgen/0.8.0:
     resolution: {integrity: sha512-x/rqGMdzj+fWZvCOYForTghzbtqPDZ5gPwaoNGHdgDfF2QA/XZbCBp4Moo5scrkAMPhB7z26XM/AaHuIJdgauA==}
 
-  /@babel/runtime/7.28.6:
-    resolution: {integrity: sha512-05WQkdpL9COIMz4LjTxGpPNCdlpyimKppYNoJ5Di5EUObifl8t4tuLuUBBZEpoLYOmfvIWrsp9fCl0HoPRVTdA==}
+  /@babel/runtime/7.29.2:
+    resolution: {integrity: sha512-JiDShH45zKHWyGe4ZNVRrCjBz8Nh9TMmZG1kh4QTK8hCBTWBi8Da+i7s1fJw7/lYpM4ccepSNfqzZ/QvABBi5g==}
     engines: {node: '>=6.9.0'}
 
   /@babel/template/7.24.0:
@@ -2487,8 +2487,8 @@ packages:
       memoize-one: 5.2.1
       scroll-into-view-if-needed: 2.2.31
 
-  /@douyinfe/semi-icons-lab/2.92.2_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-fji8IsmaktOYztG2HSezObFgejz7WEBWT/X52jj48k8Mz3cOJxD6vZyzmttfvpQPKH2/G0KpmxbkQ3cNHOiHFQ==}
+  /@douyinfe/semi-icons-lab/2.95.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-uDtX7d54rXSbscLHMBOyZ+N7aD+vanLwnj6j3W3XF+CiU6t5HJ4nm0aDS5j6s/CWCOP7KWBu02TXGg0b4c3FQw==}
     peerDependencies:
       react: '>=16.0.0'
       react-dom: '>=16.0.0'
@@ -2504,8 +2504,8 @@ packages:
       classnames: 2.5.1
       react: 18.2.0
 
-  /@douyinfe/semi-icons/2.92.2_react@18.2.0:
-    resolution: {integrity: sha512-+fgK2Oe2+uokQZnrd+rHgksmfvDVvqT1fhbl49qJlDsg/xaXRxI2LOQRqBI+x0sOKabGKem+P3lY24Jgd/IGnQ==}
+  /@douyinfe/semi-icons/2.95.0_react@18.2.0:
+    resolution: {integrity: sha512-JVKOQ7WHjbOjHXW+isydR6yWgoHaG8FN8c5r0JvVZwONUc45DutfNiK/MyuZ1JW/QzEznYAjJ0yAKze6xSEE3A==}
     peerDependencies:
       react: '>=16.0.0'
     dependencies:
@@ -3138,7 +3138,7 @@ packages:
     peerDependencies:
       react: ^16.3.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
       hoist-non-react-statics: 3.3.2
       react: 18.2.0
       react-is: 16.13.1
@@ -4628,32 +4628,32 @@ packages:
       '@typescript-eslint/types': 5.30.0
       eslint-visitor-keys: 3.4.3
 
-  /@visactor/react-vchart/2.0.19_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-gLEJ8Q6DhI21xX6PDUEmhSUu4Ft8+Foho7TktiMMX6Nll5RYgXagjtjRAI1kSSKm6t/7ZXbBsmP4RdL+KaGtNA==}
+  /@visactor/react-vchart/2.0.22_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-A0eKXv8Y/6JjiFp6NB8IU4kiXOLLh09ZTisATEEi70nrNcWV+++rsd4dPx1wJCQYk68RDOzQXVpqDDA5lNRIWA==}
     peerDependencies:
       react: '>=16.0.0'
       react-dom: '>=16.0.0'
     dependencies:
-      '@visactor/vchart': 2.0.19
-      '@visactor/vchart-extension': 2.0.19
-      '@visactor/vrender-core': 1.0.41
-      '@visactor/vrender-kits': 1.0.41
+      '@visactor/vchart': 2.0.22
+      '@visactor/vchart-extension': 2.0.22
+      '@visactor/vrender-core': 1.0.45
+      '@visactor/vrender-kits': 1.0.45
       '@visactor/vutils': 1.0.23
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-is: 18.2.0
     dev: true
 
-  /@visactor/vchart-extension/2.0.19:
-    resolution: {integrity: sha512-SCFysGMRGdNK6wYFKDrvZzGdYbVjGhdbqlWA5t2fdbuVcCN7wNBTDKI+pL4yUL3n9M1ZtVxQp5uOw9I0AjFHZQ==}
+  /@visactor/vchart-extension/2.0.22:
+    resolution: {integrity: sha512-XonzIM9Wp9DTvfdwQFAVPjYpHvfPGooNfz1/QkoyH01L0qBarTAJfItXralDgNJNuy1L+RxU0gEZaXQAEP9pIw==}
     dependencies:
-      '@visactor/vchart': 2.0.19
+      '@visactor/vchart': 2.0.22
       '@visactor/vdataset': 1.0.23
       '@visactor/vlayouts': 1.0.23
-      '@visactor/vrender-animate': 1.0.41
-      '@visactor/vrender-components': 1.0.41
-      '@visactor/vrender-core': 1.0.41
-      '@visactor/vrender-kits': 1.0.41
+      '@visactor/vrender-animate': 1.0.45
+      '@visactor/vrender-components': 1.0.45
+      '@visactor/vrender-core': 1.0.45
+      '@visactor/vrender-kits': 1.0.45
       '@visactor/vutils': 1.0.23
     dev: true
 
@@ -4661,18 +4661,18 @@ packages:
     resolution: {integrity: sha512-G3MaSthmlDPzcTMN/XlqPSzihDneh6lXZZ3MAqEUeamvoOSHPJPAcwe7PFE4tOFwthAgM43j+W3d2sbtujkzOg==}
     dev: true
 
-  /@visactor/vchart/2.0.19:
-    resolution: {integrity: sha512-pPNAHUuNlw1FNgbSSwT9comeJUXpaTAe8yed1MVI5rT+TspIg9Wpio29ZlUjrevUxosQqka5VAD63jQS6PMaOg==}
+  /@visactor/vchart/2.0.22:
+    resolution: {integrity: sha512-37jw5tSUMOoSvo8dfx0tMUougpsMMRG8IO+TC5QMZpWEb7rx/3HTBYPAeHPFdSTDkNE2CdwFKmuE+cn9tCjPfA==}
     dependencies:
       '@visactor/vdataset': 1.0.23
       '@visactor/vlayouts': 1.0.23
-      '@visactor/vrender-animate': 1.0.41
-      '@visactor/vrender-components': 1.0.41
-      '@visactor/vrender-core': 1.0.41
-      '@visactor/vrender-kits': 1.0.41
+      '@visactor/vrender-animate': 1.0.45
+      '@visactor/vrender-components': 1.0.45
+      '@visactor/vrender-core': 1.0.45
+      '@visactor/vrender-kits': 1.0.45
       '@visactor/vscale': 1.0.23
       '@visactor/vutils': 1.0.23
-      '@visactor/vutils-extension': 2.0.19
+      '@visactor/vutils-extension': 2.0.22
     dev: true
 
   /@visactor/vdataset/1.0.23:
@@ -4707,35 +4707,35 @@ packages:
       eventemitter3: 4.0.7
     dev: true
 
-  /@visactor/vrender-animate/1.0.41:
-    resolution: {integrity: sha512-kdMoIh7OEo6z4rZfnJHX7d+izBhGVWq6MR22uppk0LPilfdBd/1hSNAEKO6C9JWAy5uROGFpEkh+kk+ar/zSZg==}
+  /@visactor/vrender-animate/1.0.45:
+    resolution: {integrity: sha512-6v7LRpr+zugxR8JH3RCnodYxrrzHkSp4GaBTNwXuJ7bwThi/YzXTvmBz2pfQNmUG/rRze8Bm7vqneHVdXuFhng==}
     dependencies:
-      '@visactor/vrender-core': 1.0.41
+      '@visactor/vrender-core': 1.0.45
       '@visactor/vutils': 1.0.23
     dev: true
 
-  /@visactor/vrender-components/1.0.41:
-    resolution: {integrity: sha512-B7iXJE1TdkYapPZN6DNxoaErY4FzGf5AbcbG/z6Q0hnzO4Iw1hKdtlTGOIYA1+JXhehDWcyy+D0bnoNQNf+rgw==}
+  /@visactor/vrender-components/1.0.45:
+    resolution: {integrity: sha512-rYsG/rncT5FgYYWqv09f6LkZEAk/IS45IEYWBD0SCgKguYnpEebYDmDba1muJGn+rRv/vGlqg1pYqXLw8mEU5w==}
     dependencies:
-      '@visactor/vrender-animate': 1.0.41
-      '@visactor/vrender-core': 1.0.41
-      '@visactor/vrender-kits': 1.0.41
+      '@visactor/vrender-animate': 1.0.45
+      '@visactor/vrender-core': 1.0.45
+      '@visactor/vrender-kits': 1.0.45
       '@visactor/vscale': 1.0.23
       '@visactor/vutils': 1.0.23
     dev: true
 
-  /@visactor/vrender-core/1.0.41:
-    resolution: {integrity: sha512-P7YVUJ45vwqPA460W6JJjg201ThvxBrjEgTBJ4tHKaHZPP/nVyF8rPyUOCL8QesEFDB+R0e/sUJUVs+ckHhd2w==}
+  /@visactor/vrender-core/1.0.45:
+    resolution: {integrity: sha512-kvYAsKGZ+dXbhOQzjjbMkRzI815KgaHoWOW7iyVorXTldQBTsxLtFIi/J3VfYqGdM3apUgsFoy8uvjS5DepPUA==}
     dependencies:
       '@visactor/vutils': 1.0.23
       color-convert: 2.0.1
     dev: true
 
-  /@visactor/vrender-kits/1.0.41:
-    resolution: {integrity: sha512-ffJlKkNseOsnRjvBmxKxQ9dsQXu+K288NFCtB0ZZ2N/mtcTsZUlH5SDCcsAvDhPGEvJ22Ye4MFKcXSEDctpGzA==}
+  /@visactor/vrender-kits/1.0.45:
+    resolution: {integrity: sha512-iaeRitht8IqNvJwdKmcPKAYL0a4+f8xhK2bWUumSQjNbZJQx9UzGuDp73cIdNXzCNoCiJZElpsOiIGu3kymqiw==}
     dependencies:
       '@resvg/resvg-js': 2.4.1
-      '@visactor/vrender-core': 1.0.41
+      '@visactor/vrender-core': 1.0.45
       '@visactor/vutils': 1.0.23
       gifuct-js: 2.1.2
       lottie-web: 5.13.0
@@ -4748,8 +4748,8 @@ packages:
       '@visactor/vutils': 1.0.23
     dev: true
 
-  /@visactor/vutils-extension/2.0.19:
-    resolution: {integrity: sha512-uRYCZFw7bYFdrSPQNIrYYsEGKuVn7lTMd4zDKBA2qnAfAZ/Y4WeXzZhQKdXgTFu5UGa292CqmVqMlVKFNWjC+A==}
+  /@visactor/vutils-extension/2.0.22:
+    resolution: {integrity: sha512-PRxjplZF1/Qdsflb1hYh9DGGJdblq91yIG7CCC6MIlMMSlDYEAMJzJ9y2clnR1MgWa2AsAtMtuu+MSdG3DctUA==}
     dependencies:
       '@visactor/vdataset': 1.0.23
       '@visactor/vutils': 1.0.23
@@ -4777,7 +4777,7 @@ packages:
       vite: ^4 || ^5
     dependencies:
       '@swc/core': 1.4.13
-      vite: 4.5.3_bby3wderf736tel7qp3evndmrm
+      vite: 4.5.3_drwgbx6kncedk3tgksguhmevgq
     transitivePeerDependencies:
       - '@swc/helpers'
     dev: true
@@ -4793,7 +4793,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.24.1_@babel+core@7.24.4
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.0
-      vite: 4.5.3_bby3wderf736tel7qp3evndmrm
+      vite: 4.5.3_drwgbx6kncedk3tgksguhmevgq
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -6240,7 +6240,7 @@ packages:
     resolution: {integrity: sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==}
     engines: {node: '>=0.11'}
     dependencies:
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
 
   /date-time/3.1.0:
     resolution: {integrity: sha512-uqCUKXE5q1PNBXjPqvwhwJf9SwMoAHBgWJ6DcrnS5o+W2JOiIILl0JEdVD8SGujrNS02GGxgwAg2PN2zONgtjg==}
@@ -6445,7 +6445,7 @@ packages:
   /dom-helpers/5.2.1:
     resolution: {integrity: sha512-nRCa7CK3VTrM2NmGkIy4cbK7IZlgBE/PYMn55rrXefr5xXDP0LdtfPnblFDoVdcAfslJ7or6iqAUnx0CCGIWQA==}
     dependencies:
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
       csstype: 3.1.3
 
   /dom-serializer/0.2.2:
@@ -7843,7 +7843,7 @@ packages:
   /history/4.10.1:
     resolution: {integrity: sha512-36nwAD620w12kuzPAsyINPWJqlNbij+hpK1k9XRloDtym8mxzGYl2c17LnV6IAGB2Dmg4tEa7G7DlawS0+qjew==}
     dependencies:
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
       loose-envify: 1.4.0
       resolve-pathname: 3.0.0
       tiny-invariant: 1.3.3
@@ -10590,7 +10590,7 @@ packages:
     peerDependencies:
       react: ^15.3.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
       react: 18.2.0
 
   /react-color/2.19.3_react@18.2.0:
@@ -10658,7 +10658,7 @@ packages:
       '@types/react':
         optional: true
     dependencies:
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
       '@types/react': 17.0.80
       focus-lock: 1.3.5
       prop-types: 15.8.1
@@ -10689,7 +10689,7 @@ packages:
       react-native:
         optional: true
     dependencies:
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
       '@types/react-redux': 7.1.33
       hoist-non-react-statics: 3.3.2
       loose-envify: 1.4.0
@@ -10720,7 +10720,7 @@ packages:
     peerDependencies:
       react: '>=15'
     dependencies:
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
       history: 4.10.1
       loose-envify: 1.4.0
       prop-types: 15.8.1
@@ -10735,7 +10735,7 @@ packages:
     peerDependencies:
       react: '>=15'
     dependencies:
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
       history: 4.10.1
       hoist-non-react-statics: 3.3.2
       loose-envify: 1.4.0
@@ -10753,7 +10753,7 @@ packages:
       react: '>=16.6.0'
       react-dom: '>=16.6.0'
     dependencies:
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
       dom-helpers: 5.2.1
       loose-envify: 1.4.0
       prop-types: 15.8.1
@@ -10767,7 +10767,7 @@ packages:
       react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
       react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
       memoize-one: 5.2.1
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -10887,7 +10887,7 @@ packages:
   /redux/4.2.1:
     resolution: {integrity: sha512-LAUYz4lc+Do8/g7aeRa8JkyDErK6ekstQaqWQrNRW//MY1TvCEpMtpTWvlQ+FPbWCx+Xixu/6SHt5N0HR+SB4w==}
     dependencies:
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
     dev: true
 
   /regenerate-unicode-properties/10.1.1:
@@ -10902,7 +10902,7 @@ packages:
   /regenerator-transform/0.15.2:
     resolution: {integrity: sha512-hfMp2BoF0qOk3uc5V20ALGDS2ddjQaLrdl7xrGXvAIow7qeWRM2VA2HuCHkUKk9slq3VwEwLNK3DFBqDfPGYtg==}
     dependencies:
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
 
   /regex-not/1.0.2:
     resolution: {integrity: sha512-J6SDjUgDxQj5NusnOtdFxDwN/+HWykR8GELwctJ7mdqhcyy1xEc4SRFHUXvxTp661YaVKAjfRLZ9cCqS6tn32A==}
@@ -12741,7 +12741,7 @@ packages:
       '@rollup/pluginutils': 5.1.0
       '@svgr/core': 8.1.0_typescript@4.9.5
       '@svgr/plugin-jsx': 8.1.0_@svgr+core@8.1.0
-      vite: 4.5.3_bby3wderf736tel7qp3evndmrm
+      vite: 4.5.3_drwgbx6kncedk3tgksguhmevgq
     transitivePeerDependencies:
       - rollup
       - supports-color

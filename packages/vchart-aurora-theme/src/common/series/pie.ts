@@ -28,7 +28,8 @@ export const pie: ISeriesTheme['pie'] = {
   label: {
     visible: true,
     position: 'outside',
-    formatMethod: (label, data) => {
+    // @ts-ignore
+    formatMethod: (label: any, data: any) => {
       const midAngle = data.__VCHART_ARC_MIDDLE_ANGLE;
       const cos = Math.cos(midAngle);
       return {

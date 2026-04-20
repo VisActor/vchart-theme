@@ -25,7 +25,7 @@
     "@visactor/vchart": ">=1.10.4"
   },
   "devDependencies": {
-    "@visactor/vchart": "2.0.19",
+    "@visactor/vchart": "2.0.22",
     "@visactor/vchart-types": "2.0.19",
     "@internal/bundler": "workspace:*",
     "@internal/eslint-config": "workspace:*",

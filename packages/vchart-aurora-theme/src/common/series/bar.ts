@@ -3,7 +3,7 @@ import type { ISeriesTheme, SeriesTypeEnum, SeriesTypeForThemeEnum } from '@visa
 const bar: ISeriesTheme['bar'] = {
   barMaxWidth: 16,
   barGapInGroup: 2,
-  // barMinHeight: 2,
+  barMinHeight: 2,
   bar: {
     style: {
       // @ts-ignore

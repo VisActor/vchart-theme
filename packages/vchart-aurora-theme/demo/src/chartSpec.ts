@@ -723,94 +723,33 @@ export const radarSpec = {
     {
       id: 'radarData',
       values: [
-        {
-          key: 'Strength',
-          value: 6,
-          type: 'Risk'
-        },
-        {
-          key: 'Speed',
-          value: 5,
-          type: 'Risk'
-        },
-        {
-          key: 'Shooting',
-          value: 3,
-          type: 'Risk'
-        },
-        {
-          key: 'Endurance',
-          value: 4,
-          type: 'Risk'
-        },
-        {
-          key: 'Precision',
-          value: 5,
-          type: 'Risk'
-        },
-        {
-          key: 'Strength',
-          value: 5,
-          type: 'Average risk'
-        },
-        {
-          key: 'Speed',
-          value: 5,
-          type: 'Average risk'
-        },
-        {
-          key: 'Shooting',
-          value: 5,
-          type: 'Average risk'
-        },
-        {
-          key: 'Endurance',
-          value: 5,
-          type: 'Average risk'
-        },
-        {
-          key: 'Precision',
-          value: 5,
-          type: 'Average risk'
-        }
+        { key: '维度一', value: 60, type: '数据指标一' },
+        { key: '维度二', value: 50, type: '数据指标一' },
+        { key: '维度三', value: 70, type: '数据指标一' },
+        { key: '维度四', value: 80, type: '数据指标一' },
+        { key: '维度五', value: 45, type: '数据指标一' },
+
+        { key: '维度一', value: 40, type: '数据指标二' },
+        { key: '维度二', value: 30, type: '数据指标二' },
+        { key: '维度三', value: 40, type: '数据指标二' },
+        { key: '维度四', value: 60, type: '数据指标二' },
+        { key: '维度五', value: 65, type: '数据指标二' }
       ]
     }
   ],
   categoryField: 'key',
   valueField: 'value',
   seriesField: 'type',
-  label: {
-    visible: true, //展示label
-    style: {
-      visible: datum => datum.type !== 'Average risk'
-    }
-  },
-  point: {
-    visible: true, // disable point
-    style: {
-      visible: datum => datum.type !== 'Average risk'
-    }
-  },
   legends: {
     visible: true
   },
-  area: {
-    visible: true,
-    style: {
-      visible: datum => datum.type !== 'Average risk'
-    }
-  },
-  outerRadius: 1,
+  outerRadius: 0.8,
   axes: [
     {
-      orient: 'radius', // radius axis
-      zIndex: 100,
-      min: 0,
-      max: 8
+      orient: 'radius' // radius axis
     },
     {
-      orient: 'angle', // angle axis
-      zIndex: 50
+      orient: 'angle' // angle axis
     }
   ]
 };
@@ -954,7 +893,7 @@ export const areaSpec = {
     ]
   },
   height: 600,
-  xField: ['type'],
+  xField: 'type',
   yField: 'value',
   seriesField: 'country',
   legends: {
@@ -1099,4 +1038,55 @@ export const multiAreaSpec = {
       }
     }
   }
+};
+export const scatterSpec = {
+  type: 'scatter',
+  data: [
+    {
+      id: 'scatterData',
+      values: [
+        { x: 93.6, y: 83.2, z: 10, type: 'A' },
+        { x: 74.4, y: 79.4, z: 15, type: 'A' },
+        { x: 93.1, y: 92.5, z: 20, type: 'B' },
+        { x: 76.5, y: 81.3, z: 25, type: 'B' },
+        { x: 82.0, y: 74.8, z: 30, type: 'C' },
+        { x: 88.0, y: 76.8, z: 35, type: 'C' },
+        { x: 85.0, y: 80.0, z: 22, type: 'A' },
+        { x: 90.0, y: 85.0, z: 18, type: 'B' },
+        { x: 78.0, y: 70.0, z: 12, type: 'C' }
+      ]
+    }
+  ],
+  xField: 'x',
+  yField: 'y',
+  axes: [
+    { orient: 'left', type: 'linear', zero: false },
+    { orient: 'bottom', type: 'linear', zero: false }
+  ],
+  legends: [{ visible: false }]
+};
+
+export const wordCloudSpec = {
+  type: 'wordCloud',
+  data: [
+    {
+      name: 'wordCloudData',
+      values: [
+        { word: 'VChart', count: 120, type: '前端技术' },
+        { word: 'React', count: 100, type: '前端技术' },
+        { word: 'Data', count: 80, type: '数据分析' },
+        { word: 'Visualization', count: 60, type: '数据分析' },
+        { word: 'Chart', count: 40, type: '数据分析' },
+        { word: 'Theme', count: 30, type: '前端技术' },
+        { word: 'Aurora', count: 20, type: '前端技术' },
+        { word: 'Frontend', count: 15, type: '前端技术' },
+        { word: 'Web', count: 10, type: '前端技术' },
+        { word: 'Design', count: 5, type: '数据分析' }
+      ]
+    }
+  ],
+  nameField: 'word',
+  valueField: 'count',
+  seriesField: 'type',
+  legends: [{ visible: true, orient: 'top' }]
 };

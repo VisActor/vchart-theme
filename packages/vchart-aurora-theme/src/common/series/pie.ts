@@ -40,7 +40,7 @@ export const pie: ISeriesTheme['pie'] = {
             fill: '#111',
             fontSize: 16,
             fontWeight: 500,
-            fontFamily: 'douyinNumber',
+            fontFamily: 'Douyin Number ABC',
             stroke: false,
             textAlign: cos < 0 ? 'right' : 'left'
           },

@@ -681,7 +681,7 @@ export const metricPieSpec = {
       autoFit: false,
       style: {
         fontWeight: '500',
-        fontFamily: 'douyinNumber',
+        fontFamily: 'Douyin Number ABC',
         fill: '#111',
         fontSize: 32,
         lineHeight: 46,

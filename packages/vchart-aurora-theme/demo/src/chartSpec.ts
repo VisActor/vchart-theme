@@ -743,15 +743,13 @@ export const radarSpec = {
   legends: {
     visible: true
   },
-  outerRadius: 0.8,
-  axes: [
-    {
-      orient: 'radius' // radius axis
-    },
-    {
-      orient: 'angle' // angle axis
+  area: {
+    visible: true, // display area
+    style: {
+      fillOpacity: 0.1,
+      lineDash: [2, 2]
     }
-  ]
+  }
 };
 
 export const funnelSpec = {

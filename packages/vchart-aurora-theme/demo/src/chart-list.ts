@@ -170,12 +170,12 @@ export const chartCategories: IChartCategory[] = [
     key: 'radar',
     title: '雷达图',
     charts: radarCharts
+  },
+  {
+    key: 'funnel',
+    title: '漏斗图',
+    charts: funnelCharts
   }
-  // {
-  //   key: 'funnel',
-  //   title: '漏斗图',
-  //   charts: funnelCharts
-  // }
 ];
 
 // 所有图表（向后兼容）

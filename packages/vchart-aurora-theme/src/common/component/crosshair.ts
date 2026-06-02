@@ -34,3 +34,14 @@ export const lineCrosshair: ICrosshairTheme = {
     }
   }
 };
+
+export const radarCrosshair: ICrosshairTheme = {
+  categoryField: {
+    line: {
+      style: {
+        lineDash: [0],
+        lineWidth: 1
+      }
+    }
+  }
+};

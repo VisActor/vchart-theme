@@ -60,7 +60,7 @@ const Frame = () => {
           <Nav.Item itemKey="scatter" text="散点图" />
           <Nav.Item itemKey="wordCloud" text="词云" />
           <Nav.Item itemKey="radar" text="雷达图" />
-          {/* <Nav.Item itemKey="funnel" text="漏斗图" /> */}
+          <Nav.Item itemKey="funnel" text="漏斗图" />
         </Nav>
         <div className={styles.right}>
           <p className={styles.item}>{getCategoryTitle(selectedKey)}</p>

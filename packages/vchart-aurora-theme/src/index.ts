@@ -4,7 +4,7 @@ import { colorScheme, colorList, barColorList, nestColorList } from './common/co
 import { legend, lineLegend } from './common/component/legend';
 import { token } from './common/token';
 import { tooltip } from './common/component/tooltip';
-import { barCrosshair, lineCrosshair } from './common/component/crosshair';
+import { barCrosshair, lineCrosshair, radarCrosshair } from './common/component/crosshair';
 import { area } from './common/series/area';
 import { barTheme as bar } from './common/series/bar';
 import { line } from './common/series/line';
@@ -48,6 +48,11 @@ export const chartAuroraTheme: ITheme = {
         default: {
           dataScheme: barColorList
         }
+      }
+    },
+    radar: {
+      component: {
+        crosshair: radarCrosshair
       }
     }
   },

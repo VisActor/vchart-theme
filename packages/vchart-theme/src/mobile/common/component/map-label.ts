@@ -1,6 +1,6 @@
-import type { IMapLabelTheme } from '@visactor/vchart';
+import type { IComponentTheme } from '@visactor/vchart';
 
-export const mapLabel: IMapLabelTheme = {
+export const mapLabel: IComponentTheme['mapLabel'] = {
   visible: true,
   offset: 12,
   position: 'top',

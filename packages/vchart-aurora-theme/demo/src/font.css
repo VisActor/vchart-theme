@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'Douyin Number ABC';
+  src: url('https://lf3-static.bytednsdoc.com/obj/eden-cn/lm-ljuhpssh/ljhwZthlaukjlkulzlp/DouyinNumberABC/DouyinNumberABC-Medium.otf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Douyin Number ABC';
+  src: url('https://lf3-static.bytednsdoc.com/obj/eden-cn/lm-ljuhpssh/ljhwZthlaukjlkulzlp/DouyinNumberABC/DouyinNumberABC-Bold.otf');
+  font-weight: 500;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Douyin Number ABC';
+  src: url('https://lf3-static.bytednsdoc.com/obj/eden-cn/lm-ljuhpssh/ljhwZthlaukjlkulzlp/DouyinNumberABC/DouyinNumberABC-Bold.otf');
+  font-weight: 600;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Douyin Number ABC';
+  src: url('https://lf3-static.bytednsdoc.com/obj/eden-cn/lm-ljuhpssh/ljhwZthlaukjlkulzlp/DouyinNumberABC/DouyinNumberABC-ExtraBold.otf');
+  font-weight: 700;
+  font-style: normal;
+  font-display: block;
+}

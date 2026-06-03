@@ -31,8 +31,8 @@ importers:
       '@types/react-dom': ^17.0.0
       '@typescript-eslint/eslint-plugin': 5.30.0
       '@typescript-eslint/parser': 5.30.0
-      '@visactor/react-vchart': 1.12.1
-      '@visactor/vchart': 1.12.1
+      '@visactor/react-vchart': 2.0.22
+      '@visactor/vchart': 2.0.22
       '@visactor/vchart-theme-utils': workspace:1.12.3
       '@vitejs/plugin-react': ^4.1.1
       '@vitejs/plugin-react-swc': ^3.4.1
@@ -83,7 +83,7 @@ importers:
       '@arco-design/webpack-plugin': 1.7.0
       '@arco-plugins/vite-plugin-svgr': 0.7.2_vite@4.5.3
       '@arco-themes/react-arco-pro': 0.0.7_pa7uxehr42623f73endqjggywi
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
       '@esbuild-plugins/node-globals-polyfill': 0.1.1
       '@esbuild-plugins/node-modules-polyfill': 0.1.4
       '@internal/bundler': link:../../tools/bundler
@@ -102,8 +102,8 @@ importers:
       '@types/react-dom': 17.0.25
       '@typescript-eslint/eslint-plugin': 5.30.0_cow5zg7tx6c3eisi5a4ud5kwia
       '@typescript-eslint/parser': 5.30.0_vwud3sodsb5zxmzckoj7rdwdbq
-      '@visactor/react-vchart': 1.12.1_biqbaboplfbrettd7655fr4n2y
-      '@visactor/vchart': 1.12.1
+      '@visactor/react-vchart': 2.0.22_biqbaboplfbrettd7655fr4n2y
+      '@visactor/vchart': 2.0.22
       '@vitejs/plugin-react': 4.2.1_vite@4.5.3
       '@vitejs/plugin-react-swc': 3.6.0_vite@4.5.3
       classnames: 2.5.1
@@ -146,6 +146,89 @@ importers:
       vite: 4.5.3_bby3wderf736tel7qp3evndmrm
       vite-plugin-svgr: 4.2.0_phsvvvlejkpjhjvgxznbnrvcoa
 
+  ../../packages/vchart-aurora-theme:
+    specifiers:
+      '@babel/runtime': latest
+      '@douyinfe/semi-icons': latest
+      '@douyinfe/semi-icons-lab': latest
+      '@douyinfe/semi-ui': ^2.51.3
+      '@esbuild-plugins/node-globals-polyfill': 0.1.1
+      '@esbuild-plugins/node-modules-polyfill': 0.1.4
+      '@internal/bundler': workspace:*
+      '@internal/chart-demo': workspace:*
+      '@internal/eslint-config': workspace:*
+      '@internal/jest-config': workspace:*
+      '@internal/ts-config': workspace:*
+      '@jest/globals': ~29.5.0
+      '@rushstack/eslint-patch': ~1.1.4
+      '@types/jest': ~29.5.0
+      '@types/node': '*'
+      '@types/offscreencanvas': 2019.6.4
+      '@visactor/react-vchart': 2.0.22
+      '@visactor/vchart': 2.0.22
+      '@visactor/vchart-theme-utils': workspace:1.12.3
+      '@vitejs/plugin-react': ^4.1.1
+      '@vitejs/plugin-react-swc': ^3.4.1
+      eslint: ~8.18.0
+      husky: 7.0.4
+      jest: ~29.5.0
+      lint-staged: 12.3.7
+      magic-string: ^0.25.7
+      prettier: 2.6.1
+      react: ^18.0.0
+      react-device-detect: ^2.2.2
+      react-dom: ^18.0.0
+      sass: ^1.63.6
+      ts-jest: ~29.1.0
+      ts-loader: 8.0.2
+      ts-node: 10.9.0
+      tslib: 2.3.1
+      tslint: 5.12.1
+      typescript: 4.9.5
+      vite: ^4.5.0
+      vite-plugin-svgr: ^4.1.0
+    dependencies:
+      '@visactor/vchart-theme-utils': link:../vchart-theme-utils
+    devDependencies:
+      '@babel/runtime': 7.29.2
+      '@douyinfe/semi-icons': 2.95.0_react@18.2.0
+      '@douyinfe/semi-icons-lab': 2.95.0_biqbaboplfbrettd7655fr4n2y
+      '@douyinfe/semi-ui': 2.55.5_biqbaboplfbrettd7655fr4n2y
+      '@esbuild-plugins/node-globals-polyfill': 0.1.1
+      '@esbuild-plugins/node-modules-polyfill': 0.1.4
+      '@internal/bundler': link:../../tools/bundler
+      '@internal/chart-demo': link:../../share/chart-demo
+      '@internal/eslint-config': link:../../share/eslint-config
+      '@internal/jest-config': link:../../share/jest-config
+      '@internal/ts-config': link:../../share/ts-config
+      '@jest/globals': 29.5.0
+      '@rushstack/eslint-patch': 1.1.4
+      '@types/jest': 29.5.12
+      '@types/node': 20.12.7
+      '@types/offscreencanvas': 2019.6.4
+      '@visactor/react-vchart': 2.0.22_biqbaboplfbrettd7655fr4n2y
+      '@visactor/vchart': 2.0.22
+      '@vitejs/plugin-react': 4.2.1_vite@4.5.3
+      '@vitejs/plugin-react-swc': 3.6.0_vite@4.5.3
+      eslint: 8.18.0
+      husky: 7.0.4
+      jest: 29.5.0_nfgaym6ygctcxvhgdn7jfhc2pq
+      lint-staged: 12.3.7
+      magic-string: 0.25.9
+      prettier: 2.6.1
+      react: 18.2.0
+      react-device-detect: 2.2.3_biqbaboplfbrettd7655fr4n2y
+      react-dom: 18.2.0_react@18.2.0
+      sass: 1.98.0
+      ts-jest: 29.1.2_doipufordlnvh5g4adbwayvyvy
+      ts-loader: 8.0.2_typescript@4.9.5
+      ts-node: 10.9.0_misjo77sqtw74jgpkxp7bulu2q
+      tslib: 2.3.1
+      tslint: 5.12.1_typescript@4.9.5
+      typescript: 4.9.5
+      vite: 4.5.3_drwgbx6kncedk3tgksguhmevgq
+      vite-plugin-svgr: 4.2.0_phsvvvlejkpjhjvgxznbnrvcoa
+
   ../../packages/vchart-semi-theme:
     specifiers:
       '@babel/runtime': latest
@@ -164,8 +247,8 @@ importers:
       '@types/jest': ~29.5.0
       '@types/node': '*'
       '@types/offscreencanvas': 2019.6.4
-      '@visactor/react-vchart': 1.12.1
-      '@visactor/vchart': 1.12.1
+      '@visactor/react-vchart': 2.0.22
+      '@visactor/vchart': 2.0.22
       '@visactor/vchart-theme-utils': workspace:1.12.3
       '@vitejs/plugin-react': ^4.1.1
       '@vitejs/plugin-react-swc': ^3.4.1
@@ -189,9 +272,9 @@ importers:
     dependencies:
       '@visactor/vchart-theme-utils': link:../vchart-theme-utils
     devDependencies:
-      '@babel/runtime': 7.28.6
-      '@douyinfe/semi-icons': 2.90.13_react@18.2.0
-      '@douyinfe/semi-icons-lab': 2.90.13_biqbaboplfbrettd7655fr4n2y
+      '@babel/runtime': 7.29.2
+      '@douyinfe/semi-icons': 2.95.0_react@18.2.0
+      '@douyinfe/semi-icons-lab': 2.95.0_biqbaboplfbrettd7655fr4n2y
       '@douyinfe/semi-ui': 2.55.5_biqbaboplfbrettd7655fr4n2y
       '@esbuild-plugins/node-globals-polyfill': 0.1.1
       '@esbuild-plugins/node-modules-polyfill': 0.1.4
@@ -205,8 +288,8 @@ importers:
       '@types/jest': 29.5.12
       '@types/node': 20.12.7
       '@types/offscreencanvas': 2019.6.4
-      '@visactor/react-vchart': 1.12.1_biqbaboplfbrettd7655fr4n2y
-      '@visactor/vchart': 1.12.1
+      '@visactor/react-vchart': 2.0.22_biqbaboplfbrettd7655fr4n2y
+      '@visactor/vchart': 2.0.22
       '@vitejs/plugin-react': 4.2.1_vite@4.5.3
       '@vitejs/plugin-react-swc': 3.6.0_vite@4.5.3
       eslint: 8.18.0
@@ -239,11 +322,11 @@ importers:
       '@types/jest': ~29.5.0
       '@types/node': '*'
       '@types/offscreencanvas': 2019.6.4
-      '@visactor/vchart': 1.12.1
+      '@visactor/vchart': 2.0.22
       '@visactor/vchart-arco-theme': workspace:1.12.3
       '@visactor/vchart-semi-theme': workspace:1.12.3
       '@visactor/vchart-tt-platform-theme': workspace:1.12.3
-      '@visactor/vchart-types': 1.12.1
+      '@visactor/vchart-types': 2.0.19
       '@visactor/vchart-ve-o-theme': workspace:1.12.3
       eslint: ~8.18.0
       husky: 7.0.4
@@ -271,11 +354,11 @@ importers:
       '@types/jest': 29.5.12
       '@types/node': 20.12.7
       '@types/offscreencanvas': 2019.6.4
-      '@visactor/vchart': 1.12.1
+      '@visactor/vchart': 2.0.22
       '@visactor/vchart-arco-theme': link:../vchart-arco-theme
       '@visactor/vchart-semi-theme': link:../vchart-semi-theme
       '@visactor/vchart-tt-platform-theme': link:../vchart-tt-platform-theme
-      '@visactor/vchart-types': 1.12.1
+      '@visactor/vchart-types': 2.0.19
       '@visactor/vchart-ve-o-theme': link:../vchart-ve-o-theme
       eslint: 8.18.0
       husky: 7.0.4
@@ -320,8 +403,8 @@ importers:
       '@types/react-dom': ^17.0.0
       '@typescript-eslint/eslint-plugin': 5.30.0
       '@typescript-eslint/parser': 5.30.0
-      '@visactor/react-vchart': 1.12.1
-      '@visactor/vchart': 1.12.1
+      '@visactor/react-vchart': 2.0.22
+      '@visactor/vchart': 2.0.22
       '@visactor/vchart-semi-theme': workspace:1.12.3
       '@visactor/vchart-theme': workspace:1.12.3
       '@visactor/vutils': ~0.18.15
@@ -375,7 +458,7 @@ importers:
       '@arco-design/webpack-plugin': 1.7.0
       '@arco-plugins/vite-plugin-svgr': 0.7.2_vite@4.5.3
       '@arco-themes/react-arco-pro': 0.0.7_pa7uxehr42623f73endqjggywi
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
       '@esbuild-plugins/node-globals-polyfill': 0.1.1
       '@esbuild-plugins/node-modules-polyfill': 0.1.4
       '@internal/bundler': link:../../tools/bundler
@@ -395,8 +478,8 @@ importers:
       '@types/react-dom': 17.0.25
       '@typescript-eslint/eslint-plugin': 5.30.0_cow5zg7tx6c3eisi5a4ud5kwia
       '@typescript-eslint/parser': 5.30.0_vwud3sodsb5zxmzckoj7rdwdbq
-      '@visactor/react-vchart': 1.12.1_biqbaboplfbrettd7655fr4n2y
-      '@visactor/vchart': 1.12.1
+      '@visactor/react-vchart': 2.0.22_biqbaboplfbrettd7655fr4n2y
+      '@visactor/vchart': 2.0.22
       '@visactor/vchart-semi-theme': link:../vchart-semi-theme
       '@visactor/vchart-theme': link:../vchart-theme
       '@vitejs/plugin-react': 4.2.1_vite@4.5.3
@@ -458,8 +541,8 @@ importers:
       '@types/offscreencanvas': 2019.6.4
       '@types/react': ^17.0.0
       '@types/react-dom': ^17.0.0
-      '@visactor/react-vchart': 1.12.1
-      '@visactor/vchart': 1.12.1
+      '@visactor/react-vchart': 2.0.22
+      '@visactor/vchart': 2.0.22
       '@visactor/vchart-theme': workspace:1.12.3
       '@visactor/vchart-theme-utils': workspace:1.12.3
       '@vitejs/plugin-react': ^4.1.1
@@ -471,8 +554,8 @@ importers:
       vite: ^4.5.0
     dependencies:
       '@arco-design/web-react': 2.61.2_42iwexueogtmu5amowprdpoisy
-      '@douyinfe/semi-icons': 2.90.13_react@18.2.0
-      '@douyinfe/semi-icons-lab': 2.90.13_biqbaboplfbrettd7655fr4n2y
+      '@douyinfe/semi-icons': 2.95.0_react@18.2.0
+      '@douyinfe/semi-icons-lab': 2.95.0_biqbaboplfbrettd7655fr4n2y
       '@douyinfe/semi-ui': 2.55.5_biqbaboplfbrettd7655fr4n2y
       '@visactor/vchart-theme': link:../vchart-theme
       '@visactor/vchart-theme-utils': link:../vchart-theme-utils
@@ -487,8 +570,8 @@ importers:
       '@types/offscreencanvas': 2019.6.4
       '@types/react': 17.0.80
       '@types/react-dom': 17.0.25
-      '@visactor/react-vchart': 1.12.1_biqbaboplfbrettd7655fr4n2y
-      '@visactor/vchart': 1.12.1
+      '@visactor/react-vchart': 2.0.22_biqbaboplfbrettd7655fr4n2y
+      '@visactor/vchart': 2.0.22
       '@vitejs/plugin-react': 4.2.1_vite@4.5.3
       eslint: 8.18.0
       react: 18.2.0
@@ -508,8 +591,8 @@ importers:
       '@types/jest': ~29.5.0
       '@types/node': '*'
       '@types/offscreencanvas': 2019.6.4
-      '@visactor/vchart': 1.12.1
-      '@visactor/vchart-types': 1.12.1
+      '@visactor/vchart': 2.0.22
+      '@visactor/vchart-types': 2.0.19
       eslint: ~8.18.0
       husky: 7.0.4
       jest: ~29.5.0
@@ -535,8 +618,8 @@ importers:
       '@types/jest': 29.5.12
       '@types/node': 20.12.7
       '@types/offscreencanvas': 2019.6.4
-      '@visactor/vchart': 1.12.1
-      '@visactor/vchart-types': 1.12.1
+      '@visactor/vchart': 2.0.22
+      '@visactor/vchart-types': 2.0.19
       eslint: 8.18.0
       husky: 7.0.4
       jest: 29.5.0_nfgaym6ygctcxvhgdn7jfhc2pq
@@ -572,8 +655,8 @@ importers:
       '@types/jest': ~29.5.0
       '@types/node': '*'
       '@types/offscreencanvas': 2019.6.4
-      '@visactor/react-vchart': 1.12.1
-      '@visactor/vchart': 1.12.1
+      '@visactor/react-vchart': 2.0.22
+      '@visactor/vchart': 2.0.22
       '@visactor/vchart-semi-theme': workspace:1.12.3
       '@visactor/vchart-theme-utils': workspace:1.12.3
       '@vitejs/plugin-react': ^4.1.1
@@ -600,9 +683,9 @@ importers:
       '@visactor/vchart-semi-theme': link:../vchart-semi-theme
       '@visactor/vchart-theme-utils': link:../vchart-theme-utils
     devDependencies:
-      '@babel/runtime': 7.28.6
-      '@douyinfe/semi-icons': 2.90.13_react@18.2.0
-      '@douyinfe/semi-icons-lab': 2.90.13_biqbaboplfbrettd7655fr4n2y
+      '@babel/runtime': 7.29.2
+      '@douyinfe/semi-icons': 2.95.0_react@18.2.0
+      '@douyinfe/semi-icons-lab': 2.95.0_biqbaboplfbrettd7655fr4n2y
       '@douyinfe/semi-ui': 2.55.5_biqbaboplfbrettd7655fr4n2y
       '@esbuild-plugins/node-globals-polyfill': 0.1.1
       '@esbuild-plugins/node-modules-polyfill': 0.1.4
@@ -617,8 +700,8 @@ importers:
       '@types/jest': 29.5.12
       '@types/node': 20.12.7
       '@types/offscreencanvas': 2019.6.4
-      '@visactor/react-vchart': 1.12.1_biqbaboplfbrettd7655fr4n2y
-      '@visactor/vchart': 1.12.1
+      '@visactor/react-vchart': 2.0.22_biqbaboplfbrettd7655fr4n2y
+      '@visactor/vchart': 2.0.22
       '@vitejs/plugin-react': 4.2.1_vite@4.5.3
       '@vitejs/plugin-react-swc': 3.6.0_vite@4.5.3
       eslint: 8.18.0
@@ -666,8 +749,8 @@ importers:
       '@types/react-dom': ^17.0.0
       '@typescript-eslint/eslint-plugin': 5.30.0
       '@typescript-eslint/parser': 5.30.0
-      '@visactor/react-vchart': 1.12.1
-      '@visactor/vchart': 1.12.1
+      '@visactor/react-vchart': 2.0.22
+      '@visactor/vchart': 2.0.22
       '@visactor/vchart-arco-theme': workspace:1.12.3
       '@visactor/vchart-theme-utils': workspace:1.12.3
       '@vitejs/plugin-react': ^4.1.1
@@ -716,7 +799,7 @@ importers:
       '@arco-design/webpack-plugin': 1.7.0
       '@arco-plugins/vite-plugin-svgr': 0.7.2_vite@4.5.3
       '@arco-themes/react-arco-pro': 0.0.7_pa7uxehr42623f73endqjggywi
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
       '@esbuild-plugins/node-globals-polyfill': 0.1.1
       '@esbuild-plugins/node-modules-polyfill': 0.1.4
       '@internal/bundler': link:../../tools/bundler
@@ -735,8 +818,8 @@ importers:
       '@types/react-dom': 17.0.25
       '@typescript-eslint/eslint-plugin': 5.30.0_cow5zg7tx6c3eisi5a4ud5kwia
       '@typescript-eslint/parser': 5.30.0_vwud3sodsb5zxmzckoj7rdwdbq
-      '@visactor/react-vchart': 1.12.1_biqbaboplfbrettd7655fr4n2y
-      '@visactor/vchart': 1.12.1
+      '@visactor/react-vchart': 2.0.22_biqbaboplfbrettd7655fr4n2y
+      '@visactor/vchart': 2.0.22
       '@vitejs/plugin-react': 4.2.1_vite@4.5.3
       '@vitejs/plugin-react-swc': 3.6.0_vite@4.5.3
       classnames: 2.5.1
@@ -786,8 +869,8 @@ importers:
       '@types/jest': ~29.5.0
       '@types/node': '*'
       '@types/offscreencanvas': 2019.6.4
-      '@visactor/vchart': 1.12.1
-      '@visactor/vchart-types': 1.12.1
+      '@visactor/vchart': 2.0.22
+      '@visactor/vchart-types': 2.0.19
       eslint: ~8.18.0
       husky: 7.0.4
       jest: ~29.5.0
@@ -811,8 +894,8 @@ importers:
       '@types/jest': 29.5.12
       '@types/node': 20.12.7
       '@types/offscreencanvas': 2019.6.4
-      '@visactor/vchart': 1.12.1
-      '@visactor/vchart-types': 1.12.1
+      '@visactor/vchart': 2.0.22
+      '@visactor/vchart-types': 2.0.19
       eslint: 8.18.0
       husky: 7.0.4
       jest: 29.5.0_nfgaym6ygctcxvhgdn7jfhc2pq
@@ -1038,7 +1121,7 @@ packages:
       react-dom: '>=16'
     dependencies:
       '@arco-design/color': 0.4.0
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
       b-tween: 0.3.3
       b-validate: 1.5.3
       compute-scroll-into-view: 1.0.20
@@ -2282,8 +2365,8 @@ packages:
   /@babel/regjsgen/0.8.0:
     resolution: {integrity: sha512-x/rqGMdzj+fWZvCOYForTghzbtqPDZ5gPwaoNGHdgDfF2QA/XZbCBp4Moo5scrkAMPhB7z26XM/AaHuIJdgauA==}
 
-  /@babel/runtime/7.28.6:
-    resolution: {integrity: sha512-05WQkdpL9COIMz4LjTxGpPNCdlpyimKppYNoJ5Di5EUObifl8t4tuLuUBBZEpoLYOmfvIWrsp9fCl0HoPRVTdA==}
+  /@babel/runtime/7.29.2:
+    resolution: {integrity: sha512-JiDShH45zKHWyGe4ZNVRrCjBz8Nh9TMmZG1kh4QTK8hCBTWBi8Da+i7s1fJw7/lYpM4ccepSNfqzZ/QvABBi5g==}
     engines: {node: '>=6.9.0'}
 
   /@babel/template/7.24.0:
@@ -2404,8 +2487,8 @@ packages:
       memoize-one: 5.2.1
       scroll-into-view-if-needed: 2.2.31
 
-  /@douyinfe/semi-icons-lab/2.90.13_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-/3ihlPM1F2XHB4IucYDyDkkZVQ5h43bSJksAwnnMwiDRCiwvfk1vMPruwWdJ6tFoIBANYo/qjyZHv1MwNH/Gmg==}
+  /@douyinfe/semi-icons-lab/2.95.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-uDtX7d54rXSbscLHMBOyZ+N7aD+vanLwnj6j3W3XF+CiU6t5HJ4nm0aDS5j6s/CWCOP7KWBu02TXGg0b4c3FQw==}
     peerDependencies:
       react: '>=16.0.0'
       react-dom: '>=16.0.0'
@@ -2421,8 +2504,8 @@ packages:
       classnames: 2.5.1
       react: 18.2.0
 
-  /@douyinfe/semi-icons/2.90.13_react@18.2.0:
-    resolution: {integrity: sha512-9OiKvleOMB+t0h+Vbq/6Tz90JJPANJDvW5g3XtVWmIwIgScgy/N52fMhWXDf6Avr6wi9MDPcQZ6SYPO2S7m4sQ==}
+  /@douyinfe/semi-icons/2.95.0_react@18.2.0:
+    resolution: {integrity: sha512-JVKOQ7WHjbOjHXW+isydR6yWgoHaG8FN8c5r0JvVZwONUc45DutfNiK/MyuZ1JW/QzEznYAjJ0yAKze6xSEE3A==}
     peerDependencies:
       react: '>=16.0.0'
     dependencies:
@@ -3055,7 +3138,7 @@ packages:
     peerDependencies:
       react: ^16.3.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
       hoist-non-react-statics: 3.3.2
       react: 18.2.0
       react-is: 16.13.1
@@ -3111,6 +3194,149 @@ packages:
       mkdirp: 1.0.4
       rimraf: 3.0.2
     dev: true
+
+  /@parcel/watcher-android-arm64/2.5.6:
+    resolution: {integrity: sha512-YQxSS34tPF/6ZG7r/Ih9xy+kP/WwediEUsqmtf0cuCV5TPPKw/PQHRhueUo6JdeFJaqV3pyjm0GdYjZotbRt/A==}
+    engines: {node: '>= 10.0.0'}
+    cpu: [arm64]
+    os: [android]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@parcel/watcher-darwin-arm64/2.5.6:
+    resolution: {integrity: sha512-Z2ZdrnwyXvvvdtRHLmM4knydIdU9adO3D4n/0cVipF3rRiwP+3/sfzpAwA/qKFL6i1ModaabkU7IbpeMBgiVEA==}
+    engines: {node: '>= 10.0.0'}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@parcel/watcher-darwin-x64/2.5.6:
+    resolution: {integrity: sha512-HgvOf3W9dhithcwOWX9uDZyn1lW9R+7tPZ4sug+NGrGIo4Rk1hAXLEbcH1TQSqxts0NYXXlOWqVpvS1SFS4fRg==}
+    engines: {node: '>= 10.0.0'}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@parcel/watcher-freebsd-x64/2.5.6:
+    resolution: {integrity: sha512-vJVi8yd/qzJxEKHkeemh7w3YAn6RJCtYlE4HPMoVnCpIXEzSrxErBW5SJBgKLbXU3WdIpkjBTeUNtyBVn8TRng==}
+    engines: {node: '>= 10.0.0'}
+    cpu: [x64]
+    os: [freebsd]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@parcel/watcher-linux-arm-glibc/2.5.6:
+    resolution: {integrity: sha512-9JiYfB6h6BgV50CCfasfLf/uvOcJskMSwcdH1PHH9rvS1IrNy8zad6IUVPVUfmXr+u+Km9IxcfMLzgdOudz9EQ==}
+    engines: {node: '>= 10.0.0'}
+    cpu: [arm]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@parcel/watcher-linux-arm-musl/2.5.6:
+    resolution: {integrity: sha512-Ve3gUCG57nuUUSyjBq/MAM0CzArtuIOxsBdQ+ftz6ho8n7s1i9E1Nmk/xmP323r2YL0SONs1EuwqBp2u1k5fxg==}
+    engines: {node: '>= 10.0.0'}
+    cpu: [arm]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@parcel/watcher-linux-arm64-glibc/2.5.6:
+    resolution: {integrity: sha512-f2g/DT3NhGPdBmMWYoxixqYr3v/UXcmLOYy16Bx0TM20Tchduwr4EaCbmxh1321TABqPGDpS8D/ggOTaljijOA==}
+    engines: {node: '>= 10.0.0'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@parcel/watcher-linux-arm64-musl/2.5.6:
+    resolution: {integrity: sha512-qb6naMDGlbCwdhLj6hgoVKJl2odL34z2sqkC7Z6kzir8b5W65WYDpLB6R06KabvZdgoHI/zxke4b3zR0wAbDTA==}
+    engines: {node: '>= 10.0.0'}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@parcel/watcher-linux-x64-glibc/2.5.6:
+    resolution: {integrity: sha512-kbT5wvNQlx7NaGjzPFu8nVIW1rWqV780O7ZtkjuWaPUgpv2NMFpjYERVi0UYj1msZNyCzGlaCWEtzc+exjMGbQ==}
+    engines: {node: '>= 10.0.0'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@parcel/watcher-linux-x64-musl/2.5.6:
+    resolution: {integrity: sha512-1JRFeC+h7RdXwldHzTsmdtYR/Ku8SylLgTU/reMuqdVD7CtLwf0VR1FqeprZ0eHQkO0vqsbvFLXUmYm/uNKJBg==}
+    engines: {node: '>= 10.0.0'}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@parcel/watcher-win32-arm64/2.5.6:
+    resolution: {integrity: sha512-3ukyebjc6eGlw9yRt678DxVF7rjXatWiHvTXqphZLvo7aC5NdEgFufVwjFfY51ijYEWpXbqF5jtrK275z52D4Q==}
+    engines: {node: '>= 10.0.0'}
+    cpu: [arm64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@parcel/watcher-win32-ia32/2.5.6:
+    resolution: {integrity: sha512-k35yLp1ZMwwee3Ez/pxBi5cf4AoBKYXj00CZ80jUz5h8prpiaQsiRPKQMxoLstNuqe2vR4RNPEAEcjEFzhEz/g==}
+    engines: {node: '>= 10.0.0'}
+    cpu: [ia32]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@parcel/watcher-win32-x64/2.5.6:
+    resolution: {integrity: sha512-hbQlYcCq5dlAX9Qx+kFb0FHue6vbjlf0FrNzSKdYK2APUf7tGfGxQCk2ihEREmbR6ZMc0MVAD5RIX/41gpUzTw==}
+    engines: {node: '>= 10.0.0'}
+    cpu: [x64]
+    os: [win32]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@parcel/watcher/2.5.6:
+    resolution: {integrity: sha512-tmmZ3lQxAe/k/+rNnXQRawJ4NjxO2hqiOLTHvWchtGZULp4RyFeh6aU4XdOYBFe2KE1oShQTv4AblOs2iOrNnQ==}
+    engines: {node: '>= 10.0.0'}
+    requiresBuild: true
+    dependencies:
+      detect-libc: 2.1.2
+      is-glob: 4.0.3
+      node-addon-api: 7.1.1
+      picomatch: 4.0.3
+    optionalDependencies:
+      '@parcel/watcher-android-arm64': 2.5.6
+      '@parcel/watcher-darwin-arm64': 2.5.6
+      '@parcel/watcher-darwin-x64': 2.5.6
+      '@parcel/watcher-freebsd-x64': 2.5.6
+      '@parcel/watcher-linux-arm-glibc': 2.5.6
+      '@parcel/watcher-linux-arm-musl': 2.5.6
+      '@parcel/watcher-linux-arm64-glibc': 2.5.6
+      '@parcel/watcher-linux-arm64-musl': 2.5.6
+      '@parcel/watcher-linux-x64-glibc': 2.5.6
+      '@parcel/watcher-linux-x64-musl': 2.5.6
+      '@parcel/watcher-win32-arm64': 2.5.6
+      '@parcel/watcher-win32-ia32': 2.5.6
+      '@parcel/watcher-win32-x64': 2.5.6
+    dev: true
+    optional: true
 
   /@resvg/resvg-js-android-arm-eabi/2.4.1:
     resolution: {integrity: sha512-AA6f7hS0FAPpvQMhBCf6f1oD1LdlqNXKCxAAPpKh6tR11kqV0YIB9zOlIYgITM14mq2YooLFl6XIbbvmY+jwUw==}
@@ -4402,53 +4628,60 @@ packages:
       '@typescript-eslint/types': 5.30.0
       eslint-visitor-keys: 3.4.3
 
-  /@visactor/react-vchart/1.12.1_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-nQLsj6zQf/a6cClABbGKgwFYTSqFJ7ZWBAt0YjePEBHI8xERsVpD2lgEYXFqkA822QIFGv9wk82NeJXRkT8oJA==}
+  /@visactor/react-vchart/2.0.22_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-A0eKXv8Y/6JjiFp6NB8IU4kiXOLLh09ZTisATEEi70nrNcWV+++rsd4dPx1wJCQYk68RDOzQXVpqDDA5lNRIWA==}
     peerDependencies:
       react: '>=16.0.0'
       react-dom: '>=16.0.0'
     dependencies:
-      '@visactor/vchart': 1.12.1
-      '@visactor/vgrammar-core': 0.14.0
-      '@visactor/vrender-core': 0.20.0
-      '@visactor/vrender-kits': 0.20.0
-      '@visactor/vutils': 0.18.15
+      '@visactor/vchart': 2.0.22
+      '@visactor/vchart-extension': 2.0.22
+      '@visactor/vrender-core': 1.0.45
+      '@visactor/vrender-kits': 1.0.45
+      '@visactor/vutils': 1.0.23
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
       react-is: 18.2.0
     dev: true
 
-  /@visactor/vchart-types/1.12.1:
-    resolution: {integrity: sha512-jr6yw2kYFVbxAWPT3G50ZykXGm3//NMG0KhVFE7g6/VPDFIhb8HAAVkb5g/taybOxSAVbCZ3yHUbbe2ZhhBWgA==}
-    dev: true
-
-  /@visactor/vchart/1.12.1:
-    resolution: {integrity: sha512-/MSNRN2+gL8lgmXw3IQw9oG2ORxp1Kehvd4p4W95yd8EK6CVwYMRqredT84J3kr4jOtpK2a3ylsWNMUNFk8CrQ==}
+  /@visactor/vchart-extension/2.0.22:
+    resolution: {integrity: sha512-XonzIM9Wp9DTvfdwQFAVPjYpHvfPGooNfz1/QkoyH01L0qBarTAJfItXralDgNJNuy1L+RxU0gEZaXQAEP9pIw==}
     dependencies:
-      '@visactor/vdataset': 0.18.15
-      '@visactor/vgrammar-core': 0.14.0
-      '@visactor/vgrammar-hierarchy': 0.14.0
-      '@visactor/vgrammar-projection': 0.14.0
-      '@visactor/vgrammar-sankey': 0.14.0
-      '@visactor/vgrammar-util': 0.14.0
-      '@visactor/vgrammar-venn': 0.14.0
-      '@visactor/vgrammar-wordcloud': 0.14.0
-      '@visactor/vgrammar-wordcloud-shape': 0.14.0
-      '@visactor/vrender-components': 0.20.0
-      '@visactor/vrender-core': 0.20.0
-      '@visactor/vrender-kits': 0.20.0
-      '@visactor/vscale': 0.18.15
-      '@visactor/vutils': 0.18.15
-      '@visactor/vutils-extension': 1.12.1
+      '@visactor/vchart': 2.0.22
+      '@visactor/vdataset': 1.0.23
+      '@visactor/vlayouts': 1.0.23
+      '@visactor/vrender-animate': 1.0.45
+      '@visactor/vrender-components': 1.0.45
+      '@visactor/vrender-core': 1.0.45
+      '@visactor/vrender-kits': 1.0.45
+      '@visactor/vutils': 1.0.23
     dev: true
 
-  /@visactor/vdataset/0.18.15:
-    resolution: {integrity: sha512-LWaaunGetH8ThWjz6CE7NMG/LcFS41lTl76UCNJM1msfQxyIsbtoHim7t+Hdvud76oRZM0rxX/V4iB/+JpMRfw==}
+  /@visactor/vchart-types/2.0.19:
+    resolution: {integrity: sha512-G3MaSthmlDPzcTMN/XlqPSzihDneh6lXZZ3MAqEUeamvoOSHPJPAcwe7PFE4tOFwthAgM43j+W3d2sbtujkzOg==}
+    dev: true
+
+  /@visactor/vchart/2.0.22:
+    resolution: {integrity: sha512-37jw5tSUMOoSvo8dfx0tMUougpsMMRG8IO+TC5QMZpWEb7rx/3HTBYPAeHPFdSTDkNE2CdwFKmuE+cn9tCjPfA==}
+    dependencies:
+      '@visactor/vdataset': 1.0.23
+      '@visactor/vlayouts': 1.0.23
+      '@visactor/vrender-animate': 1.0.45
+      '@visactor/vrender-components': 1.0.45
+      '@visactor/vrender-core': 1.0.45
+      '@visactor/vrender-kits': 1.0.45
+      '@visactor/vscale': 1.0.23
+      '@visactor/vutils': 1.0.23
+      '@visactor/vutils-extension': 2.0.22
+    dev: true
+
+  /@visactor/vdataset/1.0.23:
+    resolution: {integrity: sha512-zrLk9FBUWJoW6b30XnPKzXwAXl8USdLDfed6QZLsmdkylRU8V7yZeXE2aKwU8Lg1U4HmQngqmqOx7/QlbX44Tg==}
     dependencies:
       '@turf/flatten': 6.5.0
       '@turf/helpers': 6.5.0
       '@turf/rewind': 6.5.0
-      '@visactor/vutils': 0.18.15
+      '@visactor/vutils': 1.0.23
       d3-dsv: 2.0.0
       d3-geo: 1.12.1
       d3-hexbin: 0.2.2
@@ -4464,129 +4697,62 @@ packages:
       topojson-client: 3.1.0
     dev: true
 
-  /@visactor/vgrammar-coordinate/0.14.0:
-    resolution: {integrity: sha512-9ZxQ0BQmcxi70Bl5oHRe2xd4UVPTbjdHhyQOIT1l4X6fVUwyIf2nRibQILHOlQj+KN8AhrdQIuYp1rD6khecpg==}
+  /@visactor/vlayouts/1.0.23:
+    resolution: {integrity: sha512-fK1f5LmuumhYanLArk5yrT4BZxu4IAmdc8WMwfB/KAvV+2dTPFuBUMWbWnDl0siQoU9SX9l/bLozUnI9n7BwBQ==}
     dependencies:
-      '@visactor/vgrammar-util': 0.14.0
-      '@visactor/vutils': 0.18.15
+      '@turf/helpers': 6.5.0
+      '@turf/invariant': 6.5.0
+      '@visactor/vscale': 1.0.23
+      '@visactor/vutils': 1.0.23
+      eventemitter3: 4.0.7
     dev: true
 
-  /@visactor/vgrammar-core/0.14.0:
-    resolution: {integrity: sha512-VZu/9cPkjrG6xVx4KeV5zJpEYKfqMR4vov3nIKqgXgIuKgqLcVSrsFsthoYu9qi8xCbPtgZSFI2yo0qiB9wN3g==}
+  /@visactor/vrender-animate/1.0.45:
+    resolution: {integrity: sha512-6v7LRpr+zugxR8JH3RCnodYxrrzHkSp4GaBTNwXuJ7bwThi/YzXTvmBz2pfQNmUG/rRze8Bm7vqneHVdXuFhng==}
     dependencies:
-      '@visactor/vdataset': 0.18.15
-      '@visactor/vgrammar-coordinate': 0.14.0
-      '@visactor/vgrammar-util': 0.14.0
-      '@visactor/vrender-components': 0.20.0
-      '@visactor/vrender-core': 0.20.0
-      '@visactor/vrender-kits': 0.20.0
-      '@visactor/vscale': 0.18.15
-      '@visactor/vutils': 0.18.15
+      '@visactor/vrender-core': 1.0.45
+      '@visactor/vutils': 1.0.23
     dev: true
 
-  /@visactor/vgrammar-hierarchy/0.14.0:
-    resolution: {integrity: sha512-Tme/aCx3m+tKcUu5X5BJLqc654YzNXpCc29s6T97DEev1PCvyGeTf/lvBUirnfSBkgoCbrfDZVpK/zOAUtrC0g==}
+  /@visactor/vrender-components/1.0.45:
+    resolution: {integrity: sha512-rYsG/rncT5FgYYWqv09f6LkZEAk/IS45IEYWBD0SCgKguYnpEebYDmDba1muJGn+rRv/vGlqg1pYqXLw8mEU5w==}
     dependencies:
-      '@visactor/vgrammar-core': 0.14.0
-      '@visactor/vgrammar-util': 0.14.0
-      '@visactor/vrender-core': 0.20.0
-      '@visactor/vrender-kits': 0.20.0
-      '@visactor/vutils': 0.18.15
+      '@visactor/vrender-animate': 1.0.45
+      '@visactor/vrender-core': 1.0.45
+      '@visactor/vrender-kits': 1.0.45
+      '@visactor/vscale': 1.0.23
+      '@visactor/vutils': 1.0.23
     dev: true
 
-  /@visactor/vgrammar-projection/0.14.0:
-    resolution: {integrity: sha512-/Y1ffjMl1j8X7TXHrni9IBQJkL7q1yzVaFILhXUjY3NnYXWuDGJKEgK1BX3KbJhZzGLjDLeRVATvSYN1pzkO4A==}
+  /@visactor/vrender-core/1.0.45:
+    resolution: {integrity: sha512-kvYAsKGZ+dXbhOQzjjbMkRzI815KgaHoWOW7iyVorXTldQBTsxLtFIi/J3VfYqGdM3apUgsFoy8uvjS5DepPUA==}
     dependencies:
-      '@visactor/vgrammar-core': 0.14.0
-      '@visactor/vgrammar-util': 0.14.0
-      '@visactor/vutils': 0.18.15
-      d3-geo: 1.12.1
-    dev: true
-
-  /@visactor/vgrammar-sankey/0.14.0:
-    resolution: {integrity: sha512-VVnmi7znTYnDQNAxW0stK14LSVFKSQe/flnavkVds91tgtT5+RBLE09Vqz9eH45n23nxHEfwrWA4sHiWfQ8mLg==}
-    dependencies:
-      '@visactor/vgrammar-core': 0.14.0
-      '@visactor/vgrammar-util': 0.14.0
-      '@visactor/vrender-core': 0.20.0
-      '@visactor/vrender-kits': 0.20.0
-      '@visactor/vutils': 0.18.15
-    dev: true
-
-  /@visactor/vgrammar-util/0.14.0:
-    resolution: {integrity: sha512-h838qgT6IFHYtugTf7sC+rRvz2aU/W0EEnXX/cEeyvMAkuBgdC0Jq6vmGYAbmm+hwbhUREC5QvxudwSEEKCelg==}
-    dependencies:
-      '@visactor/vrender-core': 0.20.0
-      '@visactor/vutils': 0.18.15
-    dev: true
-
-  /@visactor/vgrammar-venn/0.14.0:
-    resolution: {integrity: sha512-l8w802GiSs3oRhn9lvt5YERyQwvgaCHXlOMU26tQqssrR0u6tbdH0Q+crqL6jzLktwzVVfbVPRC3q1pBQU6geQ==}
-    dependencies:
-      '@visactor/vgrammar-core': 0.14.0
-      '@visactor/vgrammar-util': 0.14.0
-      '@visactor/vrender-core': 0.20.0
-      '@visactor/vrender-kits': 0.20.0
-      '@visactor/vutils': 0.18.15
-    dev: true
-
-  /@visactor/vgrammar-wordcloud-shape/0.14.0:
-    resolution: {integrity: sha512-gDMTVaryB37uTZSXYpf0Zih894lHVJQRrPZYSiHvu5Jj9FZcisqBU+G8Q1Lo4WZJVhfWvCeuv9tYHtR9Gvuw3A==}
-    dependencies:
-      '@visactor/vgrammar-core': 0.14.0
-      '@visactor/vgrammar-util': 0.14.0
-      '@visactor/vrender-core': 0.20.0
-      '@visactor/vrender-kits': 0.20.0
-      '@visactor/vscale': 0.18.15
-      '@visactor/vutils': 0.18.15
-    dev: true
-
-  /@visactor/vgrammar-wordcloud/0.14.0:
-    resolution: {integrity: sha512-NYzNS9vKuZJJUvqshxA88ScH7fB57tdO/wvtBYTDwRp249xqK/uzrAtaOgzNj4bJ5vwu//R+i5hYOjzdQABebw==}
-    dependencies:
-      '@visactor/vgrammar-core': 0.14.0
-      '@visactor/vgrammar-util': 0.14.0
-      '@visactor/vrender-core': 0.20.0
-      '@visactor/vrender-kits': 0.20.0
-      '@visactor/vutils': 0.18.15
-    dev: true
-
-  /@visactor/vrender-components/0.20.0:
-    resolution: {integrity: sha512-nZUtFF1Kg8xjDGGIVeBdAOjxWW+jibUV4ltF1G/Z4GaHYUzpYfifWVrPBpo4BFIjaeICaSit2nKvntXhEUzj2w==}
-    dependencies:
-      '@visactor/vrender-core': 0.20.0
-      '@visactor/vrender-kits': 0.20.0
-      '@visactor/vscale': 0.18.15
-      '@visactor/vutils': 0.18.15
-    dev: true
-
-  /@visactor/vrender-core/0.20.0:
-    resolution: {integrity: sha512-P6Ata06lmVlLu23usSFluILuyxhMydRIgPW5o0zzK/EASstirRdWEx4EghZmobg3XPoipzh0/8O8ddBBtzaflg==}
-    dependencies:
-      '@visactor/vutils': 0.18.15
+      '@visactor/vutils': 1.0.23
       color-convert: 2.0.1
     dev: true
 
-  /@visactor/vrender-kits/0.20.0:
-    resolution: {integrity: sha512-9r7XQdLoNfCtr+QQU0JpghDXQ7DOaa3CnvJmXrSn1gonkeDmUmTN9yDs8L2URdYEpXrThPUMJsVy/N3Tp3cqCA==}
+  /@visactor/vrender-kits/1.0.45:
+    resolution: {integrity: sha512-iaeRitht8IqNvJwdKmcPKAYL0a4+f8xhK2bWUumSQjNbZJQx9UzGuDp73cIdNXzCNoCiJZElpsOiIGu3kymqiw==}
     dependencies:
       '@resvg/resvg-js': 2.4.1
-      '@visactor/vrender-core': 0.20.0
-      '@visactor/vutils': 0.18.15
-      roughjs: 4.5.2
+      '@visactor/vrender-core': 1.0.45
+      '@visactor/vutils': 1.0.23
+      gifuct-js: 2.1.2
+      lottie-web: 5.13.0
+      roughjs: 4.6.6
     dev: true
 
-  /@visactor/vscale/0.18.15:
-    resolution: {integrity: sha512-09dDWc6muJbOMxzp4odCsyLjqAF6u3BOx9kAJJ0tEpKE1AuHL4BTejNe697mJAnXqAo2ynAA+dn+cgWYiW1WQg==}
+  /@visactor/vscale/1.0.23:
+    resolution: {integrity: sha512-XePhYuRoNAp+8MeSMuEOOvhVAlOwvM1sDT2yFxE6zdwVB2GjZk8mH+5N2xQGQWk75YmGJjlJASFtgwjlb1yWxw==}
     dependencies:
-      '@visactor/vutils': 0.18.15
+      '@visactor/vutils': 1.0.23
     dev: true
 
-  /@visactor/vutils-extension/1.12.1:
-    resolution: {integrity: sha512-4UcTDdlgkCpDNUxO+U1OMWWqkxhYNS9UF8qR3xBC3x5z7Mu2c8ppM7oZDujnTeJEoG7+JKpOIpX/el3pFFh8Rg==}
+  /@visactor/vutils-extension/2.0.22:
+    resolution: {integrity: sha512-PRxjplZF1/Qdsflb1hYh9DGGJdblq91yIG7CCC6MIlMMSlDYEAMJzJ9y2clnR1MgWa2AsAtMtuu+MSdG3DctUA==}
     dependencies:
-      '@visactor/vdataset': 0.18.15
-      '@visactor/vutils': 0.18.15
+      '@visactor/vdataset': 1.0.23
+      '@visactor/vutils': 1.0.23
     dev: true
 
   /@visactor/vutils/0.18.15:
@@ -4595,6 +4761,15 @@ packages:
       '@turf/helpers': 6.5.0
       '@turf/invariant': 6.5.0
       eventemitter3: 4.0.7
+    dev: false
+
+  /@visactor/vutils/1.0.23:
+    resolution: {integrity: sha512-M8SLqgdHhKN8QmQKTWD1gzEaHptpIV9pvMYvC6+VeOsqYvZZ6UdhSCAAczTYVo+m/uwcEC2JHSUspbrs8rzlRQ==}
+    dependencies:
+      '@turf/helpers': 6.5.0
+      '@turf/invariant': 6.5.0
+      eventemitter3: 4.0.7
+    dev: true
 
   /@vitejs/plugin-react-swc/3.6.0_vite@4.5.3:
     resolution: {integrity: sha512-XFRbsGgpGxGzEV5i5+vRiro1bwcIaZDIdBRP16qwm+jP68ue/S8FJTBEgOeojtVDYrbSua3XFp71kC8VJE6v+g==}
@@ -4602,7 +4777,7 @@ packages:
       vite: ^4 || ^5
     dependencies:
       '@swc/core': 1.4.13
-      vite: 4.5.3_bby3wderf736tel7qp3evndmrm
+      vite: 4.5.3_drwgbx6kncedk3tgksguhmevgq
     transitivePeerDependencies:
       - '@swc/helpers'
     dev: true
@@ -4618,7 +4793,7 @@ packages:
       '@babel/plugin-transform-react-jsx-source': 7.24.1_@babel+core@7.24.4
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.0
-      vite: 4.5.3_bby3wderf736tel7qp3evndmrm
+      vite: 4.5.3_drwgbx6kncedk3tgksguhmevgq
     transitivePeerDependencies:
       - supports-color
     dev: true
@@ -5556,6 +5731,13 @@ packages:
       fsevents: 2.3.3
     dev: true
 
+  /chokidar/4.0.3:
+    resolution: {integrity: sha512-Qgzu8kfBvo+cA4962jnP1KkS6Dop5NS6g7R5LFYJr4b8Ub94PPQXUksCw9PvXoeXPRRddRNC5C1JQUR2SMGtnA==}
+    engines: {node: '>= 14.16.0'}
+    dependencies:
+      readdirp: 4.1.2
+    dev: true
+
   /chownr/2.0.0:
     resolution: {integrity: sha512-bIomtDF5KGpdogkLd9VspvFzk9KfpyyGlS8YFVZl7TGPBHL5snIOnxeshwVgPteQ9b4Eydl+pVbIyE1DcvCWgQ==}
     engines: {node: '>=10'}
@@ -6058,7 +6240,7 @@ packages:
     resolution: {integrity: sha512-fnULvOpxnC5/Vg3NCiWelDsLiUc9bRwAPs/+LfTLNvetFCtCTN+yQz15C/fs4AwX1R9K5GLtLfn8QW+dWisaAw==}
     engines: {node: '>=0.11'}
     dependencies:
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
 
   /date-time/3.1.0:
     resolution: {integrity: sha512-uqCUKXE5q1PNBXjPqvwhwJf9SwMoAHBgWJ6DcrnS5o+W2JOiIILl0JEdVD8SGujrNS02GGxgwAg2PN2zONgtjg==}
@@ -6211,6 +6393,12 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
+  /detect-libc/2.1.2:
+    resolution: {integrity: sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==}
+    engines: {node: '>=8'}
+    dev: true
+    optional: true
+
   /detect-newline/2.1.0:
     resolution: {integrity: sha512-CwffZFvlJffUg9zZA0uqrjQayUTC8ob94pnr5sFwaVv3IOmkfUHcWH+jXaQK3askE51Cqe8/9Ql/0uXNwqZ8Zg==}
     engines: {node: '>=0.10.0'}
@@ -6257,7 +6445,7 @@ packages:
   /dom-helpers/5.2.1:
     resolution: {integrity: sha512-nRCa7CK3VTrM2NmGkIy4cbK7IZlgBE/PYMn55rrXefr5xXDP0LdtfPnblFDoVdcAfslJ7or6iqAUnx0CCGIWQA==}
     dependencies:
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
       csstype: 3.1.3
 
   /dom-serializer/0.2.2:
@@ -7276,6 +7464,12 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: false
 
+  /gifuct-js/2.1.2:
+    resolution: {integrity: sha512-rI2asw77u0mGgwhV3qA+OEgYqaDn5UNqgs+Bx0FGwSpuqfYn+Ir6RQY5ENNQ8SbIiG/m5gVa7CD5RriO4f4Lsg==}
+    dependencies:
+      js-binary-schema-parser: 2.0.3
+    dev: true
+
   /glob-parent/3.1.0:
     resolution: {integrity: sha512-E8Ak/2+dZY6fnzlR7+ueWvhsH1SjHr4jjss4YS/h4py44jY9MhK/VFdaZJAWDz6BbL21KeteKxFSFpq8OS5gVA==}
     dependencies:
@@ -7326,17 +7520,19 @@ packages:
 
   /glob/7.1.7:
     resolution: {integrity: sha512-OvD9ENzPLbegENnYP5UUfJIirTg4+XwMWGaQfQTY0JenxNvvIKP3U3/tAQSPIu/lHxXYSZmpXlUHeqAIdKzBLQ==}
+    deprecated: Glob versions prior to v9 are no longer supported
     dependencies:
       fs.realpath: 1.0.0
       inflight: 1.0.6
       inherits: 2.0.4
-      minimatch: 3.0.8
+      minimatch: 3.1.2
       once: 1.4.0
       path-is-absolute: 1.0.1
     dev: true
 
   /glob/7.2.3:
     resolution: {integrity: sha512-nFR0zLpU2YCaRxwoCJvL6UvCH2JFyFVIvwTLsIf21AuHlMskA1hhTdk+LlYJtOlYt9v6dvszD2BGRqBL+iQK9Q==}
+    deprecated: Glob versions prior to v9 are no longer supported
     dependencies:
       fs.realpath: 1.0.0
       inflight: 1.0.6
@@ -7557,6 +7753,10 @@ packages:
       glogg: 1.0.2
     dev: false
 
+  /hachure-fill/0.5.2:
+    resolution: {integrity: sha512-3GKBOn+m2LX9iq+JC1064cSFprJY4jL1jCXTcpnfER5HYE2l/4EfWSGzkPa/ZDBmYI0ZOEj5VHV/eKnPGkHuOg==}
+    dev: true
+
   /hard-rejection/2.1.0:
     resolution: {integrity: sha512-VIZB+ibDhx7ObhAe7OVtoEbuP4h/MuOTHJ+J8h/eBXotJYl0fBgR72xDFCKgIh22OJZIOVNxBMWuhAr10r8HdA==}
     engines: {node: '>=6'}
@@ -7643,7 +7843,7 @@ packages:
   /history/4.10.1:
     resolution: {integrity: sha512-36nwAD620w12kuzPAsyINPWJqlNbij+hpK1k9XRloDtym8mxzGYl2c17LnV6IAGB2Dmg4tEa7G7DlawS0+qjew==}
     dependencies:
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
       loose-envify: 1.4.0
       resolve-pathname: 3.0.0
       tiny-invariant: 1.3.3
@@ -7767,6 +7967,10 @@ packages:
     hasBin: true
     requiresBuild: true
     optional: true
+
+  /immutable/5.1.5:
+    resolution: {integrity: sha512-t7xcm2siw+hlUM68I+UEOK+z84RzmN59as9DZ7P1l0994DKUWV7UXBMQZVxaoMSRQ+PBZbHCOoBt7a2wxOMt+A==}
+    dev: true
 
   /import-fresh/3.3.0:
     resolution: {integrity: sha512-veYYhQa+D1QBKznvhUHxb8faxlrwUnxseDAbAp457E0wLNio2bOSKnjYDhMj+YiAq61xrMGhQk9iXVk5FzgQMw==}
@@ -8736,6 +8940,10 @@ packages:
     resolution: {integrity: sha512-pZe//GGmwJndub7ZghVHz7vjb2LgC1m8B07Au3eYqeqv9emhESByMXxaEgkUkEqJe87oBbSniGYoQNIBklc7IQ==}
     dev: true
 
+  /js-binary-schema-parser/2.0.3:
+    resolution: {integrity: sha512-xezGJmOb4lk/M1ZZLTR/jaBHQ4gG/lqQnJqdIv4721DMggsa1bDVlHXNeHYogaIEHD9vCRv0fcL4hMA+Coarkg==}
+    dev: true
+
   /js-string-escape/1.0.1:
     resolution: {integrity: sha512-Smw4xcfIQ5LVjAOuJCvN/zIodzA/BBSsluuoSykP+lUvScIi4U6RJLfwHet5cxFnCswUjISV8oAXaqaJDY3chg==}
     engines: {node: '>= 0.8'}
@@ -9082,6 +9290,10 @@ packages:
     hasBin: true
     dependencies:
       js-tokens: 4.0.0
+
+  /lottie-web/5.13.0:
+    resolution: {integrity: sha512-+gfBXl6sxXMPe8tKQm7qzLnUy5DUPJPKIyRHwtpCpyUEYjHYRJC/5gjUvdkuO2c3JllrPtHXH5UJJK8LRYl5yQ==}
+    dev: true
 
   /loupe/2.3.7:
     resolution: {integrity: sha512-zSMINGVYkdpYSOBmLi0D1Uo7JU9nVdQKrHxC8eYlV+9YKK9WePqAlL7lSlorG/U2Fw1w0hTBmaa/jrQ3UbPHtA==}
@@ -9586,6 +9798,11 @@ packages:
       tslib: 2.3.1
     dev: true
 
+  /node-addon-api/7.1.1:
+    resolution: {integrity: sha512-5m3bsyrjFWE1xf7nz7YXdN4udnVtXK6/Yfgn5qnahL6bCkf2yKt4k3nuTKAtT4r3IG8JNR2ncsIMdZuAzJjHQQ==}
+    dev: true
+    optional: true
+
   /node-gyp/8.4.1:
     resolution: {integrity: sha512-olTJRgUtAb/hOXG0E93wZDs5YiJlgbXxTwQAFHyNlRsXQnYzUaF2aGgujZbw+hR8aF4ZG/rST57bWMWD16jr9w==}
     engines: {node: '>= 10.12.0'}
@@ -10057,6 +10274,12 @@ packages:
     engines: {node: '>=10'}
     dev: true
 
+  /picomatch/4.0.3:
+    resolution: {integrity: sha512-5gTmgEY/sqK6gFXLIsQNH19lWb4ebPDLA4SdLP7dsWkIXHWlG66oPuVvXSGFPppYZz8ZDZq0dYYrbHfBCVUb1Q==}
+    engines: {node: '>=12'}
+    dev: true
+    optional: true
+
   /pidtree/0.5.0:
     resolution: {integrity: sha512-9nxspIM7OpZuhBxPg73Zvyq7j1QMPMPsGKTqRc2XOaFQauDvoNz9fM1Wdkjmeo7l9GXOZiRs97sPkuayl39wjA==}
     engines: {node: '>=0.10'}
@@ -10367,7 +10590,7 @@ packages:
     peerDependencies:
       react: ^15.3.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
       react: 18.2.0
 
   /react-color/2.19.3_react@18.2.0:
@@ -10435,7 +10658,7 @@ packages:
       '@types/react':
         optional: true
     dependencies:
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
       '@types/react': 17.0.80
       focus-lock: 1.3.5
       prop-types: 15.8.1
@@ -10466,7 +10689,7 @@ packages:
       react-native:
         optional: true
     dependencies:
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
       '@types/react-redux': 7.1.33
       hoist-non-react-statics: 3.3.2
       loose-envify: 1.4.0
@@ -10497,7 +10720,7 @@ packages:
     peerDependencies:
       react: '>=15'
     dependencies:
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
       history: 4.10.1
       loose-envify: 1.4.0
       prop-types: 15.8.1
@@ -10512,7 +10735,7 @@ packages:
     peerDependencies:
       react: '>=15'
     dependencies:
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
       history: 4.10.1
       hoist-non-react-statics: 3.3.2
       loose-envify: 1.4.0
@@ -10530,7 +10753,7 @@ packages:
       react: '>=16.6.0'
       react-dom: '>=16.6.0'
     dependencies:
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
       dom-helpers: 5.2.1
       loose-envify: 1.4.0
       prop-types: 15.8.1
@@ -10544,7 +10767,7 @@ packages:
       react: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
       react-dom: ^15.0.0 || ^16.0.0 || ^17.0.0 || ^18.0.0
     dependencies:
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
       memoize-one: 5.2.1
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
@@ -10641,6 +10864,11 @@ packages:
       picomatch: 2.3.1
     dev: true
 
+  /readdirp/4.1.2:
+    resolution: {integrity: sha512-GDhwkLfywWL2s6vEjyhri+eXmfH6j1L7JE27WhqLeYzoh/A3DBaYGEj2H/HFZCn/kMfim73FXxEJTw06WtxQwg==}
+    engines: {node: '>= 14.18.0'}
+    dev: true
+
   /rechoir/0.6.2:
     resolution: {integrity: sha512-HFM8rkZ+i3zrV+4LQjwQ0W+ez98pApMGM3HUrN04j3CqzPOzl9nmP15Y8YXNm8QHGv/eacOVEjqhmWpkRV0NAw==}
     engines: {node: '>= 0.10'}
@@ -10659,7 +10887,7 @@ packages:
   /redux/4.2.1:
     resolution: {integrity: sha512-LAUYz4lc+Do8/g7aeRa8JkyDErK6ekstQaqWQrNRW//MY1TvCEpMtpTWvlQ+FPbWCx+Xixu/6SHt5N0HR+SB4w==}
     dependencies:
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
     dev: true
 
   /regenerate-unicode-properties/10.1.1:
@@ -10674,7 +10902,7 @@ packages:
   /regenerator-transform/0.15.2:
     resolution: {integrity: sha512-hfMp2BoF0qOk3uc5V20ALGDS2ddjQaLrdl7xrGXvAIow7qeWRM2VA2HuCHkUKk9slq3VwEwLNK3DFBqDfPGYtg==}
     dependencies:
-      '@babel/runtime': 7.28.6
+      '@babel/runtime': 7.29.2
 
   /regex-not/1.0.2:
     resolution: {integrity: sha512-J6SDjUgDxQj5NusnOtdFxDwN/+HWykR8GELwctJ7mdqhcyy1xEc4SRFHUXvxTp661YaVKAjfRLZ9cCqS6tn32A==}
@@ -10922,9 +11150,10 @@ packages:
       fsevents: 2.3.3
     dev: true
 
-  /roughjs/4.5.2:
-    resolution: {integrity: sha512-2xSlLDKdsWyFxrveYWk9YQ/Y9UfK38EAMRNkYkMqYBJvPX8abCa9PN0x3w02H8Oa6/0bcZICJU+U95VumPqseg==}
+  /roughjs/4.6.6:
+    resolution: {integrity: sha512-ZUz/69+SYpFN/g/lUlo2FXcIjRkSu3nDarreVdGGndHEBJ6cXPdKguS8JGxwj5HA5xIbVKSmLgr5b3AWxtRfvQ==}
     dependencies:
+      hachure-fill: 0.5.2
       path-data-parser: 0.1.0
       points-on-curve: 0.2.0
       points-on-path: 0.2.1
@@ -10986,6 +11215,18 @@ packages:
       lodash: 4.17.21
       scss-tokenizer: 0.4.3
       yargs: 17.7.2
+    dev: true
+
+  /sass/1.98.0:
+    resolution: {integrity: sha512-+4N/u9dZ4PrgzGgPlKnaaRQx64RO0JBKs9sDhQ2pLgN6JQZ25uPQZKQYaBJU48Kd5BxgXoJ4e09Dq7nMcOUW3A==}
+    engines: {node: '>=14.0.0'}
+    hasBin: true
+    dependencies:
+      chokidar: 4.0.3
+      immutable: 5.1.5
+      source-map-js: 1.2.0
+    optionalDependencies:
+      '@parcel/watcher': 2.5.6
     dev: true
 
   /sax/1.2.4:
@@ -12500,7 +12741,7 @@ packages:
       '@rollup/pluginutils': 5.1.0
       '@svgr/core': 8.1.0_typescript@4.9.5
       '@svgr/plugin-jsx': 8.1.0_@svgr+core@8.1.0
-      vite: 4.5.3_bby3wderf736tel7qp3evndmrm
+      vite: 4.5.3_drwgbx6kncedk3tgksguhmevgq
     transitivePeerDependencies:
       - rollup
       - supports-color
@@ -12614,6 +12855,43 @@ packages:
       less: 4.1.3
       postcss: 8.4.38
       rollup: 3.29.4
+    optionalDependencies:
+      fsevents: 2.3.3
+    dev: true
+
+  /vite/4.5.3_drwgbx6kncedk3tgksguhmevgq:
+    resolution: {integrity: sha512-kQL23kMeX92v3ph7IauVkXkikdDRsYMGTVl5KY2E9OY4ONLvkHf04MDTbnfo6NKxZiDLWzVpP5oTa8hQD8U3dg==}
+    engines: {node: ^14.18.0 || >=16.0.0}
+    hasBin: true
+    peerDependencies:
+      '@types/node': '>= 14'
+      less: '*'
+      lightningcss: ^1.21.0
+      sass: '*'
+      stylus: '*'
+      sugarss: '*'
+      terser: ^5.4.0
+    peerDependenciesMeta:
+      '@types/node':
+        optional: true
+      less:
+        optional: true
+      lightningcss:
+        optional: true
+      sass:
+        optional: true
+      stylus:
+        optional: true
+      sugarss:
+        optional: true
+      terser:
+        optional: true
+    dependencies:
+      '@types/node': 20.12.7
+      esbuild: 0.18.20
+      postcss: 8.4.38
+      rollup: 3.29.4
+      sass: 1.98.0
     optionalDependencies:
       fsevents: 2.3.3
     dev: true

@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "comment": "feat: 新增vchart-aurora-theme主题包\n\n新增aurora主题包，包含完整的主题配置和示例代码\n\n",
+      "type": "none",
+      "packageName": "@visactor/vchart-aurora-theme"
+    }
+  ],
+  "packageName": "@visactor/vchart-aurora-theme",
+  "email": "yangxian.x@bytedance.com"
+}

@@ -55,6 +55,13 @@
       "versionPolicyName": "vchartThemeMain"
     },
     {
+      "packageName": "@visactor/vchart-aurora-theme",
+      "projectFolder": "packages/vchart-aurora-theme",
+      "tags": ["package"],
+      "shouldPublish": true,
+      "versionPolicyName": "vchartThemeMain"
+    },
+    {
       "packageName": "@visactor/vchart-arco-theme",
       "projectFolder": "packages/vchart-arco-theme",
       "tags": ["package"],

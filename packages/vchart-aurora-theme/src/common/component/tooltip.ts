@@ -1,6 +1,6 @@
-import type { ITooltipTheme } from '@visactor/vchart';
+import type { IComponentTheme } from '@visactor/vchart';
 
-export const tooltip: ITooltipTheme = {
+export const tooltip: IComponentTheme['tooltip'] = {
   panel: {
     border: {
       radius: 8

@@ -1,6 +1,6 @@
 {
   "name": "@visactor/vchart-theme-utils",
-  "version": "1.12.3",
+  "version": "1.13.0",
   "description": "Utils of extended themes for VChart",
   "sideEffects": false,
   "main": "cjs/index.js",
@@ -36,8 +36,8 @@
     "ts-jest": "~29.1.0",
     "@types/jest": "~29.5.0",
     "@rushstack/eslint-patch": "~1.1.4",
-    "@visactor/vchart": "1.12.1",
-    "@visactor/vchart-types": "1.12.1",
+    "@visactor/vchart": "2.0.22",
+    "@visactor/vchart-types": "2.0.19",
     "eslint": "~8.18.0",
     "vite": "^4.5.0",
     "typescript": "4.9.5",

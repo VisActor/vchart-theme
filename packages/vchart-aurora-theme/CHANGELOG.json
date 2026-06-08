@@ -1,0 +1,17 @@
+{
+  "name": "@visactor/vchart-aurora-theme",
+  "entries": [
+    {
+      "version": "1.13.0",
+      "tag": "@visactor/vchart-aurora-theme_v1.13.0",
+      "date": "Wed, 03 Jun 2026 03:45:21 GMT",
+      "comments": {
+        "none": [
+          {
+            "comment": "feat: 新增vchart-aurora-theme主题包\n\n新增aurora主题包，包含完整的主题配置和示例代码\n\n"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 import { ITheme } from '@visactor/vchart';
 import { getCSSVariableValue } from '../design-tokens';
 
-type KeystoneTheme = ITheme & {
+export type KeystoneTheme = ITheme & {
   component?: any;
   chart?: any;
   markByName?: any;

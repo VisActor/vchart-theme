@@ -1,5 +1,12 @@
 import { getCSSVariableValue, ks } from '../src/design-tokens';
 import { getBarTheme, getTheme, theme } from '../src/common';
+import {
+  allThemeMap,
+  initVChartKeystoneTheme,
+  keystoneDesignDark,
+  keystoneDesignLight,
+  VChartKeystoneThemeHelper
+} from '../src';
 
 describe('vchart-keystone-theme design tokens', () => {
   beforeEach(() => {
@@ -47,5 +54,30 @@ describe('vchart-keystone-theme common theme utilities', () => {
       isRtl: false
     });
     expect(barTheme.markByName?.bar?.style?.cornerRadius).toEqual([4, 4, 0, 0]);
+  });
+});
+
+describe('vchart-keystone-theme public API', () => {
+  it('exports light and dark Keystone themes', () => {
+    expect(keystoneDesignLight.name).toBe('keystoneDesignLight');
+    expect(keystoneDesignLight.type).toBe('light');
+    expect(keystoneDesignLight.description).toBe('Keystone Design - light');
+    expect(keystoneDesignLight.component?.axis?.label?.style?.fontFamily).toBe('TikTok Sans Text');
+
+    expect(keystoneDesignDark.name).toBe('keystoneDesignDark');
+    expect(keystoneDesignDark.type).toBe('dark');
+    expect(keystoneDesignDark.description).toBe('Keystone Design - dark');
+    expect(keystoneDesignDark.component?.axis?.label?.style?.fontFamily).toBe('TikTok Sans Text');
+  });
+
+  it('exports all themes in allThemeMap', () => {
+    expect(allThemeMap.get('keystoneDesignLight')).toBe(keystoneDesignLight);
+    expect(allThemeMap.get('keystoneDesignDark')).toBe(keystoneDesignDark);
+  });
+
+  it('initializes through the Keystone helper', () => {
+    const helper = initVChartKeystoneTheme();
+    expect(helper).toBeInstanceOf(VChartKeystoneThemeHelper);
+    expect(VChartKeystoneThemeHelper.themeNamePrefix).toBe('keystoneDesign');
   });
 });

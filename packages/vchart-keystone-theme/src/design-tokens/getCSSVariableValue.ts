@@ -16,7 +16,10 @@ export function getCSSVariableValue(varName: string): string {
     }
 
     if (typeof getComputedStyle !== 'function' || typeof document === 'undefined') {
-      return `var(${varNameWithoutVarCall})`;
+      const value = `var(${varNameWithoutVarCall})`;
+      cache.set(varNameWithoutVarCall, value);
+      cache.set(`var(${varNameWithoutVarCall})`, value);
+      return value;
     }
 
     if (!rootComputedStyle) rootComputedStyle = getComputedStyle(document.documentElement);

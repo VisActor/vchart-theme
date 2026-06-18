@@ -28,6 +28,32 @@ describe('vchart-keystone-theme design tokens', () => {
   it('reads cached CSS variables by var() call syntax', () => {
     expect(getCSSVariableValue('var(--ks-test-color)').trim()).toBe('#123456');
   });
+
+  it('caches no-DOM fallback values for raw and var() names', () => {
+    const originalDocument = global.document;
+    const originalGetComputedStyle = global.getComputedStyle;
+
+    try {
+      (global as any).document = undefined;
+      (global as any).getComputedStyle = undefined;
+
+      jest.isolateModules(() => {
+        const { getCSSVariableValue: getIsolatedCSSVariableValue } = require('../src/design-tokens/getCSSVariableValue');
+
+        expect(getIsolatedCSSVariableValue('--ks-no-dom-cache')).toBe('var(--ks-no-dom-cache)');
+
+        (global as any).document = originalDocument;
+        (global as any).getComputedStyle = originalGetComputedStyle;
+        document.documentElement.style.setProperty('--ks-no-dom-cache', '#abcdef');
+
+        expect(getIsolatedCSSVariableValue('var(--ks-no-dom-cache)').trim()).toBe('var(--ks-no-dom-cache)');
+      });
+    } finally {
+      (global as any).document = originalDocument;
+      (global as any).getComputedStyle = originalGetComputedStyle;
+      document.documentElement.style.removeProperty('--ks-no-dom-cache');
+    }
+  });
 });
 
 describe('vchart-keystone-theme common theme utilities', () => {

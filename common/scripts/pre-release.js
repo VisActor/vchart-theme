@@ -63,7 +63,7 @@ function run() {
     });
 
     // 3. publish to npm
-    spawnSync('sh', ['-c', `rush publish --publish --include-all --tag ${preReleaseType}`], {
+    spawnSync('sh', ['-c', `rush publish --publish --include-all --tag ${preReleaseType} --set-access-level public`], {
       stdio: 'inherit',
       shell: false,
     });
@@ -94,4 +94,3 @@ function run() {
 }
 
 run()
-

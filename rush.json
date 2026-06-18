@@ -62,6 +62,13 @@
       "versionPolicyName": "vchartThemeMain"
     },
     {
+      "packageName": "@visactor/vchart-keystone-theme",
+      "projectFolder": "packages/vchart-keystone-theme",
+      "tags": ["package"],
+      "shouldPublish": true,
+      "versionPolicyName": "vchartThemeMain"
+    },
+    {
       "packageName": "@visactor/vchart-arco-theme",
       "projectFolder": "packages/vchart-arco-theme",
       "tags": ["package"],

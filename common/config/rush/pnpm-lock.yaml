@@ -83,7 +83,7 @@ importers:
       '@arco-design/webpack-plugin': 1.7.0
       '@arco-plugins/vite-plugin-svgr': 0.7.2_vite@4.5.3
       '@arco-themes/react-arco-pro': 0.0.7_pa7uxehr42623f73endqjggywi
-      '@babel/runtime': 7.29.7
+      '@babel/runtime': 8.0.0
       '@esbuild-plugins/node-globals-polyfill': 0.1.1
       '@esbuild-plugins/node-modules-polyfill': 0.1.4
       '@internal/bundler': link:../../tools/bundler
@@ -190,9 +190,9 @@ importers:
     dependencies:
       '@visactor/vchart-theme-utils': link:../vchart-theme-utils
     devDependencies:
-      '@babel/runtime': 7.29.7
-      '@douyinfe/semi-icons': 2.99.3_react@18.2.0
-      '@douyinfe/semi-icons-lab': 2.99.3_biqbaboplfbrettd7655fr4n2y
+      '@babel/runtime': 8.0.0
+      '@douyinfe/semi-icons': 2.100.0_react@18.2.0
+      '@douyinfe/semi-icons-lab': 2.100.0_biqbaboplfbrettd7655fr4n2y
       '@douyinfe/semi-ui': 2.55.5_biqbaboplfbrettd7655fr4n2y
       '@esbuild-plugins/node-globals-polyfill': 0.1.1
       '@esbuild-plugins/node-modules-polyfill': 0.1.4
@@ -228,6 +228,65 @@ importers:
       typescript: 4.9.5
       vite: 4.5.3_drwgbx6kncedk3tgksguhmevgq
       vite-plugin-svgr: 4.2.0_phsvvvlejkpjhjvgxznbnrvcoa
+
+  ../../packages/vchart-keystone-theme:
+    specifiers:
+      '@babel/runtime': latest
+      '@esbuild-plugins/node-globals-polyfill': 0.1.1
+      '@esbuild-plugins/node-modules-polyfill': 0.1.4
+      '@internal/bundler': workspace:*
+      '@internal/chart-demo': workspace:*
+      '@internal/eslint-config': workspace:*
+      '@internal/jest-config': workspace:*
+      '@internal/ts-config': workspace:*
+      '@jest/globals': ~29.5.0
+      '@rushstack/eslint-patch': ~1.1.4
+      '@types/jest': ~29.5.0
+      '@types/node': '*'
+      '@types/offscreencanvas': 2019.6.4
+      '@visactor/vchart': 2.0.22
+      '@visactor/vchart-theme-utils': workspace:1.13.0
+      eslint: ~8.18.0
+      husky: 7.0.4
+      jest: ~29.5.0
+      lint-staged: 12.3.7
+      magic-string: ^0.25.7
+      prettier: 2.6.1
+      ts-jest: ~29.1.0
+      ts-loader: 8.0.2
+      ts-node: 10.9.0
+      tslib: 2.3.1
+      tslint: 5.12.1
+      typescript: 4.9.5
+    dependencies:
+      '@visactor/vchart-theme-utils': link:../vchart-theme-utils
+    devDependencies:
+      '@babel/runtime': 8.0.0
+      '@esbuild-plugins/node-globals-polyfill': 0.1.1
+      '@esbuild-plugins/node-modules-polyfill': 0.1.4
+      '@internal/bundler': link:../../tools/bundler
+      '@internal/chart-demo': link:../../share/chart-demo
+      '@internal/eslint-config': link:../../share/eslint-config
+      '@internal/jest-config': link:../../share/jest-config
+      '@internal/ts-config': link:../../share/ts-config
+      '@jest/globals': 29.5.0
+      '@rushstack/eslint-patch': 1.1.4
+      '@types/jest': 29.5.12
+      '@types/node': 20.12.7
+      '@types/offscreencanvas': 2019.6.4
+      '@visactor/vchart': 2.0.22
+      eslint: 8.18.0
+      husky: 7.0.4
+      jest: 29.5.0_nfgaym6ygctcxvhgdn7jfhc2pq
+      lint-staged: 12.3.7
+      magic-string: 0.25.9
+      prettier: 2.6.1
+      ts-jest: 29.1.2_doipufordlnvh5g4adbwayvyvy
+      ts-loader: 8.0.2_typescript@4.9.5
+      ts-node: 10.9.0_misjo77sqtw74jgpkxp7bulu2q
+      tslib: 2.3.1
+      tslint: 5.12.1_typescript@4.9.5
+      typescript: 4.9.5
 
   ../../packages/vchart-semi-theme:
     specifiers:
@@ -272,9 +331,9 @@ importers:
     dependencies:
       '@visactor/vchart-theme-utils': link:../vchart-theme-utils
     devDependencies:
-      '@babel/runtime': 7.29.7
-      '@douyinfe/semi-icons': 2.99.3_react@18.2.0
-      '@douyinfe/semi-icons-lab': 2.99.3_biqbaboplfbrettd7655fr4n2y
+      '@babel/runtime': 8.0.0
+      '@douyinfe/semi-icons': 2.100.0_react@18.2.0
+      '@douyinfe/semi-icons-lab': 2.100.0_biqbaboplfbrettd7655fr4n2y
       '@douyinfe/semi-ui': 2.55.5_biqbaboplfbrettd7655fr4n2y
       '@esbuild-plugins/node-globals-polyfill': 0.1.1
       '@esbuild-plugins/node-modules-polyfill': 0.1.4
@@ -458,7 +517,7 @@ importers:
       '@arco-design/webpack-plugin': 1.7.0
       '@arco-plugins/vite-plugin-svgr': 0.7.2_vite@4.5.3
       '@arco-themes/react-arco-pro': 0.0.7_pa7uxehr42623f73endqjggywi
-      '@babel/runtime': 7.29.7
+      '@babel/runtime': 8.0.0
       '@esbuild-plugins/node-globals-polyfill': 0.1.1
       '@esbuild-plugins/node-modules-polyfill': 0.1.4
       '@internal/bundler': link:../../tools/bundler
@@ -554,8 +613,8 @@ importers:
       vite: ^4.5.0
     dependencies:
       '@arco-design/web-react': 2.61.2_42iwexueogtmu5amowprdpoisy
-      '@douyinfe/semi-icons': 2.99.3_react@18.2.0
-      '@douyinfe/semi-icons-lab': 2.99.3_biqbaboplfbrettd7655fr4n2y
+      '@douyinfe/semi-icons': 2.100.0_react@18.2.0
+      '@douyinfe/semi-icons-lab': 2.100.0_biqbaboplfbrettd7655fr4n2y
       '@douyinfe/semi-ui': 2.55.5_biqbaboplfbrettd7655fr4n2y
       '@visactor/vchart-theme': link:../vchart-theme
       '@visactor/vchart-theme-utils': link:../vchart-theme-utils
@@ -683,9 +742,9 @@ importers:
       '@visactor/vchart-semi-theme': link:../vchart-semi-theme
       '@visactor/vchart-theme-utils': link:../vchart-theme-utils
     devDependencies:
-      '@babel/runtime': 7.29.7
-      '@douyinfe/semi-icons': 2.99.3_react@18.2.0
-      '@douyinfe/semi-icons-lab': 2.99.3_biqbaboplfbrettd7655fr4n2y
+      '@babel/runtime': 8.0.0
+      '@douyinfe/semi-icons': 2.100.0_react@18.2.0
+      '@douyinfe/semi-icons-lab': 2.100.0_biqbaboplfbrettd7655fr4n2y
       '@douyinfe/semi-ui': 2.55.5_biqbaboplfbrettd7655fr4n2y
       '@esbuild-plugins/node-globals-polyfill': 0.1.1
       '@esbuild-plugins/node-modules-polyfill': 0.1.4
@@ -799,7 +858,7 @@ importers:
       '@arco-design/webpack-plugin': 1.7.0
       '@arco-plugins/vite-plugin-svgr': 0.7.2_vite@4.5.3
       '@arco-themes/react-arco-pro': 0.0.7_pa7uxehr42623f73endqjggywi
-      '@babel/runtime': 7.29.7
+      '@babel/runtime': 8.0.0
       '@esbuild-plugins/node-globals-polyfill': 0.1.1
       '@esbuild-plugins/node-modules-polyfill': 0.1.4
       '@internal/bundler': link:../../tools/bundler
@@ -2369,6 +2428,10 @@ packages:
     resolution: {integrity: sha512-Nq8OhGWiZIZGV6hLHoyAKLLcJihP/xFeBMGJoUrxTX2psI8dCifzLhZISFb+VWS3wFMRDmCGw5R+dOySCqPLhw==}
     engines: {node: '>=6.9.0'}
 
+  /@babel/runtime/8.0.0:
+    resolution: {integrity: sha512-sL6cvO2IfkSu/iU+zs2S/w01B7A8V7suXSIKEN4hPFFdZoiPGxrj5pAG0lCaqLWiEIrjKzdznIWuaLcxPR53qw==}
+    dev: true
+
   /@babel/template/7.24.0:
     resolution: {integrity: sha512-Bkf2q8lMB0AFpX0NFEqSbx1OkTHf0f+0j82mkw+ZpzBnkk7e9Ql0891vlfgi+kHwOk8tQjiQHpqh4LaSa0fKEA==}
     engines: {node: '>=6.9.0'}
@@ -2487,8 +2550,8 @@ packages:
       memoize-one: 5.2.1
       scroll-into-view-if-needed: 2.2.31
 
-  /@douyinfe/semi-icons-lab/2.99.3_biqbaboplfbrettd7655fr4n2y:
-    resolution: {integrity: sha512-pC320Hqwkl6Af356BUTPo5zEYIlErI4v54edmzdFYaJufNTNnoFVYpLAAZTJ6meWtJeLPoUi/GWN9mx4I+xreA==}
+  /@douyinfe/semi-icons-lab/2.100.0_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-96xgxK5FuhEw7GF8S0Vpkdh+owSXv2GcybXtudsRMWWBxAUhTPTUnJeDQ1lZ+Lttqq+Dy+L+Cauu+eLriwnHBg==}
     peerDependencies:
       react: '>=16.0.0'
       react-dom: '>=16.0.0'
@@ -2496,18 +2559,18 @@ packages:
       react: 18.2.0
       react-dom: 18.2.0_react@18.2.0
 
-  /@douyinfe/semi-icons/2.55.5_react@18.2.0:
-    resolution: {integrity: sha512-y3gbo5yiDxWdk0rRgWWktilS2/pcDUoldozoAeEuUhCWl8rTw0qJ622lTaUcD3AggK7t8K+hMPLdxoT9lpsI0Q==}
+  /@douyinfe/semi-icons/2.100.0_react@18.2.0:
+    resolution: {integrity: sha512-S/UZAOgzhbk2Dpwn0mUz/SrjswRpSTjSupzluLO0QmM8mCVuLSetmJ0Y/HO4MGM1eY9rEUrXON/FV3+SukFzxQ==}
     peerDependencies:
-      react: ^16.8.0 || ^17.0.0 || ^18.0.0
+      react: '>=16.0.0'
     dependencies:
       classnames: 2.5.1
       react: 18.2.0
 
-  /@douyinfe/semi-icons/2.99.3_react@18.2.0:
-    resolution: {integrity: sha512-Pm5H3Ua/PDumUCCsnJWwN+znVoKiyFCqag6DJy9/cuF6OOdd1+QUnvi0NHNg6+0fx/LHH088UwKFoOiZRkbaSw==}
+  /@douyinfe/semi-icons/2.55.5_react@18.2.0:
+    resolution: {integrity: sha512-y3gbo5yiDxWdk0rRgWWktilS2/pcDUoldozoAeEuUhCWl8rTw0qJ622lTaUcD3AggK7t8K+hMPLdxoT9lpsI0Q==}
     peerDependencies:
-      react: '>=16.0.0'
+      react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
       classnames: 2.5.1
       react: 18.2.0
@@ -2809,6 +2872,7 @@ packages:
   /@humanwhocodes/config-array/0.9.5:
     resolution: {integrity: sha512-ObyMyWxZiCu/yTisA7uzx81s40xR2fD5Cg/2Kq7G02ajkNubJf6BopgDTmDyc3U7sXpNKM8cYOw7s7Tyr+DnCw==}
     engines: {node: '>=10.10.0'}
+    deprecated: Use @eslint/config-array instead
     dependencies:
       '@humanwhocodes/object-schema': 1.2.1
       debug: 4.3.4
@@ -2818,6 +2882,7 @@ packages:
 
   /@humanwhocodes/object-schema/1.2.1:
     resolution: {integrity: sha512-ZnQMnLV4e7hDlUvw8H+U8ASL02SS2Gn6+9Ac3wGGLIe7+je2AeAOxPY+izIPJDfFDb7eDjev0Us8MO1iFRN8hA==}
+    deprecated: Use @eslint/object-schema instead
 
   /@icons/material/0.2.4_react@18.2.0:
     resolution: {integrity: sha512-QPcGmICAPbGLGb6F/yNf/KzKqvFx8z5qx3D1yFqVAjoFmXK35EgyW+cJ57Te3CNsmzblwtzakLGFqHPqrfb4Tw==}
@@ -6870,6 +6935,7 @@ packages:
   /eslint/8.18.0:
     resolution: {integrity: sha512-As1EfFMVk7Xc6/CvhssHUjsAQSkpfXvUGMFC3ce8JDe6WvqCgRrLOBQbVpsBFr1X1V+RACOadnzVvcUS5ni2bA==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
+    deprecated: This version is no longer supported. Please see https://eslint.org/version-support for other options.
     hasBin: true
     dependencies:
       '@eslint/eslintrc': 1.4.1
@@ -7520,7 +7586,7 @@ packages:
 
   /glob/7.1.7:
     resolution: {integrity: sha512-OvD9ENzPLbegENnYP5UUfJIirTg4+XwMWGaQfQTY0JenxNvvIKP3U3/tAQSPIu/lHxXYSZmpXlUHeqAIdKzBLQ==}
-    deprecated: Glob versions prior to v9 are no longer supported
+    deprecated: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
     dependencies:
       fs.realpath: 1.0.0
       inflight: 1.0.6

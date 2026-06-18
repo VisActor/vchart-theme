@@ -1,3 +1,5 @@
+import fs from 'fs';
+import path from 'path';
 import { getCSSVariableValue, ks } from '../src/design-tokens';
 import { getBarTheme, getTheme, theme } from '../src/common';
 import {
@@ -80,6 +82,17 @@ describe('vchart-keystone-theme common theme utilities', () => {
       isRtl: false
     });
     expect(barTheme.markByName?.bar?.style?.cornerRadius).toEqual([4, 4, 0, 0]);
+  });
+});
+
+describe('vchart-keystone-theme export output', () => {
+  it('exports concrete Keystone token values in public theme JSON', () => {
+    const themeJsonPath = path.resolve(__dirname, '../public/keystoneDesignLight.json');
+    const exportedTheme = JSON.parse(fs.readFileSync(themeJsonPath, 'utf8'));
+
+    expect(exportedTheme.colorScheme.default.dataScheme[0]).toBe('#8987f6');
+    expect(exportedTheme.colorScheme.default.dataScheme).not.toContain('var(--ks-color-data-data1-fill)');
+    expect(exportedTheme.component.axis.label.style.color).toBe('#87898b');
   });
 });
 

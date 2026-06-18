@@ -4,10 +4,55 @@
 import fs from 'fs';
 import path from 'path';
 import { ThemeManager } from '@visactor/vchart';
-import { allThemeMap } from '../src';
 
 const VCHART_THEME_PROJECT_ROOT = process.cwd();
 const targetPaths = [path.resolve(VCHART_THEME_PROJECT_ROOT, './public')];
+
+const parseCSSVariables = (css: string) => {
+  const variables = new Map<string, string>();
+  const rootBlockPattern = /:root\s*{([\s\S]*?)}/g;
+  let rootBlockMatch: RegExpExecArray | null;
+
+  while ((rootBlockMatch = rootBlockPattern.exec(css))) {
+    const declarationPattern = /(--[\w-]+)\s*:\s*([^;]+);/g;
+    let declarationMatch: RegExpExecArray | null;
+
+    while ((declarationMatch = declarationPattern.exec(rootBlockMatch[1]))) {
+      variables.set(declarationMatch[1], declarationMatch[2].replace(/\s*!important\s*$/, '').trim());
+    }
+  }
+
+  return variables;
+};
+
+const setupCSSVariableEnvironment = () => {
+  const variableMap = new Map<string, string>();
+  [path.resolve(VCHART_THEME_PROJECT_ROOT, './root.css'), path.resolve(VCHART_THEME_PROJECT_ROOT, './index.css')].forEach(
+    cssPath => {
+      if (!fs.existsSync(cssPath)) {
+        return;
+      }
+      parseCSSVariables(fs.readFileSync(cssPath, 'utf8')).forEach((value, key) => {
+        variableMap.set(key, value);
+      });
+    }
+  );
+
+  (globalThis as any).document = {
+    documentElement: {},
+    body: {
+      hasAttribute: () => false,
+      getAttribute: () => null
+    }
+  };
+  (globalThis as any).getComputedStyle = () => ({
+    getPropertyValue: (name: string) => variableMap.get(name) ?? ''
+  });
+};
+
+setupCSSVariableEnvironment();
+
+const { allThemeMap } = require('../src') as typeof import('../src');
 
 const result: string[] = [];
 allThemeMap.forEach((value, key) => {

@@ -10,11 +10,16 @@ export function getCSSVariableValue(varName: string): string {
   if (cache.has(varName)) {
     return cache.get(varName)!;
   } else {
-    if (!rootComputedStyle) rootComputedStyle = getComputedStyle(document.documentElement);
     let varNameWithoutVarCall = varName;
     if (varName.startsWith('var(')) {
       varNameWithoutVarCall = varName.substring(4, varName.length - 1);
     }
+
+    if (typeof getComputedStyle !== 'function' || typeof document === 'undefined') {
+      return `var(${varNameWithoutVarCall})`;
+    }
+
+    if (!rootComputedStyle) rootComputedStyle = getComputedStyle(document.documentElement);
     const value = rootComputedStyle.getPropertyValue(varNameWithoutVarCall);
     cache.set(varNameWithoutVarCall, value);
     cache.set(`var(${varNameWithoutVarCall})`, value);

@@ -881,6 +881,6 @@ export const darkKs = {
     }
   }
 } as const;
-export { getCSSVariableValue } from './getCSSVariableValue.js';
+export { getCSSVariableValue } from './getCSSVariableValue';
 
 export * from './getCSSVariableValue';

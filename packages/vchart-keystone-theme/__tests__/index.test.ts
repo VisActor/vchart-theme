@@ -80,4 +80,17 @@ describe('vchart-keystone-theme public API', () => {
     expect(helper).toBeInstanceOf(VChartKeystoneThemeHelper);
     expect(VChartKeystoneThemeHelper.themeNamePrefix).toBe('keystoneDesign');
   });
+
+  it('generates the Keystone light theme without rewriting its array color scheme', () => {
+    const helper = new VChartKeystoneThemeHelper({ isWatchingMode: false });
+    const generatedTheme = helper.generateTheme({ mode: 'light' });
+    const generatedDefaultColorScheme = generatedTheme.colorScheme?.default;
+
+    expect(generatedDefaultColorScheme).toBe(keystoneDesignLight.colorScheme?.default);
+    expect(Array.isArray(generatedDefaultColorScheme)).toBe(true);
+    expect(generatedDefaultColorScheme).toHaveLength(9);
+    expect(generatedDefaultColorScheme).toEqual(
+      Array.from({ length: 9 }, (_, index) => getCSSVariableValue(`--ks-color-data-data${index + 1}-fill`))
+    );
+  });
 });

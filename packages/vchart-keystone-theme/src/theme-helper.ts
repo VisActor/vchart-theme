@@ -1,5 +1,5 @@
 import type { ITheme } from '@visactor/vchart';
-import type { ThemeMode } from '@visactor/vchart-theme-utils';
+import type { IThemeQueryOption, ThemeMode } from '@visactor/vchart-theme-utils';
 // eslint-disable-next-line no-duplicate-imports
 import { VChartExtendThemeHelper } from '@visactor/vchart-theme-utils';
 import { keystoneDesignDark } from './dark';
@@ -18,6 +18,11 @@ export class VChartKeystoneThemeHelper extends VChartExtendThemeHelper {
   };
 
   tokenMap = {};
+
+  generateTheme(option?: IThemeQueryOption): ITheme {
+    const mode = option?.mode ?? this.getCurrentMode();
+    return this.baseTheme[mode];
+  }
 
   declare options: IInitVChartKeystoneThemeOption;
 

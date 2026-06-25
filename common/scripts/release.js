@@ -1,80 +1,67 @@
 /**
- * prelease
- * node release.js [alpha.0] [patch | major | minor | 1.0.0]
+ * release
+ * node release.js [patch | major | minor | 1.0.0]
  */
 
 const { spawnSync } = require('child_process')
-const fs = require('fs')
 const path = require('path')
 const checkAndUpdateNextBump = require('./version-policies');
+const getPackageJson = require('./get-package-json');
+const validateReleaseVersion = path.join(__dirname, './validate-release-version.js');
 
-function getPackageJson(pkgJsonPath) {
-  const pkgJson = fs.readFileSync(pkgJsonPath, { encoding: 'utf-8' })
-  return JSON.parse(pkgJson)
+function runCommand(command) {
+  const res = spawnSync('sh', ['-c', command], {
+    stdio: 'inherit',
+    shell: false,
+  });
+
+  if (res.status !== 0) {
+    process.exit(res.status || 1);
+  }
 }
 
+function getExpectedVersion(releaseVersion) {
+  return /^\d+\.\d+\.\d+$/.test(releaseVersion || '') ? releaseVersion : '';
+}
 
 function run() {
   let releaseVersion = process.argv.slice(2)[0];
-  const cwd = process.cwd();
   // 0. update `nextBump`
   checkAndUpdateNextBump(releaseVersion);
 
   // 1. update version of package.json, this operation will remove the common/changes
-  spawnSync('sh', ['-c', `rush version --bump`], {
-    stdio: 'inherit',
-    shell: false,
-  });
+  runCommand(`rush version --bump`);
+
+  runCommand(`node ${validateReleaseVersion} ${getExpectedVersion(releaseVersion)}`);
 
 
   // 2. build all the packages
-  spawnSync('sh', ['-c', `rush build --only tag:package`], {
-    stdio: 'inherit',
-    shell: false,
-  });
+  runCommand(`rush build --only tag:package`);
 
   // 3. publish to npm
-  spawnSync('sh', ['-c', 'rush publish --publish --include-all --set-access-level public'], {
-    stdio: 'inherit',
-    shell: false,
-  });
+  runCommand('rush publish --publish --include-all --set-access-level public');
 
   // 4. update version of local packages to shrinkwrap
-  spawnSync('sh', ['-c', `rush update`], {
-    stdio: 'inherit',
-    shell: false,
-  });
+  runCommand(`rush update`);
 
   const rushJson = getPackageJson(path.join(__dirname, '../../rush.json'));
-  const package = rushJson.projects.find((project) => project.name === '@visactor/vchart-theme');
+  const project = rushJson.projects.find((item) => item.packageName === '@visactor/vchart-theme');
 
-  if (package) {
+  if (project) {
     const pkgJsonPath = path.join(__dirname, '../../', project.projectFolder, 'package.json')
     const pkgJson = getPackageJson(pkgJsonPath)
 
     // 5. add tag
-    spawnSync('sh', ['-c', `git tag v${pkgJson.versopn}`], {
-      stdio: 'inherit',
-      shell: false,
-    });
+    runCommand(`git tag v${pkgJson.version}`);
 
     // 6. add all the changes
-    spawnSync('sh', ['-c', `git add --all`], {
-      stdio: 'inherit',
-      shell: false,
-    });
+    runCommand(`git add --all`);
 
     // 7. commit all the changes
-    spawnSync('sh', ['-c', `git commit -m "build: publish version ${pkgJson.version}"`], {
-      stdio: 'inherit',
-      shell: false,
-    });
+    runCommand(`git commit -m "build: publish version ${pkgJson.version}"`);
 
     // 8. push tag to origin
-    spawnSync('sh', ['-c', `git push origin v${pkgJson.version}`], {
-      stdio: 'inherit',
-      shell: false,
-    });
+    runCommand(`git push origin v${pkgJson.version}`);
   }
 }
 

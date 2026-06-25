@@ -43,6 +43,9 @@ jobs:
       - name: Apply prereleaseName
         run: node common/scripts/apply-release-version.js ${{ steps.semver_parser.outputs.pre_release_name }} ${{ steps.semver_parser.outputs.main }}
 
+      - name: Validate prerelease versions
+        run: node common/scripts/validate-release-version.js ${{ steps.semver_parser.outputs.full }}
+
       - name: Build packages
         run: node common/scripts/install-run-rush.js build --only tag:package
 

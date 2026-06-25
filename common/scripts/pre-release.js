@@ -8,12 +8,23 @@ const path = require('path')
 const checkAndUpdateNextBump = require('./version-policies');
 const getPackageJson = require('./get-package-json');
 const writePrereleaseVersion = require('./set-prerelease-version');
+const validateReleaseVersion = path.join(__dirname, './validate-release-version.js');
 
 
 const semverRegex = /^(0|[1-9]\d*)\.(0|[1-9]\d*)\.(0|[1-9]\d*)(?:-(alpha|beta|rc)(?:\.(?:(0|[1-9])))*)$/;
 
 const preReleaseNameReg = /^((alpha|beta|rc)(?:\.(?:0|[1-9]))*)$/;
 
+function runCommand(command) {
+  const res = spawnSync('sh', ['-c', command], {
+    stdio: 'inherit',
+    shell: false,
+  });
+
+  if (res.status !== 0) {
+    process.exit(res.status || 1);
+  }
+}
 
 function run() {
   let preReleaseName = process.argv.slice(2)[0];
@@ -54,44 +65,30 @@ function run() {
 
   if (preReleaseName && preReleaseType) {
     // 1. apply version and update version of package.json
-    writePrereleaseVersion(checkAndUpdateNextBump(process.argv.slice(2)[1]), preReleaseName)
+    writePrereleaseVersion(checkAndUpdateNextBump(process.argv.slice(2)[1]), null, preReleaseName)
+
+    runCommand(`node ${validateReleaseVersion}`);
 
     // 2. build all the packages
-    spawnSync('sh', ['-c', `rush build --only tag:package`], {
-      stdio: 'inherit',
-      shell: false,
-    });
+    runCommand(`rush build --only tag:package`);
 
     // 3. publish to npm
-    spawnSync('sh', ['-c', `rush publish --publish --include-all --tag ${preReleaseType}`], {
-      stdio: 'inherit',
-      shell: false,
-    });
+    runCommand(`rush publish --publish --include-all --tag ${preReleaseType} --set-access-level public`);
 
     // 4. update version of local packages to shrinkwrap
-    spawnSync('sh', ['-c', `rush update`], {
-      stdio: 'inherit',
-      shell: false,
-    });
+    runCommand(`rush update`);
 
     if (package) {
       const pkgJsonPath = path.join(__dirname, '../../', package.projectFolder, 'package.json');
       const pkgJson = getPackageJson(pkgJsonPath)
 
       // 5. add the the changes
-      spawnSync('sh', ['-c', `git add --all`], {
-        stdio: 'inherit',
-        shell: false,
-      });
+      runCommand(`git add --all`);
 
       // 6. commit all the changes
-      spawnSync('sh', ['-c', `git commit -m "build: prerelease version ${pkgJson.version}"`], {
-        stdio: 'inherit',
-        shell: false,
-      });
+      runCommand(`git commit -m "build: prerelease version ${pkgJson.version}"`);
     }
   }
 }
 
 run()
-
